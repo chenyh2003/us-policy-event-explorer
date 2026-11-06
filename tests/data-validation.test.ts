@@ -1,0 +1,61 @@
+// @vitest-environment node
+import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const read = (name: string) => {
+  const path = fileURLToPath(new URL(`../public/data/${name}`, import.meta.url));
+  return JSON.parse(readFileSync(path, "utf-8"));
+};
+
+describe("构建数据", () => {
+  const events = read("events.json");
+  const taxonomy = read("taxonomy.json");
+
+  it("有 108 条事件，类别计数正确", () => {
+    expect(events).toHaveLength(108);
+    const counts = events.reduce((acc: Record<string, number>, e: any) => {
+      acc[e.category] = (acc[e.category] ?? 0) + 1;
+      return acc;
+    }, {});
+    expect(counts).toEqual({ 价格: 44, 黄金: 31, 工资: 26, 宏观: 7 });
+  });
+
+  it("ID 唯一且日期可排序", () => {
+    expect(new Set(events.map((e: any) => e.id)).size).toBe(108);
+    expect(events.every((e: any) => /^\d{4}-\d{2}-\d{2}$/.test(e.date))).toBe(true);
+  });
+
+  it("工具 code 都在 taxonomy 中", () => {
+    const codes = new Set(taxonomy.instruments.map((i: any) => i.code));
+    for (const e of events) {
+      for (const i of e.instruments) expect(codes.has(i.code)).toBe(true);
+    }
+  });
+
+  it("每条事件都有完整解析字段", () => {
+    for (const e of events) {
+      expect(e.summary.length).toBeGreaterThan(8);
+      expect(e.layers.length).toBeGreaterThan(0);
+      expect(e.instruments.length).toBeGreaterThan(0);
+      expect(e.transmission.length).toBeGreaterThanOrEqual(3);
+      expect(e.metrics.length).toBeGreaterThanOrEqual(1);
+      expect(e.sideEffects.length).toBeGreaterThanOrEqual(2);
+      expect(e.winners.length).toBeGreaterThan(0);
+      expect(e.losers.length).toBeGreaterThan(0);
+      expect(e.sources.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("关联事件 ID 都存在", () => {
+    const ids = new Set(events.map((e: any) => e.id));
+    for (const e of events) {
+      for (const id of e.relatedIds) expect(ids.has(id)).toBe(true);
+    }
+  });
+
+  it("核心32与K标注可识别", () => {
+    expect(events.filter((e: any) => e.isCore32)).toHaveLength(32);
+    expect(events.filter((e: any) => e.keyAnnotation).length).toBeGreaterThanOrEqual(11);
+  });
+});

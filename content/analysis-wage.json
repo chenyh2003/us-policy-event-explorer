@@ -1,0 +1,2052 @@
+{
+  "1": {
+    "summary": "马萨诸塞州为妇女和未成年人设定最低工资，是美国第一部州级最低工资法，也是联邦工资底线的制度试验。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "州级最低工资",
+        "detail": "覆盖妇女和未成年人，按周设定工资下限。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "州劳工委员会执法",
+        "detail": "州政府负责调查、许可和处罚。"
+      }
+    ],
+    "targets": [
+      "妇女",
+      "未成年人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1912-01-01"
+      },
+      {
+        "label": "州",
+        "value": "马萨诸塞"
+      },
+      {
+        "label": "覆盖",
+        "value": "妇女/未成年人"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "州级最低工资",
+    "exit": "州级试点",
+    "sideEffects": [
+      "覆盖范围有限",
+      "执法能力不足",
+      "雇主规避",
+      "后续州效仿"
+    ],
+    "winners": [
+      "低工资妇女/未成年工人"
+    ],
+    "losers": [
+      "低毛利雇主",
+      "未被覆盖的男性工人（相对）"
+    ],
+    "relatedIds": [
+      11,
+      24
+    ],
+    "sources": [
+      "03#3.1"
+    ]
+  },
+  "8": {
+    "summary": "一战 NWLB 用仲裁、8 小时工作制和生活工资换取劳资停战，工资管制从地方试验升级为全国性战时制度。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "wage_board_arbitration",
+        "label": "工资委员会/仲裁",
+        "parameter": "劳资仲裁/生活工资",
+        "detail": "委员会调解工资争议并设定生活工资标准。"
+      },
+      {
+        "code": "collective_bargaining",
+        "label": "集体谈判",
+        "parameter": "工会承认",
+        "detail": "以承认工会换取战时生产稳定。"
+      },
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "8 小时工作制",
+        "detail": "超过标准工时支付加班或调整班次。"
+      }
+    ],
+    "targets": [
+      "战时工业",
+      "工会",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "成立",
+        "value": "1918-04-08"
+      },
+      {
+        "label": "标准",
+        "value": "8 小时/生活工资"
+      },
+      {
+        "label": "解散",
+        "value": "1919 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资仲裁",
+    "exit": "1919年解散",
+    "sideEffects": [
+      "仲裁执行不均",
+      "战后工资刚性",
+      "劳资冲突",
+      "通胀压力"
+    ],
+    "winners": [
+      "工会",
+      "工人",
+      "战时生产"
+    ],
+    "losers": [
+      "雇主",
+      "消费者"
+    ],
+    "relatedIds": [
+      4,
+      28,
+      31
+    ],
+    "sources": [
+      "03#3.1"
+    ]
+  },
+  "11": {
+    "summary": "Adkins 案推翻哥伦比亚特区妇女最低工资法，最高法院以“契约自由”限制工资立法。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "司法否决最低工资",
+        "detail": "最高法院认定妇女最低工资侵犯契约自由。"
+      },
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "妇女最低工资失效",
+        "detail": "哥伦比亚特区法律被推翻。"
+      }
+    ],
+    "targets": [
+      "妇女工人",
+      "哥伦比亚特区",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "判决",
+        "value": "1923-04-09"
+      },
+      {
+        "label": "结果",
+        "value": "妇女最低工资被推翻"
+      },
+      {
+        "label": "影响",
+        "value": "最低工资立法受挫"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "司法否决",
+    "exit": "最低工资立法受挫",
+    "sideEffects": [
+      "工资底线缺失",
+      "州级立法受阻",
+      "工人谈判力下降"
+    ],
+    "winners": [
+      "雇主"
+    ],
+    "losers": [
+      "妇女工人",
+      "低工资劳动者"
+    ],
+    "relatedIds": [
+      1,
+      24
+    ],
+    "sources": [
+      "03#3.1"
+    ]
+  },
+  "12": {
+    "summary": "Davis-Bacon 要求联邦建筑项目支付当地 prevailing wage，把工资底线嵌入政府采购。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "prevailing_wage",
+        "label": "当地通行工资（prevailing wage）",
+        "parameter": "联邦建筑 prevailing wage",
+        "detail": "联邦工程按当地通行工资支付。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "联邦合同合规",
+        "detail": "承包商须遵守工资规则才能获得合同。"
+      }
+    ],
+    "targets": [
+      "联邦建筑",
+      "承包商",
+      "建筑工人"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1931-03-03"
+      },
+      {
+        "label": "覆盖",
+        "value": "联邦建筑"
+      },
+      {
+        "label": "机制",
+        "value": "prevailing wage"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资底线",
+    "exit": "长期有效",
+    "sideEffects": [
+      "合规成本",
+      "小型承包商进入门槛",
+      "工资数据争议",
+      "地区差异"
+    ],
+    "winners": [
+      "建筑工人",
+      "工会承包商"
+    ],
+    "losers": [
+      "低成本承包商",
+      "联邦预算（短期）"
+    ],
+    "relatedIds": [
+      22,
+      24
+    ],
+    "sources": [
+      "03#3.2"
+    ]
+  },
+  "22": {
+    "summary": "《瓦格纳法》保障工会组织和集体谈判权，为工资谈判提供制度基础。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "collective_bargaining",
+        "label": "集体谈判",
+        "parameter": "工会/集体谈判权",
+        "detail": "禁止雇主干预工会组织。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "NLRB 执法",
+        "detail": "设立国家劳动关系委员会处理不公平劳动行为。"
+      }
+    ],
+    "targets": [
+      "工会",
+      "雇主",
+      "州际商业"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1935-07-05"
+      },
+      {
+        "label": "机构",
+        "value": "NLRB"
+      },
+      {
+        "label": "效果",
+        "value": "工会扩张"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "集体谈判",
+    "exit": "工会扩张",
+    "sideEffects": [
+      "工会力量上升",
+      "罢工增加",
+      "雇主合规成本",
+      "行业工资差"
+    ],
+    "winners": [
+      "工会工人",
+      "工会"
+    ],
+    "losers": [
+      "雇主",
+      "未工会化工人（相对）"
+    ],
+    "relatedIds": [
+      24,
+      39
+    ],
+    "sources": [
+      "03#3.2"
+    ]
+  },
+  "24": {
+    "summary": "FLSA 建立联邦最低工资、44 小时标准工时和加班溢价，把工资管制从战时冻结转为长期劳动底线。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "首年 0.25 美元/小时",
+        "detail": "覆盖州际商业相关行业，后续逐步提高。"
+      },
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "超过 44 小时支付 1.5 倍",
+        "detail": "标准工时从 44 小时逐步降到 40 小时。"
+      }
+    ],
+    "targets": [
+      "州际商业企业",
+      "雇员"
+    ],
+    "exemptions": [
+      "农业",
+      "家政",
+      "部分管理岗位"
+    ],
+    "transmission": [
+      "低工资工人获得联邦工资下限",
+      "超过标准工时的工作成本上升",
+      "企业用涨价、减少工时或自动化消化成本",
+      "劳动收入份额与行业成本结构变化",
+      "最低工资/加班规则成为长期制度"
+    ],
+    "metrics": [
+      {
+        "label": "首年最低工资",
+        "value": "0.25 美元/小时"
+      },
+      {
+        "label": "标准工时",
+        "value": "44 小时，后降至 40 小时"
+      },
+      {
+        "label": "加班溢价",
+        "value": "1.5 倍"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本上升，自动化/效率受益",
+      "rates": "工资—价格螺旋预期影响利率",
+      "usd": "通过通胀与增长间接影响",
+      "gold": "工资通胀支撑黄金的抗通胀属性",
+      "sectors": "制造、零售、餐饮、物流"
+    },
+    "enforcement": "最低工资/加班",
+    "exit": "联邦工资制度基础",
+    "sideEffects": [
+      "部分低技能岗位减少",
+      "工时调整",
+      "合规成本",
+      "地区差异"
+    ],
+    "winners": [
+      "低工资工人",
+      "工会",
+      "自动化设备商"
+    ],
+    "losers": [
+      "低毛利劳动密集企业",
+      "部分小企业"
+    ],
+    "relatedIds": [
+      22,
+      23,
+      32,
+      92
+    ],
+    "sources": [
+      "03#3.2"
+    ],
+    "keyAnnotation": "K2"
+  },
+  "26": {
+    "summary": "EO 8802 禁止国防工业中的种族歧视，把反歧视与联邦采购合规结合，扩大少数族裔就业机会。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "国防工业反歧视",
+        "detail": "禁止承包商基于种族/宗教/国籍歧视。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "联邦采购合规",
+        "detail": "违反者可失去国防合同。"
+      }
+    ],
+    "targets": [
+      "国防工业",
+      "少数族裔工人",
+      "承包商"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1941-06-25"
+      },
+      {
+        "label": "范围",
+        "value": "国防工业"
+      },
+      {
+        "label": "机构",
+        "value": "FEPC"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "反歧视",
+    "exit": "促进公平就业",
+    "sideEffects": [
+      "执行有限",
+      "承包商规避",
+      "种族工资差距",
+      "后续民权运动"
+    ],
+    "winners": [
+      "少数族裔工人",
+      "合规承包商"
+    ],
+    "losers": [
+      "歧视性雇主"
+    ],
+    "relatedIds": [
+      22,
+      39
+    ],
+    "sources": [
+      "03#3.3"
+    ]
+  },
+  "28": {
+    "summary": "二战 NWLB 通过三方委员会审批工资协议，把工资涨幅与物价稳定绑定。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "wage_board_arbitration",
+        "label": "工资委员会/仲裁",
+        "parameter": "三方工资委员会",
+        "detail": "劳工/企业/公众代表审批工资争议。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资审批/上限",
+        "detail": "工资上涨须获批准。"
+      },
+      {
+        "code": "cooling_off",
+        "label": "冷却期",
+        "parameter": "罢工冷却期",
+        "detail": "劳资争议先调解/仲裁再罢工。"
+      }
+    ],
+    "targets": [
+      "全国工资",
+      "工会",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "成立",
+        "value": "1942-01-12"
+      },
+      {
+        "label": "依据",
+        "value": "EO 9017"
+      },
+      {
+        "label": "机制",
+        "value": "三方委员会"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资管制",
+    "exit": "工资审批",
+    "sideEffects": [
+      "审批积压",
+      "福利漏洞",
+      "罢工压力",
+      "工资压缩"
+    ],
+    "winners": [
+      "工会",
+      "工人"
+    ],
+    "losers": [
+      "雇主",
+      "消费者（价格上涨）"
+    ],
+    "relatedIds": [
+      8,
+      31,
+      32
+    ],
+    "sources": [
+      "03#3.3"
+    ]
+  },
+  "31": {
+    "summary": "Little Steel 公式把工资涨幅锚定为 1941 年 1 月以来 15%，成为二战工资管制核心标准。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "wage_formula_cola",
+        "label": "工资公式/COLA",
+        "parameter": "1941-01 以来上涨 15%",
+        "detail": "以生活成本/工资基数为公式。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资涨幅上限",
+        "detail": "超过公式的涨幅需 NWLB 批准。"
+      }
+    ],
+    "targets": [
+      "钢铁",
+      "全国工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1942-07"
+      },
+      {
+        "label": "标准",
+        "value": "15%"
+      },
+      {
+        "label": "机构",
+        "value": "NWLB"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资标准",
+    "exit": "NWLB核心标准",
+    "sideEffects": [
+      "工资压缩",
+      "福利替代",
+      "行业差异",
+      "劳工不满"
+    ],
+    "winners": [
+      "低工资工人",
+      "工会"
+    ],
+    "losers": [
+      "高利润企业",
+      "消费者"
+    ],
+    "relatedIds": [
+      28,
+      32
+    ],
+    "sources": [
+      "03#3.3"
+    ]
+  },
+  "32": {
+    "summary": "EO 9250 要求工资上涨须经 NWLB 批准，并允许福利作为例外，催生“福利漏洞”。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资上涨审批",
+        "detail": "超过标准的工资协议须 NWLB 批准。"
+      },
+      {
+        "code": "wage_board_arbitration",
+        "label": "工资委员会/仲裁",
+        "parameter": "NWLB 审批",
+        "detail": "委员会审查工资和福利。"
+      },
+      {
+        "code": "benefits_social",
+        "label": "福利/社保",
+        "parameter": "福利例外",
+        "detail": "雇主用养老金/保险等福利绕开工资上限。"
+      }
+    ],
+    "targets": [
+      "全国工资",
+      "工会",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1942-10-02"
+      },
+      {
+        "label": "机制",
+        "value": "工资审批"
+      },
+      {
+        "label": "副作用",
+        "value": "福利漏洞"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资/价格稳定",
+    "exit": "福利漏洞",
+    "sideEffects": [
+      "福利扩张",
+      "工资压缩",
+      "审批积压",
+      "劳资冲突"
+    ],
+    "winners": [
+      "工人（福利）",
+      "保险公司"
+    ],
+    "losers": [
+      "现金工资",
+      "企业成本"
+    ],
+    "relatedIds": [
+      28,
+      31
+    ],
+    "sources": [
+      "03#3.3"
+    ]
+  },
+  "39": {
+    "summary": "Taft-Hartley 限制工会和罢工，允许州 right-to-work，改变战后劳资力量对比。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "工会限制",
+        "detail": "禁止 closed shop，限制二次抵制。"
+      },
+      {
+        "code": "cooling_off",
+        "label": "冷却期",
+        "parameter": "全国紧急冷却期",
+        "detail": "总统可要求 80 天冷却期。"
+      },
+      {
+        "code": "collective_bargaining",
+        "label": "集体谈判",
+        "parameter": "集体谈判规则",
+        "detail": "界定不公平劳动行为。"
+      }
+    ],
+    "targets": [
+      "工会",
+      "雇主",
+      "州"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1947-06-23"
+      },
+      {
+        "label": "措施",
+        "value": "禁止 closed shop"
+      },
+      {
+        "label": "州法",
+        "value": "right-to-work"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工会限制",
+    "exit": "工会力量受抑",
+    "sideEffects": [
+      "工会密度下降",
+      "罢工减少",
+      "州际工资差",
+      "政治极化"
+    ],
+    "winners": [
+      "雇主",
+      "州政府"
+    ],
+    "losers": [
+      "工会",
+      "工人"
+    ],
+    "relatedIds": [
+      22,
+      84
+    ],
+    "sources": [
+      "03#3.3"
+    ]
+  },
+  "45": {
+    "summary": "朝鲜战争 WSB 先允许约 10% 追赶式上涨，随后收紧至 2.5%—3%，工资管制从宽松转向紧缩。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资涨幅上限",
+        "detail": "初期允许 10% 追赶，后收紧。"
+      },
+      {
+        "code": "wage_formula_cola",
+        "label": "工资公式/COLA",
+        "parameter": "追赶公式",
+        "detail": "按生活成本/历史差距调整。"
+      }
+    ],
+    "targets": [
+      "全国工资",
+      "工会"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1951"
+      },
+      {
+        "label": "初期",
+        "value": "约 10%"
+      },
+      {
+        "label": "后续",
+        "value": "2.5%—3%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "工资标准",
+    "exit": "后收紧至2.5%-3%",
+    "sideEffects": [
+      "工资压缩",
+      "劳资冲突",
+      "通胀压力",
+      "政策反复"
+    ],
+    "winners": [
+      "工人（初期）"
+    ],
+    "losers": [
+      "工会（后期）",
+      "企业"
+    ],
+    "relatedIds": [
+      43,
+      44,
+      46
+    ],
+    "sources": [
+      "03#3.4"
+    ]
+  },
+  "46": {
+    "summary": "Youngstown 案否定总统接管钢铁厂，确认工资/价格管制不能绕开国会立法。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "总统权力边界",
+        "detail": "最高法院限制总统以紧急状态接管私产。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "钢铁工资争议",
+        "detail": "工资管制与劳资谈判冲突。"
+      }
+    ],
+    "targets": [
+      "钢铁",
+      "总统",
+      "国会"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "判决",
+        "value": "1952-06-02"
+      },
+      {
+        "label": "结果",
+        "value": "接管无效"
+      },
+      {
+        "label": "意义",
+        "value": "总统权力边界"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "司法否决",
+    "exit": "总统权力边界",
+    "sideEffects": [
+      "政策不确定性",
+      "劳资冲突",
+      "法治约束",
+      "行业投资"
+    ],
+    "winners": [
+      "钢铁企业",
+      "法治"
+    ],
+    "losers": [
+      "总统",
+      "战时管制支持者"
+    ],
+    "relatedIds": [
+      43,
+      44,
+      45
+    ],
+    "sources": [
+      "03#3.4"
+    ]
+  },
+  "60": {
+    "summary": "EO 11627 建立 Pay Board、Price Commission 和 Cost of Living Council，搭建 Phase II 的工资/价格审批机构。",
+    "layers": [
+      "labor_wage",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "wage_board_arbitration",
+        "label": "工资委员会/仲裁",
+        "parameter": "Pay Board",
+        "detail": "审批工资协议和涨幅。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资标准",
+        "detail": "后续设定 5.5% 标准。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "Price Commission",
+        "detail": "审批价格和涨价申请。"
+      }
+    ],
+    "targets": [
+      "全国工资",
+      "价格",
+      "大企业"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1971-10-15"
+      },
+      {
+        "label": "机构",
+        "value": "Pay Board/Price Commission/CLC"
+      },
+      {
+        "label": "阶段",
+        "value": "Phase II"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "机构建设",
+    "exit": "Phase II框架",
+    "sideEffects": [
+      "审批积压",
+      "合规成本",
+      "工资压缩",
+      "政策反复"
+    ],
+    "winners": [
+      "合规企业",
+      "固定收入者"
+    ],
+    "losers": [
+      "工会",
+      "高增长企业"
+    ],
+    "relatedIds": [
+      58,
+      61,
+      76
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "76": {
+    "summary": "卡特工资/价格指导线提出工资 7%、价格 5.75%，由 COWPS 监督，但自愿合规难以抑制通胀。",
+    "layers": [
+      "labor_wage",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资 7% 指导线",
+        "detail": "非强制工资涨幅参考。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "价格 5.75% 指导线",
+        "detail": "非强制价格涨幅参考。"
+      },
+      {
+        "code": "tax_penalty_incentive",
+        "label": "税收惩罚/激励",
+        "parameter": "合规监督/采购杠杆",
+        "detail": "COWPS 监督并影响联邦合同。"
+      }
+    ],
+    "targets": [
+      "全国工资",
+      "价格",
+      "联邦承包商"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1978-10-24"
+      },
+      {
+        "label": "工资指导",
+        "value": "7%"
+      },
+      {
+        "label": "价格指导",
+        "value": "5.75%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "自愿指导",
+    "exit": "COWPS监督",
+    "sideEffects": [
+      "自愿合规率低",
+      "通胀预期失控",
+      "政策可信度下降",
+      "劳资冲突"
+    ],
+    "winners": [
+      "企业（短期）"
+    ],
+    "losers": [
+      "工人",
+      "消费者"
+    ],
+    "relatedIds": [
+      60,
+      77
+    ],
+    "sources": [
+      "03#3.7"
+    ]
+  },
+  "77": {
+    "summary": "EO 12092 要求联邦承包商遵守工资/价格标准，否则可能失去合同，用采购杠杆强化自愿指导线。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "联邦合同合规",
+        "detail": "承包商须证明遵守工资/价格标准。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资标准",
+        "detail": "与 7% 指导线挂钩。"
+      }
+    ],
+    "targets": [
+      "联邦承包商",
+      "工资",
+      "价格"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1978-11-01"
+      },
+      {
+        "label": "对象",
+        "value": "联邦承包商"
+      },
+      {
+        "label": "杠杆",
+        "value": "合同资格"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "采购合规",
+    "exit": "否则可能失去合同",
+    "sideEffects": [
+      "合规成本",
+      "承包商规避",
+      "执行不均",
+      "政治争议"
+    ],
+    "winners": [
+      "合规承包商"
+    ],
+    "losers": [
+      "不合规承包商",
+      "联邦预算"
+    ],
+    "relatedIds": [
+      76
+    ],
+    "sources": [
+      "03#3.7"
+    ]
+  },
+  "84": {
+    "summary": "PATCO 罢工中里根解雇空管员，成为战后工会力量受挫的标志性事件。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "解雇罢工空管员",
+        "detail": "联邦政府以非法罢工为由解雇并禁止再雇。"
+      },
+      {
+        "code": "collective_bargaining",
+        "label": "集体谈判",
+        "parameter": "工会谈判受挫",
+        "detail": "削弱公共部门工会的罢工筹码。"
+      }
+    ],
+    "targets": [
+      "航空",
+      "空管员",
+      "工会"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1981-08-03"
+      },
+      {
+        "label": "事件",
+        "value": "PATCO 罢工"
+      },
+      {
+        "label": "结果",
+        "value": "约 1.1 万人被解雇"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "劳资冲突",
+    "exit": "工会力量受挫",
+    "sideEffects": [
+      "工会力量下降",
+      "航空短期混乱",
+      "公共部门劳资关系变化",
+      "替代招聘"
+    ],
+    "winners": [
+      "联邦政府",
+      "航空公司"
+    ],
+    "losers": [
+      "PATCO 工会",
+      "空管员"
+    ],
+    "relatedIds": [
+      39,
+      22
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  },
+  "86": {
+    "summary": "1990 年联邦最低工资提高到 3.80 美元，1990—91 年分步上调。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "3.80 美元/小时",
+        "detail": "1990—91 年分步提高。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "劳工部执法",
+        "detail": "覆盖受 FLSA 约束的雇主。"
+      }
+    ],
+    "targets": [
+      "低工资工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1990-04-01"
+      },
+      {
+        "label": "工资",
+        "value": "3.80 美元/小时"
+      },
+      {
+        "label": "方式",
+        "value": "分步上调"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "法定",
+    "exit": "03#4",
+    "sideEffects": [
+      "低技能就业调整",
+      "企业成本上升",
+      "地区差异"
+    ],
+    "winners": [
+      "低工资工人"
+    ],
+    "losers": [
+      "低毛利雇主"
+    ],
+    "relatedIds": [
+      24,
+      87
+    ],
+    "sources": [
+      "03#4"
+    ]
+  },
+  "87": {
+    "summary": "1996 年联邦最低工资提高到 4.75 美元，1996—97 年分步上调。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "4.75 美元/小时",
+        "detail": "1996—97 年分步提高。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "劳工部执法",
+        "detail": "FLSA 覆盖雇主。"
+      }
+    ],
+    "targets": [
+      "低工资工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1996-10-01"
+      },
+      {
+        "label": "工资",
+        "value": "4.75 美元/小时"
+      },
+      {
+        "label": "方式",
+        "value": "分步上调"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "法定",
+    "exit": "03#4",
+    "sideEffects": [
+      "就业调整",
+      "企业成本",
+      "州级最低工资分化"
+    ],
+    "winners": [
+      "低工资工人"
+    ],
+    "losers": [
+      "低毛利雇主"
+    ],
+    "relatedIds": [
+      86,
+      91
+    ],
+    "sources": [
+      "03#4"
+    ]
+  },
+  "89": {
+    "summary": "2004 年加班规则改革提高 exempt 工资门槛并重定义“执行/行政/专业”岗位，扩大/收窄加班资格。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "exempt 工资门槛",
+        "detail": "年薪低于门槛通常有加班资格。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "岗位分类重定义",
+        "detail": "重新界定 exempt duties。"
+      }
+    ],
+    "targets": [
+      "白领工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2004-08-23"
+      },
+      {
+        "label": "门槛",
+        "value": "约 23,660 美元/年"
+      },
+      {
+        "label": "效果",
+        "value": "部分工人失去加班资格"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "加班",
+    "exit": "03#3.8",
+    "sideEffects": [
+      "加班资格变化",
+      "企业合规成本",
+      "诉讼增加",
+      "行业差异"
+    ],
+    "winners": [
+      "雇主"
+    ],
+    "losers": [
+      "部分白领工人"
+    ],
+    "relatedIds": [
+      24,
+      94,
+      95
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  },
+  "91": {
+    "summary": "2007 年联邦最低工资提高到 5.85 美元，是三步上调的第一步。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "5.85 美元/小时",
+        "detail": "2007—09 年三步上调。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "劳工部执法",
+        "detail": "FLSA 覆盖雇主。"
+      }
+    ],
+    "targets": [
+      "低工资工人"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2007-07-24"
+      },
+      {
+        "label": "工资",
+        "value": "5.85 美元/小时"
+      },
+      {
+        "label": "步骤",
+        "value": "三步第一步"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "法定",
+    "exit": "03#4",
+    "sideEffects": [
+      "企业成本",
+      "就业调整",
+      "州级差异"
+    ],
+    "winners": [
+      "低工资工人"
+    ],
+    "losers": [
+      "低毛利雇主"
+    ],
+    "relatedIds": [
+      87,
+      92
+    ],
+    "sources": [
+      "03#4"
+    ]
+  },
+  "92": {
+    "summary": "2009 年联邦最低工资提高到 7.25 美元，此后长期未再上调，实际价值被通胀侵蚀。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "minimum_wage",
+        "label": "最低工资",
+        "parameter": "7.25 美元/小时",
+        "detail": "2009-07-24 起生效。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "州/地方加码",
+        "detail": "多州和城市设定更高最低工资。"
+      }
+    ],
+    "targets": [
+      "低工资工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2009-07-24"
+      },
+      {
+        "label": "工资",
+        "value": "7.25 美元/小时"
+      },
+      {
+        "label": "现状",
+        "value": "联邦层面长期未上调"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "法定",
+    "exit": "03#4",
+    "sideEffects": [
+      "实际工资下降",
+      "州级分化",
+      "企业成本",
+      "政治争议"
+    ],
+    "winners": [
+      "低工资工人（名义）"
+    ],
+    "losers": [
+      "低工资工人（实际）",
+      "低毛利雇主"
+    ],
+    "relatedIds": [
+      24,
+      91
+    ],
+    "sources": [
+      "03#4"
+    ]
+  },
+  "94": {
+    "summary": "奥巴马加班规则把 exempt 门槛提高到 47,476 美元，但 2016 年被法院阻止。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "门槛 47,476 美元",
+        "detail": "扩大加班资格覆盖。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "法院阻止",
+        "detail": "联邦法官暂停实施。"
+      }
+    ],
+    "targets": [
+      "白领工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2016-05-18"
+      },
+      {
+        "label": "门槛",
+        "value": "47,476 美元/年"
+      },
+      {
+        "label": "状态",
+        "value": "被法院阻止"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "加班",
+    "exit": "03#3.8",
+    "sideEffects": [
+      "政策不确定性",
+      "企业合规准备",
+      "加班资格争议"
+    ],
+    "winners": [
+      "部分白领工人（若实施）"
+    ],
+    "losers": [
+      "雇主"
+    ],
+    "relatedIds": [
+      89,
+      95,
+      101
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  },
+  "95": {
+    "summary": "特朗普加班规则把门槛定为 35,568 美元，2019 年生效，覆盖范围小于奥巴马版本。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "门槛 35,568 美元",
+        "detail": "提高 exempt 工资门槛。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "劳工部规则",
+        "detail": "2019-09-24 生效。"
+      }
+    ],
+    "targets": [
+      "白领工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2019-09-24"
+      },
+      {
+        "label": "门槛",
+        "value": "35,568 美元/年"
+      },
+      {
+        "label": "状态",
+        "value": "生效"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "加班",
+    "exit": "03#3.8",
+    "sideEffects": [
+      "加班资格扩大有限",
+      "企业成本",
+      "州级差异"
+    ],
+    "winners": [
+      "部分白领工人"
+    ],
+    "losers": [
+      "雇主"
+    ],
+    "relatedIds": [
+      89,
+      94,
+      101
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  },
+  "101": {
+    "summary": "拜登加班规则把门槛提高到 43,888/58,656 美元，2024 年 11 月被法院撤销。",
+    "layers": [
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "overtime_premium",
+        "label": "加班溢价",
+        "parameter": "门槛 43,888/58,656 美元",
+        "detail": "分两步提高 exempt 工资门槛。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "法院撤销",
+        "detail": "德州联邦法院推翻规则。"
+      }
+    ],
+    "targets": [
+      "白领工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2024-04-23"
+      },
+      {
+        "label": "门槛",
+        "value": "43,888/58,656 美元"
+      },
+      {
+        "label": "状态",
+        "value": "2024-11 被撤销"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "加班",
+    "exit": "03#3.8",
+    "sideEffects": [
+      "政策反复",
+      "企业合规成本",
+      "加班资格争议"
+    ],
+    "winners": [
+      "部分白领工人（若实施）"
+    ],
+    "losers": [
+      "雇主"
+    ],
+    "relatedIds": [
+      94,
+      95
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  },
+  "104": {
+    "summary": "OBBBA 用小费/加班收入税收扣除替代直接工资管制，2025—2028 年对部分劳动收入减税。",
+    "layers": [
+      "labor_wage",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "tax_penalty_incentive",
+        "label": "税收惩罚/激励",
+        "parameter": "小费/加班收入扣除",
+        "detail": "对符合条件的小费和加班收入给予税收扣除。"
+      },
+      {
+        "code": "benefits_social",
+        "label": "福利/社保",
+        "parameter": "劳动收入补贴",
+        "detail": "通过税式支出提高可支配收入。"
+      }
+    ],
+    "targets": [
+      "餐饮/服务业",
+      "加班工人",
+      "雇主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定工资底线、涨幅或审批程序",
+      "企业调整用工、工时、福利或价格",
+      "劳动成本与收入分配变化",
+      "利润率与通胀预期再定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "2025-07-04"
+      },
+      {
+        "label": "期限",
+        "value": "2025—2028"
+      },
+      {
+        "label": "对象",
+        "value": "小费/加班收入"
+      }
+    ],
+    "marketImpact": {
+      "equities": "劳动密集型行业成本与利润率变化",
+      "rates": "工资—通胀预期影响利率",
+      "usd": "通过通胀与增长间接影响美元",
+      "gold": "工资通胀支撑抗通胀需求",
+      "sectors": "零售、餐饮、物流、制造"
+    },
+    "enforcement": "税收激励",
+    "exit": "2025-2028",
+    "sideEffects": [
+      "税式支出成本",
+      "覆盖范围争议",
+      "行业扭曲",
+      "到期不确定性"
+    ],
+    "winners": [
+      "小费工人",
+      "加班工人",
+      "餐饮业"
+    ],
+    "losers": [
+      "联邦财政",
+      "未覆盖工人"
+    ],
+    "relatedIds": [
+      92
+    ],
+    "sources": [
+      "03#3.8"
+    ]
+  }
+}

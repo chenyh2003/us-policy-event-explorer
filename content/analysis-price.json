@@ -1,0 +1,3689 @@
+{
+  "5": {
+    "summary": "一战工业动员把原料分配、优先订单和价格固定放进同一个战时机构，价格信号开始让位于军需优先级。",
+    "layers": [
+      "price_industry",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "军需原料固定价/优先订单",
+        "detail": "WIB 对钢铁、铜、木材等关键原料设定优先级和价格协调。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "原料分配额度",
+        "detail": "按军需订单分配运力、燃料和原材料，民用需求被降级。"
+      },
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "政府优先采购",
+        "detail": "政府作为军需大买家，直接挤占民用供给。"
+      }
+    ],
+    "targets": [
+      "工业原料",
+      "军需品",
+      "铁路运力"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "成立时间",
+        "value": "1917-07-28"
+      },
+      {
+        "label": "负责人",
+        "value": "1918 年巴鲁克主持"
+      },
+      {
+        "label": "结束",
+        "value": "1918 年停战后解散"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接协调",
+    "exit": "1918年巴鲁克主持",
+    "sideEffects": [
+      "民用原料短缺",
+      "价格信号失真",
+      "战后突然撤销造成库存与产能错配"
+    ],
+    "winners": [
+      "军工与上游原料商",
+      "有军需订单的企业"
+    ],
+    "losers": [
+      "民用工业",
+      "消费者",
+      "未被优先分配的中小企业"
+    ],
+    "relatedIds": [
+      4,
+      6,
+      8
+    ],
+    "sources": [
+      "01#3.1"
+    ]
+  },
+  "6": {
+    "summary": "《食品与燃料管制法》用小麦担保价、食品管理局和配给制度同时管住农产品价格与城市食品供给。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_floor_guarantee",
+        "label": "最低限价/担保价",
+        "parameter": "小麦担保价 2.20 美元/蒲式耳",
+        "detail": "政府承诺最低收购价，鼓励农民扩大生产。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "食品/燃料零售价格上限",
+        "detail": "对面粉、糖、煤等设定最高价。"
+      },
+      {
+        "code": "rationing_coupon",
+        "label": "配给券",
+        "parameter": "糖/面粉等配给",
+        "detail": "通过配给券限制家庭购买量。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "食品加工/销售许可",
+        "detail": "食品管理局对加工商和经销商发放许可并检查。"
+      }
+    ],
+    "targets": [
+      "小麦",
+      "食品",
+      "燃料",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "小麦担保价",
+        "value": "2.20 美元/蒲式耳"
+      },
+      {
+        "label": "实施",
+        "value": "1917-08-10"
+      },
+      {
+        "label": "结束",
+        "value": "战后取消"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "战后取消",
+    "sideEffects": [
+      "食品短缺与排队",
+      "黑市",
+      "农民与消费者之间的价格分配扭曲",
+      "行政成本高"
+    ],
+    "winners": [
+      "小麦种植者",
+      "食品加工商"
+    ],
+    "losers": [
+      "城市消费者",
+      "未受担保的小农"
+    ],
+    "relatedIds": [
+      4,
+      5,
+      8
+    ],
+    "sources": [
+      "01#3.1"
+    ]
+  },
+  "16": {
+    "summary": "AAA 用“平价+加工税+休耕”把农产品价格托到战前水平，是价格支持而非单纯限价。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_floor_guarantee",
+        "label": "最低限价/担保价",
+        "parameter": "农产品平价（parity）",
+        "detail": "以 1909—1914 年农民购买力为基准设定支持价。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "休耕/种植面积配额",
+        "detail": "通过减少供给抬升价格。"
+      },
+      {
+        "code": "subsidy_tax_credit",
+        "label": "补贴/税收抵免",
+        "parameter": "加工税+补贴",
+        "detail": "对农产品加工征税，用税收支付农场补贴。"
+      }
+    ],
+    "targets": [
+      "小麦",
+      "棉花",
+      "玉米",
+      "农场主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1933-05-12"
+      },
+      {
+        "label": "核心机制",
+        "value": "平价/加工税/休耕"
+      },
+      {
+        "label": "司法结局",
+        "value": "1936 年 Butler 案违宪"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "价格支持",
+    "exit": "1936年Butler案违宪",
+    "sideEffects": [
+      "加工税转嫁给消费者",
+      "休耕造成产能浪费",
+      "佃农与租地农民被挤出",
+      "行政分配争议"
+    ],
+    "winners": [
+      "大农场主",
+      "有政治影响力的农产品"
+    ],
+    "losers": [
+      "农产品加工商",
+      "消费者",
+      "佃农"
+    ],
+    "relatedIds": [
+      18,
+      23,
+      6
+    ],
+    "sources": [
+      "01#3.2"
+    ]
+  },
+  "18": {
+    "summary": "NIRA 让行业公会制定“公平竞争法典”，把最低价格、产量配额、准入许可和工资工时一起制度化。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_floor_guarantee",
+        "label": "最低限价/担保价",
+        "parameter": "行业法典最低价格",
+        "detail": "禁止低于法典价格销售，抑制价格战。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "产量/产能配额",
+        "detail": "按行业协议限制产量和新增产能。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "行业准入/法典合规",
+        "detail": "企业须遵守法典才能获得蓝鹰标志与政策支持。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "价格/成本申报",
+        "detail": "企业向行业委员会报告价格与成本。"
+      }
+    ],
+    "targets": [
+      "多数工业",
+      "雇主",
+      "劳工"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1933-06-16"
+      },
+      {
+        "label": "覆盖",
+        "value": "多数工业"
+      },
+      {
+        "label": "司法结局",
+        "value": "1935 年 Schechter 案违宪"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "1935年Schechter案违宪",
+    "sideEffects": [
+      "卡特尔化",
+      "进入壁垒上升",
+      "消费者价格上升",
+      "产量与就业收缩"
+    ],
+    "winners": [
+      "在位大企业",
+      "工会",
+      "受保护行业"
+    ],
+    "losers": [
+      "消费者",
+      "小企业",
+      "新进入者"
+    ],
+    "relatedIds": [
+      16,
+      21,
+      22
+    ],
+    "sources": [
+      "01#3.2"
+    ]
+  },
+  "21": {
+    "summary": "最高法院在 Schechter 案中否定 NIRA 的核心授权，行业法典体系整体崩塌。",
+    "layers": [
+      "price_industry",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "NIRA 核心条款失效",
+        "detail": "价格下限、产量配额和行业法典失去法律基础。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "司法审查收紧",
+        "detail": "限制国会把广泛经济权力授权给总统/行业组织。"
+      }
+    ],
+    "targets": [
+      "NIRA 覆盖行业",
+      "家禽业",
+      "小企业"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "判决",
+        "value": "1935-05-27"
+      },
+      {
+        "label": "结果",
+        "value": "NRA 解散"
+      },
+      {
+        "label": "影响",
+        "value": "价格管制回到行业/州层面"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "司法否决",
+    "exit": "NRA解散",
+    "sideEffects": [
+      "政策突然退出",
+      "行业价格战回归",
+      "就业与产能重新调整"
+    ],
+    "winners": [
+      "消费者",
+      "小企业",
+      "新进入者"
+    ],
+    "losers": [
+      "在位企业",
+      "NRA 体系内的工会"
+    ],
+    "relatedIds": [
+      18,
+      23
+    ],
+    "sources": [
+      "01#3.2"
+    ]
+  },
+  "23": {
+    "summary": "Butler 案否定 AAA 的加工税，价格支持从“税收—补贴”转向 1938 年新农业法。",
+    "layers": [
+      "price_industry",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "加工税违宪",
+        "detail": "最高法院认为加工税不是真正的税收，而是对农业的强制转移。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "旧 AAA 价格支持中断",
+        "detail": "平价与休耕机制失去资金来源。"
+      }
+    ],
+    "targets": [
+      "农产品",
+      "加工商",
+      "农场主"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "判决",
+        "value": "1936-01-06"
+      },
+      {
+        "label": "结果",
+        "value": "1938 年新 AAA"
+      },
+      {
+        "label": "争点",
+        "value": "联邦农业权力边界"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "司法否决",
+    "exit": "1938年新AAA",
+    "sideEffects": [
+      "政策空窗期",
+      "农业收入波动",
+      "国会重新设计补贴工具"
+    ],
+    "winners": [
+      "农产品加工商",
+      "消费者"
+    ],
+    "losers": [
+      "依赖补贴的农场主"
+    ],
+    "relatedIds": [
+      16,
+      25
+    ],
+    "sources": [
+      "01#3.2"
+    ]
+  },
+  "25": {
+    "summary": "OPACS 先做价格监测、优先配给和许可，为 1942 年 OPA 的全面价格管制搭好行政骨架。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "价格监测/申报",
+        "detail": "对消费品价格进行登记、调查和公开。"
+      },
+      {
+        "code": "rationing_coupon",
+        "label": "配给券",
+        "parameter": "优先配给",
+        "detail": "对紧缺消费品实行优先购买和配给。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "供应/销售许可",
+        "detail": "对经销和加工环节发放许可。"
+      }
+    ],
+    "targets": [
+      "消费品",
+      "紧缺原料",
+      "经销商"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "成立",
+        "value": "1941-04-11"
+      },
+      {
+        "label": "升级",
+        "value": "1942 年 OPA"
+      },
+      {
+        "label": "职能",
+        "value": "价格监测/优先配给"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "1942年升级OPA",
+    "sideEffects": [
+      "行政能力不足",
+      "价格监测覆盖有限",
+      "配给排队",
+      "黑市苗头"
+    ],
+    "winners": [
+      "有配给资格的企业",
+      "军工供应链"
+    ],
+    "losers": [
+      "消费者",
+      "无许可的小经销商"
+    ],
+    "relatedIds": [
+      29,
+      30
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "29": {
+    "summary": "《紧急价格管制法》把价格上限、租金管制和配给写进法律，OPA 成为二战价格体系的核心。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "约 90% 商品价格上限",
+        "detail": "以 1942 年 3 月为基准冻结多数零售/批发价格。"
+      },
+      {
+        "code": "rent_control",
+        "label": "租金管制",
+        "parameter": "租金冻结",
+        "detail": "对住房租金设定上限，防止战时人口流动推高租金。"
+      },
+      {
+        "code": "rationing_coupon",
+        "label": "配给券",
+        "parameter": "糖、肉、汽油等配给",
+        "detail": "按人头发票证，限制购买量。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "加工/销售许可",
+        "detail": "企业须取得许可并遵守价格规则。"
+      }
+    ],
+    "targets": [
+      "零售/批发",
+      "住房",
+      "食品",
+      "燃料"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1942-01-30"
+      },
+      {
+        "label": "覆盖",
+        "value": "约 90% 商品"
+      },
+      {
+        "label": "核心机构",
+        "value": "OPA"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "二战价格管制核心",
+    "sideEffects": [
+      "短缺与排队",
+      "黑市",
+      "质量下降",
+      "执法成本高",
+      "配给不平等"
+    ],
+    "winners": [
+      "固定收入者",
+      "军工工人",
+      "受租金保护的租户"
+    ],
+    "losers": [
+      "农民",
+      "零售商",
+      "消费者（选择受限）"
+    ],
+    "relatedIds": [
+      25,
+      30,
+      33,
+      36
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "30": {
+    "summary": "General Max 把零售/批发价格冻结在 1942 年 3 月水平，约 90% 零售食品被纳入。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "冻结在 1942-03 水平",
+        "detail": "以 1942 年 3 月为基准，禁止多数商品涨价。"
+      },
+      {
+        "code": "rationing_coupon",
+        "label": "配给券",
+        "parameter": "食品配给",
+        "detail": "糖、咖啡、肉、黄油等凭券购买。"
+      },
+      {
+        "code": "anti_hoarding",
+        "label": "反囤积/反暴利",
+        "parameter": "反囤积执法",
+        "detail": "打击囤货、惜售和黑市。"
+      }
+    ],
+    "targets": [
+      "零售食品",
+      "批发食品",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "以 1942 年 3 月价格为基准冻结零售/批发价格",
+      "食品、燃料、租金等关键品类配合配给券",
+      "管制价格低于市场出清价，出现排队、短缺和黑市",
+      "农民/零售商减少供给或降低质量",
+      "战后退出时价格集中补涨"
+    ],
+    "metrics": [
+      {
+        "label": "实施",
+        "value": "1942-05-11"
+      },
+      {
+        "label": "覆盖",
+        "value": "约 90% 零售食品"
+      },
+      {
+        "label": "基准",
+        "value": "1942 年 3 月"
+      }
+    ],
+    "marketImpact": {
+      "equities": "受管制行业毛利被压缩，黑市/替代品受益",
+      "rates": "通胀被暂时压低，但退出后利率上行",
+      "usd": "战时资本管制与美元地位强化",
+      "gold": "战时黄金流动受限，金价官价固定",
+      "sectors": "食品零售、农业、燃料、住房"
+    },
+    "enforcement": "全面冻结",
+    "exit": "约90%零售食品",
+    "sideEffects": [
+      "食品短缺",
+      "黑市",
+      "质量下降",
+      "农民缩减供给",
+      "配给排队"
+    ],
+    "winners": [
+      "固定收入者",
+      "有配给券的家庭"
+    ],
+    "losers": [
+      "农民",
+      "食品零售商",
+      "消费者"
+    ],
+    "relatedIds": [
+      29,
+      33,
+      36
+    ],
+    "sources": [
+      "01#3.3"
+    ],
+    "keyAnnotation": "K3"
+  },
+  "33": {
+    "summary": "EO 9328 把价格和工资进一步钉死，并用食品补贴缓和城市食品成本。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "禁止进一步涨价",
+        "detail": "把价格冻结在现有水平，减少例外。"
+      },
+      {
+        "code": "wage_freeze",
+        "label": "工资冻结",
+        "parameter": "禁止进一步涨薪",
+        "detail": "与价格冻结同步，防止工资—价格螺旋。"
+      },
+      {
+        "code": "subsidy_tax_credit",
+        "label": "补贴/税收抵免",
+        "parameter": "食品补贴",
+        "detail": "用财政补贴压低部分食品价格。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资",
+      "食品"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1943-04-08"
+      },
+      {
+        "label": "政策",
+        "value": "Hold the Line"
+      },
+      {
+        "label": "配套",
+        "value": "食品补贴"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "管制收紧",
+    "sideEffects": [
+      "管制刚性增强",
+      "补贴财政成本",
+      "黑市与规避",
+      "战后退出压力"
+    ],
+    "winners": [
+      "固定收入者",
+      "城市消费者"
+    ],
+    "losers": [
+      "农民",
+      "企业主",
+      "黑市参与者（短期）"
+    ],
+    "relatedIds": [
+      29,
+      30,
+      36
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "36": {
+    "summary": "OPA 授权到期造成约 25 天价格管制真空，物价立即跳升，成为战后通胀反弹的导火索。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "价格管制短暂失效",
+        "detail": "OPA 授权到期，国会未及时续期。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "管制真空",
+        "detail": "多数价格上限在约 25 天内不存在。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "食品",
+      "租金"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "OPA 授权到期，价格上限短暂失效",
+      "被压制的涨价需求集中释放",
+      "食品、服装、租金等价格跳升",
+      "工资追赶与通胀预期上升",
+      "国会恢复管制但力度减弱，1947 年基本退出"
+    ],
+    "metrics": [
+      {
+        "label": "到期",
+        "value": "1946-06-30"
+      },
+      {
+        "label": "真空",
+        "value": "约 25 天"
+      },
+      {
+        "label": "CPI",
+        "value": "1946 年 8.3%；1947 年 14.4%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "消费/零售短期受益于涨价，固定成本行业承压",
+      "rates": "通胀反弹推高利率预期",
+      "usd": "战后美元仍受金汇兑本位约束",
+      "gold": "通胀与不确定性支撑黄金",
+      "sectors": "食品、服装、零售、住房"
+    },
+    "enforcement": "短暂中断",
+    "exit": "物价跳升",
+    "sideEffects": [
+      "物价跳升",
+      "囤积与抢购",
+      "政策可信度受损",
+      "工资追赶"
+    ],
+    "winners": [
+      "卖方",
+      "农民",
+      "囤货者"
+    ],
+    "losers": [
+      "消费者",
+      "固定收入者",
+      "工资领取者"
+    ],
+    "relatedIds": [
+      29,
+      30,
+      37,
+      40
+    ],
+    "sources": [
+      "01#3.3"
+    ],
+    "keyAnnotation": "K5"
+  },
+  "37": {
+    "summary": "国会重新授权价格管制，但覆盖面和力度明显减弱，价格体系进入“半管制”状态。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "恢复但弱化的价格上限",
+        "detail": "重新立法，但豁免更多、执行更松。"
+      },
+      {
+        "code": "rent_control",
+        "label": "租金管制",
+        "parameter": "租金管制延续",
+        "detail": "住房租金仍受地方/联邦限制。"
+      }
+    ],
+    "targets": [
+      "价格",
+      "租金"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "恢复",
+        "value": "1946-07-25"
+      },
+      {
+        "label": "力度",
+        "value": "弱于战时"
+      },
+      {
+        "label": "结局",
+        "value": "1947 年多数管制结束"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "力度减弱",
+    "sideEffects": [
+      "管制漏洞",
+      "价格扭曲",
+      "政治争议",
+      "通胀压力"
+    ],
+    "winners": [
+      "消费者",
+      "租户"
+    ],
+    "losers": [
+      "农民",
+      "企业"
+    ],
+    "relatedIds": [
+      36,
+      40
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "40": {
+    "summary": "多数价格管制在 1947 年撤销，租金管制转由地方延续，美国回到以市场定价为主的政策框架。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "多数价格管制结束",
+        "detail": "取消战时价格上限和配给。"
+      },
+      {
+        "code": "rent_control",
+        "label": "租金管制",
+        "parameter": "地方租金管制延续",
+        "detail": "纽约等城市保留租金稳定政策。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "住房租金"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1947"
+      },
+      {
+        "label": "结果",
+        "value": "多数价格管制结束"
+      },
+      {
+        "label": "例外",
+        "value": "地方租金管制"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "解除管制",
+    "exit": "租金管制地方延续",
+    "sideEffects": [
+      "通胀补涨",
+      "租金短缺（受控城市）",
+      "政策退出后的行业重组"
+    ],
+    "winners": [
+      "农民",
+      "企业",
+      "房东（非管制地区）"
+    ],
+    "losers": [
+      "消费者",
+      "租户（受控市场）"
+    ],
+    "relatedIds": [
+      36,
+      37
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "42": {
+    "summary": "《国防生产法》给总统价格、工资、信贷和优先分配的授权，是朝鲜战争及后续产业政策的常备法律工具。",
+    "layers": [
+      "price_industry",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "价格/工资管制授权",
+        "detail": "总统可对价格、工资、信贷实施管制。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "优先分配/生产指令",
+        "detail": "国防优先订单和原料分配。"
+      },
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "国防采购/储备",
+        "detail": "政府直接采购关键物资。"
+      }
+    ],
+    "targets": [
+      "国防工业",
+      "关键原料",
+      "信贷"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1950-09-08"
+      },
+      {
+        "label": "特点",
+        "value": "至今定期续期"
+      },
+      {
+        "label": "用途",
+        "value": "国防优先/价格授权"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "授权",
+    "exit": "至今定期续期",
+    "sideEffects": [
+      "行政权力扩大",
+      "民用供给被挤出",
+      "政策不确定性",
+      "产业游说"
+    ],
+    "winners": [
+      "国防承包商",
+      "关键原料生产商"
+    ],
+    "losers": [
+      "民用行业",
+      "消费者"
+    ],
+    "relatedIds": [
+      43,
+      44,
+      47
+    ],
+    "sources": [
+      "01#3.4"
+    ]
+  },
+  "43": {
+    "summary": "EO 10161 建立 ESA/OPS/WSB，把 DPA 的授权变成可执行的价格、工资和稳定机构。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "OPS 价格上限",
+        "detail": "对多数商品设定最高价。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "WSB 工资标准",
+        "detail": "控制工资涨幅和劳资协议。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "管制合规/许可",
+        "detail": "企业须遵守价格与工资规则。"
+      }
+    ],
+    "targets": [
+      "价格",
+      "工资",
+      "信贷"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1950-09-09"
+      },
+      {
+        "label": "机构",
+        "value": "ESA/OPS/WSB"
+      },
+      {
+        "label": "撤销",
+        "value": "1953 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "机构建设",
+    "exit": "1953年撤销",
+    "sideEffects": [
+      "机构重叠",
+      "执行成本",
+      "价格扭曲",
+      "劳资冲突"
+    ],
+    "winners": [
+      "军工",
+      "合规企业"
+    ],
+    "losers": [
+      "消费者",
+      "企业",
+      "工会（受上限约束）"
+    ],
+    "relatedIds": [
+      42,
+      44,
+      47
+    ],
+    "sources": [
+      "01#3.4"
+    ]
+  },
+  "44": {
+    "summary": "朝鲜战争版 General Max 把价格冻结在 1950 年 12 月至 1951 年 1 月水平，随后按行业细化规则。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "冻结在 1950-12—1951-01",
+        "detail": "以朝鲜战争爆发后的价格为基准。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "行业价格申报",
+        "detail": "按行业制定例外和成本转嫁规则。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工业原料",
+      "消费品"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "实施",
+        "value": "1951-01-26"
+      },
+      {
+        "label": "基准",
+        "value": "1950-12—1951-01"
+      },
+      {
+        "label": "结局",
+        "value": "1953 年解除"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "全面冻结",
+    "exit": "后续行业规则",
+    "sideEffects": [
+      "短缺",
+      "成本转嫁受阻",
+      "行业规则复杂",
+      "黑市"
+    ],
+    "winners": [
+      "固定收入者",
+      "军工"
+    ],
+    "losers": [
+      "农民",
+      "企业",
+      "消费者"
+    ],
+    "relatedIds": [
+      42,
+      43,
+      47
+    ],
+    "sources": [
+      "01#3.4"
+    ]
+  },
+  "47": {
+    "summary": "EO 10434 结束朝鲜战争价格/工资管制，OPS 随后撤销，美国回归市场定价。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "结束价格/工资管制",
+        "detail": "取消 General Max 和工资审批。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "废除价格上限",
+        "detail": "OPS 于 1953-04-30 撤销。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1953-02-06"
+      },
+      {
+        "label": "OPS 撤销",
+        "value": "1953-04-30"
+      },
+      {
+        "label": "背景",
+        "value": "艾森豪威尔上台"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "解除管制",
+    "exit": "1953-04-30 OPS撤销",
+    "sideEffects": [
+      "退出后的价格补涨",
+      "工资追赶",
+      "行业重新定价"
+    ],
+    "winners": [
+      "企业",
+      "农民"
+    ],
+    "losers": [
+      "消费者",
+      "固定收入者"
+    ],
+    "relatedIds": [
+      42,
+      44
+    ],
+    "sources": [
+      "01#3.4"
+    ]
+  },
+  "48": {
+    "summary": "Phillips 案确认联邦可以管制天然气井口价格，价格上限从州际管道延伸到生产端。",
+    "layers": [
+      "price_industry",
+      "energy_resource"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "井口价格上限",
+        "detail": "联邦对州际销售天然气设定最高价。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "联邦管辖扩张",
+        "detail": "最高法院确认联邦能源管制权。"
+      }
+    ],
+    "targets": [
+      "天然气",
+      "管道公司",
+      "生产商"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "判决",
+        "value": "1954"
+      },
+      {
+        "label": "结果",
+        "value": "联邦管制井口价"
+      },
+      {
+        "label": "后续",
+        "value": "1978 年 NGPA 逐步解除"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "制度",
+    "exit": "1978年NGPA逐步解除",
+    "sideEffects": [
+      "气价低于市场",
+      "供给短缺/停供",
+      "合同扭曲",
+      "投资不足"
+    ],
+    "winners": [
+      "消费者",
+      "管道公司"
+    ],
+    "losers": [
+      "天然气生产商",
+      "新进入者"
+    ],
+    "relatedIds": [
+      78,
+      85
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  },
+  "52": {
+    "summary": "CEA 3.2% 指导线把工资与生产率增长挂钩，是 1960 年代自愿收入政策的模板。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "工资/价格 3.2% 指导线",
+        "detail": "以生产率增长为工资涨幅参考，非强制。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资指导",
+        "detail": "引导劳资双方把涨幅控制在 3.2% 附近。"
+      }
+    ],
+    "targets": [
+      "工资",
+      "价格",
+      "工会",
+      "企业"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "提出",
+        "value": "1962-01"
+      },
+      {
+        "label": "指导线",
+        "value": "3.2%"
+      },
+      {
+        "label": "性质",
+        "value": "自愿/道义劝说"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "自愿指导",
+    "exit": "1960年代收入政策",
+    "sideEffects": [
+      "自愿合规不稳定",
+      "行业例外",
+      "工资—价格螺旋",
+      "政治压力"
+    ],
+    "winners": [
+      "企业（工资成本可控）",
+      "宏观稳定受益者"
+    ],
+    "losers": [
+      "工会",
+      "工人（工资涨幅受限）"
+    ],
+    "relatedIds": [
+      53,
+      55,
+      61
+    ],
+    "sources": [
+      "01#3.5"
+    ]
+  },
+  "53": {
+    "summary": "肯尼迪与钢铁行业的对峙把“指导线”变成公开的政治压力，钢铁涨价被迫撤回。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "钢铁价格指导",
+        "detail": "政府公开要求钢铁企业不涨价。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "涨价前沟通",
+        "detail": "企业在涨价前承受白宫/公众压力。"
+      }
+    ],
+    "targets": [
+      "钢铁",
+      "价格",
+      "劳资谈判"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1962-04"
+      },
+      {
+        "label": "事件",
+        "value": "钢铁涨价撤回"
+      },
+      {
+        "label": "意义",
+        "value": "jawboning 标志案例"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "jawboning",
+    "exit": "自愿指导线标志案例",
+    "sideEffects": [
+      "企业定价自主权受损",
+      "投资不确定性",
+      "政治风险溢价",
+      "行业关系紧张"
+    ],
+    "winners": [
+      "消费者",
+      "下游制造业"
+    ],
+    "losers": [
+      "钢铁企业",
+      "股东"
+    ],
+    "relatedIds": [
+      52,
+      55
+    ],
+    "sources": [
+      "01#3.5"
+    ]
+  },
+  "55": {
+    "summary": "约翰逊时期把 3.2% 指导线延续到越战扩张期，但财政刺激使指导线逐渐失去约束力。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "3.2% 工资/价格指导线",
+        "detail": "延续自愿收入政策。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资指导",
+        "detail": "对工会谈判施加压力。"
+      }
+    ],
+    "targets": [
+      "工资",
+      "价格"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时期",
+        "value": "1966—1968"
+      },
+      {
+        "label": "指导线",
+        "value": "3.2%"
+      },
+      {
+        "label": "CPI",
+        "value": "1968 年 4.2%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "自愿指导",
+    "exit": "1968年通胀4.2%",
+    "sideEffects": [
+      "指导线失效",
+      "通胀上升",
+      "劳资冲突",
+      "政策可信度下降"
+    ],
+    "winners": [
+      "企业（短期成本可控）"
+    ],
+    "losers": [
+      "工人",
+      "消费者"
+    ],
+    "relatedIds": [
+      52,
+      53,
+      57
+    ],
+    "sources": [
+      "01#3.5"
+    ]
+  },
+  "57": {
+    "summary": "《经济稳定法》给总统价格/工资管制的法律授权，成为 1971 年尼克松新经济政策的基础。",
+    "layers": [
+      "price_industry",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "总统价格管制授权",
+        "detail": "可冻结价格、租金和工资。"
+      },
+      {
+        "code": "wage_freeze",
+        "label": "工资冻结",
+        "parameter": "总统工资管制授权",
+        "detail": "可设立工资委员会和审批机制。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资",
+      "租金"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1970"
+      },
+      {
+        "label": "作用",
+        "value": "NEP 法律基础"
+      },
+      {
+        "label": "后续",
+        "value": "1971 年冻结"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "授权",
+    "exit": "1971年NEP法律基础",
+    "sideEffects": [
+      "授权过宽",
+      "政策突然性",
+      "市场预期扭曲"
+    ],
+    "winners": [
+      "政府",
+      "被保护行业"
+    ],
+    "losers": [
+      "企业",
+      "劳动者",
+      "投资者"
+    ],
+    "relatedIds": [
+      58,
+      61
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "58": {
+    "summary": "尼克松新经济政策同时冻结工资/价格/租金 90 天、关闭黄金窗口并加征 10% 进口附加税，是货币、价格与贸易的三重冲击。",
+    "layers": [
+      "price_industry",
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "90 天价格/租金冻结",
+        "detail": "全国范围冻结价格、工资和租金。"
+      },
+      {
+        "code": "wage_freeze",
+        "label": "工资冻结",
+        "parameter": "90 天工资冻结",
+        "detail": "禁止工资上涨，随后进入 Phase II。"
+      },
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "关闭黄金窗口",
+        "detail": "停止外国央行用美元兑换黄金。"
+      },
+      {
+        "code": "tariff_surcharge",
+        "label": "进口附加税/关税",
+        "parameter": "10% 进口附加税",
+        "detail": "对进口商品加征临时附加税。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资",
+      "租金",
+      "进口",
+      "美元黄金兑换"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "关闭黄金窗口，切断美元与黄金的官方兑换",
+      "90 天冻结工资、价格和租金",
+      "加征 10% 进口附加税，压缩进口竞争",
+      "Phase II 转为价格/工资审批",
+      "短缺、通胀反弹与美元信用重估"
+    ],
+    "metrics": [
+      {
+        "label": "宣布",
+        "value": "1971-08-15"
+      },
+      {
+        "label": "冻结",
+        "value": "90 天"
+      },
+      {
+        "label": "进口附加税",
+        "value": "10%"
+      },
+      {
+        "label": "黄金",
+        "value": "关闭窗口"
+      }
+    ],
+    "marketImpact": {
+      "equities": "短期风险偏好受冲击，黄金/大宗商品受益",
+      "rates": "通胀预期与美元信用重定价",
+      "usd": "美元对黄金贬值，固定汇率体系动摇",
+      "gold": "黄金窗口关闭后金价自由化",
+      "sectors": "黄金、能源、出口、进口替代"
+    },
+    "enforcement": "全面冻结",
+    "exit": "Phase I开始",
+    "sideEffects": [
+      "价格短缺",
+      "通胀反弹",
+      "美元信用受损",
+      "贸易摩擦",
+      "管制退出困难"
+    ],
+    "winners": [
+      "黄金",
+      "大宗商品",
+      "出口行业"
+    ],
+    "losers": [
+      "美元资产",
+      "进口商",
+      "工资领取者",
+      "股市（短期冲击）"
+    ],
+    "relatedIds": [
+      57,
+      59,
+      61,
+      69
+    ],
+    "sources": [
+      "01#3.6"
+    ],
+    "keyAnnotation": "K6"
+  },
+  "61": {
+    "summary": "Phase II 把冻结转为“价格委员会 2.5% + 工资委员会 5.5% + 大企业事前通知”的强制管制。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "价格目标 2.5%",
+        "detail": "Price Commission 审批涨价，目标压低通胀。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "工资标准 5.5%",
+        "detail": "Pay Board 审批较大幅度的工资协议。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "大企业事前通知",
+        "detail": "涨价前须向委员会申报。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资",
+      "大企业"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1971-11-14"
+      },
+      {
+        "label": "价格目标",
+        "value": "2.5%"
+      },
+      {
+        "label": "工资标准",
+        "value": "5.5%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "强制管制",
+    "sideEffects": [
+      "审批积压",
+      "企业绕开管制",
+      "相对价格扭曲",
+      "劳资冲突"
+    ],
+    "winners": [
+      "合规企业",
+      "固定收入者"
+    ],
+    "losers": [
+      "高增长企业",
+      "工会",
+      "消费者（短缺）"
+    ],
+    "relatedIds": [
+      58,
+      63,
+      66
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "63": {
+    "summary": "Phase III 转向自我管理和部分自愿，价格管制松动后通胀迅速反弹。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "自我管理/自愿合规",
+        "detail": "企业自行遵守价格标准，政府保留特殊行业干预。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "特殊行业申报",
+        "detail": "食品等敏感行业仍受监督。"
+      }
+    ],
+    "targets": [
+      "价格",
+      "工资",
+      "食品"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1973-01-11"
+      },
+      {
+        "label": "特点",
+        "value": "自愿/部分强制"
+      },
+      {
+        "label": "结果",
+        "value": "通胀反弹"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "自愿/部分强制",
+    "exit": "通胀反弹",
+    "sideEffects": [
+      "合规率下降",
+      "通胀预期上升",
+      "政策反复",
+      "企业定价混乱"
+    ],
+    "winners": [
+      "企业（短期）"
+    ],
+    "losers": [
+      "消费者",
+      "固定收入者"
+    ],
+    "relatedIds": [
+      61,
+      65,
+      66
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "65": {
+    "summary": "60 天价格冻结重点打击食品涨价，结果直接造成牛肉等食品短缺。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "食品价格冻结 60 天",
+        "detail": "对牛肉等食品设定最高价。"
+      },
+      {
+        "code": "export_restriction",
+        "label": "出口限制",
+        "parameter": "出口/供应限制",
+        "detail": "限制部分农产品出口以保国内供应。"
+      }
+    ],
+    "targets": [
+      "食品",
+      "牛肉",
+      "农产品"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1973-06-13"
+      },
+      {
+        "label": "时长",
+        "value": "60 天"
+      },
+      {
+        "label": "结果",
+        "value": "牛肉短缺"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "牛肉短缺",
+    "sideEffects": [
+      "短缺",
+      "黑市",
+      "农民减少出栏",
+      "质量下降"
+    ],
+    "winners": [
+      "消费者（短期低价）"
+    ],
+    "losers": [
+      "牧场主",
+      "肉类加工商",
+      "消费者（长期）"
+    ],
+    "relatedIds": [
+      63,
+      66
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "66": {
+    "summary": "Phase IV 逐步放松管制，保留 5.5% 工资标准并分阶段解除价格控制，1974-04-30 到期。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "分阶段解除价格管制",
+        "detail": "按行业逐步取消价格上限。"
+      },
+      {
+        "code": "wage_ceiling",
+        "label": "工资上限",
+        "parameter": "5.5% 工资标准",
+        "detail": "继续限制工资涨幅。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "过渡期指导",
+        "detail": "为退出管制提供过渡规则。"
+      }
+    ],
+    "targets": [
+      "价格",
+      "工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1973-08-13"
+      },
+      {
+        "label": "工资标准",
+        "value": "5.5%"
+      },
+      {
+        "label": "到期",
+        "value": "1974-04-30"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "逐步放松",
+    "exit": "1974-04-30到期",
+    "sideEffects": [
+      "退出顺序争议",
+      "价格补涨",
+      "工资追赶",
+      "政策不确定性"
+    ],
+    "winners": [
+      "企业",
+      "投资者"
+    ],
+    "losers": [
+      "消费者",
+      "工资领取者"
+    ],
+    "relatedIds": [
+      61,
+      63,
+      69
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "68": {
+    "summary": "EPAA 把石油切成旧油/新油双轨价，用炼厂配额和 entitlements 把低价油租金在炼厂间再分配。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "dual_pricing",
+        "label": "双轨价",
+        "parameter": "旧油上限约 5.25 美元/桶；新油不受限",
+        "detail": "按油田/批次划分旧油和新油，旧油执行低价。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "炼厂旧油配额",
+        "detail": "按历史产量分配低价原油，配额成为稀缺资产。"
+      },
+      {
+        "code": "subsidy_tax_credit",
+        "label": "补贴/税收抵免",
+        "parameter": "Entitlements 现金转移",
+        "detail": "缺油炼厂向有旧油配额的炼厂购买 entitlements。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "成品油价格上限",
+        "detail": "对汽油、柴油等设定最高价。"
+      }
+    ],
+    "targets": [
+      "原油",
+      "炼厂",
+      "成品油",
+      "消费者"
+    ],
+    "exemptions": [
+      "新油",
+      "部分小炼厂",
+      "特定用途成品油"
+    ],
+    "transmission": [
+      "旧油价格被压到上限以下，新油按市场价",
+      "炼厂争抢旧油配额，配额成为稀缺资产",
+      "成品油价格与炼化利润出现分化",
+      "entitlements 把部分租金从旧油持有者转移给缺油炼厂",
+      "短缺、进口与投资扭曲逐步显现"
+    ],
+    "metrics": [
+      {
+        "label": "旧油上限",
+        "value": "约 5.25 美元/桶"
+      },
+      {
+        "label": "开始",
+        "value": "1973-11-27"
+      },
+      {
+        "label": "结束",
+        "value": "1981 年解除"
+      }
+    ],
+    "marketImpact": {
+      "equities": "炼化利润分化，持有旧油配额的炼厂受益",
+      "rates": "能源通胀推高利率，但管制压低部分成品油价格",
+      "usd": "石油进口成本与美元走势联动",
+      "gold": "滞胀环境下黄金受避险需求支撑",
+      "sectors": "上游、炼化、油服、航空、运输"
+    },
+    "enforcement": "直接管制",
+    "exit": "1981年解除",
+    "sideEffects": [
+      "旧油短缺",
+      "炼厂投资扭曲",
+      "配额寻租",
+      "进口依赖上升",
+      "成品油短缺"
+    ],
+    "winners": [
+      "持有旧油配额的炼厂",
+      "部分上游"
+    ],
+    "losers": [
+      "缺油炼厂",
+      "航空/运输",
+      "消费者"
+    ],
+    "relatedIds": [
+      67,
+      69,
+      73,
+      80,
+      83
+    ],
+    "sources": [
+      "01#3.7"
+    ],
+    "keyAnnotation": "K7"
+  },
+  "69": {
+    "summary": "尼克松工资/价格管制到期，美国在通胀仍高时退出全面管制，随后出现价格补涨。",
+    "layers": [
+      "price_industry",
+      "labor_wage"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "工资/价格管制结束",
+        "detail": "取消 Phase IV 的价格和工资限制。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "废除剩余价格上限",
+        "detail": "多数行业恢复市场定价。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "到期",
+        "value": "1974-04-30"
+      },
+      {
+        "label": "CPI",
+        "value": "1974 年 11.0%"
+      },
+      {
+        "label": "背景",
+        "value": "第一次石油危机"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "解除管制",
+    "exit": "通胀反弹",
+    "sideEffects": [
+      "通胀反弹",
+      "价格补涨",
+      "工资追赶",
+      "政策信誉受损"
+    ],
+    "winners": [
+      "企业",
+      "能源行业"
+    ],
+    "losers": [
+      "消费者",
+      "固定收入者"
+    ],
+    "relatedIds": [
+      58,
+      61,
+      66,
+      68
+    ],
+    "sources": [
+      "01#3.6"
+    ]
+  },
+  "73": {
+    "summary": "EPCA 延续石油价格管制，同时引入 CAFE 和战略石油储备，政策工具从单纯限价转向能源安全组合。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "石油价格管制延续",
+        "detail": "维持国内原油/成品油价格上限。"
+      },
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "战略石油储备（SPR）",
+        "detail": "建立政府原油储备以应对供应冲击。"
+      },
+      {
+        "code": "regulatory_regime",
+        "label": "监管制度",
+        "parameter": "CAFE 燃油经济标准",
+        "detail": "对汽车油耗设定监管标准。"
+      }
+    ],
+    "targets": [
+      "石油",
+      "汽车",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1975-12-22"
+      },
+      {
+        "label": "工具",
+        "value": "价格管制+CAFE+SPR"
+      },
+      {
+        "label": "后续",
+        "value": "1981 年解除油价管制"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "1981年解除",
+    "sideEffects": [
+      "价格扭曲",
+      "炼厂/进口结构变化",
+      "汽车产业合规成本",
+      "SPR 财政成本"
+    ],
+    "winners": [
+      "国内石油生产商（部分）",
+      "节能技术"
+    ],
+    "losers": [
+      "消费者",
+      "高油耗汽车制造商"
+    ],
+    "relatedIds": [
+      68,
+      80,
+      83,
+      98
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  },
+  "78": {
+    "summary": "NGPA 对天然气井口价格分阶段放开，1989 年完成市场化，是能源价格管制退出的典型案例。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "分阶段价格上限",
+        "detail": "按气田/合同类型逐步提高或取消上限。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "过渡期价格路径",
+        "detail": "为不同类别天然气设定解除时间表。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "最终解除井口管制",
+        "detail": "1989 年完成市场化。"
+      }
+    ],
+    "targets": [
+      "天然气",
+      "管道",
+      "工业用户"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1978-11-09"
+      },
+      {
+        "label": "完成",
+        "value": "1989 年"
+      },
+      {
+        "label": "方式",
+        "value": "分阶段解除"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "逐步解除",
+    "exit": "1989年完全解除",
+    "sideEffects": [
+      "过渡期价格扭曲",
+      "合同重谈",
+      "管道合同风险",
+      "供应反应滞后"
+    ],
+    "winners": [
+      "天然气生产商",
+      "消费者（长期）"
+    ],
+    "losers": [
+      "管道公司",
+      "高成本工业用户（短期）"
+    ],
+    "relatedIds": [
+      48,
+      85
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  },
+  "80": {
+    "summary": "卡特政府分阶段解除石油价格管制，1981 年里根完成剩余解除，油价逐步回归市场。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "分阶段解除石油管制",
+        "detail": "逐步取消国内原油价格上限。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "过渡期价格路径",
+        "detail": "设定解除时间表，避免一次性冲击。"
+      }
+    ],
+    "targets": [
+      "石油",
+      "成品油"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1979"
+      },
+      {
+        "label": "完成",
+        "value": "1981"
+      },
+      {
+        "label": "背景",
+        "value": "第二次石油危机"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "解除管制",
+    "exit": "1981年完成",
+    "sideEffects": [
+      "短期价格跳升",
+      "炼厂/消费者调整",
+      "能源投资回升"
+    ],
+    "winners": [
+      "石油生产商",
+      "能源服务"
+    ],
+    "losers": [
+      "消费者",
+      "用油行业"
+    ],
+    "relatedIds": [
+      68,
+      73,
+      83
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  },
+  "83": {
+    "summary": "EO 12287 解除剩余石油价格管制，美国能源价格回到市场定价，炼厂和上游重新按供需配置。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "解除剩余石油价格管制",
+        "detail": "取消原油和成品油价格上限。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "废除价格控制",
+        "detail": "不再使用配额/entitlements。"
+      }
+    ],
+    "targets": [
+      "石油",
+      "成品油",
+      "炼厂"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "取消原油和成品油价格上限",
+      "炼厂不再依赖旧油配额和 entitlements",
+      "油价按供需与进口成本定价",
+      "上游投资和炼化利润重新分配",
+      "短期波动后能源配置效率提高"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1981-01-28"
+      },
+      {
+        "label": "范围",
+        "value": "剩余石油价格管制"
+      },
+      {
+        "label": "结果",
+        "value": "能源市场化"
+      }
+    ],
+    "marketImpact": {
+      "equities": "上游与高效炼厂受益，低效炼厂承压",
+      "rates": "能源价格回归市场，通胀波动加大",
+      "usd": "油价与美元联动增强",
+      "gold": "能源通胀影响黄金避险需求",
+      "sectors": "上游、炼化、油服、运输"
+    },
+    "enforcement": "解除管制",
+    "exit": "能源市场化",
+    "sideEffects": [
+      "短期价格波动",
+      "炼厂利润重新分配",
+      "能源投资周期变化"
+    ],
+    "winners": [
+      "上游生产商",
+      "炼厂（高效）"
+    ],
+    "losers": [
+      "消费者（短期）",
+      "低效炼厂"
+    ],
+    "relatedIds": [
+      68,
+      73,
+      80
+    ],
+    "sources": [
+      "01#3.7"
+    ],
+    "keyAnnotation": "K8"
+  },
+  "85": {
+    "summary": "1989 年天然气井口解除管制法完成市场化，长达 35 年的联邦井口价格管制退出。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "完成天然气井口市场化",
+        "detail": "取消剩余井口价格上限。"
+      },
+      {
+        "code": "price_guideline",
+        "label": "指导线/自愿合规",
+        "parameter": "过渡合同安排",
+        "detail": "处理存量合同与管道运输。"
+      }
+    ],
+    "targets": [
+      "天然气",
+      "管道",
+      "工业用户"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1989"
+      },
+      {
+        "label": "完成",
+        "value": "井口价格市场化"
+      },
+      {
+        "label": "历史",
+        "value": "1954 年开始管制"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "解除管制",
+    "exit": "01#3.7",
+    "sideEffects": [
+      "合同重谈",
+      "管道容量约束",
+      "价格波动"
+    ],
+    "winners": [
+      "天然气生产商",
+      "消费者（长期）"
+    ],
+    "losers": [
+      "管道公司",
+      "高成本用户（短期）"
+    ],
+    "relatedIds": [
+      48,
+      78
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  },
+  "96": {
+    "summary": "加州、俄勒冈、纽约等地方租金法扩大租金上限和涨租限制，价格管制回到住房市场。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "rent_control",
+        "label": "租金管制",
+        "parameter": "租金上限/涨租限制",
+        "detail": "限制年度租金涨幅或设定租金上限。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "租金稳定/管制扩展",
+        "detail": "扩大受管制住房范围。"
+      }
+    ],
+    "targets": [
+      "住房租赁",
+      "租户",
+      "房东"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2019"
+      },
+      {
+        "label": "地区",
+        "value": "加州/俄勒冈/纽约"
+      },
+      {
+        "label": "对象",
+        "value": "地方住房"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "直接管制",
+    "exit": "01#3.8",
+    "sideEffects": [
+      "住房供给减少",
+      "房东维护不足",
+      "租户流动性下降",
+      "排队/配给"
+    ],
+    "winners": [
+      "现有租户",
+      "长期居民"
+    ],
+    "losers": [
+      "房东",
+      "新租户",
+      "开发商"
+    ],
+    "relatedIds": [
+      40
+    ],
+    "sources": [
+      "01#3.8"
+    ]
+  },
+  "98": {
+    "summary": "战略石油储备释放通过增加短期供给压低油价，是“数量干预”而非直接限价。",
+    "layers": [
+      "energy_resource",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "SPR 释放约 1.8 亿桶",
+        "detail": "从战略储备向市场投放原油。"
+      },
+      {
+        "code": "export_restriction",
+        "label": "出口限制",
+        "parameter": "出口/投放规则",
+        "detail": "通过招标和投放节奏影响市场。"
+      }
+    ],
+    "targets": [
+      "原油",
+      "成品油",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2021-11"
+      },
+      {
+        "label": "规模",
+        "value": "累计约 1.8 亿桶"
+      },
+      {
+        "label": "目的",
+        "value": "抑制油价"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "间接干预",
+    "exit": "抑制油价",
+    "sideEffects": [
+      "库存缓冲下降",
+      "短期效果有限",
+      "地缘风险",
+      "财政/储备成本"
+    ],
+    "winners": [
+      "炼厂",
+      "消费者（短期）"
+    ],
+    "losers": [
+      "上游生产商",
+      "长期能源安全"
+    ],
+    "relatedIds": [
+      67,
+      68,
+      73
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "99": {
+    "summary": "IRA 用 Medicare 药品谈判、胰岛素 35 美元上限和 Part D 自付上限，把药价管制从行政谈判扩展到保险支付端。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "Medicare 药品谈判价",
+        "detail": "CMS 与药企谈判，首批 10 种药品 2026 年生效。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "胰岛素 35 美元/月上限",
+        "detail": "对胰岛素共付设定上限。"
+      },
+      {
+        "code": "subsidy_tax_credit",
+        "label": "补贴/税收抵免",
+        "parameter": "Part D 自付上限/补贴",
+        "detail": "2025 年起个人自付上限 2,000 美元。"
+      }
+    ],
+    "targets": [
+      "Medicare 药品",
+      "胰岛素",
+      "Part D 受益人"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "CMS 获得 Medicare 药品谈判权",
+      "首批 10 种药品谈判价 2026 年生效",
+      "胰岛素共付上限与 Part D 自付上限压缩患者支出",
+      "药企收入、处方结构和保险 formulary 调整",
+      "研发激励与药品准入的长期影响"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "2022-08-16"
+      },
+      {
+        "label": "首批谈判",
+        "value": "10 种药品"
+      },
+      {
+        "label": "生效",
+        "value": "2026-01-01"
+      },
+      {
+        "label": "胰岛素",
+        "value": "35 美元/月"
+      }
+    ],
+    "marketImpact": {
+      "equities": "专利药企承压，保险/药店/生物类似药分化",
+      "rates": "药价通胀放缓，但财政支出结构变化",
+      "usd": "通过财政与通胀间接影响",
+      "gold": "避险与通胀交易的综合影响",
+      "sectors": "专利药、仿制药、PBM、保险、药店"
+    },
+    "enforcement": "间接干预",
+    "exit": "首批2026年生效",
+    "sideEffects": [
+      "药企收入下降",
+      "研发激励变化",
+      "保险计划重设",
+      "药品准入/处方管理"
+    ],
+    "winners": [
+      "Medicare 受益人",
+      "糖尿病患者",
+      "保险计划"
+    ],
+    "losers": [
+      "专利药企",
+      "PBM（部分）",
+      "生物类似药竞争"
+    ],
+    "relatedIds": [
+      100,
+      102,
+      105,
+      108
+    ],
+    "sources": [
+      "01#3.9"
+    ],
+    "keyAnnotation": "K10"
+  },
+  "100": {
+    "summary": "CMS 公布首批 10 种 Medicare 谈判药品，2026 年生效，药价从市场定价转向政府谈判价。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "首批 10 种药品谈判价",
+        "detail": "2023-08-29 选定，2024-08-15 公布价格，2026 生效。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "药企申报/谈判",
+        "detail": "药企须提交数据并接受谈判。"
+      }
+    ],
+    "targets": [
+      "Medicare Part D 药品",
+      "药企",
+      "受益人"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "公布",
+        "value": "2023-08-29"
+      },
+      {
+        "label": "价格公布",
+        "value": "2024-08-15"
+      },
+      {
+        "label": "生效",
+        "value": "2026-01-01"
+      },
+      {
+        "label": "数量",
+        "value": "10 种"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "谈判",
+    "exit": "2026-01-01生效",
+    "sideEffects": [
+      "药企收入下降",
+      "处方转向",
+      "研发管线调整",
+      "保险 formulary 变化"
+    ],
+    "winners": [
+      "Medicare 受益人",
+      "保险计划"
+    ],
+    "losers": [
+      "专利药企",
+      "相关生物药"
+    ],
+    "relatedIds": [
+      99,
+      102,
+      105
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "102": {
+    "summary": "CMS 第二批 15 种药品进入谈判，2027 年生效，药价谈判从首批扩展到更大范围。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "第二批 15 种药品谈判",
+        "detail": "2025 年谈判，2027-01-01 生效。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "药企数据申报",
+        "detail": "药企须提交价格、销量和成本数据。"
+      }
+    ],
+    "targets": [
+      "Medicare Part D 药品",
+      "药企"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2025-01-17"
+      },
+      {
+        "label": "数量",
+        "value": "15 种"
+      },
+      {
+        "label": "生效",
+        "value": "2027-01-01"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "谈判",
+    "exit": "2027-01-01生效",
+    "sideEffects": [
+      "药企定价权下降",
+      "处方转移",
+      "谈判范围扩大",
+      "法律挑战"
+    ],
+    "winners": [
+      "Medicare 受益人"
+    ],
+    "losers": [
+      "专利药企",
+      "PBM（部分）"
+    ],
+    "relatedIds": [
+      99,
+      100,
+      105
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "103": {
+    "summary": "MFN 药价行政令要求美国药价对标发达国家最低价，2026 年覆盖 50 州 Medicaid。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "最惠国参考价（MFN）",
+        "detail": "以发达国家最低价格作为美国支付参考。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "Medicaid 药价上限",
+        "detail": "2026 年覆盖 50 州 Medicaid。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "药企价格披露",
+        "detail": "要求药企提供国际价格和协议数据。"
+      }
+    ],
+    "targets": [
+      "药品",
+      "Medicaid",
+      "药企"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "以发达国家最低价格作为美国支付参考",
+      "Medicaid 先行覆盖 50 州",
+      "药企面临美国价格与国际价格的联动压力",
+      "药品准入、折扣和 rebate 结构重谈",
+      "跨国药企收入与研发配置调整"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "2025-05-12"
+      },
+      {
+        "label": "覆盖",
+        "value": "2026 年 50 州 Medicaid"
+      },
+      {
+        "label": "基准",
+        "value": "发达国家最低价"
+      }
+    ],
+    "marketImpact": {
+      "equities": "跨国药企与高价药企承压，低价仿制药相对受益",
+      "rates": "药价与财政支出影响通胀预期",
+      "usd": "通过贸易与定价权间接影响",
+      "gold": "避险与政策不确定性",
+      "sectors": "专利药、仿制药、PBM、保险"
+    },
+    "enforcement": "间接干预",
+    "exit": "2026年覆盖50州Medicaid",
+    "sideEffects": [
+      "药企收入下降",
+      "国际定价联动",
+      "药品准入变化",
+      "贸易摩擦"
+    ],
+    "winners": [
+      "Medicaid 受益人",
+      "联邦预算"
+    ],
+    "losers": [
+      "专利药企",
+      "跨国药企"
+    ],
+    "relatedIds": [
+      99,
+      100,
+      102,
+      108
+    ],
+    "sources": [
+      "01#3.9"
+    ],
+    "keyAnnotation": "K11"
+  },
+  "105": {
+    "summary": "CMS 第三批 15 种药品进入谈判，2028 年生效，药品谈判进入常态化。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "第三批 15 种药品谈判",
+        "detail": "2026 年谈判，2028-01-01 生效。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "药企申报",
+        "detail": "药企提交数据和价格信息。"
+      }
+    ],
+    "targets": [
+      "Medicare Part B/D 药品",
+      "药企"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2026-01-27"
+      },
+      {
+        "label": "数量",
+        "value": "15 种"
+      },
+      {
+        "label": "生效",
+        "value": "2028-01-01"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "谈判",
+    "exit": "2028-01-01生效",
+    "sideEffects": [
+      "药企收入下降",
+      "处方管理变化",
+      "谈判范围扩大"
+    ],
+    "winners": [
+      "Medicare 受益人"
+    ],
+    "losers": [
+      "专利药企"
+    ],
+    "relatedIds": [
+      99,
+      100,
+      102
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "106": {
+    "summary": "S.3892 拟禁止食品零售“过度涨价”并监控定价算法，截至 2026-11 尚未成法。",
+    "layers": [
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "price_gouging_rule",
+        "label": "反价格欺诈/涨价审查",
+        "parameter": "禁止过度涨价",
+        "detail": "对危机期间的食品涨价设定审查标准。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "定价算法/价格监控",
+        "detail": "要求零售商披露或接受价格监控。"
+      },
+      {
+        "code": "anti_hoarding",
+        "label": "反囤积/反暴利",
+        "parameter": "反囤积",
+        "detail": "防止零售商/批发商囤货。"
+      }
+    ],
+    "targets": [
+      "零售食品",
+      "超市",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "提出",
+        "value": "2026-02-12"
+      },
+      {
+        "label": "状态",
+        "value": "截至 2026-11 未成法"
+      },
+      {
+        "label": "对象",
+        "value": "零售食品"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "提案",
+    "exit": "截至2026-11未成法",
+    "sideEffects": [
+      "价格信号扭曲",
+      "合规成本",
+      "供给减少",
+      "法律争议"
+    ],
+    "winners": [
+      "消费者（若通过）"
+    ],
+    "losers": [
+      "零售商",
+      "食品供应链"
+    ],
+    "relatedIds": [
+      29,
+      30
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "107": {
+    "summary": "信用卡利率上限提案拟把消费信贷利率压到 10%，截至 2026-11 尚未成法。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "interest_rate_cap",
+        "label": "利率上限",
+        "parameter": "信用卡利率 10% 上限设想",
+        "detail": "对信用卡年化利率设定上限。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "信贷价格上限",
+        "detail": "限制循环信用成本。"
+      }
+    ],
+    "targets": [
+      "信用卡",
+      "消费信贷",
+      "发卡行"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2026-01"
+      },
+      {
+        "label": "上限",
+        "value": "10% 设想"
+      },
+      {
+        "label": "状态",
+        "value": "截至 2026-11 未成法"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "提案",
+    "exit": "截至2026-11未成法",
+    "sideEffects": [
+      "信贷供给收缩",
+      "高风险借款人被排除",
+      "年费/其他费用上升",
+      "法律争议"
+    ],
+    "winners": [
+      "低风险借款人（短期）"
+    ],
+    "losers": [
+      "发卡行",
+      "高风险借款人"
+    ],
+    "relatedIds": [
+      98,
+      106
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  },
+  "108": {
+    "summary": "50 州 Medicaid MFN 把最惠国药价扩展到 Medicaid，覆盖 26 家药企、约 89% 品牌药市场。",
+    "layers": [
+      "health_consumption",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "administered_price",
+        "label": "政府定价/谈判价",
+        "parameter": "Medicaid MFN 支付价",
+        "detail": "以发达国家最低价作为 Medicaid 支付基准。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "药价上限/对标",
+        "detail": "对品牌药设定国际参考上限。"
+      },
+      {
+        "code": "price_notification",
+        "label": "价格申报/事前通知",
+        "parameter": "药企价格披露",
+        "detail": "药企须提交国际价格数据。"
+      }
+    ],
+    "targets": [
+      "Medicaid 药品",
+      "26 家药企",
+      "品牌药"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策设定价格、数量或准入约束",
+      "企业调整产量、采购、定价或转嫁成本",
+      "供需缺口与行业利润再分配",
+      "通胀与股价重新定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2026-09-18"
+      },
+      {
+        "label": "覆盖",
+        "value": "50 州 Medicaid"
+      },
+      {
+        "label": "药企",
+        "value": "26 家"
+      },
+      {
+        "label": "市场份额",
+        "value": "约 89% 品牌药"
+      }
+    ],
+    "marketImpact": {
+      "equities": "价格约束改变毛利与定价权，行业间分化",
+      "rates": "通胀预期与政策不确定性影响利率",
+      "usd": "通过通胀与贸易渠道间接影响美元",
+      "gold": "滞胀/避险环境下受支撑",
+      "sectors": "覆盖行业及其上下游"
+    },
+    "enforcement": "间接干预",
+    "exit": "01#3.9",
+    "sideEffects": [
+      "药企收入下降",
+      "药品准入受限",
+      "国际定价联动",
+      "州预算变化"
+    ],
+    "winners": [
+      "Medicaid 受益人",
+      "州预算"
+    ],
+    "losers": [
+      "品牌药企",
+      "跨国药企"
+    ],
+    "relatedIds": [
+      99,
+      103
+    ],
+    "sources": [
+      "01#3.9"
+    ]
+  }
+}

@@ -1,0 +1,581 @@
+{
+  "4": {
+    "summary": "美国参战把经济切换到战时动员，价格、工资、资源分配管制从此前的局部试验升级为全国性制度。",
+    "layers": [
+      "macro_institution",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "war_mobilization",
+        "label": "战争动员",
+        "parameter": "全国工业/军需优先",
+        "detail": "设立战时工业委员会等机构，协调军需订单与原料分配。"
+      },
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "军需采购",
+        "detail": "政府成为关键投入品的大买家，影响价格与产能。"
+      }
+    ],
+    "targets": [
+      "工业",
+      "军需",
+      "食品",
+      "燃料"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "参战",
+        "value": "1917-04-06"
+      },
+      {
+        "label": "管制机构",
+        "value": "WIB/食品管理局/燃料管理局"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "价格/工资管制前奏",
+    "sideEffects": [
+      "产能扭曲",
+      "战后通缩",
+      "财政压力",
+      "劳工冲突"
+    ],
+    "winners": [
+      "军工",
+      "钢铁",
+      "化工"
+    ],
+    "losers": [
+      "民用消费",
+      "和平行业"
+    ],
+    "relatedIds": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "sources": [
+      "01#3.1"
+    ]
+  },
+  "10": {
+    "summary": "一战后的需求收缩与库存调整造成 1920—1921 年通缩，CPI 从 1920 年 +15.6% 转为 1921 年 -10.5%。",
+    "layers": [
+      "macro_institution",
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "战后紧缩",
+        "detail": "财政/货币收缩与需求下降叠加。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "战时管制退出",
+        "detail": "价格/工资管制逐步取消。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "就业",
+      "产出"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "CPI 1920",
+        "value": "+15.6%"
+      },
+      {
+        "label": "CPI 1921",
+        "value": "-10.5%"
+      },
+      {
+        "label": "结果",
+        "value": "失业上升"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "失业上升",
+    "sideEffects": [
+      "通缩",
+      "失业上升",
+      "企业破产",
+      "农业收入下降"
+    ],
+    "winners": [
+      "现金持有者",
+      "债权人"
+    ],
+    "losers": [
+      "债务人",
+      "农民",
+      "工人"
+    ],
+    "relatedIds": [
+      35,
+      38
+    ],
+    "sources": [
+      "01#4"
+    ]
+  },
+  "27": {
+    "summary": "珍珠港事件使美国全面参战，价格、工资、配给和资源分配管制迅速升级。",
+    "layers": [
+      "macro_institution",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "war_mobilization",
+        "label": "战争动员",
+        "parameter": "全面参战/经济动员",
+        "detail": "军需生产优先，民用供给收缩。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "价格管制升级",
+        "detail": "为 OPA 全面管制铺路。"
+      },
+      {
+        "code": "rationing_coupon",
+        "label": "配给券",
+        "parameter": "配给制度",
+        "detail": "食品、燃料、橡胶等实行配给。"
+      }
+    ],
+    "targets": [
+      "全国经济",
+      "军需",
+      "消费者"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1941-12-07"
+      },
+      {
+        "label": "结果",
+        "value": "全面参战"
+      },
+      {
+        "label": "政策",
+        "value": "管制升级"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "管制升级",
+    "sideEffects": [
+      "民用短缺",
+      "通胀压力",
+      "财政赤字",
+      "劳工动员"
+    ],
+    "winners": [
+      "军工",
+      "重工业"
+    ],
+    "losers": [
+      "民用消费",
+      "非军需行业"
+    ],
+    "relatedIds": [
+      25,
+      28,
+      29
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "35": {
+    "summary": "二战结束使军需订单骤降，价格/工资管制逐步放松，经济面临从战时生产转向民用的再配置。",
+    "layers": [
+      "macro_institution",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "军需订单下降/管制放松",
+        "detail": "逐步取消战时采购和配给。"
+      },
+      {
+        "code": "fiscal_expansion",
+        "label": "财政扩张",
+        "parameter": "退伍军人/重建支出",
+        "detail": "用财政政策吸收复员劳动力。"
+      }
+    ],
+    "targets": [
+      "全国经济",
+      "军工",
+      "民用生产"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1945-08"
+      },
+      {
+        "label": "背景",
+        "value": "二战结束"
+      },
+      {
+        "label": "政策",
+        "value": "管制逐步放松"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "管制逐步放松",
+    "sideEffects": [
+      "复员就业压力",
+      "产能转换",
+      "通胀压力",
+      "行业重组"
+    ],
+    "winners": [
+      "民用消费",
+      "建筑",
+      "汽车"
+    ],
+    "losers": [
+      "军工",
+      "战时重工业"
+    ],
+    "relatedIds": [
+      36,
+      38
+    ],
+    "sources": [
+      "01#3.3"
+    ]
+  },
+  "38": {
+    "summary": "战后通胀在 1946—1947 年爆发，CPI 分别为 8.3% 和 14.4%，与 OPA 退出和需求释放有关。",
+    "layers": [
+      "macro_institution",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "价格管制退出",
+        "detail": "OPA 到期/撤销后价格补涨。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "宽松货币/储蓄释放",
+        "detail": "战时储蓄和信贷需求释放。"
+      }
+    ],
+    "targets": [
+      "全国价格",
+      "消费者",
+      "工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "CPI 1946",
+        "value": "8.3%"
+      },
+      {
+        "label": "CPI 1947",
+        "value": "14.4%"
+      },
+      {
+        "label": "背景",
+        "value": "OPA 退出"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "1947年14.4%",
+    "sideEffects": [
+      "通胀补涨",
+      "实际工资下降",
+      "劳资冲突",
+      "政策信誉受损"
+    ],
+    "winners": [
+      "企业",
+      "农民"
+    ],
+    "losers": [
+      "消费者",
+      "固定收入者"
+    ],
+    "relatedIds": [
+      36,
+      37,
+      40
+    ],
+    "sources": [
+      "01#4"
+    ]
+  },
+  "41": {
+    "summary": "朝鲜战争爆发引发恐慌性抢购，美国重启价格/工资管制，DPA 与 OPS/WSB 迅速建立。",
+    "layers": [
+      "macro_institution",
+      "price_industry"
+    ],
+    "instruments": [
+      {
+        "code": "war_mobilization",
+        "label": "战争动员",
+        "parameter": "战时动员/抢购",
+        "detail": "军需扩张与民用囤货叠加。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "价格管制重启",
+        "detail": "为 General Max 铺路。"
+      },
+      {
+        "code": "government_purchase_reserve",
+        "label": "政府采购/储备",
+        "parameter": "战略采购",
+        "detail": "政府增加关键物资采购。"
+      }
+    ],
+    "targets": [
+      "全国经济",
+      "价格",
+      "工资"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1950-06-25"
+      },
+      {
+        "label": "反应",
+        "value": "恐慌性抢购"
+      },
+      {
+        "label": "政策",
+        "value": "管制重启"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "管制重启",
+    "sideEffects": [
+      "抢购/囤积",
+      "通胀压力",
+      "供给短缺",
+      "政策快速扩张"
+    ],
+    "winners": [
+      "军工",
+      "上游原料"
+    ],
+    "losers": [
+      "消费者",
+      "民用行业"
+    ],
+    "relatedIds": [
+      42,
+      43,
+      44
+    ],
+    "sources": [
+      "01#3.4"
+    ]
+  },
+  "67": {
+    "summary": "OPEC 对美石油禁运把油价从约 3 美元推到 12 美元，能源冲击与价格管制叠加，形成 1970 年代滞胀。",
+    "layers": [
+      "macro_institution",
+      "energy_resource"
+    ],
+    "instruments": [
+      {
+        "code": "trade_policy",
+        "label": "贸易政策",
+        "parameter": "石油禁运",
+        "detail": "OPEC 对美国等目标国减少/停止出口。"
+      },
+      {
+        "code": "price_ceiling_freeze",
+        "label": "最高限价/冻结",
+        "parameter": "国内油价管制",
+        "detail": "EPAA 等政策压制国内价格。"
+      },
+      {
+        "code": "production_quota",
+        "label": "生产配额",
+        "parameter": "产量/出口配额",
+        "detail": "产油国限制产量以抬价。"
+      }
+    ],
+    "targets": [
+      "原油",
+      "成品油",
+      "全国经济"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "宏观冲击或制度变化出现",
+      "政策工具与管制升级/转向",
+      "价格、工资、资源分配与预期变化",
+      "增长、通胀与市场风险偏好重定价"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1973-10-17"
+      },
+      {
+        "label": "油价",
+        "value": "约 3→12 美元/桶"
+      },
+      {
+        "label": "结果",
+        "value": "能源管制加剧"
+      }
+    ],
+    "marketImpact": {
+      "equities": "风险偏好与行业轮动变化",
+      "rates": "财政/货币条件变化",
+      "usd": "美元与资本流动变化",
+      "gold": "避险与货币信用变化",
+      "sectors": "宏观敏感行业"
+    },
+    "enforcement": "宏观",
+    "exit": "能源管制加剧",
+    "sideEffects": [
+      "滞胀",
+      "能源短缺",
+      "产业成本上升",
+      "地缘风险"
+    ],
+    "winners": [
+      "石油生产国",
+      "能源上游"
+    ],
+    "losers": [
+      "石油进口国",
+      "航空/运输",
+      "消费者"
+    ],
+    "relatedIds": [
+      68,
+      69,
+      73,
+      80
+    ],
+    "sources": [
+      "01#3.7"
+    ]
+  }
+}

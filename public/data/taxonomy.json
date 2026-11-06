@@ -1,0 +1,318 @@
+{
+  "layers": [
+    {
+      "id": "monetary",
+      "label": "货币/黄金",
+      "color": "#B7950B"
+    },
+    {
+      "id": "price_industry",
+      "label": "价格/产业",
+      "color": "#D35400"
+    },
+    {
+      "id": "labor_wage",
+      "label": "劳动/工资",
+      "color": "#27AE60"
+    },
+    {
+      "id": "energy_resource",
+      "label": "能源/资源",
+      "color": "#A04000"
+    },
+    {
+      "id": "health_consumption",
+      "label": "医疗/消费",
+      "color": "#8E44AD"
+    },
+    {
+      "id": "macro_institution",
+      "label": "宏观/制度",
+      "color": "#2E86C1"
+    }
+  ],
+  "categoryColors": {
+    "价格": "#D35400",
+    "黄金": "#B7950B",
+    "工资": "#27AE60",
+    "宏观": "#2E86C1"
+  },
+  "instruments": [
+    {
+      "code": "price_ceiling_freeze",
+      "label": "最高限价/冻结",
+      "group": "价格",
+      "definition": "规定价格不得超过某一水平，或直接冻结在基准日水平。"
+    },
+    {
+      "code": "price_floor_guarantee",
+      "label": "最低限价/担保价",
+      "group": "价格",
+      "definition": "政府承诺最低收购价或价格下限。"
+    },
+    {
+      "code": "dual_pricing",
+      "label": "双轨价",
+      "group": "价格",
+      "definition": "同一商品按来源、批次或用途适用不同价格。"
+    },
+    {
+      "code": "price_guideline",
+      "label": "指导线/自愿合规",
+      "group": "价格",
+      "definition": "非强制价格或工资增长参考值。"
+    },
+    {
+      "code": "production_quota",
+      "label": "生产配额",
+      "group": "数量",
+      "definition": "限制企业或行业的生产数量。"
+    },
+    {
+      "code": "import_quota",
+      "label": "进口配额",
+      "group": "数量",
+      "definition": "限制进口数量或市场份额。"
+    },
+    {
+      "code": "export_restriction",
+      "label": "出口限制",
+      "group": "数量",
+      "definition": "禁止、许可或限制出口。"
+    },
+    {
+      "code": "rationing_coupon",
+      "label": "配给券",
+      "group": "数量",
+      "definition": "按人头或用途发票证，凭券购买。"
+    },
+    {
+      "code": "license_permit",
+      "label": "许可证/审批",
+      "group": "执行",
+      "definition": "从事生产、销售、进口或定价需要许可或事前批准。"
+    },
+    {
+      "code": "price_notification",
+      "label": "价格申报/事前通知",
+      "group": "执行",
+      "definition": "涨价前必须向主管部门申报或等待审批。"
+    },
+    {
+      "code": "subsidy_tax_credit",
+      "label": "补贴/税收抵免",
+      "group": "财政",
+      "definition": "用财政转移支付抵消价格管制或引导行为。"
+    },
+    {
+      "code": "government_purchase_reserve",
+      "label": "政府采购/储备",
+      "group": "财政",
+      "definition": "政府收储、释放库存或直接采购。"
+    },
+    {
+      "code": "rent_control",
+      "label": "租金管制",
+      "group": "价格",
+      "definition": "限制租金涨幅或设定租金上限。"
+    },
+    {
+      "code": "anti_hoarding",
+      "label": "反囤积/反暴利",
+      "group": "执行",
+      "definition": "禁止囤积、惜售或超额利润。"
+    },
+    {
+      "code": "administered_price",
+      "label": "政府定价/谈判价",
+      "group": "价格",
+      "definition": "政府直接设定或通过谈判确定价格。"
+    },
+    {
+      "code": "interest_rate_cap",
+      "label": "利率上限",
+      "group": "价格",
+      "definition": "限制贷款利率或融资成本上限。"
+    },
+    {
+      "code": "price_gouging_rule",
+      "label": "反价格欺诈/涨价审查",
+      "group": "执行",
+      "definition": "禁止危机期间过度涨价，或对涨价进行审查。"
+    },
+    {
+      "code": "deregulation",
+      "label": "解除管制/价格市场化",
+      "group": "执行",
+      "definition": "取消价格上限、配额或审批，让价格回归市场。"
+    },
+    {
+      "code": "tariff_surcharge",
+      "label": "进口附加税/关税",
+      "group": "贸易",
+      "definition": "对进口征收附加税或调整关税。"
+    },
+    {
+      "code": "wage_freeze",
+      "label": "工资冻结",
+      "group": "工资",
+      "definition": "禁止或限制工资上涨。"
+    },
+    {
+      "code": "wage_ceiling",
+      "label": "工资上限",
+      "group": "工资",
+      "definition": "规定工资涨幅或工资水平上限。"
+    },
+    {
+      "code": "wage_formula_cola",
+      "label": "工资公式/COLA",
+      "group": "工资",
+      "definition": "按公式、生活成本或生产率调整工资。"
+    },
+    {
+      "code": "wage_board_arbitration",
+      "label": "工资委员会/仲裁",
+      "group": "工资",
+      "definition": "由委员会审批、调解或仲裁工资争议。"
+    },
+    {
+      "code": "cooling_off",
+      "label": "冷却期",
+      "group": "工资",
+      "definition": "罢工或 lockout 前强制等待、调解。"
+    },
+    {
+      "code": "minimum_wage",
+      "label": "最低工资",
+      "group": "工资",
+      "definition": "规定工资下限。"
+    },
+    {
+      "code": "prevailing_wage",
+      "label": "当地通行工资（prevailing wage）",
+      "group": "工资",
+      "definition": "要求公共工程支付当地通行工资。"
+    },
+    {
+      "code": "overtime_premium",
+      "label": "加班溢价",
+      "group": "工资",
+      "definition": "超过标准工时必须支付更高倍数工资。"
+    },
+    {
+      "code": "benefits_social",
+      "label": "福利/社保",
+      "group": "工资",
+      "definition": "通过福利、社保、养老金等非工资渠道补偿。"
+    },
+    {
+      "code": "collective_bargaining",
+      "label": "集体谈判",
+      "group": "工资",
+      "definition": "工会与雇主谈判工资和劳动条件。"
+    },
+    {
+      "code": "tax_penalty_incentive",
+      "label": "税收惩罚/激励",
+      "group": "工资",
+      "definition": "用税收惩罚超标涨薪或奖励合规。"
+    },
+    {
+      "code": "official_gold_price",
+      "label": "黄金官价",
+      "group": "黄金",
+      "definition": "政府设定黄金的官方美元价格。"
+    },
+    {
+      "code": "gold_nationalization",
+      "label": "黄金国有化/强制上缴",
+      "group": "黄金",
+      "definition": "要求居民或机构把黄金卖给政府。"
+    },
+    {
+      "code": "gold_convertibility_restriction",
+      "label": "黄金兑换限制",
+      "group": "黄金",
+      "definition": "限制美元兑换黄金或黄金兑换美元。"
+    },
+    {
+      "code": "gold_export_license",
+      "label": "黄金出口许可/禁运",
+      "group": "黄金",
+      "definition": "限制黄金出口或需要许可证。"
+    },
+    {
+      "code": "gold_reserve_requirement",
+      "label": "黄金储备要求",
+      "group": "黄金",
+      "definition": "要求银行或货币发行保持黄金储备比例。"
+    },
+    {
+      "code": "gold_dual_market",
+      "label": "黄金双轨制",
+      "group": "黄金",
+      "definition": "官方黄金市场与私人市场分开定价。"
+    },
+    {
+      "code": "central_bank_sales_cap",
+      "label": "央行售金上限",
+      "group": "黄金",
+      "definition": "央行之间约定售金数量上限。"
+    },
+    {
+      "code": "central_bank_intervention",
+      "label": "央行市场干预",
+      "group": "黄金",
+      "definition": "央行通过买卖黄金或外汇干预市场。"
+    },
+    {
+      "code": "gold_investment_product",
+      "label": "黄金投资产品/ETF",
+      "group": "黄金",
+      "definition": "通过 ETF、期货等金融产品改变黄金需求。"
+    },
+    {
+      "code": "gold_demonetization",
+      "label": "黄金去货币化",
+      "group": "黄金",
+      "definition": "取消黄金的货币职能或官价。"
+    },
+    {
+      "code": "private_gold_ban",
+      "label": "私人持有禁止/合法化",
+      "group": "黄金",
+      "definition": "禁止或恢复居民持有黄金。"
+    },
+    {
+      "code": "war_mobilization",
+      "label": "战争动员",
+      "group": "宏观",
+      "definition": "战争时期的全面经济动员与优先分配。"
+    },
+    {
+      "code": "fiscal_expansion",
+      "label": "财政扩张",
+      "group": "宏观",
+      "definition": "政府支出、减税或赤字扩张。"
+    },
+    {
+      "code": "monetary_regime",
+      "label": "货币制度",
+      "group": "宏观",
+      "definition": "金本位、法币、汇率或央行制度变化。"
+    },
+    {
+      "code": "trade_policy",
+      "label": "贸易政策",
+      "group": "宏观",
+      "definition": "关税、禁运、贸易协定或出口管制。"
+    },
+    {
+      "code": "regulatory_regime",
+      "label": "监管制度",
+      "group": "宏观",
+      "definition": "设立监管机构、法律框架或司法规则。"
+    }
+  ]
+}

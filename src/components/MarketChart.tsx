@@ -1,0 +1,180 @@
+import { useEffect, useMemo, useRef } from "react";
+import * as echarts from "echarts";
+import type { PolicyEvent, SpxPoint, Taxonomy } from "../types";
+
+export default function MarketChart({
+  spx,
+  events,
+  selected,
+  taxonomy,
+  onOpen,
+}: {
+  spx: SpxPoint[];
+  events: PolicyEvent[];
+  selected: Set<number>;
+  taxonomy: Taxonomy;
+  onOpen: (id: number) => void;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<echarts.ECharts | null>(null);
+  const onOpenRef = useRef(onOpen);
+  const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
+
+  useEffect(() => {
+    onOpenRef.current = onOpen;
+  }, [onOpen]);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
+    chartRef.current = chart;
+    chart.on("click", (params) => {
+      if (params.seriesType === "scatter" && Array.isArray(params.data)) {
+        const id = Number((params.data as unknown[])[2]);
+        if (Number.isFinite(id)) onOpenRef.current(id);
+      }
+    });
+    const ro = new ResizeObserver(() => chart.resize());
+    ro.observe(ref.current);
+    return () => {
+      ro.disconnect();
+      chart.dispose();
+      chartRef.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    const chart = chartRef.current;
+    if (!chart) return;
+    const inRange = events.filter(
+      (e) => selected.has(e.id) && e.chartStatus === "in-range" && e.chartDate
+    );
+    const normal = inRange.filter((e) => !e.keyAnnotation);
+    const keys = inRange.filter((e) => e.keyAnnotation);
+    const pointOf = (e: PolicyEvent) => [e.chartDate, e.chartClose, e.id];
+    const colorOf = (e: PolicyEvent | undefined) =>
+      e ? taxonomy.categoryColors[e.category] : "#555";
+    const tooltipOf = (e: PolicyEvent) =>
+      [
+        `<b>${e.dateLabel} · ${e.title}</b>`,
+        `${e.category} · ${e.layers.join(" / ")}`,
+        e.instruments.map((i) => `${i.label}：${i.parameter}`).join("<br/>"),
+        e.summary,
+      ].join("<br/>");
+
+    chart.setOption(
+      {
+        backgroundColor: "transparent",
+        animation: false,
+        grid: { left: 64, right: 24, top: 34, bottom: 58 },
+        tooltip: {
+          trigger: "item",
+          confine: true,
+          backgroundColor: "rgba(255,255,255,.97)",
+          borderColor: "#ddd",
+          textStyle: { color: "#222", fontSize: 12, lineHeight: 18 },
+          formatter: (p: any) => {
+            if (p.seriesType !== "scatter" || !Array.isArray(p.data)) return "";
+            const e = eventsById.get(Number(p.data[2]));
+            return e ? tooltipOf(e) : "";
+          },
+        },
+        xAxis: {
+          type: "time",
+          min: "1927-01-01",
+          max: "2026-12-31",
+          axisLine: { lineStyle: { color: "#cfd3d8" } },
+          axisLabel: { color: "#667085", fontSize: 11 },
+          splitLine: { show: false },
+        },
+        yAxis: {
+          type: "log",
+          name: "标普500（对数）",
+          nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
+          axisLabel: { color: "#667085", fontSize: 11 },
+          splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
+        },
+        dataZoom: [
+          { type: "inside", filterMode: "none" },
+          {
+            type: "slider",
+            height: 18,
+            bottom: 10,
+            borderColor: "#e5e7eb",
+            fillerColor: "rgba(31,78,121,.12)",
+            handleStyle: { color: "#1F4E79" },
+            textStyle: { color: "#667085", fontSize: 10 },
+          },
+        ],
+        series: [
+          {
+            id: "spx",
+            name: "标普500",
+            type: "line",
+            showSymbol: false,
+            sampling: "lttb",
+            data: spx.map((p) => [p.date, p.close]),
+            lineStyle: { width: 1.2, color: "#1F4E79" },
+            itemStyle: { color: "#1F4E79" },
+            z: 1,
+          },
+          {
+            id: "events",
+            name: "政策事件",
+            type: "scatter",
+            data: normal.map(pointOf),
+            symbolSize: 8,
+            itemStyle: {
+              color: (p: any) => colorOf(eventsById.get(Number(p.data[2]))),
+              borderColor: "#fff",
+              borderWidth: 1,
+            },
+            emphasis: { scale: 1.8 },
+            z: 5,
+          },
+          {
+            id: "keys",
+            name: "关键标注",
+            type: "scatter",
+            symbol: "diamond",
+            symbolSize: 14,
+            data: keys.map(pointOf),
+            itemStyle: {
+              color: (p: any) => colorOf(eventsById.get(Number(p.data[2]))),
+              borderColor: "#fff",
+              borderWidth: 1.5,
+            },
+            label: {
+              show: true,
+              position: "top",
+              distance: 4,
+              formatter: (p: any) => eventsById.get(Number(p.data[2]))?.keyAnnotation ?? "",
+              color: "#1f2937",
+              fontSize: 9,
+              fontWeight: 700,
+            },
+            emphasis: { scale: 1.4 },
+            z: 6,
+          },
+        ],
+      },
+      { replaceMerge: ["series"] }
+    );
+  }, [spx, events, selected, taxonomy, eventsById]);
+
+  return (
+    <section className="chart-panel">
+      <div className="panel-heading">
+        <h2>标普500与政策事件</h2>
+        <span>曲线仅显示 1927—2026 可映射事件；其余看时间轴</span>
+      </div>
+      <div className="chart-legend">
+        {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
+          <span key={cat}><i style={{ background: color }} />{cat}</span>
+        ))}
+        <span className="key-legend"><i className="diamond" />K1—K11 关键标注</span>
+      </div>
+      <div ref={ref} className="market-chart" />
+    </section>
+  );
+}

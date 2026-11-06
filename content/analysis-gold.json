@@ -1,0 +1,2512 @@
+{
+  "2": {
+    "summary": "《联邦储备法》建立美联储，并保留联邦储备券的黄金储备要求，金本位以央行制度形式延续。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_reserve_requirement",
+        "label": "黄金储备要求",
+        "parameter": "联邦储备券黄金储备要求",
+        "detail": "美联储发行纸币须持有一定比例黄金储备。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "美联储成立",
+        "detail": "建立央行体系，黄金继续作为货币锚。"
+      }
+    ],
+    "targets": [
+      "银行体系",
+      "货币发行",
+      "黄金储备"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1913-12-23"
+      },
+      {
+        "label": "机构",
+        "value": "美联储"
+      },
+      {
+        "label": "制度",
+        "value": "金本位延续"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "制度",
+    "exit": "金本位延续",
+    "sideEffects": [
+      "黄金储备约束信用扩张",
+      "地区 Reserve Bank 权力分配",
+      "货币弹性仍受限"
+    ],
+    "winners": [
+      "银行体系",
+      "黄金储备持有者"
+    ],
+    "losers": [
+      "需要季节性信贷的农业/企业"
+    ],
+    "relatedIds": [
+      3,
+      7,
+      13
+    ],
+    "sources": [
+      "02#3.1"
+    ]
+  },
+  "3": {
+    "summary": "一战爆发后欧洲交战国暂停黄金兑换，国际黄金流动骤停，美国仍维持兑换但外部环境恶化。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "交战国暂停黄金兑换",
+        "detail": "欧洲主要国家停止纸币兑金。"
+      },
+      {
+        "code": "gold_export_license",
+        "label": "黄金出口许可/禁运",
+        "parameter": "黄金流动受限",
+        "detail": "跨境黄金运输受战争和管制影响。"
+      }
+    ],
+    "targets": [
+      "国际黄金",
+      "交战国货币",
+      "美国黄金市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1914-07-31"
+      },
+      {
+        "label": "范围",
+        "value": "欧洲交战国"
+      },
+      {
+        "label": "美国",
+        "value": "仍维持兑换"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "临时限制",
+    "exit": "美国仍维持兑换",
+    "sideEffects": [
+      "国际支付体系碎片化",
+      "黄金流向美国",
+      "汇率波动",
+      "资本管制"
+    ],
+    "winners": [
+      "美国黄金储备",
+      "出口商"
+    ],
+    "losers": [
+      "交战国货币",
+      "依赖伦敦市场的机构"
+    ],
+    "relatedIds": [
+      2,
+      7,
+      9
+    ],
+    "sources": [
+      "02#3.1"
+    ]
+  },
+  "7": {
+    "summary": "总统公告 1392 号限制黄金、白银和货币出口，把黄金留在国内并为战时金融动员服务。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_export_license",
+        "label": "黄金出口许可/禁运",
+        "parameter": "黄金/白银/货币出口许可",
+        "detail": "出口须获许可，实质限制黄金外流。"
+      },
+      {
+        "code": "export_restriction",
+        "label": "出口限制",
+        "parameter": "贵金属与通货出口限制",
+        "detail": "覆盖金币、金条、白银和部分纸币。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "白银",
+      "货币出口"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1917-09-07"
+      },
+      {
+        "label": "范围",
+        "value": "黄金/白银/货币"
+      },
+      {
+        "label": "恢复",
+        "value": "1919 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "临时限制",
+    "exit": "1919年恢复",
+    "sideEffects": [
+      "黄金外流受控",
+      "国际贸易支付摩擦",
+      "黑市/走私",
+      "战后恢复压力"
+    ],
+    "winners": [
+      "美国黄金储备",
+      "战时财政"
+    ],
+    "losers": [
+      "出口商",
+      "国际银行"
+    ],
+    "relatedIds": [
+      3,
+      9
+    ],
+    "sources": [
+      "02#3.1"
+    ]
+  },
+  "9": {
+    "summary": "一战结束后恢复黄金出口，1919 年取消限制，美国回归金本位下的自由黄金流动。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "取消黄金出口限制",
+        "detail": "恢复黄金和货币出口。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "回归金本位",
+        "detail": "恢复黄金与美元的兑换和跨境流动。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "货币",
+      "国际贸易"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1919-06"
+      },
+      {
+        "label": "结果",
+        "value": "恢复黄金出口"
+      },
+      {
+        "label": "背景",
+        "value": "战后回归金本位"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "解除限制",
+    "exit": "回归金本位",
+    "sideEffects": [
+      "黄金流动恢复",
+      "汇率重估",
+      "战后通胀/通缩压力"
+    ],
+    "winners": [
+      "出口商",
+      "国际银行"
+    ],
+    "losers": [
+      "黄金储备（短期外流压力）"
+    ],
+    "relatedIds": [
+      3,
+      7
+    ],
+    "sources": [
+      "02#3.1"
+    ]
+  },
+  "13": {
+    "summary": "全国银行假日暂停银行支付和黄金兑换，切断了银行挤兑与黄金外流，为紧急银行法争取时间。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "暂停黄金兑换",
+        "detail": "银行停业期间停止兑金和对外支付。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "银行复业许可",
+        "detail": "只有经审查的银行才能复业。"
+      }
+    ],
+    "targets": [
+      "银行体系",
+      "黄金兑换",
+      "存款人"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "开始",
+        "value": "1933-03-06"
+      },
+      {
+        "label": "复业",
+        "value": "1933-03-13"
+      },
+      {
+        "label": "范围",
+        "value": "全国银行"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "危机应对",
+    "exit": "3月13日起复业",
+    "sideEffects": [
+      "银行挤兑",
+      "现金短缺",
+      "地区差异",
+      "信任危机"
+    ],
+    "winners": [
+      "稳健银行",
+      "黄金储备"
+    ],
+    "losers": [
+      "挤兑中的银行",
+      "存款人（短期）"
+    ],
+    "relatedIds": [
+      14,
+      15
+    ],
+    "sources": [
+      "02#3.2"
+    ]
+  },
+  "14": {
+    "summary": "《紧急银行法》授权总统管制黄金和银行，EO 6073 等行政令把银行复业与黄金管制连在一起。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "总统黄金管制授权",
+        "detail": "可限制黄金兑换、出口和持有。"
+      },
+      {
+        "code": "gold_export_license",
+        "label": "黄金出口许可/禁运",
+        "parameter": "黄金出口许可",
+        "detail": "限制黄金外流。"
+      },
+      {
+        "code": "license_permit",
+        "label": "许可证/审批",
+        "parameter": "银行复业审批",
+        "detail": "财政部审查银行资产负债表。"
+      }
+    ],
+    "targets": [
+      "银行",
+      "黄金",
+      "货币"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1933-03-09"
+      },
+      {
+        "label": "授权",
+        "value": "总统管制黄金/银行"
+      },
+      {
+        "label": "后续",
+        "value": "EO 6102"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "危机应对",
+    "exit": "EO 6073等",
+    "sideEffects": [
+      "行政权力扩张",
+      "银行重组",
+      "黄金外流受控",
+      "储户信心恢复缓慢"
+    ],
+    "winners": [
+      "稳健银行",
+      "财政部"
+    ],
+    "losers": [
+      "黄金持有者",
+      "经营不善的银行"
+    ],
+    "relatedIds": [
+      13,
+      15
+    ],
+    "sources": [
+      "02#3.2"
+    ]
+  },
+  "15": {
+    "summary": "EO 6102 强制居民和机构把黄金上缴美联储，切断私人黄金与美元的自由兑换，为 1934 年美元贬值铺路。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "gold_nationalization",
+        "label": "黄金国有化/强制上缴",
+        "parameter": "上缴价 20.67 美元/盎司；100 美元豁免",
+        "detail": "个人、银行、企业持有黄金须在期限内卖给美联储。"
+      },
+      {
+        "code": "private_gold_ban",
+        "label": "私人持有禁止/合法化",
+        "parameter": "禁止私人囤积黄金",
+        "detail": "除首饰、工业用途和少量豁免外，私人持有黄金违法。"
+      },
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "暂停美元兑换黄金",
+        "detail": "配合银行假日，切断黄金外流。"
+      }
+    ],
+    "targets": [
+      "居民",
+      "银行",
+      "企业",
+      "黄金出口"
+    ],
+    "exemptions": [
+      "100 美元以内",
+      "首饰/工业用途",
+      "部分央行"
+    ],
+    "transmission": [
+      "私人黄金被要求上缴美联储",
+      "黄金兑换被切断，私人市场消失",
+      "1934 年官价从 20.67 提高到 35 美元",
+      "美元对黄金贬值约 41%，债务实际负担下降",
+      "黄金黑市与资产配置扭曲长期存在"
+    ],
+    "metrics": [
+      {
+        "label": "上缴价",
+        "value": "20.67 美元/盎司"
+      },
+      {
+        "label": "豁免",
+        "value": "100 美元以内"
+      },
+      {
+        "label": "1934 年官价",
+        "value": "35 美元/盎司"
+      },
+      {
+        "label": "私人持有恢复",
+        "value": "1974 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "再通胀预期抬升，周期股与黄金矿股受益",
+      "rates": "实际利率与通胀预期重定价",
+      "usd": "美元对黄金贬值，国际货币关系重组",
+      "gold": "官方金价重估，私人市场受限",
+      "sectors": "黄金矿业、银行、出口行业"
+    },
+    "enforcement": "强制上缴",
+    "exit": "1933-1974私人持有受限",
+    "sideEffects": [
+      "黄金黑市",
+      "资产配置扭曲",
+      "司法争议",
+      "国际资本流动变化"
+    ],
+    "winners": [
+      "黄金矿商",
+      "债务人",
+      "出口行业"
+    ],
+    "losers": [
+      "黄金持有者",
+      "债权人",
+      "进口行业"
+    ],
+    "relatedIds": [
+      14,
+      19,
+      20,
+      70,
+      71
+    ],
+    "sources": [
+      "02#3.2"
+    ],
+    "keyAnnotation": "K1"
+  },
+  "17": {
+    "summary": "托马斯修正案授权总统调整金价、最高贬值 50%，为 1934 年把官价提高到 35 美元提供法律授权。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "总统可调整金价",
+        "detail": "授权总统设定黄金美元价格。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "最高贬值 50% 授权",
+        "detail": "为美元对黄金贬值提供法律空间。"
+      }
+    ],
+    "targets": [
+      "黄金官价",
+      "美元",
+      "货币制度"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1933-05-12"
+      },
+      {
+        "label": "授权",
+        "value": "调整金价/最高贬值 50%"
+      },
+      {
+        "label": "后续",
+        "value": "1934 年 35 美元"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "授权",
+    "exit": "为35美元铺路",
+    "sideEffects": [
+      "美元信用重估",
+      "黄金官价政治化",
+      "通胀预期",
+      "国际反应"
+    ],
+    "winners": [
+      "债务人",
+      "黄金矿商"
+    ],
+    "losers": [
+      "债权人",
+      "黄金持有者"
+    ],
+    "relatedIds": [
+      15,
+      19,
+      20
+    ],
+    "sources": [
+      "02#3.2"
+    ]
+  },
+  "19": {
+    "summary": "《黄金储备法》把黄金所有权集中到财政部，设立外汇稳定基金，并在次日把官价定为 35 美元。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "gold_nationalization",
+        "label": "黄金国有化/强制上缴",
+        "parameter": "黄金所有权归财政部",
+        "detail": "美联储和私人黄金集中到财政部。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官价 35 美元/盎司",
+        "detail": "1934-01-31 正式重估。"
+      },
+      {
+        "code": "gold_reserve_requirement",
+        "label": "黄金储备要求",
+        "parameter": "黄金储备/ESF",
+        "detail": "建立外汇稳定基金支持汇率操作。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "财政部",
+      "美联储",
+      "汇率"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1934-01-30"
+      },
+      {
+        "label": "官价",
+        "value": "35 美元/盎司"
+      },
+      {
+        "label": "机构",
+        "value": "ESF"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国有化",
+    "exit": "1934-01-31官价35美元",
+    "sideEffects": [
+      "黄金国有化",
+      "美元贬值",
+      "国际资本流动",
+      "国内通缩预期逆转"
+    ],
+    "winners": [
+      "黄金矿商",
+      "债务人",
+      "出口行业"
+    ],
+    "losers": [
+      "黄金持有者",
+      "债权人",
+      "进口行业"
+    ],
+    "relatedIds": [
+      15,
+      17,
+      20
+    ],
+    "sources": [
+      "02#3.2"
+    ]
+  },
+  "20": {
+    "summary": "美元对黄金正式贬值，官价从 20.67 提高到 35 美元/盎司，美元对黄金贬值约 41%。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "20.67→35 美元/盎司",
+        "detail": "黄金官价一次性重估。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "美元贬值约 41%",
+        "detail": "以黄金计价的美元价值下降。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "美元",
+      "国际储备"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1934-01-31"
+      },
+      {
+        "label": "官价",
+        "value": "35 美元/盎司"
+      },
+      {
+        "label": "贬值",
+        "value": "约 41%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "官价",
+    "exit": "美元对黄金贬值约41%",
+    "sideEffects": [
+      "再通胀",
+      "国际竞争性贬值",
+      "黄金流入",
+      "债务实际负担下降"
+    ],
+    "winners": [
+      "黄金矿商",
+      "债务人",
+      "出口行业"
+    ],
+    "losers": [
+      "债权人",
+      "进口行业",
+      "黄金持有者"
+    ],
+    "relatedIds": [
+      15,
+      17,
+      19,
+      34
+    ],
+    "sources": [
+      "02#3.2"
+    ]
+  },
+  "34": {
+    "summary": "布雷顿森林会议建立美元—黄金双挂钩：美元锚定 35 美元/盎司，其它货币锚定美元，并成立 IMF/世界银行。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "35 美元/盎司",
+        "detail": "美国承诺以官价兑换外国央行持有的美元。"
+      },
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "美元—黄金双挂钩",
+        "detail": "只有外国央行可按官价兑换黄金。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "IMF/世界银行体系",
+        "detail": "固定汇率、资本管制与国际救助机制。"
+      }
+    ],
+    "targets": [
+      "44 国货币",
+      "美元",
+      "黄金",
+      "国际储备"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "美元承诺以 35 美元/盎司兑换黄金",
+      "其它货币锚定美元，形成固定汇率体系",
+      "美国黄金储备支撑美元信用",
+      "美元负债上升后出现特里芬难题",
+      "1971 年关闭黄金窗口，体系终结"
+    ],
+    "metrics": [
+      {
+        "label": "会议",
+        "value": "1944-07"
+      },
+      {
+        "label": "官价",
+        "value": "35 美元/盎司"
+      },
+      {
+        "label": "机构",
+        "value": "IMF/世界银行"
+      }
+    ],
+    "marketImpact": {
+      "equities": "固定汇率与低通胀预期支撑估值",
+      "rates": "美国利率与黄金流动相互约束",
+      "usd": "美元成为核心储备货币",
+      "gold": "官价固定，私人市场受限制",
+      "sectors": "出口、银行、黄金矿业"
+    },
+    "enforcement": "国际体系",
+    "exit": "IMF/世界银行成立",
+    "sideEffects": [
+      "特里芬难题",
+      "美国黄金外流",
+      "汇率僵化",
+      "资本管制"
+    ],
+    "winners": [
+      "美国",
+      "出口国",
+      "黄金储备充足的国家"
+    ],
+    "losers": [
+      "黄金短缺国",
+      "需要汇率灵活性的国家"
+    ],
+    "relatedIds": [
+      20,
+      49,
+      50,
+      51,
+      59
+    ],
+    "sources": [
+      "02#3.3"
+    ],
+    "keyAnnotation": "K4"
+  },
+  "49": {
+    "summary": "布雷顿森林体系全面运行，欧洲货币恢复可兑换，黄金窗口压力随美元负债上升而累积。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "欧洲货币可兑换",
+        "detail": "欧洲国家恢复经常项目可兑换。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "35 美元官价",
+        "detail": "维持美元黄金平价。"
+      }
+    ],
+    "targets": [
+      "欧洲货币",
+      "美元",
+      "黄金"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1958-12"
+      },
+      {
+        "label": "范围",
+        "value": "欧洲"
+      },
+      {
+        "label": "压力",
+        "value": "黄金窗口"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国际体系",
+    "exit": "黄金窗口压力上升",
+    "sideEffects": [
+      "美国黄金储备下降",
+      "美元负债上升",
+      "固定汇率压力",
+      "投机冲击"
+    ],
+    "winners": [
+      "欧洲出口国",
+      "美国"
+    ],
+    "losers": [
+      "美元信用",
+      "黄金储备"
+    ],
+    "relatedIds": [
+      34,
+      50,
+      51
+    ],
+    "sources": [
+      "02#3.3"
+    ]
+  },
+  "50": {
+    "summary": "伦敦市场金价升到 40 美元，高于 35 美元官价，显示布雷顿森林平价开始承受市场压力。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官价 35 美元/盎司",
+        "detail": "官方平价与市场价出现裂口。"
+      },
+      {
+        "code": "gold_dual_market",
+        "label": "黄金双轨制",
+        "parameter": "官方/市场价差",
+        "detail": "市场价高于官价，套利与挤兑压力上升。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "伦敦市场",
+      "美元"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1960-10"
+      },
+      {
+        "label": "市场价",
+        "value": "约 40 美元/盎司"
+      },
+      {
+        "label": "官价",
+        "value": "35 美元/盎司"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场压力",
+    "exit": "Gold Pool前奏",
+    "sideEffects": [
+      "黄金外流",
+      "投机压力",
+      "央行干预需求",
+      "美元信用受损"
+    ],
+    "winners": [
+      "黄金持有者",
+      "投机者"
+    ],
+    "losers": [
+      "美元",
+      "央行储备"
+    ],
+    "relatedIds": [
+      34,
+      49,
+      51
+    ],
+    "sources": [
+      "02#3.3"
+    ]
+  },
+  "51": {
+    "summary": "八国央行组成 London Gold Pool 联合抛售黄金，试图把市场价压在 35 美元附近。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "八国央行联合售金",
+        "detail": "通过 London Gold Pool 向市场投放黄金。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "维持 35 美元官价",
+        "detail": "用市场干预捍卫平价。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "伦敦市场",
+      "央行储备"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "成立",
+        "value": "1961-10"
+      },
+      {
+        "label": "成员",
+        "value": "八国央行"
+      },
+      {
+        "label": "崩溃",
+        "value": "1968 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国际干预",
+    "exit": "1968年崩溃",
+    "sideEffects": [
+      "央行黄金储备流失",
+      "市场干预失败",
+      "投机加剧",
+      "双轨制压力"
+    ],
+    "winners": [
+      "黄金买家",
+      "投机者"
+    ],
+    "losers": [
+      "央行",
+      "美元信用"
+    ],
+    "relatedIds": [
+      50,
+      56
+    ],
+    "sources": [
+      "02#3.3"
+    ]
+  },
+  "54": {
+    "summary": "1965 年铸币法让银币退出流通，白银去货币化，但黄金官价仍维持 35 美元，货币压力继续累积。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "银币退出流通",
+        "detail": "减少白银在硬币中的货币用途。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "黄金仍 35 美元",
+        "detail": "黄金官价不变。"
+      }
+    ],
+    "targets": [
+      "银币",
+      "黄金",
+      "货币"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "立法",
+        "value": "1965-07-23"
+      },
+      {
+        "label": "变化",
+        "value": "银币退出"
+      },
+      {
+        "label": "黄金",
+        "value": "仍 35 美元"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "货币改革",
+    "exit": "黄金仍35美元",
+    "sideEffects": [
+      "硬币短缺",
+      "白银去货币化",
+      "黄金压力继续"
+    ],
+    "winners": [
+      "白银工业用户",
+      "财政部"
+    ],
+    "losers": [
+      "白银持有者",
+      "收藏者"
+    ],
+    "relatedIds": [
+      51,
+      56
+    ],
+    "sources": [
+      "02#3.3"
+    ]
+  },
+  "56": {
+    "summary": "黄金池崩溃后转入双轨制：官方市场维持 35 美元，私人市场自由浮动。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "gold_dual_market",
+        "label": "黄金双轨制",
+        "parameter": "官方 35 美元/私人市场浮动",
+        "detail": "央行之间维持官价，私人市场按供需定价。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官方 35 美元",
+        "detail": "官方平价继续存在但市场价脱钩。"
+      },
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "限制官方兑换",
+        "detail": "央行减少黄金兑换。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "官方储备",
+      "私人市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1968-03-17"
+      },
+      {
+        "label": "官价",
+        "value": "35 美元"
+      },
+      {
+        "label": "市场价",
+        "value": "38—42 美元"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国际体系",
+    "exit": "私人市场价38-42",
+    "sideEffects": [
+      "双轨价差",
+      "套利",
+      "央行储备流失",
+      "体系信誉下降"
+    ],
+    "winners": [
+      "黄金持有者",
+      "私人市场"
+    ],
+    "losers": [
+      "美元",
+      "央行"
+    ],
+    "relatedIds": [
+      51,
+      59,
+      62
+    ],
+    "sources": [
+      "02#3.3"
+    ]
+  },
+  "59": {
+    "summary": "尼克松关闭黄金窗口，停止外国央行用美元兑换黄金，布雷顿森林体系的货币锚正式断裂。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_convertibility_restriction",
+        "label": "黄金兑换限制",
+        "parameter": "停止美元兑换黄金",
+        "detail": "关闭黄金窗口，终止官方兑换承诺。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "35 美元官价名存实亡",
+        "detail": "官价与市场价脱钩。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "布雷顿森林体系崩溃",
+        "detail": "进入浮动汇率与法币时代。"
+      }
+    ],
+    "targets": [
+      "美元",
+      "黄金",
+      "国际货币体系"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1971-08-15"
+      },
+      {
+        "label": "措施",
+        "value": "关闭黄金窗口"
+      },
+      {
+        "label": "后续",
+        "value": "史密森/浮动"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "体系终结",
+    "exit": "布雷顿森林体系崩溃",
+    "sideEffects": [
+      "美元信用重估",
+      "黄金价格自由化",
+      "汇率波动",
+      "通胀预期上升"
+    ],
+    "winners": [
+      "黄金",
+      "大宗商品",
+      "出口行业"
+    ],
+    "losers": [
+      "美元资产",
+      "固定汇率体系"
+    ],
+    "relatedIds": [
+      34,
+      56,
+      58,
+      62,
+      64
+    ],
+    "sources": [
+      "02#3.4"
+    ],
+    "keyAnnotation": "K6"
+  },
+  "62": {
+    "summary": "史密森协定把黄金官价提高到 38 美元、美元贬值约 8%，试图挽救固定汇率体系但只维持了短暂时间。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官价 38 美元/盎司",
+        "detail": "美元对黄金贬值。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "美元贬值约 8%",
+        "detail": "重新排列主要货币汇率。"
+      }
+    ],
+    "targets": [
+      "主要货币",
+      "黄金",
+      "美元"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1971-12-18"
+      },
+      {
+        "label": "官价",
+        "value": "38 美元"
+      },
+      {
+        "label": "贬值",
+        "value": "约 8%"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国际体系",
+    "exit": "体系短暂维持",
+    "sideEffects": [
+      "体系短暂维持",
+      "投机压力",
+      "汇率重估",
+      "黄金市场紧张"
+    ],
+    "winners": [
+      "出口国",
+      "黄金持有者"
+    ],
+    "losers": [
+      "美元",
+      "进口国"
+    ],
+    "relatedIds": [
+      59,
+      64
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "64": {
+    "summary": "美元第二次贬值，黄金官价提高到 42.22 美元，随后主要货币在 1973 年 3 月转向浮动。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官价 42.22 美元/盎司",
+        "detail": "第二次美元贬值。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "转向浮动汇率",
+        "detail": "固定汇率体系难以为继。"
+      }
+    ],
+    "targets": [
+      "美元",
+      "黄金",
+      "主要货币"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1973-02-13"
+      },
+      {
+        "label": "官价",
+        "value": "42.22 美元"
+      },
+      {
+        "label": "后续",
+        "value": "1973-03 浮动"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "国际体系",
+    "exit": "1973年3月浮动",
+    "sideEffects": [
+      "固定汇率终结",
+      "黄金官价边缘化",
+      "外汇波动",
+      "通胀压力"
+    ],
+    "winners": [
+      "黄金",
+      "出口国"
+    ],
+    "losers": [
+      "美元",
+      "固定汇率体系"
+    ],
+    "relatedIds": [
+      59,
+      62
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "70": {
+    "summary": "福特签署黄金法案，恢复美国人持有黄金的权利，1974-12-31 后正式生效。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "private_gold_ban",
+        "label": "私人持有禁止/合法化",
+        "parameter": "恢复私人持有黄金",
+        "detail": "取消 EO 6102 以来的私人持有禁令。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "黄金持有合法化",
+        "detail": "1975-01-01 生效。"
+      }
+    ],
+    "targets": [
+      "美国居民",
+      "黄金市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1974-08-14"
+      },
+      {
+        "label": "生效",
+        "value": "1975-01-01"
+      },
+      {
+        "label": "意义",
+        "value": "私人持有恢复"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "私人持有合法化",
+    "exit": "1975-01-01生效",
+    "sideEffects": [
+      "黄金需求释放",
+      "黑市消失",
+      "投资产品发展",
+      "价格波动"
+    ],
+    "winners": [
+      "黄金投资者",
+      "黄金矿商",
+      "经纪商"
+    ],
+    "losers": [
+      "黑市",
+      "限制性机构"
+    ],
+    "relatedIds": [
+      15,
+      71,
+      72
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "71": {
+    "summary": "EO 11825 撤销 EO 6102 等黄金禁令，私人持有和交易黄金正式恢复。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "private_gold_ban",
+        "label": "私人持有禁止/合法化",
+        "parameter": "撤销私人持有禁令",
+        "detail": "取消 EO 6102 及相关限制。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "黄金市场化",
+        "detail": "私人可持有、买卖和进口黄金。"
+      }
+    ],
+    "targets": [
+      "美国居民",
+      "黄金市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "签署",
+        "value": "1974-12-31"
+      },
+      {
+        "label": "生效",
+        "value": "1975-01-01"
+      },
+      {
+        "label": "范围",
+        "value": "美国"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "解除禁令",
+    "exit": "私人持有恢复",
+    "sideEffects": [
+      "投资需求上升",
+      "黄金市场基础设施发展",
+      "价格波动"
+    ],
+    "winners": [
+      "黄金投资者",
+      "矿商",
+      "交易商"
+    ],
+    "losers": [
+      "黑市",
+      "旧管制体系"
+    ],
+    "relatedIds": [
+      15,
+      70,
+      72
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "72": {
+    "summary": "财政部公开拍卖 200 万盎司黄金，均价约 165.67 美元，标志政府从黄金管制者转向市场参与者。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "财政部拍卖 200 万盎司",
+        "detail": "政府向市场出售黄金。"
+      },
+      {
+        "code": "official_gold_price",
+        "label": "黄金官价",
+        "parameter": "官价体系退出",
+        "detail": "拍卖价由市场决定。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "财政部",
+      "市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1975-01-06"
+      },
+      {
+        "label": "规模",
+        "value": "200 万盎司"
+      },
+      {
+        "label": "均价",
+        "value": "约 165.67 美元"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场操作",
+    "exit": "黄金市场化",
+    "sideEffects": [
+      "价格发现",
+      "市场深度不足",
+      "官方储备下降",
+      "投机波动"
+    ],
+    "winners": [
+      "黄金买家",
+      "市场交易商"
+    ],
+    "losers": [
+      "财政部储备",
+      "旧官价体系"
+    ],
+    "relatedIds": [
+      70,
+      71,
+      74
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "74": {
+    "summary": "牙买加协议取消黄金官价、推动黄金非货币化，1978-04-01 生效。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_demonetization",
+        "label": "黄金去货币化",
+        "parameter": "取消黄金官价",
+        "detail": "黄金不再作为货币平价基础。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "浮动汇率合法化",
+        "detail": "确认浮动汇率与黄金非货币化。"
+      }
+    ],
+    "targets": [
+      "IMF 成员国",
+      "黄金",
+      "汇率"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "协议",
+        "value": "1976-01-07"
+      },
+      {
+        "label": "生效",
+        "value": "1978-04-01"
+      },
+      {
+        "label": "核心",
+        "value": "黄金非货币化"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "去货币化",
+    "exit": "1978-04-01生效",
+    "sideEffects": [
+      "黄金货币职能下降",
+      "央行售金",
+      "汇率波动",
+      "黄金投资属性上升"
+    ],
+    "winners": [
+      "黄金投资者",
+      "外汇市场"
+    ],
+    "losers": [
+      "黄金货币地位",
+      "固定汇率体系"
+    ],
+    "relatedIds": [
+      59,
+      75
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "75": {
+    "summary": "IMF 第二次修正案正式取消黄金作为货币平价基础，黄金非货币化完成法律程序。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "gold_demonetization",
+        "label": "黄金去货币化",
+        "parameter": "黄金不再作为平价基础",
+        "detail": "IMF 协定条款正式修改。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "黄金非货币化",
+        "detail": "黄金退出国际货币制度核心。"
+      }
+    ],
+    "targets": [
+      "IMF",
+      "黄金",
+      "成员国"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "生效",
+        "value": "1978-04-01"
+      },
+      {
+        "label": "范围",
+        "value": "IMF 成员国"
+      },
+      {
+        "label": "结果",
+        "value": "黄金非货币化"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "去货币化",
+    "exit": "正式非货币化",
+    "sideEffects": [
+      "央行售金",
+      "黄金价格市场化",
+      "国际货币体系去黄金化"
+    ],
+    "winners": [
+      "黄金投资者",
+      "美元体系"
+    ],
+    "losers": [
+      "黄金货币职能"
+    ],
+    "relatedIds": [
+      74
+    ],
+    "sources": [
+      "02#3.4"
+    ]
+  },
+  "79": {
+    "summary": "金价在 1979 年 8 月跌至约 252 美元，央行售金和强美元压制黄金，但随后通胀与地缘冲击反转。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "央行售金/强美元",
+        "detail": "央行和市场操作压制金价。"
+      },
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "紧缩预期",
+        "detail": "实际利率上升提高持金成本。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "美元",
+      "央行"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1979-08-25"
+      },
+      {
+        "label": "金价",
+        "value": "约 252 美元/盎司"
+      },
+      {
+        "label": "背景",
+        "value": "央行售金/强美元"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场",
+    "exit": "央行售金/强美元",
+    "sideEffects": [
+      "金价低迷",
+      "央行储备调整",
+      "实际利率上升",
+      "随后反转"
+    ],
+    "winners": [
+      "黄金买家",
+      "美元资产"
+    ],
+    "losers": [
+      "黄金持有者",
+      "金矿商"
+    ],
+    "relatedIds": [
+      81,
+      82,
+      88
+    ],
+    "sources": [
+      "02#3.5"
+    ]
+  },
+  "81": {
+    "summary": "华盛顿黄金协议（1979）约定央行售金协调与 5 年上限，试图让央行售金透明化。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "central_bank_sales_cap",
+        "label": "央行售金上限",
+        "parameter": "5 年售金上限 2000 吨",
+        "detail": "央行之间协调售金规模。"
+      },
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "售金透明化",
+        "detail": "减少突然抛售对市场冲击。"
+      }
+    ],
+    "targets": [
+      "央行",
+      "黄金市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1979-09-26"
+      },
+      {
+        "label": "上限",
+        "value": "2000 吨/5 年"
+      },
+      {
+        "label": "目的",
+        "value": "售金透明化"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "央行协调",
+    "exit": "央行售金透明化",
+    "sideEffects": [
+      "售金节奏受约束",
+      "市场预期稳定",
+      "央行储备调整",
+      "金价支撑"
+    ],
+    "winners": [
+      "黄金市场",
+      "央行"
+    ],
+    "losers": [
+      "黄金空头",
+      "短期投机者"
+    ],
+    "relatedIds": [
+      79,
+      82,
+      88
+    ],
+    "sources": [
+      "02#3.5"
+    ]
+  },
+  "82": {
+    "summary": "金价在 1980 年 1 月冲到约 850 美元，随后沃尔克紧缩与实际利率飙升开启长期熊市。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "沃尔克紧缩",
+        "detail": "大幅提高利率，实际利率上升。"
+      },
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "央行/市场干预",
+        "detail": "高利率与强美元压制黄金。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "美元",
+      "利率"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1980-01-21"
+      },
+      {
+        "label": "金价",
+        "value": "约 850 美元/盎司"
+      },
+      {
+        "label": "背景",
+        "value": "通胀/地缘/紧缩"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场",
+    "exit": "沃尔克紧缩后熊市",
+    "sideEffects": [
+      "金价泡沫",
+      "实际利率反转",
+      "央行售金",
+      "美元走强"
+    ],
+    "winners": [
+      "黄金持有者（短期）"
+    ],
+    "losers": [
+      "黄金买家",
+      "金矿商"
+    ],
+    "relatedIds": [
+      79,
+      81,
+      88
+    ],
+    "sources": [
+      "02#3.5"
+    ]
+  },
+  "88": {
+    "summary": "1999 年华盛顿黄金协议（CBGA1）把 15 国央行 5 年售金上限定为 2000 吨，金价在长期下跌后触底。",
+    "layers": [
+      "monetary"
+    ],
+    "instruments": [
+      {
+        "code": "central_bank_sales_cap",
+        "label": "央行售金上限",
+        "parameter": "15 国 5 年售金上限 2000 吨",
+        "detail": "央行协调售金规模，减少无序抛售。"
+      },
+      {
+        "code": "central_bank_intervention",
+        "label": "央行市场干预",
+        "parameter": "售金透明化",
+        "detail": "定期披露售金计划。"
+      }
+    ],
+    "targets": [
+      "央行",
+      "黄金市场"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "央行无序售金压低金价",
+      "15 国约定 5 年售金上限 2000 吨",
+      "售金节奏透明化，减少突然冲击",
+      "金价在长期下跌后触底",
+      "央行储备管理与黄金投资需求再平衡"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "1999-09-26"
+      },
+      {
+        "label": "国家",
+        "value": "15 国"
+      },
+      {
+        "label": "上限",
+        "value": "2000 吨/5 年"
+      }
+    ],
+    "marketImpact": {
+      "equities": "金矿股触底，黄金 ETF 需求起步",
+      "rates": "实际利率与美元走势主导金价",
+      "usd": "央行售金协调影响美元与黄金比价",
+      "gold": "售金上限支撑金价",
+      "sectors": "黄金矿业、央行储备、ETF"
+    },
+    "enforcement": "央行协调",
+    "exit": "金价触底",
+    "sideEffects": [
+      "售金受限",
+      "金价触底",
+      "央行储备管理变化",
+      "市场信心恢复"
+    ],
+    "winners": [
+      "黄金市场",
+      "金矿商"
+    ],
+    "losers": [
+      "黄金空头",
+      "短期投机者"
+    ],
+    "relatedIds": [
+      81,
+      82,
+      90
+    ],
+    "sources": [
+      "02#3.5"
+    ],
+    "keyAnnotation": "K9"
+  },
+  "90": {
+    "summary": "GLD 黄金 ETF 上市，黄金投资从实物/期货扩展到证券账户，投资需求成为金价的重要边际力量。",
+    "layers": [
+      "monetary",
+      "health_consumption"
+    ],
+    "instruments": [
+      {
+        "code": "gold_investment_product",
+        "label": "黄金投资产品/ETF",
+        "parameter": "黄金 ETF（GLD）",
+        "detail": "投资者通过证券账户持有黄金敞口。"
+      },
+      {
+        "code": "deregulation",
+        "label": "解除管制/价格市场化",
+        "parameter": "黄金投资产品创新",
+        "detail": "降低黄金投资门槛和交易成本。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "投资者",
+      "ETF"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "上市",
+        "value": "2004-11-18"
+      },
+      {
+        "label": "产品",
+        "value": "GLD"
+      },
+      {
+        "label": "影响",
+        "value": "黄金 ETF 时代"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "金融产品",
+    "exit": "投资需求上升",
+    "sideEffects": [
+      "投资需求上升",
+      "金价金融化",
+      "流动性增强",
+      "赎回压力"
+    ],
+    "winners": [
+      "黄金投资者",
+      "ETF 发行商",
+      "金矿商"
+    ],
+    "losers": [
+      "实物黄金交易商",
+      "传统期货"
+    ],
+    "relatedIds": [
+      88,
+      93,
+      97
+    ],
+    "sources": [
+      "02#3.6"
+    ]
+  },
+  "93": {
+    "summary": "金价在 2011 年 9 月冲到约 1920 美元，欧债危机、美国评级下调和 QE 推升避险与货币贬值交易。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "QE/零利率",
+        "detail": "实际利率低，持有黄金机会成本下降。"
+      },
+      {
+        "code": "gold_investment_product",
+        "label": "黄金投资产品/ETF",
+        "parameter": "ETF/投资需求",
+        "detail": "黄金 ETF 持仓上升。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "美元",
+      "利率"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2011-09-06"
+      },
+      {
+        "label": "金价",
+        "value": "约 1920 美元/盎司"
+      },
+      {
+        "label": "背景",
+        "value": "欧债/美国评级/QE"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场",
+    "exit": "欧债危机/美国评级",
+    "sideEffects": [
+      "避险需求",
+      "实际利率为负",
+      "央行购金",
+      "ETF 流入"
+    ],
+    "winners": [
+      "黄金投资者",
+      "金矿商"
+    ],
+    "losers": [
+      "美元资产",
+      "风险资产"
+    ],
+    "relatedIds": [
+      90,
+      97
+    ],
+    "sources": [
+      "02#3.6"
+    ]
+  },
+  "97": {
+    "summary": "金价在 2020 年 8 月冲到约 2075 美元，疫情、零利率和财政扩张推动黄金的货币/避险需求。",
+    "layers": [
+      "monetary",
+      "macro_institution"
+    ],
+    "instruments": [
+      {
+        "code": "monetary_regime",
+        "label": "货币制度",
+        "parameter": "零利率/无限 QE",
+        "detail": "实际利率深度为负。"
+      },
+      {
+        "code": "gold_investment_product",
+        "label": "黄金投资产品/ETF",
+        "parameter": "ETF/期货需求",
+        "detail": "黄金 ETF 持仓创高。"
+      },
+      {
+        "code": "fiscal_expansion",
+        "label": "财政扩张",
+        "parameter": "财政扩张",
+        "detail": "债务与赤字预期推升黄金。"
+      }
+    ],
+    "targets": [
+      "黄金",
+      "美元",
+      "利率"
+    ],
+    "exemptions": [
+      "无统一豁免"
+    ],
+    "transmission": [
+      "政策改变黄金与美元的兑换条件",
+      "黄金官价/市场价与美元信用重定价",
+      "实际利率、美元与黄金资产配置变化",
+      "黄金矿商、银行与储备资产受影响"
+    ],
+    "metrics": [
+      {
+        "label": "时间",
+        "value": "2020-08-06"
+      },
+      {
+        "label": "金价",
+        "value": "约 2075 美元/盎司"
+      },
+      {
+        "label": "背景",
+        "value": "疫情/零利率"
+      }
+    ],
+    "marketImpact": {
+      "equities": "黄金矿商与实际利率敏感资产受影响",
+      "rates": "实际利率与美元信用重定价",
+      "usd": "美元与黄金兑换关系变化",
+      "gold": "直接改变黄金供需、官价或持有条件",
+      "sectors": "黄金矿业、银行、外汇储备"
+    },
+    "enforcement": "市场",
+    "exit": "疫情/零利率",
+    "sideEffects": [
+      "避险需求",
+      "实际利率为负",
+      "ETF 流入",
+      "央行购金"
+    ],
+    "winners": [
+      "黄金投资者",
+      "金矿商"
+    ],
+    "losers": [
+      "美元资产",
+      "风险资产"
+    ],
+    "relatedIds": [
+      90,
+      93
+    ],
+    "sources": [
+      "02#3.6"
+    ]
+  }
+}
