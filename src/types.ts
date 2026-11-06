@@ -71,10 +71,13 @@ export interface RatePoint {
   date: string;
   value: number;
   note?: string;
+  direction?: string;
+  rateType?: string;
 }
 
 export interface RatesData {
   primaryCredit: RatePoint[];
+  primaryCreditEvents: RatePoint[];
   reserveRequirement: RatePoint[];
   meta: {
     primaryCredit: { label: string; unit: string; source: string };

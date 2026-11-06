@@ -23,6 +23,7 @@ export default function MarketChart({
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
   const [showCredit, setShowCredit] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
+  const [showRatePoints, setShowRatePoints] = useState(true);
 
   useEffect(() => {
     onOpenRef.current = onOpen;
@@ -80,6 +81,10 @@ export default function MarketChart({
           formatter: (p: any) => {
             if (p.seriesType === "line" && p.seriesName !== "标普500" && Array.isArray(p.value)) {
               return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%`;
+            }
+            if (p.seriesId === "primaryRatePoints" || p.seriesId === "reserveRatePoints") {
+              const note = Array.isArray(p.data) ? p.data[2] : "";
+              return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%<br/>${note ?? ""}`;
             }
             if (p.seriesType !== "scatter" || !Array.isArray(p.data)) return "";
             const e = eventsById.get(Number(p.data[2]));
@@ -165,6 +170,30 @@ export default function MarketChart({
                 z: 3,
               }]
             : []),
+          ...(showCredit && showRatePoints
+            ? [{
+                id: "primaryRatePoints",
+                name: "信贷利率调整点",
+                type: "scatter",
+                yAxisIndex: 1,
+                symbolSize: 6.5,
+                data: rates.primaryCreditEvents.map((p) => [p.date, p.value, p.note ?? ""]),
+                itemStyle: { color: "#8E44AD", borderColor: "#fff", borderWidth: 1 },
+                z: 4,
+              }]
+            : []),
+          ...(showReserve && showRatePoints
+            ? [{
+                id: "reserveRatePoints",
+                name: "准备金率调整点",
+                type: "scatter",
+                yAxisIndex: 1,
+                symbolSize: 6.5,
+                data: rates.reserveRequirement.map((p) => [p.date, p.value, p.note ?? ""]),
+                itemStyle: { color: "#2C7FB8", borderColor: "#fff", borderWidth: 1 },
+                z: 4,
+              }]
+            : []),
           {
             id: "events",
             name: "政策事件",
@@ -207,7 +236,7 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve]);
+  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRatePoints]);
 
   return (
     <section className="chart-panel">
@@ -227,6 +256,10 @@ export default function MarketChart({
         <label className="rate-toggle">
           <input type="checkbox" checked={showReserve} onChange={(e) => setShowReserve(e.target.checked)} />
           <i style={{ background: "#2C7FB8" }} />存款准备金率
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showRatePoints} onChange={(e) => setShowRatePoints(e.target.checked)} />
+          <i className="rate-dot" />调整点
         </label>
       </div>
       <p className="chart-note">

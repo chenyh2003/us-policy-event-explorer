@@ -62,6 +62,7 @@ describe("构建数据", () => {
 
   it("利率与准备金率序列完整且按日期排序", () => {
     expect(rates.primaryCredit.length).toBeGreaterThan(100);
+    expect(rates.primaryCreditEvents.length).toBeGreaterThan(150);
     expect(rates.reserveRequirement.length).toBeGreaterThan(30);
     expect(rates.primaryCredit[0].date <= "1914-12-31").toBe(true);
     expect(rates.reserveRequirement[0].date).toBe("1913-12-23");

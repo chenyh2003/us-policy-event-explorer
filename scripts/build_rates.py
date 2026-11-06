@@ -50,6 +50,35 @@ def build_primary():
     return [by_date[d] for d in sorted(by_date)]
 
 
+def build_primary_events():
+    wb = load_workbook(SOURCE / "美联储一级信贷利率Primary_Credit_Rate_1914-2026.xlsx", data_only=True)
+    table = wb["时间表"]
+    events = []
+    for row in table.iter_rows(min_row=3, values_only=True):
+        d = iso(row[1])
+        after = pct(row[6])
+        if not d or after is None:
+            continue
+        before = pct(row[5])
+        direction = str(row[4] or "").strip()
+        rate_type = str(row[3] or "").strip()
+        note = f"{before:.2f}% → {after:.2f}%" if before is not None else f"{direction or '初始'} {after:.2f}%"
+        if row[8]:
+            note += f"；{row[8]}"
+        events.append({
+            "date": d,
+            "value": after,
+            "note": note,
+            "direction": direction,
+            "rateType": rate_type,
+        })
+    wb.close()
+    by_date = {}
+    for e in events:
+        by_date[e["date"]] = e
+    return [by_date[d] for d in sorted(by_date)]
+
+
 def build_reserve():
     # 取“交易存款最高档”作为单一代表序列；1933 年前为中央储备城市/最高档。
     points = [
@@ -99,6 +128,7 @@ def build_reserve():
 def main():
     payload = {
         "primaryCredit": build_primary(),
+        "primaryCreditEvents": build_primary_events(),
         "reserveRequirement": build_reserve(),
         "meta": {
             "primaryCredit": {
@@ -114,7 +144,7 @@ def main():
         },
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"primary={len(payload['primaryCredit'])} reserve={len(payload['reserveRequirement'])}")
+    print(f"primary={len(payload['primaryCredit'])} events={len(payload['primaryCreditEvents'])} reserve={len(payload['reserveRequirement'])}")
 
 
 if __name__ == "__main__":
