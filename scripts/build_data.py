@@ -147,12 +147,16 @@ def main():
     spx = load_spx()
     events = build_events(spx, load_analysis())
     taxonomy = json.loads((CONTENT / "taxonomy.json").read_text(encoding="utf-8"))
+    rates = json.loads((CONTENT / "rates.json").read_text(encoding="utf-8"))
     (PUBLIC / "events.json").write_text(
         json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     (PUBLIC / "spx.json").write_text(json.dumps(spx, ensure_ascii=False), encoding="utf-8")
     (PUBLIC / "taxonomy.json").write_text(
         json.dumps(taxonomy, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (PUBLIC / "rates.json").write_text(
+        json.dumps(rates, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     core_count = sum(1 for e in events if e["isCore32"])
     print(f"events={len(events)} core32={core_count} spx={len(spx)} strict={STRICT}")

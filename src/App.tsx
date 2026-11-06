@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Filters, PolicyEvent, SpxPoint, Taxonomy } from "./types";
+import type { Filters, PolicyEvent, RatesData, SpxPoint, Taxonomy } from "./types";
 import { loadSiteData } from "./lib/data";
 import { filterEvents } from "./lib/filters";
 import { useEventSelection } from "./hooks/useEventSelection";
@@ -24,10 +24,12 @@ function Explorer({
   events,
   spx,
   taxonomy,
+  rates,
 }: {
   events: PolicyEvent[];
   spx: SpxPoint[];
   taxonomy: Taxonomy;
+  rates: RatesData;
 }) {
   const allIds = useMemo(() => events.map((e) => e.id), [events]);
   const { selected, actions } = useEventSelection(allIds);
@@ -89,6 +91,7 @@ function Explorer({
         <main className="main-panel">
           <MarketChart
             spx={spx}
+            rates={rates}
             events={events}
             selected={selected}
             taxonomy={taxonomy}
@@ -126,7 +129,7 @@ function Explorer({
 }
 
 export default function App() {
-  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy } | null>(null);
+  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -149,5 +152,5 @@ export default function App() {
     return <div className="loading-screen">正在加载 108 条政策事件与标普500数据…</div>;
   }
 
-  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} />;
+  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} />;
 }

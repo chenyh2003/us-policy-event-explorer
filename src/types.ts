@@ -67,6 +67,21 @@ export interface SpxPoint {
   close: number;
 }
 
+export interface RatePoint {
+  date: string;
+  value: number;
+  note?: string;
+}
+
+export interface RatesData {
+  primaryCredit: RatePoint[];
+  reserveRequirement: RatePoint[];
+  meta: {
+    primaryCredit: { label: string; unit: string; source: string };
+    reserveRequirement: { label: string; unit: string; source: string };
+  };
+}
+
 export interface LayerMeta {
   id: LayerId;
   label: string;

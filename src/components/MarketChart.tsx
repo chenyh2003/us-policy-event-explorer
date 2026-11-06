@@ -1,15 +1,17 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, SpxPoint, Taxonomy } from "../types";
+import type { PolicyEvent, RatesData, SpxPoint, Taxonomy } from "../types";
 
 export default function MarketChart({
   spx,
+  rates,
   events,
   selected,
   taxonomy,
   onOpen,
 }: {
   spx: SpxPoint[];
+  rates: RatesData;
   events: PolicyEvent[];
   selected: Set<number>;
   taxonomy: Taxonomy;
@@ -19,6 +21,8 @@ export default function MarketChart({
   const chartRef = useRef<echarts.ECharts | null>(null);
   const onOpenRef = useRef(onOpen);
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
+  const [showCredit, setShowCredit] = useState(true);
+  const [showReserve, setShowReserve] = useState(true);
 
   useEffect(() => {
     onOpenRef.current = onOpen;
@@ -66,7 +70,7 @@ export default function MarketChart({
       {
         backgroundColor: "transparent",
         animation: false,
-        grid: { left: 64, right: 24, top: 34, bottom: 58 },
+        grid: { left: 60, right: 64, top: 34, bottom: 58 },
         tooltip: {
           trigger: "item",
           confine: true,
@@ -74,6 +78,9 @@ export default function MarketChart({
           borderColor: "#ddd",
           textStyle: { color: "#222", fontSize: 12, lineHeight: 18 },
           formatter: (p: any) => {
+            if (p.seriesType === "line" && p.seriesName !== "标普500" && Array.isArray(p.value)) {
+              return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%`;
+            }
             if (p.seriesType !== "scatter" || !Array.isArray(p.data)) return "";
             const e = eventsById.get(Number(p.data[2]));
             return e ? tooltipOf(e) : "";
@@ -81,19 +88,31 @@ export default function MarketChart({
         },
         xAxis: {
           type: "time",
-          min: "1927-01-01",
+          min: "1912-01-01",
           max: "2026-12-31",
           axisLine: { lineStyle: { color: "#cfd3d8" } },
           axisLabel: { color: "#667085", fontSize: 11 },
           splitLine: { show: false },
         },
-        yAxis: {
-          type: "log",
-          name: "标普500（对数）",
-          nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
-          axisLabel: { color: "#667085", fontSize: 11 },
-          splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
-        },
+        yAxis: [
+          {
+            type: "log",
+            name: "标普500（对数）",
+            nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
+            axisLabel: { color: "#667085", fontSize: 11 },
+            splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
+          },
+          {
+            type: "value",
+            name: "利率 / 准备金率 (%)",
+            position: "right",
+            min: 0,
+            max: 30,
+            nameTextStyle: { color: "#667085", fontSize: 10, padding: [0, 0, 6, 0] },
+            axisLabel: { color: "#667085", fontSize: 10, formatter: "{value}%" },
+            splitLine: { show: false },
+          },
+        ],
         dataZoom: [
           { type: "inside", filterMode: "none" },
           {
@@ -118,6 +137,34 @@ export default function MarketChart({
             itemStyle: { color: "#1F4E79" },
             z: 1,
           },
+          ...(showCredit
+            ? [{
+                id: "primaryCredit",
+                name: rates.meta.primaryCredit.label,
+                type: "line",
+                yAxisIndex: 1,
+                step: "end",
+                showSymbol: false,
+                data: rates.primaryCredit.map((p) => [p.date, p.value]),
+                lineStyle: { width: 1.4, color: "#8E44AD" },
+                itemStyle: { color: "#8E44AD" },
+                z: 3,
+              }]
+            : []),
+          ...(showReserve
+            ? [{
+                id: "reserveRequirement",
+                name: rates.meta.reserveRequirement.label,
+                type: "line",
+                yAxisIndex: 1,
+                step: "end",
+                showSymbol: false,
+                data: rates.reserveRequirement.map((p) => [p.date, p.value]),
+                lineStyle: { width: 1.4, color: "#2C7FB8" },
+                itemStyle: { color: "#2C7FB8" },
+                z: 3,
+              }]
+            : []),
           {
             id: "events",
             name: "政策事件",
@@ -160,20 +207,31 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, events, selected, taxonomy, eventsById]);
+  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve]);
 
   return (
     <section className="chart-panel">
       <div className="panel-heading">
-        <h2>标普500与政策事件</h2>
-        <span>曲线仅显示 1927—2026 可映射事件；其余看时间轴</span>
+        <h2>标普500、政策利率与准备金率</h2>
+        <span>左轴=标普500（对数）；右轴=利率/准备金率（%）；事件看时间轴</span>
       </div>
       <div className="chart-legend">
         {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
           <span key={cat}><i style={{ background: color }} />{cat}</span>
         ))}
         <span className="key-legend"><i className="diamond" />K1—K11 关键标注</span>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showCredit} onChange={(e) => setShowCredit(e.target.checked)} />
+          <i style={{ background: "#8E44AD" }} />一级信贷利率
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showReserve} onChange={(e) => setShowReserve(e.target.checked)} />
+          <i style={{ background: "#2C7FB8" }} />存款准备金率
+        </label>
       </div>
+      <p className="chart-note">
+        来源：美联储 H.15/FRED；准备金率取交易存款最高档，1933 年前为中央储备城市最高档；1914—1933 年信贷利率为年度均值。
+      </p>
       <div ref={ref} className="market-chart" />
     </section>
   );

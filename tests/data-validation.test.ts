@@ -11,6 +11,7 @@ const read = (name: string) => {
 describe("构建数据", () => {
   const events = read("events.json");
   const taxonomy = read("taxonomy.json");
+  const rates = read("rates.json");
 
   it("有 108 条事件，类别计数正确", () => {
     expect(events).toHaveLength(108);
@@ -57,5 +58,17 @@ describe("构建数据", () => {
   it("核心32与K标注可识别", () => {
     expect(events.filter((e: any) => e.isCore32)).toHaveLength(32);
     expect(events.filter((e: any) => e.keyAnnotation).length).toBeGreaterThanOrEqual(11);
+  });
+
+  it("利率与准备金率序列完整且按日期排序", () => {
+    expect(rates.primaryCredit.length).toBeGreaterThan(100);
+    expect(rates.reserveRequirement.length).toBeGreaterThan(30);
+    expect(rates.primaryCredit[0].date <= "1914-12-31").toBe(true);
+    expect(rates.reserveRequirement[0].date).toBe("1913-12-23");
+    expect(rates.reserveRequirement.at(-1).value).toBe(0);
+    for (const series of [rates.primaryCredit, rates.reserveRequirement]) {
+      const dates = series.map((p: any) => p.date);
+      expect(dates).toEqual([...dates].sort());
+    }
   });
 });
