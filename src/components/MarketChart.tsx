@@ -25,6 +25,30 @@ export default function MarketChart({
   const [showReserve, setShowReserve] = useState(true);
   const [showRatePoints, setShowRatePoints] = useState(true);
 
+  const spotsFor = (items: RatesData["reserveRequirement"]) =>
+    items.flatMap((e) => {
+      if (e.date < "1927-01-01") return [];
+      let lo = 0;
+      let hi = spx.length - 1;
+      while (lo < hi) {
+        const mid = Math.floor((lo + hi) / 2);
+        if (spx[mid].date < e.date) lo = mid + 1;
+        else hi = mid;
+      }
+      const point = spx[lo];
+      if (!point || point.date < e.date) return [];
+      return [[point.date, point.close, e.date, e.value, e.note ?? ""]];
+    });
+
+  const creditSpots = useMemo(
+    () => spotsFor(rates.primaryCreditEvents),
+    [rates.primaryCreditEvents, spx]
+  );
+  const reserveSpots = useMemo(
+    () => spotsFor(rates.reserveRequirement),
+    [rates.reserveRequirement, spx]
+  );
+
   useEffect(() => {
     onOpenRef.current = onOpen;
   }, [onOpen]);
@@ -82,9 +106,9 @@ export default function MarketChart({
             if (p.seriesType === "line" && p.seriesName !== "标普500" && Array.isArray(p.value)) {
               return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%`;
             }
-            if (p.seriesId === "primaryRatePoints" || p.seriesId === "reserveRatePoints") {
-              const note = Array.isArray(p.data) ? p.data[2] : "";
-              return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%<br/>${note ?? ""}`;
+            if (p.seriesId === "creditSpots" || p.seriesId === "reserveSpots") {
+              const [spxDate, spxClose, eventDate, rateValue, note] = p.data as any[];
+              return `<b>${p.seriesName}</b><br/>事件日：${eventDate}<br/>利率：${rateValue}%<br/>标普收盘：${Number(spxClose).toFixed(2)}（${spxDate}）<br/>${note ?? ""}`;
             }
             if (p.seriesType !== "scatter" || !Array.isArray(p.data)) return "";
             const e = eventsById.get(Number(p.data[2]));
@@ -172,25 +196,25 @@ export default function MarketChart({
             : []),
           ...(showCredit && showRatePoints
             ? [{
-                id: "primaryRatePoints",
-                name: "信贷利率调整点",
+                id: "creditSpots",
+                name: "一级信贷利率调整点",
                 type: "scatter",
-                yAxisIndex: 1,
-                symbolSize: 6.5,
-                data: rates.primaryCreditEvents.map((p) => [p.date, p.value, p.note ?? ""]),
-                itemStyle: { color: "#8E44AD", borderColor: "#fff", borderWidth: 1 },
+                symbol: "circle",
+                symbolSize: 6,
+                data: creditSpots,
+                itemStyle: { color: "#8E44AD", borderColor: "#fff", borderWidth: 0.8 },
                 z: 4,
               }]
             : []),
           ...(showReserve && showRatePoints
             ? [{
-                id: "reserveRatePoints",
-                name: "准备金率调整点",
+                id: "reserveSpots",
+                name: "存款准备金率调整点",
                 type: "scatter",
-                yAxisIndex: 1,
-                symbolSize: 6.5,
-                data: rates.reserveRequirement.map((p) => [p.date, p.value, p.note ?? ""]),
-                itemStyle: { color: "#2C7FB8", borderColor: "#fff", borderWidth: 1 },
+                symbol: "diamond",
+                symbolSize: 7,
+                data: reserveSpots,
+                itemStyle: { color: "#2C7FB8", borderColor: "#fff", borderWidth: 0.8 },
                 z: 4,
               }]
             : []),
@@ -236,7 +260,7 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRatePoints]);
+  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRatePoints, creditSpots, reserveSpots]);
 
   return (
     <section className="chart-panel">
@@ -259,11 +283,11 @@ export default function MarketChart({
         </label>
         <label className="rate-toggle">
           <input type="checkbox" checked={showRatePoints} onChange={(e) => setShowRatePoints(e.target.checked)} />
-          <i className="rate-dot" />调整点
+          <i className="rate-dot" />调整点（标在标普上）
         </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED；准备金率取交易存款最高档，1933 年前为中央储备城市最高档；1914—1933 年信贷利率为年度均值。
+        来源：美联储 H.15/FRED；准备金率取交易存款最高档，1933 年前为中央储备城市最高档；1914—1933 年信贷利率为年度均值；调整点按事件日映射到标普收盘价；1927 年前及超出行情数据范围的调整点不显示在标普上。
       </p>
       <div ref={ref} className="market-chart" />
     </section>
