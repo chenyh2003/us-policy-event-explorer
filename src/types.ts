@@ -109,6 +109,7 @@ export interface YieldSpreadPoint {
 }
 
 export interface YieldSpreadData {
+  pre1953: YieldSpreadPoint[];
   pre1962: YieldSpreadPoint[];
   weekly: YieldSpreadPoint[];
   meta: {

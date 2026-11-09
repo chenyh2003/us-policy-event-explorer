@@ -41,10 +41,13 @@ npm.cmd run preview
 - `content/rates.json`：利率/准备金率曲线数据（由 `scripts/build_rates.py` 生成）
 - `content/rate-control-events.json`：14 条利率管制事件（Regulation Q、收益率钉住、信用卡利率上限等）
 - `content/tms.json`：1912—2026 月频 TMS（1969 年前 Friedman M2 拼接）
-- `content/yield-spread.json`：1962—2026 周度 10Y−1Y 国债利差
+- `content/yield-spread.json`：1920—2026 10Y−1Y 国债利差（1920—1953 代理；1962 前月频，1962 后周频）
 - `source-data/m14144a.dat`、`m14144c.dat`：Friedman-Schwartz 月频 M2（NBER Macrohistory）
 - `source-data/M2SL.csv`、`STDSL.csv`、`RMFSL.csv`、`TREASURY.csv`：TMS2 组件
-- `source-data/WGS10YR.csv`、`WGS1YR.csv`：周度 10Y/1Y 国债收益率
+- `source-data/M1333AUSM156NNBR.csv`、`M1333BUSM156NNBR.csv`：长期美国国债收益率（NBER）
+- `source-data/M1329AUSM193NNBR.csv`、`M1329BUSM193NNBR.csv`：短期美国国债收益率（NBER）
+- `source-data/GS10.csv`、`GS1.csv`：月度 10Y/1Y 国债收益率（1953—1961）
+- `source-data/WGS10YR.csv`、`WGS1YR.csv`：周度 10Y/1Y 国债收益率（1962 起）
 - `content/taxonomy.json`：结构层与政策工具词典
 - `public/data/`：构建产物，运行时读取
 
@@ -68,8 +71,15 @@ npm.cmd run preview
 - 悬停事件点/调整点附近会显示完整事件解析：工具、参数、摘要；利率管制事件还会显示类型、影响和来源。
 - 主图下方新增独立“利率、准备金率与 10Y−1Y 利差”图；三个图（标普、利率/利差、TMS）上下相邻排列。
 - 三图时间区间联动：拖动标普图底部滑块，或在任一图滚轮缩放，三图 x 轴同步。
-- 利率/利差图内可分别关闭一级信贷利率、存款准备金率、10Y−1Y 利差；10Y−1Y 在 1953—1961 为月频，1962 起为周频。
+- 利率/利差图内可分别关闭一级信贷利率、存款准备金率、10Y−1Y 利差。10Y−1Y 口径：1920—1953 用长期国债−短期国债代理；1953—1961 用 GS10−GS1 月频；1962 起用 WGS10YR−WGS1YR 周频。
 - 侧栏的类别、结构层、年代、搜索、工具筛选同时作用于事件列表、主图和时间轴；方框是筛选，圆点是整组显示开关。
+
+## 10Y−1Y 利差口径
+
+- **1920-01—1953-03**：长期美国国债收益率 − 短期美国国债收益率（NBER m13033a/b 与 m13029a/b，短期为 3—6 个月/3 个月），月频，**代理口径，不是严格 10Y−1Y**。
+- **1953-04—1961-12**：`GS10 − GS1`，月频。
+- **1962-01—2026-10**：`WGS10YR − WGS1YR`，周频。
+- 图上统一按日期拼接；1953 年前的水平是长短期国债利差代理，适合看曲线形态和倒挂，不宜当作严格 10Y−1Y 水平。
 
 ## TMS 口径
 

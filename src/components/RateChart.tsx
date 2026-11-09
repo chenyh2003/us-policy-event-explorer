@@ -41,7 +41,7 @@ export default function RateChart({
       }
       return found;
     };
-    const spreadPoints = [...yieldSpread.pre1962, ...yieldSpread.weekly];
+    const spreadPoints = [...yieldSpread.pre1953, ...yieldSpread.pre1962, ...yieldSpread.weekly];
 
     chart.setOption(
       {
@@ -192,7 +192,7 @@ export default function RateChart({
         </label>
       </div>
       <p className="chart-note">
-        一级信贷利率/准备金率为月频；10Y−1Y 在 1953-04—1961-12 用 GS10−GS1 月频，1962-01 起用 WGS10YR−WGS1YR 周频；1948 年前准备金率为最高档。
+        一级信贷利率/准备金率为月频；10Y−1Y 在 1920-01—1953-03 用长期国债−短期国债代理，1953-04—1961-12 用 GS10−GS1 月频，1962-01 起用 WGS10YR−WGS1YR 周频；1948 年前准备金率为最高档。
       </p>
       <div ref={ref} className="market-chart rate-chart" />
     </section>

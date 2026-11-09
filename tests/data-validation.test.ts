@@ -75,6 +75,9 @@ describe("构建数据", () => {
   });
 
   it("10Y−1Y 利差覆盖 1953—2026（1962 前月频）", () => {
+    expect(yieldSpread.pre1953.length).toBeGreaterThan(390);
+    expect(yieldSpread.pre1953[0].date).toBe("1920-01-01");
+    expect(yieldSpread.pre1953.at(-1).date).toBe("1953-03-01");
     expect(yieldSpread.pre1962.length).toBeGreaterThan(90);
     expect(yieldSpread.pre1962[0].date).toBe("1953-04-01");
     expect(yieldSpread.pre1962.at(-1).date).toBe("1961-12-01");
