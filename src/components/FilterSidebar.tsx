@@ -98,7 +98,7 @@ export default function FilterSidebar({
           <h2>类别</h2>
           <span>{filters.categories.length ? "已筛选" : "全部"}</span>
         </div>
-        <p className="control-hint">圆点=整组显示开关；方框=列表筛选</p>
+        <p className="control-hint">圆点=整组显示开关；方框=列表与图表筛选</p>
         <div className="filter-list">
           {CATEGORIES.map((c) => {
             const group = events.filter((e) => e.category === c);

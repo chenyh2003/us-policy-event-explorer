@@ -96,13 +96,13 @@ function Explorer({
             spx={spx}
             rates={rates}
             rateControls={rateControls}
-            events={events}
+            events={filtered}
             selected={selected}
             taxonomy={taxonomy}
             onOpen={openEvent}
           />
           <PolicyTimeline
-            events={events}
+            events={filtered}
             selected={selected}
             taxonomy={taxonomy}
             onOpen={openEvent}

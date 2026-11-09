@@ -121,7 +121,11 @@ export default function MarketChart({
             const reserve = latest(rates.reserveRequirement);
             if (reserve) rows.push(`存款准备金率：${reserve.value.toFixed(2)}%`);
 
-            for (const e of rateControls.filter((x) => x.chartDate === date)) {
+            const target = new Date(date).getTime();
+            const near = (value?: string) =>
+              value ? Math.abs(new Date(value).getTime() - target) <= 3 * 86400000 : false;
+
+            for (const e of rateControls.filter((x) => near(x.chartDate))) {
               rows.push(
                 `<b style="color:#C0392B">利率管制事件：${e.title}</b>`,
                 `${e.dateLabel} · ${e.type}`,
@@ -132,9 +136,14 @@ export default function MarketChart({
             }
 
             for (const e of events.filter(
-              (x) => selected.has(x.id) && x.chartDate === date
+              (x) => selected.has(x.id) && near(x.chartDate)
             )) {
-              rows.push(`<b>政策事件：${e.title}</b>`, `${e.category} · ${e.dateLabel}`);
+              rows.push(
+                `<b>政策事件：${e.title}</b>`,
+                `${e.dateLabel} · ${e.category} · ${e.layers.join(" / ")}`,
+                e.instruments.map((i) => `${i.label}：${i.parameter}`).join("<br/>"),
+                e.summary
+              );
             }
 
             return rows.join("<br/>");
