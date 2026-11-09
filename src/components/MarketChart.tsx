@@ -48,6 +48,8 @@ export default function MarketChart({
   useEffect(() => {
     if (!ref.current) return;
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
+    chart.group = "policy-charts";
+    echarts.connect("policy-charts");
     chartRef.current = chart;
     chart.on("click", (params) => {
       if (params.seriesType === "scatter" && Array.isArray(params.data)) {
@@ -148,7 +150,7 @@ export default function MarketChart({
         },
         xAxis: {
           type: "time",
-          min: "1927-01-01",
+          min: "1912-01-01",
           max: "2026-12-31",
           axisLine: { lineStyle: { color: "#cfd3d8" } },
           axisLabel: { color: "#667085", fontSize: 11 },
@@ -269,7 +271,7 @@ export default function MarketChart({
         </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED、Regulation Q 史料；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利率与 10Y−1Y 利差见下方独立图。
+        来源：美联储 H.15/FRED、Regulation Q 史料；标普曲线从 1927 年开始；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利率与 10Y−1Y 利差见下方独立图。
       </p>
       <div ref={ref} className="market-chart" />
     </section>

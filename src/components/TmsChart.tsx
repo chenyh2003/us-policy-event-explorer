@@ -10,6 +10,8 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
   useEffect(() => {
     if (!ref.current) return;
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
+    chart.group = "policy-charts";
+    echarts.connect("policy-charts");
     chartRef.current = chart;
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(ref.current);
@@ -96,7 +98,10 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
             axisPointer: { label: { formatter: (p: any) => `${Number(p.value).toFixed(1)}%` } },
           },
         ],
-        dataZoom: [{ type: "inside", filterMode: "none" }],
+        dataZoom: [
+          { type: "inside", filterMode: "none" },
+          { type: "slider", show: false, filterMode: "none" },
+        ],
         series: [
           {
             id: "tms",

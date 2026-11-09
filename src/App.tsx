@@ -98,6 +98,7 @@ function Explorer({
           onGroupToggle={actions.group}
         />
         <main className="main-panel">
+          <div className="sync-hint">拖动标普图下方滑块，或在任一图中滚轮缩放，三张图时间区间同步。</div>
           <div className="chart-stack">
             <MarketChart
               spx={spx}
