@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData } from "./types";
+import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, YieldSpreadData } from "./types";
 import { loadSiteData } from "./lib/data";
 import { filterEvents } from "./lib/filters";
 import { useEventSelection } from "./hooks/useEventSelection";
@@ -28,6 +28,7 @@ function Explorer({
   rates,
   rateControls,
   tms,
+  yieldSpread,
 }: {
   events: PolicyEvent[];
   spx: SpxPoint[];
@@ -35,6 +36,7 @@ function Explorer({
   rates: RatesData;
   rateControls: RateControlEvent[];
   tms: TmsData;
+  yieldSpread: YieldSpreadData;
 }) {
   const allIds = useMemo(() => events.map((e) => e.id), [events]);
   const { selected, actions } = useEventSelection(allIds);
@@ -99,6 +101,7 @@ function Explorer({
             spx={spx}
             rates={rates}
             rateControls={rateControls}
+            yieldSpread={yieldSpread}
             events={filtered}
             selected={selected}
             taxonomy={taxonomy}
@@ -137,7 +140,7 @@ function Explorer({
 }
 
 export default function App() {
-  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[]; tms: TmsData } | null>(null);
+  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[]; tms: TmsData; yieldSpread: YieldSpreadData } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -160,5 +163,5 @@ export default function App() {
     return <div className="loading-screen">正在加载 108 条政策事件与标普500数据…</div>;
   }
 
-  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} tms={data.tms} />;
+  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} tms={data.tms} yieldSpread={data.yieldSpread} />;
 }

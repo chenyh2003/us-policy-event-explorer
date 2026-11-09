@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, YieldSpreadData } from "../types";
 
 export default function MarketChart({
   spx,
   rates,
   rateControls,
+  yieldSpread,
   events,
   selected,
   taxonomy,
@@ -14,6 +15,7 @@ export default function MarketChart({
   spx: SpxPoint[];
   rates: RatesData;
   rateControls: RateControlEvent[];
+  yieldSpread: YieldSpreadData;
   events: PolicyEvent[];
   selected: Set<number>;
   taxonomy: Taxonomy;
@@ -26,6 +28,7 @@ export default function MarketChart({
   const [showCredit, setShowCredit] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
   const [showRateControls, setShowRateControls] = useState(true);
+  const [showSpread, setShowSpread] = useState(true);
 
   const rateControlSpots = useMemo(
     () =>
@@ -84,7 +87,7 @@ export default function MarketChart({
       {
         backgroundColor: "transparent",
         animation: false,
-        grid: { left: 60, right: 64, top: 34, bottom: 58 },
+        grid: { left: 60, right: 118, top: 34, bottom: 58 },
         tooltip: {
           trigger: "axis",
           confine: true,
@@ -120,6 +123,8 @@ export default function MarketChart({
             if (credit) rows.push(`一级信贷利率：${credit.value.toFixed(2)}%`);
             const reserve = latest(rates.reserveRequirement);
             if (reserve) rows.push(`存款准备金率：${reserve.value.toFixed(2)}%`);
+            const spread = latest(yieldSpread.weekly);
+            if (spread) rows.push(`10Y−1Y 利差：${spread.value >= 0 ? "+" : ""}${spread.value.toFixed(2)}%`);
 
             const target = new Date(date).getTime();
             const near = (value?: string) =>
@@ -195,6 +200,20 @@ export default function MarketChart({
               label: { formatter: (p: any) => `${Number(p.value).toFixed(2)}%` },
             },
           },
+          {
+            type: "value",
+            name: "10Y−1Y (%)",
+            position: "right",
+            offset: 52,
+            min: -3.5,
+            max: 4,
+            nameTextStyle: { color: "#667085", fontSize: 9, padding: [0, 0, 6, 0] },
+            axisLabel: { color: "#667085", fontSize: 9, formatter: "{value}%" },
+            splitLine: { show: false },
+            axisPointer: {
+              label: { formatter: (p: any) => `${Number(p.value).toFixed(2)}%` },
+            },
+          },
         ],
         dataZoom: [
           { type: "inside", filterMode: "none" },
@@ -246,6 +265,25 @@ export default function MarketChart({
                 lineStyle: { width: 1.4, color: "#2C7FB8" },
                 itemStyle: { color: "#2C7FB8" },
                 z: 3,
+              }]
+            : []),
+          ...(showSpread
+            ? [{
+                id: "yieldSpread",
+                name: yieldSpread.meta.label,
+                type: "line",
+                yAxisIndex: 2,
+                showSymbol: false,
+                data: yieldSpread.weekly.map((p) => [p.date, p.value]),
+                lineStyle: { width: 1.2, color: "#16A085" },
+                itemStyle: { color: "#16A085" },
+                markLine: {
+                  symbol: "none",
+                  label: { show: false },
+                  lineStyle: { color: "#94a3b8", type: "dashed", width: 0.8 },
+                  data: [{ yAxis: 0 }],
+                },
+                z: 2.5,
               }]
             : []),
           ...(showRateControls
@@ -302,13 +340,13 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRateControls, rateControlSpots]);
+  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showSpread, showRateControls, rateControlSpots, yieldSpread]);
 
   return (
     <section className="chart-panel">
       <div className="panel-heading">
         <h2>标普500、政策事件与利率管制</h2>
-        <span>左轴=标普500（对数）；右轴=利率/准备金率（%）；红方块=利率管制事件</span>
+        <span>左轴=标普500；右轴=利率/准备金率；外侧右轴=10Y−1Y 利差；红方块=利率管制</span>
       </div>
       <div className="chart-legend">
         {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
@@ -327,9 +365,13 @@ export default function MarketChart({
           <input type="checkbox" checked={showRateControls} onChange={(e) => setShowRateControls(e.target.checked)} />
           <i className="rate-square" />利率管制事件
         </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showSpread} onChange={(e) => setShowSpread(e.target.checked)} />
+          <i style={{ background: "#16A085" }} />10Y−1Y 利差
+        </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED、Regulation Q 史料；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。
+        来源：美联储 H.15/FRED、Regulation Q 史料、FRED WGS10YR/WGS1YR（周度）；红方块按事件日映射到标普收盘价；10Y−1Y 利差使用外侧右轴；1927 年前及超出行情数据范围的事件不显示在标普上。
       </p>
       <div ref={ref} className="market-chart" />
     </section>

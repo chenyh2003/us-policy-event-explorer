@@ -14,6 +14,7 @@ describe("构建数据", () => {
   const rates = read("rates.json");
   const rateControls = read("rate-control-events.json");
   const tms = read("tms.json");
+  const yieldSpread = read("yield-spread.json");
 
   it("有 108 条事件，类别计数正确", () => {
     expect(events).toHaveLength(108);
@@ -71,6 +72,14 @@ describe("构建数据", () => {
       expect(["in-range", "pre-1927", "post-data"]).toContain(e.chartStatus);
     }
     expect(rateControls.filter((e: any) => e.chartStatus === "in-range").length).toBeGreaterThanOrEqual(13);
+  });
+
+  it("10Y−1Y 周度利差覆盖 1962—2026", () => {
+    expect(yieldSpread.weekly.length).toBeGreaterThan(3000);
+    expect(yieldSpread.weekly[0].date).toBe("1962-01-05");
+    expect(yieldSpread.weekly.at(-1).date).toBe("2026-10-30");
+    expect(yieldSpread.meta.frequency).toBe("weekly");
+    expect(yieldSpread.meta.formula).toBe("WGS10YR - WGS1YR");
   });
 
   it("TMS 月频数据覆盖 1912—2026 且 1969 拼接连续", () => {

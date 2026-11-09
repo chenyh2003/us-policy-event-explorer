@@ -103,6 +103,22 @@ export interface TmsData {
   };
 }
 
+export interface YieldSpreadPoint {
+  date: string;
+  value: number;
+}
+
+export interface YieldSpreadData {
+  weekly: YieldSpreadPoint[];
+  meta: {
+    label: string;
+    unit: string;
+    frequency: string;
+    formula: string;
+    source: string;
+  };
+}
+
 export interface RatePoint {
   date: string;
   value: number;

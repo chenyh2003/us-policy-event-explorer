@@ -41,8 +41,10 @@ npm.cmd run preview
 - `content/rates.json`：利率/准备金率曲线数据（由 `scripts/build_rates.py` 生成）
 - `content/rate-control-events.json`：14 条利率管制事件（Regulation Q、收益率钉住、信用卡利率上限等）
 - `content/tms.json`：1912—2026 月频 TMS（1969 年前 Friedman M2 拼接）
+- `content/yield-spread.json`：1962—2026 周度 10Y−1Y 国债利差
 - `source-data/m14144a.dat`、`m14144c.dat`：Friedman-Schwartz 月频 M2（NBER Macrohistory）
 - `source-data/M2SL.csv`、`STDSL.csv`、`RMFSL.csv`、`TREASURY.csv`：TMS2 组件
+- `source-data/WGS10YR.csv`、`WGS1YR.csv`：周度 10Y/1Y 国债收益率
 - `content/taxonomy.json`：结构层与政策工具词典
 - `public/data/`：构建产物，运行时读取
 
@@ -64,6 +66,7 @@ npm.cmd run preview
 - 利率管制事件以红方块标在标普曲线上（按事件日取标普收盘）；可关闭“利率管制事件”图层。
 - 鼠标十字标显示日期、左轴标普值与右轴利率/准备金率，并自动读取该日之前的利率水平。
 - 悬停事件点/调整点附近会显示完整事件解析：工具、参数、摘要；利率管制事件还会显示类型、影响和来源。
+- 原图标普图新增周度 10Y−1Y 国债利差（右侧外侧轴），可在图例开关。
 - 侧栏的类别、结构层、年代、搜索、工具筛选同时作用于事件列表、主图和时间轴；方框是筛选，圆点是整组显示开关。
 
 ## TMS 口径
