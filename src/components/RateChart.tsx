@@ -41,6 +41,7 @@ export default function RateChart({
       }
       return found;
     };
+    const spreadPoints = [...yieldSpread.pre1962, ...yieldSpread.weekly];
 
     chart.setOption(
       {
@@ -62,7 +63,7 @@ export default function RateChart({
             const rows = [`<b>${date}</b>`];
             const credit = latest(rates.primaryCredit, date);
             const reserve = latest(rates.reserveRequirement, date);
-            const spread = latest(yieldSpread.weekly, date);
+            const spread = latest(spreadPoints, date);
             if (credit) rows.push(`一级信贷利率：${credit.value.toFixed(2)}%`);
             if (reserve) rows.push(`存款准备金率：${reserve.value.toFixed(2)}%`);
             if (spread) rows.push(`10Y−1Y 利差：${spread.value >= 0 ? "+" : ""}${spread.value.toFixed(2)}%`);
@@ -152,7 +153,7 @@ export default function RateChart({
                 type: "line",
                 yAxisIndex: 1,
                 showSymbol: false,
-                data: yieldSpread.weekly.map((p) => [p.date, p.value]),
+                data: spreadPoints.map((p) => [p.date, p.value]),
                 lineStyle: { width: 1.1, color: "#16A085" },
                 itemStyle: { color: "#16A085" },
                 markLine: {
@@ -191,7 +192,7 @@ export default function RateChart({
         </label>
       </div>
       <p className="chart-note">
-        一级信贷利率/准备金率为月频；10Y−1Y 为 FRED WGS10YR−WGS1YR 周频；1948 年前准备金率为最高档。
+        一级信贷利率/准备金率为月频；10Y−1Y 在 1953-04—1961-12 用 GS10−GS1 月频，1962-01 起用 WGS10YR−WGS1YR 周频；1948 年前准备金率为最高档。
       </p>
       <div ref={ref} className="market-chart rate-chart" />
     </section>

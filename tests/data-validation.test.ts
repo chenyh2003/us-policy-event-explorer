@@ -74,12 +74,15 @@ describe("构建数据", () => {
     expect(rateControls.filter((e: any) => e.chartStatus === "in-range").length).toBeGreaterThanOrEqual(13);
   });
 
-  it("10Y−1Y 周度利差覆盖 1962—2026", () => {
+  it("10Y−1Y 利差覆盖 1953—2026（1962 前月频）", () => {
+    expect(yieldSpread.pre1962.length).toBeGreaterThan(90);
+    expect(yieldSpread.pre1962[0].date).toBe("1953-04-01");
+    expect(yieldSpread.pre1962.at(-1).date).toBe("1961-12-01");
     expect(yieldSpread.weekly.length).toBeGreaterThan(3000);
     expect(yieldSpread.weekly[0].date).toBe("1962-01-05");
     expect(yieldSpread.weekly.at(-1).date).toBe("2026-10-30");
-    expect(yieldSpread.meta.frequency).toBe("weekly");
-    expect(yieldSpread.meta.formula).toBe("WGS10YR - WGS1YR");
+    expect(yieldSpread.meta.frequency).toContain("monthly");
+    expect(yieldSpread.meta.frequency).toContain("weekly");
   });
 
   it("TMS 月频数据覆盖 1912—2026 且 1969 拼接连续", () => {
