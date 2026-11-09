@@ -68,6 +68,8 @@ npm.cmd run preview
 
 ## TMS 口径
 
+完整说明见：`docs/TMS计算说明.md`。
+
 - 月频：1912-01 至 2026-09，共 1,377 个观测。
 - 1912—1968：Friedman–Schwartz M2 月度序列（NBER Macrohistory 14144a/14144c，季调），按 1969-01 TMS 水平做比例拼接；保留 1969 年前 M2 增速，水平按 TMS 缩放。
 - 1969—2026：Rothbard–Salerno TMS2 = `M2SL - STDSL - RMFSL + TREASURY`（FRED）；TMS2 不含旅行支票、small time deposits、retail MMF。
