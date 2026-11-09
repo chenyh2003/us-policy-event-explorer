@@ -12,6 +12,7 @@ describe("构建数据", () => {
   const events = read("events.json");
   const taxonomy = read("taxonomy.json");
   const rates = read("rates.json");
+  const rateControls = read("rate-control-events.json");
 
   it("有 108 条事件，类别计数正确", () => {
     expect(events).toHaveLength(108);
@@ -58,6 +59,17 @@ describe("构建数据", () => {
   it("核心32与K标注可识别", () => {
     expect(events.filter((e: any) => e.isCore32)).toHaveLength(32);
     expect(events.filter((e: any) => e.keyAnnotation).length).toBeGreaterThanOrEqual(11);
+  });
+
+  it("利率管制事件完整且可映射到标普", () => {
+    expect(rateControls.length).toBeGreaterThanOrEqual(14);
+    for (const e of rateControls) {
+      expect(e.title.length).toBeGreaterThan(2);
+      expect(e.detail.length).toBeGreaterThan(10);
+      expect(e.source.length).toBeGreaterThan(3);
+      expect(["in-range", "pre-1927", "post-data"]).toContain(e.chartStatus);
+    }
+    expect(rateControls.filter((e: any) => e.chartStatus === "in-range").length).toBeGreaterThanOrEqual(13);
   });
 
   it("利率与准备金率序列完整且按日期排序", () => {

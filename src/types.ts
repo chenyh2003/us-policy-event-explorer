@@ -67,6 +67,20 @@ export interface SpxPoint {
   close: number;
 }
 
+export interface RateControlEvent {
+  id: string;
+  date: string;
+  dateLabel: string;
+  title: string;
+  type: string;
+  detail: string;
+  marketImpact: string;
+  source: string;
+  chartStatus: ChartStatus;
+  chartDate?: string;
+  chartClose?: number;
+}
+
 export interface RatePoint {
   date: string;
   value: number;

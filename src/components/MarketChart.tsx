@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, RatesData, SpxPoint, Taxonomy } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy } from "../types";
 
 export default function MarketChart({
   spx,
   rates,
+  rateControls,
   events,
   selected,
   taxonomy,
@@ -12,6 +13,7 @@ export default function MarketChart({
 }: {
   spx: SpxPoint[];
   rates: RatesData;
+  rateControls: RateControlEvent[];
   events: PolicyEvent[];
   selected: Set<number>;
   taxonomy: Taxonomy;
@@ -23,30 +25,24 @@ export default function MarketChart({
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
   const [showCredit, setShowCredit] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
-  const [showRatePoints, setShowRatePoints] = useState(true);
+  const [showRateControls, setShowRateControls] = useState(true);
 
-  const spotsFor = (items: RatesData["reserveRequirement"]) =>
-    items.flatMap((e) => {
-      if (e.date < "1927-01-01") return [];
-      let lo = 0;
-      let hi = spx.length - 1;
-      while (lo < hi) {
-        const mid = Math.floor((lo + hi) / 2);
-        if (spx[mid].date < e.date) lo = mid + 1;
-        else hi = mid;
-      }
-      const point = spx[lo];
-      if (!point || point.date < e.date) return [];
-      return [[point.date, point.close, e.date, e.value, e.note ?? ""]];
-    });
-
-  const creditSpots = useMemo(
-    () => spotsFor(rates.primaryCreditEvents),
-    [rates.primaryCreditEvents, spx]
-  );
-  const reserveSpots = useMemo(
-    () => spotsFor(rates.reserveRequirement),
-    [rates.reserveRequirement, spx]
+  const rateControlSpots = useMemo(
+    () =>
+      rateControls
+        .filter((e) => e.chartStatus === "in-range" && e.chartDate)
+        .map((e) => [
+          e.chartDate,
+          e.chartClose,
+          e.id,
+          e.dateLabel,
+          e.title,
+          e.type,
+          e.detail,
+          e.marketImpact,
+          e.source,
+        ]),
+    [rateControls]
   );
 
   useEffect(() => {
@@ -83,13 +79,6 @@ export default function MarketChart({
     const pointOf = (e: PolicyEvent) => [e.chartDate, e.chartClose, e.id];
     const colorOf = (e: PolicyEvent | undefined) =>
       e ? taxonomy.categoryColors[e.category] : "#555";
-    const tooltipOf = (e: PolicyEvent) =>
-      [
-        `<b>${e.dateLabel} · ${e.title}</b>`,
-        `${e.category} · ${e.layers.join(" / ")}`,
-        e.instruments.map((i) => `${i.label}：${i.parameter}`).join("<br/>"),
-        e.summary,
-      ].join("<br/>");
 
     chart.setOption(
       {
@@ -97,23 +86,65 @@ export default function MarketChart({
         animation: false,
         grid: { left: 60, right: 64, top: 34, bottom: 58 },
         tooltip: {
-          trigger: "item",
+          trigger: "axis",
           confine: true,
+          axisPointer: { type: "cross" },
           backgroundColor: "rgba(255,255,255,.97)",
           borderColor: "#ddd",
           textStyle: { color: "#222", fontSize: 12, lineHeight: 18 },
-          formatter: (p: any) => {
-            if (p.seriesType === "line" && p.seriesName !== "标普500" && Array.isArray(p.value)) {
-              return `<b>${p.seriesName}</b><br/>${p.name}：${p.value[1]}%`;
+          formatter: (params: any) => {
+            const arr = Array.isArray(params) ? params : [params];
+            if (!arr.length) return "";
+            const axisValue = arr[0].axisValue;
+            const date =
+              typeof axisValue === "number"
+                ? new Date(axisValue).toISOString().slice(0, 10)
+                : String(axisValue).slice(0, 10);
+            const rows: string[] = [`<b>${date}</b>`];
+            const latest = (items: { date: string; value: number }[]) => {
+              let found: { date: string; value: number } | undefined;
+              for (const item of items) {
+                if (item.date <= date) found = item;
+                else break;
+              }
+              return found;
+            };
+
+            const spxItem = arr.find((p: any) => p.seriesId === "spx");
+            const spxValue = spxItem
+              ? Number(spxItem.value[1])
+              : latest(spx.map((p) => ({ date: p.date, value: p.close })))?.value;
+            if (spxValue !== undefined) rows.push(`标普500：${spxValue.toFixed(2)}`);
+
+            const credit = latest(rates.primaryCredit);
+            if (credit) rows.push(`一级信贷利率：${credit.value.toFixed(2)}%`);
+            const reserve = latest(rates.reserveRequirement);
+            if (reserve) rows.push(`存款准备金率：${reserve.value.toFixed(2)}%`);
+
+            for (const e of rateControls.filter((x) => x.chartDate === date)) {
+              rows.push(
+                `<b style="color:#C0392B">利率管制事件：${e.title}</b>`,
+                `${e.dateLabel} · ${e.type}`,
+                e.detail,
+                `<span style="color:#777">影响：${e.marketImpact}</span>`,
+                `<span style="color:#999">${e.source}</span>`
+              );
             }
-            if (p.seriesId === "creditSpots" || p.seriesId === "reserveSpots") {
-              const [spxDate, spxClose, eventDate, rateValue, note] = p.data as any[];
-              return `<b>${p.seriesName}</b><br/>事件日：${eventDate}<br/>利率：${rateValue}%<br/>标普收盘：${Number(spxClose).toFixed(2)}（${spxDate}）<br/>${note ?? ""}`;
+
+            for (const e of events.filter(
+              (x) => selected.has(x.id) && x.chartDate === date
+            )) {
+              rows.push(`<b>政策事件：${e.title}</b>`, `${e.category} · ${e.dateLabel}`);
             }
-            if (p.seriesType !== "scatter" || !Array.isArray(p.data)) return "";
-            const e = eventsById.get(Number(p.data[2]));
-            return e ? tooltipOf(e) : "";
+
+            return rows.join("<br/>");
           },
+        },
+        axisPointer: {
+          type: "cross",
+          snap: true,
+          crossStyle: { color: "#94a3b8", type: "dashed", width: 1 },
+          label: { show: true, backgroundColor: "#1F4E79", color: "#fff", fontSize: 10 },
         },
         xAxis: {
           type: "time",
@@ -122,6 +153,14 @@ export default function MarketChart({
           axisLine: { lineStyle: { color: "#cfd3d8" } },
           axisLabel: { color: "#667085", fontSize: 11 },
           splitLine: { show: false },
+          axisPointer: {
+            label: {
+              formatter: (p: any) => {
+                const d = new Date(p.value);
+                return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+              },
+            },
+          },
         },
         yAxis: [
           {
@@ -130,6 +169,9 @@ export default function MarketChart({
             nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
             axisLabel: { color: "#667085", fontSize: 11 },
             splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
+            axisPointer: {
+              label: { formatter: (p: any) => Number(p.value).toFixed(2) },
+            },
           },
           {
             type: "value",
@@ -140,6 +182,9 @@ export default function MarketChart({
             nameTextStyle: { color: "#667085", fontSize: 10, padding: [0, 0, 6, 0] },
             axisLabel: { color: "#667085", fontSize: 10, formatter: "{value}%" },
             splitLine: { show: false },
+            axisPointer: {
+              label: { formatter: (p: any) => `${Number(p.value).toFixed(2)}%` },
+            },
           },
         ],
         dataZoom: [
@@ -194,28 +239,16 @@ export default function MarketChart({
                 z: 3,
               }]
             : []),
-          ...(showCredit && showRatePoints
+          ...(showRateControls
             ? [{
-                id: "creditSpots",
-                name: "一级信贷利率调整点",
+                id: "rateControlSpots",
+                name: "利率管制事件",
                 type: "scatter",
-                symbol: "circle",
-                symbolSize: 6,
-                data: creditSpots,
-                itemStyle: { color: "#8E44AD", borderColor: "#fff", borderWidth: 0.8 },
-                z: 4,
-              }]
-            : []),
-          ...(showReserve && showRatePoints
-            ? [{
-                id: "reserveSpots",
-                name: "存款准备金率调整点",
-                type: "scatter",
-                symbol: "diamond",
-                symbolSize: 7,
-                data: reserveSpots,
-                itemStyle: { color: "#2C7FB8", borderColor: "#fff", borderWidth: 0.8 },
-                z: 4,
+                symbol: "rect",
+                symbolSize: 9,
+                data: rateControlSpots,
+                itemStyle: { color: "#C0392B", borderColor: "#fff", borderWidth: 1 },
+                z: 5.5,
               }]
             : []),
           {
@@ -260,13 +293,13 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRatePoints, creditSpots, reserveSpots]);
+  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showRateControls, rateControlSpots]);
 
   return (
     <section className="chart-panel">
       <div className="panel-heading">
-        <h2>标普500、政策利率与准备金率</h2>
-        <span>左轴=标普500（对数）；右轴=利率/准备金率（%）；事件看时间轴</span>
+        <h2>标普500、政策事件与利率管制</h2>
+        <span>左轴=标普500（对数）；右轴=利率/准备金率（%）；红方块=利率管制事件</span>
       </div>
       <div className="chart-legend">
         {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
@@ -282,12 +315,12 @@ export default function MarketChart({
           <i style={{ background: "#2C7FB8" }} />存款准备金率
         </label>
         <label className="rate-toggle">
-          <input type="checkbox" checked={showRatePoints} onChange={(e) => setShowRatePoints(e.target.checked)} />
-          <i className="rate-dot" />调整点（标在标普上）
+          <input type="checkbox" checked={showRateControls} onChange={(e) => setShowRateControls(e.target.checked)} />
+          <i className="rate-square" />利率管制事件
         </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED；准备金率取交易存款最高档，1933 年前为中央储备城市最高档；1914—1933 年信贷利率为年度均值；调整点按事件日映射到标普收盘价；1927 年前及超出行情数据范围的调整点不显示在标普上。
+        来源：美联储 H.15/FRED、Regulation Q 史料；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。
       </p>
       <div ref={ref} className="market-chart" />
     </section>

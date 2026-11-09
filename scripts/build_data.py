@@ -142,12 +142,38 @@ def build_events(spx, analysis):
     return sorted(out, key=lambda e: (e["date"], e["id"]))
 
 
+def enrich_rate_controls(spx):
+    spx_dates = [p["date"] for p in spx]
+    raw = json.loads((CONTENT / "rate-control-events.json").read_text(encoding="utf-8"))
+    out = []
+    for event in raw["events"]:
+        date_s, _ = normalize_date(event["date"])
+        point = nearest_trading_day(spx, spx_dates, date_s)
+        if date_s < "1927-01-01":
+            status, chart_date, chart_close = "pre-1927", None, None
+        elif point is None:
+            status, chart_date, chart_close = "post-data", None, None
+        else:
+            status, chart_date, chart_close = "in-range", point["date"], point["close"]
+        out.append(
+            {
+                **event,
+                "date": date_s,
+                "chartStatus": status,
+                "chartDate": chart_date,
+                "chartClose": chart_close,
+            }
+        )
+    return out
+
+
 def main():
     PUBLIC.mkdir(parents=True, exist_ok=True)
     spx = load_spx()
     events = build_events(spx, load_analysis())
     taxonomy = json.loads((CONTENT / "taxonomy.json").read_text(encoding="utf-8"))
     rates = json.loads((CONTENT / "rates.json").read_text(encoding="utf-8"))
+    rate_controls = enrich_rate_controls(spx)
     (PUBLIC / "events.json").write_text(
         json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -157,6 +183,9 @@ def main():
     )
     (PUBLIC / "rates.json").write_text(
         json.dumps(rates, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (PUBLIC / "rate-control-events.json").write_text(
+        json.dumps(rate_controls, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     core_count = sum(1 for e in events if e["isCore32"])
     print(f"events={len(events)} core32={core_count} spx={len(spx)} strict={STRICT}")

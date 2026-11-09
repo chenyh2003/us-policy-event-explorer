@@ -1,4 +1,4 @@
-import type { Category, Filters, LayerId, PolicyEvent, Taxonomy } from "../types";
+import type { Category, Filters, LayerId, PolicyEvent, RateControlEvent, Taxonomy } from "../types";
 import { groupState } from "../lib/selection";
 
 const CATEGORIES: Category[] = ["价格", "黄金", "工资", "宏观"];
@@ -37,6 +37,7 @@ function GroupToggle({
 export default function FilterSidebar({
   events,
   taxonomy,
+  rateControls,
   selected,
   filters,
   setFilters,
@@ -44,6 +45,7 @@ export default function FilterSidebar({
 }: {
   events: PolicyEvent[];
   taxonomy: Taxonomy;
+  rateControls: RateControlEvent[];
   selected: Set<number>;
   filters: Filters;
   setFilters: (f: Filters) => void;
@@ -199,6 +201,21 @@ export default function FilterSidebar({
             </label>
           ))}
         </div>
+      </details>
+
+      <details className="sidebar-section rate-control-box">
+        <summary>
+          利率管制事件
+          <span>{rateControls.length}</span>
+        </summary>
+        <ul className="rate-control-list">
+          {rateControls.map((e) => (
+            <li key={e.id} title={`${e.detail}\n\n影响：${e.marketImpact}`}>
+              <span>{e.dateLabel}</span>
+              {e.title}
+            </li>
+          ))}
+        </ul>
       </details>
 
       {(filters.categories.length || filters.layers.length || filters.instruments.length || filters.query || filters.era !== "all") && (

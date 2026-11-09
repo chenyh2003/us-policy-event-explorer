@@ -182,6 +182,12 @@ h1, h2, h3, p { margin-top: 0; }
 .instrument-check { align-items: flex-start; line-height: 1.25; }
 .instrument-check span { display: flex; flex-direction: column; }
 .instrument-check small { color: #9aa3ad; font-size: 10px; }
+.rate-control-box summary { display: flex; justify-content: space-between; cursor: pointer; font-size: 13px; font-weight: 700; color: #374151; list-style: none; }
+.rate-control-box summary::-webkit-details-marker { display: none; }
+.rate-control-box summary span { color: #C0392B; font-size: 11px; }
+.rate-control-list { list-style: none; margin: 8px 0 0; padding: 0; max-height: 220px; overflow: auto; }
+.rate-control-list li { font-size: 11px; line-height: 1.45; color: #4b5563; padding: 5px 0; border-bottom: 1px dashed #eee; }
+.rate-control-list li span { display: block; color: #C0392B; font-size: 10px; }
 
 /* panel common */
 .chart-panel, .timeline-panel, .event-list-panel {
@@ -209,6 +215,7 @@ h1, h2, h3, p { margin-top: 0; }
 .rate-toggle { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
 .rate-toggle input { accent-color: var(--navy); }
 .rate-toggle i.rate-dot { width: 5px; height: 5px; border-radius: 50%; background: #8E44AD; box-shadow: 0 0 0 2px #fff, 0 0 0 3px #8E44AD; }
+.rate-toggle i.rate-square { width: 8px; height: 8px; border-radius: 1px; background: #C0392B; box-shadow: 0 0 0 1px #fff, 0 0 0 2px #C0392B; }
 .chart-note { margin: 2px 0 2px; font-size: 10.5px; color: #9aa3ad; }
 .market-chart { width: 100%; height: 520px; }
 

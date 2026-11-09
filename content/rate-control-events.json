@@ -1,0 +1,144 @@
+{
+  "events": [
+    {
+      "id": "rq-1933-banking-act",
+      "date": "1933-06-16",
+      "dateLabel": "1933-06-16",
+      "title": "《1933年银行法》/ Glass-Steagall",
+      "type": "存款利率管制授权",
+      "detail": "禁止美联储会员银行对活期存款支付利息，并授权美联储对定期/储蓄存款设定利率上限；这是 Regulation Q 的法律基础。",
+      "marketImpact": "银行负债成本被人为压低，存款竞争下降；储贷机构与住房金融受益，储户实际收益受损。",
+      "source": "Federal Reserve History, Regulation Q; Banking Act of 1933"
+    },
+    {
+      "id": "rq-1933-regulation-q",
+      "date": "1933-08-29",
+      "dateLabel": "1933-08-29",
+      "title": "Regulation Q 正式发布",
+      "type": "存款利率上限",
+      "detail": "美联储发布 Regulation Q，对会员银行定期和储蓄存款设定最高 3% 的利率上限；活期存款利率为零。",
+      "marketImpact": "存款利率被压在市场利率之下；银行获得低成本资金，储户转向其他资产的条件在早期尚不成熟。",
+      "source": "Federal Reserve Board, Regulation Q, Series of 1933"
+    },
+    {
+      "id": "rq-1935-banking-act",
+      "date": "1935-08-23",
+      "dateLabel": "1935-08-23",
+      "title": "《1935年银行法》扩展 Q 条例",
+      "type": "存款利率上限扩展",
+      "detail": "把存款利率限制扩展到 FDIC 保险的非会员银行，使 Q 条例覆盖更广的银行体系。",
+      "marketImpact": "存款利率管制从会员银行扩展到多数参保银行，银行间的存款竞争进一步受抑。",
+      "source": "Banking Act of 1935; FDIC history"
+    },
+    {
+      "id": "rq-1942-yield-peg",
+      "date": "1942-04-29",
+      "dateLabel": "1942-04-29",
+      "title": "二战国债收益率钉住",
+      "type": "国债收益率上限",
+      "detail": "美联储承诺把短期国库券利率钉在 0.375%，长期国债收益率上限约 2.5%，以压低战争融资成本。",
+      "marketImpact": "整条国债收益率曲线被政策锁定，市场定价功能弱化；战后通胀上升时，实际利率被压低。",
+      "source": "Federal Reserve History; FRASER Treasury-Fed Accord timeline"
+    },
+    {
+      "id": "rq-1951-accord",
+      "date": "1951-03-04",
+      "dateLabel": "1951-03-04",
+      "title": "财政部—美联储协议",
+      "type": "结束利率钉住",
+      "detail": "Treasury-Fed Accord 结束美联储直接钉住国债收益率的义务，货币政策从财政部融资目标中独立出来。",
+      "marketImpact": "国债收益率开始由市场决定，利率曲线恢复价格发现；美联储获得独立紧缩能力。",
+      "source": "FRASER, Treasury-Federal Reserve Accord of 1951"
+    },
+    {
+      "id": "rq-1966-interest-adjustment",
+      "date": "1966-09-21",
+      "dateLabel": "1966-09-21",
+      "title": "《1966年利率调整法》",
+      "type": "存款利率上限扩展",
+      "detail": "把 Q 条例的存款利率上限扩展到储蓄贷款协会和互助储蓄银行，并设置不同期限/机构的上限；1966 年出现明显信贷紧缩。",
+      "marketImpact": "储贷机构资金来源受保护，但市场利率上升时出现脱媒；住房信贷供给波动加大。",
+      "source": "Interest Rate Adjustment Act of 1966; Federal Reserve History"
+    },
+    {
+      "id": "rq-1970-cd-suspension",
+      "date": "1970-06-24",
+      "dateLabel": "1970-06-24",
+      "title": "暂停 30—89 天大额 CD 利率上限",
+      "type": "大额 CD 利率上限暂停",
+      "detail": "美联储暂停对 10 万美元以上、30—89 天期限大额存单的 Q 条例利率上限，缓解银行资金流失。",
+      "marketImpact": "大额 CD 利率开始贴近市场，银行负债管理能力增强；小额储户仍受 Q 条例约束。",
+      "source": "Federal Reserve Bank of New York; Richmond Fed"
+    },
+    {
+      "id": "rq-1973-cd-suspension",
+      "date": "1973-05-16",
+      "dateLabel": "1973-05-16",
+      "title": "暂停 90 天以上大额 CD 利率上限",
+      "type": "大额 CD 利率上限暂停",
+      "detail": "美联储暂停所有 90 天以上、10 万美元以上大额 CD 的 Q 条例利率上限，大额存款利率基本市场化。",
+      "marketImpact": "银行和大额储户按市场利率定价；Q 条例对零售存款的约束更加突出。",
+      "source": "Federal Reserve Bank of New York; Richmond Fed"
+    },
+    {
+      "id": "rq-1978-marquette",
+      "date": "1978-12-18",
+      "dateLabel": "1978-12-18",
+      "title": "Marquette 案：信用卡利率出口",
+      "type": "州反高利贷法受限",
+      "detail": "最高法院允许国民银行按母州法律向其他州信用卡客户收取利率，州级利率上限被显著削弱。",
+      "marketImpact": "信用卡发行集中到高利率上限州，州级 usury 上限对信用卡利率的约束下降；消费者信贷供给扩大。",
+      "source": "Marquette Nat. Bank v. First of Omaha, 439 U.S. 299 (1978)"
+    },
+    {
+      "id": "rq-1980-didmca",
+      "date": "1980-03-31",
+      "dateLabel": "1980-03-31",
+      "title": "DIDMCA：Q 条例分阶段废除",
+      "type": "存款利率市场化",
+      "detail": "《存款机构放松管制与货币控制法》规定在 1986 年前分阶段取消 Q 条例利率上限，并预占部分州高利贷上限。",
+      "marketImpact": "存款利率逐步向市场利率靠拢，银行/储贷机构资金成本上升；住房与消费信贷的价格管制放松。",
+      "source": "Depository Institutions Deregulation and Monetary Control Act of 1980"
+    },
+    {
+      "id": "rq-1982-garn-st-germain",
+      "date": "1982-10-15",
+      "dateLabel": "1982-10-15",
+      "title": "Garn-St Germain 法 / MMDA",
+      "type": "存款利率进一步放开",
+      "detail": "允许银行和储贷机构提供货币市场存款账户（MMDA），并继续拆除 Q 条例的利率和产品限制。",
+      "marketImpact": "小额储户获得接近货币市场利率的账户，银行存款流失压力缓解；储贷机构的负债成本上升。",
+      "source": "Garn-St Germain Depository Institutions Act of 1982"
+    },
+    {
+      "id": "rq-1986-q-end",
+      "date": "1986-03-31",
+      "dateLabel": "1986-03-31",
+      "title": "Q 条例利率上限最终取消",
+      "type": "存款利率管制结束",
+      "detail": "Regulation Q 对储蓄存款的剩余利率上限在 1986 年 3 月 31 日取消，美国存款利率市场化基本完成。",
+      "marketImpact": "存款利率由市场决定，银行负債成本与市场利率联动；储贷危机前的利率风险暴露上升。",
+      "source": "Federal Reserve History, Regulation Q"
+    },
+    {
+      "id": "rq-2010-card-act",
+      "date": "2010-02-22",
+      "dateLabel": "2010-02-22",
+      "title": "Credit CARD Act 利率限制生效",
+      "type": "信用卡利率调整限制",
+      "detail": "禁止对现有余额追溯性提高利率（有限例外），限制向 21 岁以下消费者发卡，并强化利率/费用披露。",
+      "marketImpact": "信用卡发行商收紧低信用评分客户、提高年费和前期利率；消费者借贷成本结构变化。",
+      "source": "Credit Card Accountability Responsibility and Disclosure Act of 2009"
+    },
+    {
+      "id": "rq-2026-card-cap",
+      "date": "2026-01-01",
+      "dateLabel": "2026-01",
+      "title": "信用卡 10% 利率上限提案",
+      "type": "信用卡利率上限（提案）",
+      "detail": "拟把信用卡年化利率上限定为 10%，截至 2026-11 尚未成法；若实施将直接压缩发卡行利息收入。",
+      "marketImpact": "高信用风险借款人可能被排除，发卡行收入与年费结构承压；消费信贷供给可能收缩。",
+      "source": "2026 年信用卡利率上限提案（未成法）"
+    }
+  ]
+}
