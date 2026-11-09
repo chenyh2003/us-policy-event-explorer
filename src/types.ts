@@ -81,6 +81,28 @@ export interface RateControlEvent {
   chartClose?: number;
 }
 
+export interface TmsPoint {
+  date: string;
+  value: number;
+  yoy?: number;
+  source?: string;
+  raw?: number;
+}
+
+export interface TmsData {
+  monthly: TmsPoint[];
+  meta: {
+    label: string;
+    unit: string;
+    frequency: string;
+    pre1969: string;
+    post1969: string;
+    splice: string;
+    splice_method: string;
+    note: string;
+  };
+}
+
 export interface RatePoint {
   date: string;
   value: number;

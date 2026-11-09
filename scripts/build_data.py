@@ -174,6 +174,7 @@ def main():
     taxonomy = json.loads((CONTENT / "taxonomy.json").read_text(encoding="utf-8"))
     rates = json.loads((CONTENT / "rates.json").read_text(encoding="utf-8"))
     rate_controls = enrich_rate_controls(spx)
+    tms = json.loads((CONTENT / "tms.json").read_text(encoding="utf-8"))
     (PUBLIC / "events.json").write_text(
         json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -186,6 +187,9 @@ def main():
     )
     (PUBLIC / "rate-control-events.json").write_text(
         json.dumps(rate_controls, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (PUBLIC / "tms.json").write_text(
+        json.dumps(tms, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     core_count = sum(1 for e in events if e["isCore32"])
     print(f"events={len(events)} core32={core_count} spx={len(spx)} strict={STRICT}")

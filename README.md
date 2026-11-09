@@ -40,6 +40,9 @@ npm.cmd run preview
 - `content/analysis-*.json`：逐条结构化解析
 - `content/rates.json`：利率/准备金率曲线数据（由 `scripts/build_rates.py` 生成）
 - `content/rate-control-events.json`：14 条利率管制事件（Regulation Q、收益率钉住、信用卡利率上限等）
+- `content/tms.json`：1912—2026 月频 TMS（1969 年前 Friedman M2 拼接）
+- `source-data/m14144a.dat`、`m14144c.dat`：Friedman-Schwartz 月频 M2（NBER Macrohistory）
+- `source-data/M2SL.csv`、`STDSL.csv`、`RMFSL.csv`、`TREASURY.csv`：TMS2 组件
 - `content/taxonomy.json`：结构层与政策工具词典
 - `public/data/`：构建产物，运行时读取
 
@@ -62,6 +65,13 @@ npm.cmd run preview
 - 鼠标十字标显示日期、左轴标普值与右轴利率/准备金率，并自动读取该日之前的利率水平。
 - 悬停事件点/调整点附近会显示完整事件解析：工具、参数、摘要；利率管制事件还会显示类型、影响和来源。
 - 侧栏的类别、结构层、年代、搜索、工具筛选同时作用于事件列表、主图和时间轴；方框是筛选，圆点是整组显示开关。
+
+## TMS 口径
+
+- 月频：1912-01 至 2026-09，共 1,377 个观测。
+- 1912—1968：Friedman–Schwartz M2 月度序列（NBER Macrohistory 14144a/14144c，季调），按 1969-01 TMS 水平做比例拼接；保留 1969 年前 M2 增速，水平按 TMS 缩放。
+- 1969—2026：Rothbard–Salerno TMS2 = `M2SL - STDSL - RMFSL + TREASURY`（FRED）；TMS2 不含旅行支票、small time deposits、retail MMF。
+- 图表左轴为 TMS 水平（对数），右轴为同比增速。
 
 ## 利率管制事件口径
 

@@ -1,4 +1,4 @@
-import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData } from "../types";
 
 export interface SiteData {
   events: PolicyEvent[];
@@ -6,11 +6,12 @@ export interface SiteData {
   taxonomy: Taxonomy;
   rates: RatesData;
   rateControls: RateControlEvent[];
+  tms: TmsData;
 }
 
 export async function loadSiteData(): Promise<SiteData> {
   const base = import.meta.env.BASE_URL;
-  const [events, spx, taxonomy, rates, rateControls] = await Promise.all([
+  const [events, spx, taxonomy, rates, rateControls, tms] = await Promise.all([
     fetch(`${base}data/events.json`).then((r) => {
       if (!r.ok) throw new Error("events.json 加载失败");
       return r.json();
@@ -31,6 +32,10 @@ export async function loadSiteData(): Promise<SiteData> {
       if (!r.ok) throw new Error("rate-control-events.json 加载失败");
       return r.json();
     }),
+    fetch(`${base}data/tms.json`).then((r) => {
+      if (!r.ok) throw new Error("tms.json 加载失败");
+      return r.json();
+    }),
   ]);
-  return { events, spx, taxonomy, rates, rateControls };
+  return { events, spx, taxonomy, rates, rateControls, tms };
 }

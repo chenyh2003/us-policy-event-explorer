@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy } from "./types";
+import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData } from "./types";
 import { loadSiteData } from "./lib/data";
 import { filterEvents } from "./lib/filters";
 import { useEventSelection } from "./hooks/useEventSelection";
@@ -8,6 +8,7 @@ import SelectionToolbar from "./components/SelectionToolbar";
 import FilterSidebar from "./components/FilterSidebar";
 import MarketChart from "./components/MarketChart";
 import PolicyTimeline from "./components/PolicyTimeline";
+import TmsChart from "./components/TmsChart";
 import EventList from "./components/EventList";
 import EventDetailDrawer from "./components/EventDetailDrawer";
 
@@ -26,12 +27,14 @@ function Explorer({
   taxonomy,
   rates,
   rateControls,
+  tms,
 }: {
   events: PolicyEvent[];
   spx: SpxPoint[];
   taxonomy: Taxonomy;
   rates: RatesData;
   rateControls: RateControlEvent[];
+  tms: TmsData;
 }) {
   const allIds = useMemo(() => events.map((e) => e.id), [events]);
   const { selected, actions } = useEventSelection(allIds);
@@ -107,6 +110,7 @@ function Explorer({
             taxonomy={taxonomy}
             onOpen={openEvent}
           />
+          <TmsChart tms={tms} />
           <EventList
             events={filtered}
             selected={selected}
@@ -133,7 +137,7 @@ function Explorer({
 }
 
 export default function App() {
-  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[] } | null>(null);
+  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[]; tms: TmsData } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -156,5 +160,5 @@ export default function App() {
     return <div className="loading-screen">正在加载 108 条政策事件与标普500数据…</div>;
   }
 
-  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} />;
+  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} tms={data.tms} />;
 }

@@ -13,6 +13,7 @@ describe("构建数据", () => {
   const taxonomy = read("taxonomy.json");
   const rates = read("rates.json");
   const rateControls = read("rate-control-events.json");
+  const tms = read("tms.json");
 
   it("有 108 条事件，类别计数正确", () => {
     expect(events).toHaveLength(108);
@@ -70,6 +71,17 @@ describe("构建数据", () => {
       expect(["in-range", "pre-1927", "post-data"]).toContain(e.chartStatus);
     }
     expect(rateControls.filter((e: any) => e.chartStatus === "in-range").length).toBeGreaterThanOrEqual(13);
+  });
+
+  it("TMS 月频数据覆盖 1912—2026 且 1969 拼接连续", () => {
+    expect(tms.monthly.length).toBeGreaterThanOrEqual(1370);
+    expect(tms.monthly[0].date).toBe("1912-01-01");
+    expect(tms.monthly.at(-1).date).toBe("2026-09-01");
+    const dec1968 = tms.monthly.find((p: any) => p.date === "1968-12-01");
+    const jan1969 = tms.monthly.find((p: any) => p.date === "1969-01-01");
+    expect(Math.abs(dec1968.value - jan1969.value)).toBeLessThan(1);
+    expect(jan1969.source).toBe("tms2");
+    expect(tms.meta.frequency).toBe("monthly");
   });
 
   it("利率与准备金率序列完整且按日期排序", () => {

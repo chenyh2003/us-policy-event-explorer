@@ -1,0 +1,8948 @@
+{
+  "monthly": [
+    {
+      "date": "1912-01-01",
+      "value": 17.02,
+      "source": "friedman_m2_spliced",
+      "raw": 14.57
+    },
+    {
+      "date": "1912-02-01",
+      "value": 17.11,
+      "source": "friedman_m2_spliced",
+      "raw": 14.65
+    },
+    {
+      "date": "1912-03-01",
+      "value": 17.23,
+      "source": "friedman_m2_spliced",
+      "raw": 14.75
+    },
+    {
+      "date": "1912-04-01",
+      "value": 17.3,
+      "source": "friedman_m2_spliced",
+      "raw": 14.81
+    },
+    {
+      "date": "1912-05-01",
+      "value": 17.41,
+      "source": "friedman_m2_spliced",
+      "raw": 14.9
+    },
+    {
+      "date": "1912-06-01",
+      "value": 17.52,
+      "source": "friedman_m2_spliced",
+      "raw": 15.0
+    },
+    {
+      "date": "1912-07-01",
+      "value": 17.57,
+      "source": "friedman_m2_spliced",
+      "raw": 15.04
+    },
+    {
+      "date": "1912-08-01",
+      "value": 17.64,
+      "source": "friedman_m2_spliced",
+      "raw": 15.1
+    },
+    {
+      "date": "1912-09-01",
+      "value": 17.69,
+      "source": "friedman_m2_spliced",
+      "raw": 15.14
+    },
+    {
+      "date": "1912-10-01",
+      "value": 17.81,
+      "source": "friedman_m2_spliced",
+      "raw": 15.25
+    },
+    {
+      "date": "1912-11-01",
+      "value": 17.9,
+      "source": "friedman_m2_spliced",
+      "raw": 15.32
+    },
+    {
+      "date": "1912-12-01",
+      "value": 17.91,
+      "source": "friedman_m2_spliced",
+      "raw": 15.33
+    },
+    {
+      "date": "1913-01-01",
+      "value": 17.97,
+      "source": "friedman_m2_spliced",
+      "raw": 15.38,
+      "yoy": 5.58
+    },
+    {
+      "date": "1913-02-01",
+      "value": 18.06,
+      "source": "friedman_m2_spliced",
+      "raw": 15.46,
+      "yoy": 5.55
+    },
+    {
+      "date": "1913-03-01",
+      "value": 18.01,
+      "source": "friedman_m2_spliced",
+      "raw": 15.42,
+      "yoy": 4.53
+    },
+    {
+      "date": "1913-04-01",
+      "value": 18.08,
+      "source": "friedman_m2_spliced",
+      "raw": 15.48,
+      "yoy": 4.51
+    },
+    {
+      "date": "1913-05-01",
+      "value": 18.04,
+      "source": "friedman_m2_spliced",
+      "raw": 15.44,
+      "yoy": 3.62
+    },
+    {
+      "date": "1913-06-01",
+      "value": 17.99,
+      "source": "friedman_m2_spliced",
+      "raw": 15.4,
+      "yoy": 2.68
+    },
+    {
+      "date": "1913-07-01",
+      "value": 17.97,
+      "source": "friedman_m2_spliced",
+      "raw": 15.38,
+      "yoy": 2.28
+    },
+    {
+      "date": "1913-08-01",
+      "value": 18.12,
+      "source": "friedman_m2_spliced",
+      "raw": 15.51,
+      "yoy": 2.72
+    },
+    {
+      "date": "1913-09-01",
+      "value": 18.32,
+      "source": "friedman_m2_spliced",
+      "raw": 15.68,
+      "yoy": 3.56
+    },
+    {
+      "date": "1913-10-01",
+      "value": 18.43,
+      "source": "friedman_m2_spliced",
+      "raw": 15.78,
+      "yoy": 3.48
+    },
+    {
+      "date": "1913-11-01",
+      "value": 18.44,
+      "source": "friedman_m2_spliced",
+      "raw": 15.79,
+      "yoy": 3.02
+    },
+    {
+      "date": "1913-12-01",
+      "value": 18.48,
+      "source": "friedman_m2_spliced",
+      "raw": 15.82,
+      "yoy": 3.18
+    },
+    {
+      "date": "1914-01-01",
+      "value": 18.53,
+      "source": "friedman_m2_spliced",
+      "raw": 15.86,
+      "yoy": 3.12
+    },
+    {
+      "date": "1914-02-01",
+      "value": 18.57,
+      "source": "friedman_m2_spliced",
+      "raw": 15.9,
+      "yoy": 2.82
+    },
+    {
+      "date": "1914-03-01",
+      "value": 18.68,
+      "source": "friedman_m2_spliced",
+      "raw": 15.99,
+      "yoy": 3.72
+    },
+    {
+      "date": "1914-04-01",
+      "value": 18.68,
+      "source": "friedman_m2_spliced",
+      "raw": 15.99,
+      "yoy": 3.32
+    },
+    {
+      "date": "1914-05-01",
+      "value": 18.91,
+      "source": "friedman_m2_spliced",
+      "raw": 16.19,
+      "yoy": 4.82
+    },
+    {
+      "date": "1914-06-01",
+      "value": 18.87,
+      "source": "friedman_m2_spliced",
+      "raw": 16.15,
+      "yoy": 4.89
+    },
+    {
+      "date": "1914-07-01",
+      "value": 18.85,
+      "source": "friedman_m2_spliced",
+      "raw": 16.14,
+      "yoy": 4.9
+    },
+    {
+      "date": "1914-08-01",
+      "value": 18.92,
+      "source": "friedman_m2_spliced",
+      "raw": 16.2,
+      "yoy": 4.42
+    },
+    {
+      "date": "1914-09-01",
+      "value": 19.29,
+      "source": "friedman_m2_spliced",
+      "raw": 16.51,
+      "yoy": 5.29
+    },
+    {
+      "date": "1914-10-01",
+      "value": 19.31,
+      "source": "friedman_m2_spliced",
+      "raw": 16.53,
+      "yoy": 4.77
+    },
+    {
+      "date": "1914-11-01",
+      "value": 19.11,
+      "source": "friedman_m2_spliced",
+      "raw": 16.36,
+      "yoy": 3.63
+    },
+    {
+      "date": "1914-12-01",
+      "value": 19.06,
+      "source": "friedman_m2_spliced",
+      "raw": 16.32,
+      "yoy": 3.14
+    },
+    {
+      "date": "1915-01-01",
+      "value": 19.23,
+      "source": "friedman_m2_spliced",
+      "raw": 16.46,
+      "yoy": 3.78
+    },
+    {
+      "date": "1915-02-01",
+      "value": 19.4,
+      "source": "friedman_m2_spliced",
+      "raw": 16.61,
+      "yoy": 4.47
+    },
+    {
+      "date": "1915-03-01",
+      "value": 19.52,
+      "source": "friedman_m2_spliced",
+      "raw": 16.71,
+      "yoy": 4.5
+    },
+    {
+      "date": "1915-04-01",
+      "value": 19.64,
+      "source": "friedman_m2_spliced",
+      "raw": 16.81,
+      "yoy": 5.14
+    },
+    {
+      "date": "1915-05-01",
+      "value": 19.83,
+      "source": "friedman_m2_spliced",
+      "raw": 16.98,
+      "yoy": 4.87
+    },
+    {
+      "date": "1915-06-01",
+      "value": 20.02,
+      "source": "friedman_m2_spliced",
+      "raw": 17.14,
+      "yoy": 6.09
+    },
+    {
+      "date": "1915-07-01",
+      "value": 20.15,
+      "source": "friedman_m2_spliced",
+      "raw": 17.25,
+      "yoy": 6.9
+    },
+    {
+      "date": "1915-08-01",
+      "value": 20.28,
+      "source": "friedman_m2_spliced",
+      "raw": 17.36,
+      "yoy": 7.19
+    },
+    {
+      "date": "1915-09-01",
+      "value": 20.77,
+      "source": "friedman_m2_spliced",
+      "raw": 17.78,
+      "yoy": 7.67
+    },
+    {
+      "date": "1915-10-01",
+      "value": 21.55,
+      "source": "friedman_m2_spliced",
+      "raw": 18.45,
+      "yoy": 11.6
+    },
+    {
+      "date": "1915-11-01",
+      "value": 21.79,
+      "source": "friedman_m2_spliced",
+      "raw": 18.65,
+      "yoy": 14.02
+    },
+    {
+      "date": "1915-12-01",
+      "value": 22.17,
+      "source": "friedman_m2_spliced",
+      "raw": 18.98,
+      "yoy": 16.32
+    },
+    {
+      "date": "1916-01-01",
+      "value": 22.56,
+      "source": "friedman_m2_spliced",
+      "raw": 19.31,
+      "yoy": 17.32
+    },
+    {
+      "date": "1916-02-01",
+      "value": 22.88,
+      "source": "friedman_m2_spliced",
+      "raw": 19.59,
+      "yoy": 17.94
+    },
+    {
+      "date": "1916-03-01",
+      "value": 23.04,
+      "source": "friedman_m2_spliced",
+      "raw": 19.72,
+      "yoy": 18.03
+    },
+    {
+      "date": "1916-04-01",
+      "value": 23.37,
+      "source": "friedman_m2_spliced",
+      "raw": 20.01,
+      "yoy": 18.99
+    },
+    {
+      "date": "1916-05-01",
+      "value": 23.65,
+      "source": "friedman_m2_spliced",
+      "raw": 20.25,
+      "yoy": 19.26
+    },
+    {
+      "date": "1916-06-01",
+      "value": 23.77,
+      "source": "friedman_m2_spliced",
+      "raw": 20.35,
+      "yoy": 18.73
+    },
+    {
+      "date": "1916-07-01",
+      "value": 24.09,
+      "source": "friedman_m2_spliced",
+      "raw": 20.62,
+      "yoy": 19.55
+    },
+    {
+      "date": "1916-08-01",
+      "value": 24.39,
+      "source": "friedman_m2_spliced",
+      "raw": 20.88,
+      "yoy": 20.27
+    },
+    {
+      "date": "1916-09-01",
+      "value": 24.85,
+      "source": "friedman_m2_spliced",
+      "raw": 21.27,
+      "yoy": 19.64
+    },
+    {
+      "date": "1916-10-01",
+      "value": 25.28,
+      "source": "friedman_m2_spliced",
+      "raw": 21.64,
+      "yoy": 17.31
+    },
+    {
+      "date": "1916-11-01",
+      "value": 25.76,
+      "source": "friedman_m2_spliced",
+      "raw": 22.05,
+      "yoy": 18.22
+    },
+    {
+      "date": "1916-12-01",
+      "value": 26.28,
+      "source": "friedman_m2_spliced",
+      "raw": 22.5,
+      "yoy": 18.54
+    },
+    {
+      "date": "1917-01-01",
+      "value": 26.81,
+      "source": "friedman_m2_spliced",
+      "raw": 22.95,
+      "yoy": 18.84
+    },
+    {
+      "date": "1917-02-01",
+      "value": 27.03,
+      "source": "friedman_m2_spliced",
+      "raw": 23.14,
+      "yoy": 18.14
+    },
+    {
+      "date": "1917-03-01",
+      "value": 27.37,
+      "source": "friedman_m2_spliced",
+      "raw": 23.43,
+      "yoy": 18.79
+    },
+    {
+      "date": "1917-04-01",
+      "value": 27.64,
+      "source": "friedman_m2_spliced",
+      "raw": 23.66,
+      "yoy": 18.27
+    },
+    {
+      "date": "1917-05-01",
+      "value": 28.01,
+      "source": "friedman_m2_spliced",
+      "raw": 23.98,
+      "yoy": 18.44
+    },
+    {
+      "date": "1917-06-01",
+      "value": 27.96,
+      "source": "friedman_m2_spliced",
+      "raw": 23.94,
+      "yoy": 17.63
+    },
+    {
+      "date": "1917-07-01",
+      "value": 28.56,
+      "source": "friedman_m2_spliced",
+      "raw": 24.45,
+      "yoy": 18.56
+    },
+    {
+      "date": "1917-08-01",
+      "value": 28.78,
+      "source": "friedman_m2_spliced",
+      "raw": 24.64,
+      "yoy": 18.0
+    },
+    {
+      "date": "1917-09-01",
+      "value": 28.67,
+      "source": "friedman_m2_spliced",
+      "raw": 24.54,
+      "yoy": 15.37
+    },
+    {
+      "date": "1917-10-01",
+      "value": 28.62,
+      "source": "friedman_m2_spliced",
+      "raw": 24.5,
+      "yoy": 13.21
+    },
+    {
+      "date": "1917-11-01",
+      "value": 28.89,
+      "source": "friedman_m2_spliced",
+      "raw": 24.73,
+      "yoy": 12.15
+    },
+    {
+      "date": "1917-12-01",
+      "value": 30.07,
+      "source": "friedman_m2_spliced",
+      "raw": 25.74,
+      "yoy": 14.42
+    },
+    {
+      "date": "1918-01-01",
+      "value": 29.83,
+      "source": "friedman_m2_spliced",
+      "raw": 25.54,
+      "yoy": 11.26
+    },
+    {
+      "date": "1918-02-01",
+      "value": 29.55,
+      "source": "friedman_m2_spliced",
+      "raw": 25.3,
+      "yoy": 9.32
+    },
+    {
+      "date": "1918-03-01",
+      "value": 30.31,
+      "source": "friedman_m2_spliced",
+      "raw": 25.95,
+      "yoy": 10.74
+    },
+    {
+      "date": "1918-04-01",
+      "value": 30.43,
+      "source": "friedman_m2_spliced",
+      "raw": 26.05,
+      "yoy": 10.09
+    },
+    {
+      "date": "1918-05-01",
+      "value": 29.68,
+      "source": "friedman_m2_spliced",
+      "raw": 25.41,
+      "yoy": 5.96
+    },
+    {
+      "date": "1918-06-01",
+      "value": 30.18,
+      "source": "friedman_m2_spliced",
+      "raw": 25.84,
+      "yoy": 7.94
+    },
+    {
+      "date": "1918-07-01",
+      "value": 30.58,
+      "source": "friedman_m2_spliced",
+      "raw": 26.18,
+      "yoy": 7.07
+    },
+    {
+      "date": "1918-08-01",
+      "value": 31.06,
+      "source": "friedman_m2_spliced",
+      "raw": 26.59,
+      "yoy": 7.92
+    },
+    {
+      "date": "1918-09-01",
+      "value": 32.19,
+      "source": "friedman_m2_spliced",
+      "raw": 27.56,
+      "yoy": 12.28
+    },
+    {
+      "date": "1918-10-01",
+      "value": 31.59,
+      "source": "friedman_m2_spliced",
+      "raw": 27.04,
+      "yoy": 10.38
+    },
+    {
+      "date": "1918-11-01",
+      "value": 32.25,
+      "source": "friedman_m2_spliced",
+      "raw": 27.61,
+      "yoy": 11.63
+    },
+    {
+      "date": "1918-12-01",
+      "value": 33.82,
+      "source": "friedman_m2_spliced",
+      "raw": 28.95,
+      "yoy": 12.47
+    },
+    {
+      "date": "1919-01-01",
+      "value": 33.51,
+      "source": "friedman_m2_spliced",
+      "raw": 28.69,
+      "yoy": 12.34
+    },
+    {
+      "date": "1919-02-01",
+      "value": 33.37,
+      "source": "friedman_m2_spliced",
+      "raw": 28.57,
+      "yoy": 12.93
+    },
+    {
+      "date": "1919-03-01",
+      "value": 34.32,
+      "source": "friedman_m2_spliced",
+      "raw": 29.38,
+      "yoy": 13.23
+    },
+    {
+      "date": "1919-04-01",
+      "value": 34.72,
+      "source": "friedman_m2_spliced",
+      "raw": 29.72,
+      "yoy": 14.1
+    },
+    {
+      "date": "1919-05-01",
+      "value": 34.81,
+      "source": "friedman_m2_spliced",
+      "raw": 29.8,
+      "yoy": 17.28
+    },
+    {
+      "date": "1919-06-01",
+      "value": 35.42,
+      "source": "friedman_m2_spliced",
+      "raw": 30.32,
+      "yoy": 17.36
+    },
+    {
+      "date": "1919-07-01",
+      "value": 36.15,
+      "source": "friedman_m2_spliced",
+      "raw": 30.95,
+      "yoy": 18.21
+    },
+    {
+      "date": "1919-08-01",
+      "value": 36.66,
+      "source": "friedman_m2_spliced",
+      "raw": 31.38,
+      "yoy": 18.03
+    },
+    {
+      "date": "1919-09-01",
+      "value": 37.26,
+      "source": "friedman_m2_spliced",
+      "raw": 31.9,
+      "yoy": 15.75
+    },
+    {
+      "date": "1919-10-01",
+      "value": 38.17,
+      "source": "friedman_m2_spliced",
+      "raw": 32.68,
+      "yoy": 20.83
+    },
+    {
+      "date": "1919-11-01",
+      "value": 38.66,
+      "source": "friedman_m2_spliced",
+      "raw": 33.1,
+      "yoy": 19.88
+    },
+    {
+      "date": "1919-12-01",
+      "value": 39.14,
+      "source": "friedman_m2_spliced",
+      "raw": 33.51,
+      "yoy": 15.73
+    },
+    {
+      "date": "1920-01-01",
+      "value": 39.27,
+      "source": "friedman_m2_spliced",
+      "raw": 33.62,
+      "yoy": 17.19
+    },
+    {
+      "date": "1920-02-01",
+      "value": 39.9,
+      "source": "friedman_m2_spliced",
+      "raw": 34.16,
+      "yoy": 19.57
+    },
+    {
+      "date": "1920-03-01",
+      "value": 40.48,
+      "source": "friedman_m2_spliced",
+      "raw": 34.65,
+      "yoy": 17.95
+    },
+    {
+      "date": "1920-04-01",
+      "value": 40.49,
+      "source": "friedman_m2_spliced",
+      "raw": 34.66,
+      "yoy": 16.62
+    },
+    {
+      "date": "1920-05-01",
+      "value": 40.56,
+      "source": "friedman_m2_spliced",
+      "raw": 34.72,
+      "yoy": 16.52
+    },
+    {
+      "date": "1920-06-01",
+      "value": 40.55,
+      "source": "friedman_m2_spliced",
+      "raw": 34.71,
+      "yoy": 14.48
+    },
+    {
+      "date": "1920-07-01",
+      "value": 40.56,
+      "source": "friedman_m2_spliced",
+      "raw": 34.72,
+      "yoy": 12.2
+    },
+    {
+      "date": "1920-08-01",
+      "value": 40.62,
+      "source": "friedman_m2_spliced",
+      "raw": 34.77,
+      "yoy": 10.8
+    },
+    {
+      "date": "1920-09-01",
+      "value": 40.63,
+      "source": "friedman_m2_spliced",
+      "raw": 34.78,
+      "yoy": 9.04
+    },
+    {
+      "date": "1920-10-01",
+      "value": 40.45,
+      "source": "friedman_m2_spliced",
+      "raw": 34.63,
+      "yoy": 5.97
+    },
+    {
+      "date": "1920-11-01",
+      "value": 39.98,
+      "source": "friedman_m2_spliced",
+      "raw": 34.23,
+      "yoy": 3.41
+    },
+    {
+      "date": "1920-12-01",
+      "value": 40.32,
+      "source": "friedman_m2_spliced",
+      "raw": 34.52,
+      "yoy": 3.01
+    },
+    {
+      "date": "1921-01-01",
+      "value": 39.61,
+      "source": "friedman_m2_spliced",
+      "raw": 33.91,
+      "yoy": 0.87
+    },
+    {
+      "date": "1921-02-01",
+      "value": 39.3,
+      "source": "friedman_m2_spliced",
+      "raw": 33.64,
+      "yoy": -1.5
+    },
+    {
+      "date": "1921-03-01",
+      "value": 38.66,
+      "source": "friedman_m2_spliced",
+      "raw": 33.1,
+      "yoy": -4.5
+    },
+    {
+      "date": "1921-04-01",
+      "value": 38.26,
+      "source": "friedman_m2_spliced",
+      "raw": 32.75,
+      "yoy": -5.51
+    },
+    {
+      "date": "1921-05-01",
+      "value": 38.15,
+      "source": "friedman_m2_spliced",
+      "raw": 32.66,
+      "yoy": -5.94
+    },
+    {
+      "date": "1921-06-01",
+      "value": 37.63,
+      "source": "friedman_m2_spliced",
+      "raw": 32.21,
+      "yoy": -7.2
+    },
+    {
+      "date": "1921-07-01",
+      "value": 37.26,
+      "source": "friedman_m2_spliced",
+      "raw": 31.9,
+      "yoy": -8.14
+    },
+    {
+      "date": "1921-08-01",
+      "value": 37.37,
+      "source": "friedman_m2_spliced",
+      "raw": 31.99,
+      "yoy": -8.0
+    },
+    {
+      "date": "1921-09-01",
+      "value": 37.08,
+      "source": "friedman_m2_spliced",
+      "raw": 31.74,
+      "yoy": -8.74
+    },
+    {
+      "date": "1921-10-01",
+      "value": 37.3,
+      "source": "friedman_m2_spliced",
+      "raw": 31.93,
+      "yoy": -7.79
+    },
+    {
+      "date": "1921-11-01",
+      "value": 37.36,
+      "source": "friedman_m2_spliced",
+      "raw": 31.98,
+      "yoy": -6.55
+    },
+    {
+      "date": "1921-12-01",
+      "value": 37.26,
+      "source": "friedman_m2_spliced",
+      "raw": 31.9,
+      "yoy": -7.59
+    },
+    {
+      "date": "1922-01-01",
+      "value": 36.98,
+      "source": "friedman_m2_spliced",
+      "raw": 31.66,
+      "yoy": -6.64
+    },
+    {
+      "date": "1922-02-01",
+      "value": 37.43,
+      "source": "friedman_m2_spliced",
+      "raw": 32.04,
+      "yoy": -4.76
+    },
+    {
+      "date": "1922-03-01",
+      "value": 37.58,
+      "source": "friedman_m2_spliced",
+      "raw": 32.17,
+      "yoy": -2.79
+    },
+    {
+      "date": "1922-04-01",
+      "value": 38.4,
+      "source": "friedman_m2_spliced",
+      "raw": 32.87,
+      "yoy": 0.37
+    },
+    {
+      "date": "1922-05-01",
+      "value": 38.71,
+      "source": "friedman_m2_spliced",
+      "raw": 33.14,
+      "yoy": 1.47
+    },
+    {
+      "date": "1922-06-01",
+      "value": 39.31,
+      "source": "friedman_m2_spliced",
+      "raw": 33.65,
+      "yoy": 4.46
+    },
+    {
+      "date": "1922-07-01",
+      "value": 39.73,
+      "source": "friedman_m2_spliced",
+      "raw": 34.01,
+      "yoy": 6.63
+    },
+    {
+      "date": "1922-08-01",
+      "value": 39.96,
+      "source": "friedman_m2_spliced",
+      "raw": 34.21,
+      "yoy": 6.93
+    },
+    {
+      "date": "1922-09-01",
+      "value": 40.29,
+      "source": "friedman_m2_spliced",
+      "raw": 34.49,
+      "yoy": 8.66
+    },
+    {
+      "date": "1922-10-01",
+      "value": 40.58,
+      "source": "friedman_m2_spliced",
+      "raw": 34.74,
+      "yoy": 8.79
+    },
+    {
+      "date": "1922-11-01",
+      "value": 40.57,
+      "source": "friedman_m2_spliced",
+      "raw": 34.73,
+      "yoy": 8.59
+    },
+    {
+      "date": "1922-12-01",
+      "value": 41.7,
+      "source": "friedman_m2_spliced",
+      "raw": 35.7,
+      "yoy": 11.92
+    },
+    {
+      "date": "1923-01-01",
+      "value": 41.57,
+      "source": "friedman_m2_spliced",
+      "raw": 35.59,
+      "yoy": 12.41
+    },
+    {
+      "date": "1923-02-01",
+      "value": 41.85,
+      "source": "friedman_m2_spliced",
+      "raw": 35.83,
+      "yoy": 11.81
+    },
+    {
+      "date": "1923-03-01",
+      "value": 41.84,
+      "source": "friedman_m2_spliced",
+      "raw": 35.82,
+      "yoy": 11.34
+    },
+    {
+      "date": "1923-04-01",
+      "value": 42.29,
+      "source": "friedman_m2_spliced",
+      "raw": 36.2,
+      "yoy": 10.13
+    },
+    {
+      "date": "1923-05-01",
+      "value": 42.59,
+      "source": "friedman_m2_spliced",
+      "raw": 36.46,
+      "yoy": 10.02
+    },
+    {
+      "date": "1923-06-01",
+      "value": 42.53,
+      "source": "friedman_m2_spliced",
+      "raw": 36.41,
+      "yoy": 8.19
+    },
+    {
+      "date": "1923-07-01",
+      "value": 42.5,
+      "source": "friedman_m2_spliced",
+      "raw": 36.38,
+      "yoy": 6.97
+    },
+    {
+      "date": "1923-08-01",
+      "value": 42.54,
+      "source": "friedman_m2_spliced",
+      "raw": 36.42,
+      "yoy": 6.46
+    },
+    {
+      "date": "1923-09-01",
+      "value": 42.75,
+      "source": "friedman_m2_spliced",
+      "raw": 36.6,
+      "yoy": 6.11
+    },
+    {
+      "date": "1923-10-01",
+      "value": 42.98,
+      "source": "friedman_m2_spliced",
+      "raw": 36.79,
+      "yoy": 5.91
+    },
+    {
+      "date": "1923-11-01",
+      "value": 43.1,
+      "source": "friedman_m2_spliced",
+      "raw": 36.9,
+      "yoy": 6.24
+    },
+    {
+      "date": "1923-12-01",
+      "value": 43.3,
+      "source": "friedman_m2_spliced",
+      "raw": 37.07,
+      "yoy": 3.84
+    },
+    {
+      "date": "1924-01-01",
+      "value": 43.13,
+      "source": "friedman_m2_spliced",
+      "raw": 36.92,
+      "yoy": 3.75
+    },
+    {
+      "date": "1924-02-01",
+      "value": 43.27,
+      "source": "friedman_m2_spliced",
+      "raw": 37.04,
+      "yoy": 3.39
+    },
+    {
+      "date": "1924-03-01",
+      "value": 43.43,
+      "source": "friedman_m2_spliced",
+      "raw": 37.18,
+      "yoy": 3.8
+    },
+    {
+      "date": "1924-04-01",
+      "value": 43.71,
+      "source": "friedman_m2_spliced",
+      "raw": 37.42,
+      "yoy": 3.36
+    },
+    {
+      "date": "1924-05-01",
+      "value": 43.96,
+      "source": "friedman_m2_spliced",
+      "raw": 37.63,
+      "yoy": 3.22
+    },
+    {
+      "date": "1924-06-01",
+      "value": 44.38,
+      "source": "friedman_m2_spliced",
+      "raw": 37.99,
+      "yoy": 4.35
+    },
+    {
+      "date": "1924-07-01",
+      "value": 44.9,
+      "source": "friedman_m2_spliced",
+      "raw": 38.44,
+      "yoy": 5.65
+    },
+    {
+      "date": "1924-08-01",
+      "value": 45.42,
+      "source": "friedman_m2_spliced",
+      "raw": 38.88,
+      "yoy": 6.77
+    },
+    {
+      "date": "1924-09-01",
+      "value": 45.93,
+      "source": "friedman_m2_spliced",
+      "raw": 39.32,
+      "yoy": 7.44
+    },
+    {
+      "date": "1924-10-01",
+      "value": 46.26,
+      "source": "friedman_m2_spliced",
+      "raw": 39.6,
+      "yoy": 7.63
+    },
+    {
+      "date": "1924-11-01",
+      "value": 46.83,
+      "source": "friedman_m2_spliced",
+      "raw": 40.09,
+      "yoy": 8.65
+    },
+    {
+      "date": "1924-12-01",
+      "value": 46.68,
+      "source": "friedman_m2_spliced",
+      "raw": 39.96,
+      "yoy": 7.81
+    },
+    {
+      "date": "1925-01-01",
+      "value": 47.24,
+      "source": "friedman_m2_spliced",
+      "raw": 40.44,
+      "yoy": 9.53
+    },
+    {
+      "date": "1925-02-01",
+      "value": 47.61,
+      "source": "friedman_m2_spliced",
+      "raw": 40.76,
+      "yoy": 10.03
+    },
+    {
+      "date": "1925-03-01",
+      "value": 47.64,
+      "source": "friedman_m2_spliced",
+      "raw": 40.78,
+      "yoy": 9.69
+    },
+    {
+      "date": "1925-04-01",
+      "value": 47.86,
+      "source": "friedman_m2_spliced",
+      "raw": 40.97,
+      "yoy": 9.49
+    },
+    {
+      "date": "1925-05-01",
+      "value": 48.26,
+      "source": "friedman_m2_spliced",
+      "raw": 41.31,
+      "yoy": 9.78
+    },
+    {
+      "date": "1925-06-01",
+      "value": 48.7,
+      "source": "friedman_m2_spliced",
+      "raw": 41.69,
+      "yoy": 9.73
+    },
+    {
+      "date": "1925-07-01",
+      "value": 48.91,
+      "source": "friedman_m2_spliced",
+      "raw": 41.87,
+      "yoy": 8.93
+    },
+    {
+      "date": "1925-08-01",
+      "value": 49.6,
+      "source": "friedman_m2_spliced",
+      "raw": 42.46,
+      "yoy": 9.2
+    },
+    {
+      "date": "1925-09-01",
+      "value": 50.1,
+      "source": "friedman_m2_spliced",
+      "raw": 42.89,
+      "yoy": 9.08
+    },
+    {
+      "date": "1925-10-01",
+      "value": 50.21,
+      "source": "friedman_m2_spliced",
+      "raw": 42.98,
+      "yoy": 8.54
+    },
+    {
+      "date": "1925-11-01",
+      "value": 50.23,
+      "source": "friedman_m2_spliced",
+      "raw": 43.0,
+      "yoy": 7.26
+    },
+    {
+      "date": "1925-12-01",
+      "value": 50.26,
+      "source": "friedman_m2_spliced",
+      "raw": 43.03,
+      "yoy": 7.67
+    },
+    {
+      "date": "1926-01-01",
+      "value": 50.45,
+      "source": "friedman_m2_spliced",
+      "raw": 43.19,
+      "yoy": 6.8
+    },
+    {
+      "date": "1926-02-01",
+      "value": 50.63,
+      "source": "friedman_m2_spliced",
+      "raw": 43.34,
+      "yoy": 6.34
+    },
+    {
+      "date": "1926-03-01",
+      "value": 50.54,
+      "source": "friedman_m2_spliced",
+      "raw": 43.27,
+      "yoy": 6.09
+    },
+    {
+      "date": "1926-04-01",
+      "value": 50.39,
+      "source": "friedman_m2_spliced",
+      "raw": 43.14,
+      "yoy": 5.29
+    },
+    {
+      "date": "1926-05-01",
+      "value": 50.81,
+      "source": "friedman_m2_spliced",
+      "raw": 43.5,
+      "yoy": 5.28
+    },
+    {
+      "date": "1926-06-01",
+      "value": 50.86,
+      "source": "friedman_m2_spliced",
+      "raw": 43.54,
+      "yoy": 4.44
+    },
+    {
+      "date": "1926-07-01",
+      "value": 50.66,
+      "source": "friedman_m2_spliced",
+      "raw": 43.37,
+      "yoy": 3.58
+    },
+    {
+      "date": "1926-08-01",
+      "value": 50.88,
+      "source": "friedman_m2_spliced",
+      "raw": 43.56,
+      "yoy": 2.58
+    },
+    {
+      "date": "1926-09-01",
+      "value": 50.79,
+      "source": "friedman_m2_spliced",
+      "raw": 43.48,
+      "yoy": 1.38
+    },
+    {
+      "date": "1926-10-01",
+      "value": 50.6,
+      "source": "friedman_m2_spliced",
+      "raw": 43.32,
+      "yoy": 0.78
+    },
+    {
+      "date": "1926-11-01",
+      "value": 50.65,
+      "source": "friedman_m2_spliced",
+      "raw": 43.36,
+      "yoy": 0.84
+    },
+    {
+      "date": "1926-12-01",
+      "value": 50.24,
+      "source": "friedman_m2_spliced",
+      "raw": 43.01,
+      "yoy": -0.04
+    },
+    {
+      "date": "1927-01-01",
+      "value": 50.63,
+      "source": "friedman_m2_spliced",
+      "raw": 43.34,
+      "yoy": 0.36
+    },
+    {
+      "date": "1927-02-01",
+      "value": 51.15,
+      "source": "friedman_m2_spliced",
+      "raw": 43.79,
+      "yoy": 1.03
+    },
+    {
+      "date": "1927-03-01",
+      "value": 51.39,
+      "source": "friedman_m2_spliced",
+      "raw": 43.99,
+      "yoy": 1.68
+    },
+    {
+      "date": "1927-04-01",
+      "value": 51.41,
+      "source": "friedman_m2_spliced",
+      "raw": 44.01,
+      "yoy": 2.02
+    },
+    {
+      "date": "1927-05-01",
+      "value": 52.12,
+      "source": "friedman_m2_spliced",
+      "raw": 44.62,
+      "yoy": 2.58
+    },
+    {
+      "date": "1927-06-01",
+      "value": 51.84,
+      "source": "friedman_m2_spliced",
+      "raw": 44.38,
+      "yoy": 1.93
+    },
+    {
+      "date": "1927-07-01",
+      "value": 52.0,
+      "source": "friedman_m2_spliced",
+      "raw": 44.52,
+      "yoy": 2.65
+    },
+    {
+      "date": "1927-08-01",
+      "value": 52.24,
+      "source": "friedman_m2_spliced",
+      "raw": 44.72,
+      "yoy": 2.67
+    },
+    {
+      "date": "1927-09-01",
+      "value": 52.16,
+      "source": "friedman_m2_spliced",
+      "raw": 44.65,
+      "yoy": 2.7
+    },
+    {
+      "date": "1927-10-01",
+      "value": 52.37,
+      "source": "friedman_m2_spliced",
+      "raw": 44.83,
+      "yoy": 3.5
+    },
+    {
+      "date": "1927-11-01",
+      "value": 53.27,
+      "source": "friedman_m2_spliced",
+      "raw": 45.6,
+      "yoy": 5.17
+    },
+    {
+      "date": "1927-12-01",
+      "value": 52.52,
+      "source": "friedman_m2_spliced",
+      "raw": 44.96,
+      "yoy": 4.54
+    },
+    {
+      "date": "1928-01-01",
+      "value": 53.32,
+      "source": "friedman_m2_spliced",
+      "raw": 45.65,
+      "yoy": 5.31
+    },
+    {
+      "date": "1928-02-01",
+      "value": 53.54,
+      "source": "friedman_m2_spliced",
+      "raw": 45.83,
+      "yoy": 4.67
+    },
+    {
+      "date": "1928-03-01",
+      "value": 53.85,
+      "source": "friedman_m2_spliced",
+      "raw": 46.1,
+      "yoy": 4.79
+    },
+    {
+      "date": "1928-04-01",
+      "value": 54.38,
+      "source": "friedman_m2_spliced",
+      "raw": 46.55,
+      "yoy": 5.78
+    },
+    {
+      "date": "1928-05-01",
+      "value": 54.28,
+      "source": "friedman_m2_spliced",
+      "raw": 46.47,
+      "yoy": 4.14
+    },
+    {
+      "date": "1928-06-01",
+      "value": 53.57,
+      "source": "friedman_m2_spliced",
+      "raw": 45.86,
+      "yoy": 3.34
+    },
+    {
+      "date": "1928-07-01",
+      "value": 53.7,
+      "source": "friedman_m2_spliced",
+      "raw": 45.97,
+      "yoy": 3.27
+    },
+    {
+      "date": "1928-08-01",
+      "value": 53.52,
+      "source": "friedman_m2_spliced",
+      "raw": 45.82,
+      "yoy": 2.45
+    },
+    {
+      "date": "1928-09-01",
+      "value": 53.71,
+      "source": "friedman_m2_spliced",
+      "raw": 45.98,
+      "yoy": 2.97
+    },
+    {
+      "date": "1928-10-01",
+      "value": 54.13,
+      "source": "friedman_m2_spliced",
+      "raw": 46.34,
+      "yoy": 3.36
+    },
+    {
+      "date": "1928-11-01",
+      "value": 54.26,
+      "source": "friedman_m2_spliced",
+      "raw": 46.45,
+      "yoy": 1.86
+    },
+    {
+      "date": "1928-12-01",
+      "value": 54.4,
+      "source": "friedman_m2_spliced",
+      "raw": 46.57,
+      "yoy": 3.58
+    },
+    {
+      "date": "1929-01-01",
+      "value": 53.96,
+      "source": "friedman_m2_spliced",
+      "raw": 46.19,
+      "yoy": 1.2
+    },
+    {
+      "date": "1929-02-01",
+      "value": 54.07,
+      "source": "friedman_m2_spliced",
+      "raw": 46.29,
+      "yoy": 0.99
+    },
+    {
+      "date": "1929-03-01",
+      "value": 53.98,
+      "source": "friedman_m2_spliced",
+      "raw": 46.21,
+      "yoy": 0.24
+    },
+    {
+      "date": "1929-04-01",
+      "value": 53.86,
+      "source": "friedman_m2_spliced",
+      "raw": 46.11,
+      "yoy": -0.96
+    },
+    {
+      "date": "1929-05-01",
+      "value": 53.51,
+      "source": "friedman_m2_spliced",
+      "raw": 45.81,
+      "yoy": -1.42
+    },
+    {
+      "date": "1929-06-01",
+      "value": 53.64,
+      "source": "friedman_m2_spliced",
+      "raw": 45.92,
+      "yoy": 0.13
+    },
+    {
+      "date": "1929-07-01",
+      "value": 54.2,
+      "source": "friedman_m2_spliced",
+      "raw": 46.4,
+      "yoy": 0.93
+    },
+    {
+      "date": "1929-08-01",
+      "value": 54.06,
+      "source": "friedman_m2_spliced",
+      "raw": 46.28,
+      "yoy": 1.01
+    },
+    {
+      "date": "1929-09-01",
+      "value": 54.12,
+      "source": "friedman_m2_spliced",
+      "raw": 46.33,
+      "yoy": 0.76
+    },
+    {
+      "date": "1929-10-01",
+      "value": 56.26,
+      "source": "friedman_m2_spliced",
+      "raw": 48.16,
+      "yoy": 3.93
+    },
+    {
+      "date": "1929-11-01",
+      "value": 52.61,
+      "source": "friedman_m2_spliced",
+      "raw": 45.04,
+      "yoy": -3.04
+    },
+    {
+      "date": "1929-12-01",
+      "value": 53.58,
+      "source": "friedman_m2_spliced",
+      "raw": 45.87,
+      "yoy": -1.51
+    },
+    {
+      "date": "1930-01-01",
+      "value": 52.92,
+      "source": "friedman_m2_spliced",
+      "raw": 45.3,
+      "yoy": -1.93
+    },
+    {
+      "date": "1930-02-01",
+      "value": 53.1,
+      "source": "friedman_m2_spliced",
+      "raw": 45.46,
+      "yoy": -1.79
+    },
+    {
+      "date": "1930-03-01",
+      "value": 53.91,
+      "source": "friedman_m2_spliced",
+      "raw": 46.15,
+      "yoy": -0.13
+    },
+    {
+      "date": "1930-04-01",
+      "value": 53.31,
+      "source": "friedman_m2_spliced",
+      "raw": 45.64,
+      "yoy": -1.02
+    },
+    {
+      "date": "1930-05-01",
+      "value": 52.76,
+      "source": "friedman_m2_spliced",
+      "raw": 45.17,
+      "yoy": -1.4
+    },
+    {
+      "date": "1930-06-01",
+      "value": 52.92,
+      "source": "friedman_m2_spliced",
+      "raw": 45.3,
+      "yoy": -1.34
+    },
+    {
+      "date": "1930-07-01",
+      "value": 52.96,
+      "source": "friedman_m2_spliced",
+      "raw": 45.34,
+      "yoy": -2.29
+    },
+    {
+      "date": "1930-08-01",
+      "value": 52.67,
+      "source": "friedman_m2_spliced",
+      "raw": 45.09,
+      "yoy": -2.57
+    },
+    {
+      "date": "1930-09-01",
+      "value": 52.66,
+      "source": "friedman_m2_spliced",
+      "raw": 45.08,
+      "yoy": -2.7
+    },
+    {
+      "date": "1930-10-01",
+      "value": 52.62,
+      "source": "friedman_m2_spliced",
+      "raw": 45.05,
+      "yoy": -6.47
+    },
+    {
+      "date": "1930-11-01",
+      "value": 52.26,
+      "source": "friedman_m2_spliced",
+      "raw": 44.74,
+      "yoy": -0.67
+    },
+    {
+      "date": "1930-12-01",
+      "value": 51.46,
+      "source": "friedman_m2_spliced",
+      "raw": 44.05,
+      "yoy": -3.96
+    },
+    {
+      "date": "1931-01-01",
+      "value": 50.99,
+      "source": "friedman_m2_spliced",
+      "raw": 43.65,
+      "yoy": -3.65
+    },
+    {
+      "date": "1931-02-01",
+      "value": 51.33,
+      "source": "friedman_m2_spliced",
+      "raw": 43.94,
+      "yoy": -3.33
+    },
+    {
+      "date": "1931-03-01",
+      "value": 51.26,
+      "source": "friedman_m2_spliced",
+      "raw": 43.88,
+      "yoy": -4.92
+    },
+    {
+      "date": "1931-04-01",
+      "value": 50.77,
+      "source": "friedman_m2_spliced",
+      "raw": 43.46,
+      "yoy": -4.76
+    },
+    {
+      "date": "1931-05-01",
+      "value": 50.14,
+      "source": "friedman_m2_spliced",
+      "raw": 42.92,
+      "yoy": -4.97
+    },
+    {
+      "date": "1931-06-01",
+      "value": 49.76,
+      "source": "friedman_m2_spliced",
+      "raw": 42.6,
+      "yoy": -5.97
+    },
+    {
+      "date": "1931-07-01",
+      "value": 49.42,
+      "source": "friedman_m2_spliced",
+      "raw": 42.31,
+      "yoy": -6.68
+    },
+    {
+      "date": "1931-08-01",
+      "value": 48.56,
+      "source": "friedman_m2_spliced",
+      "raw": 41.57,
+      "yoy": -7.8
+    },
+    {
+      "date": "1931-09-01",
+      "value": 47.81,
+      "source": "friedman_m2_spliced",
+      "raw": 40.93,
+      "yoy": -9.21
+    },
+    {
+      "date": "1931-10-01",
+      "value": 45.98,
+      "source": "friedman_m2_spliced",
+      "raw": 39.36,
+      "yoy": -12.62
+    },
+    {
+      "date": "1931-11-01",
+      "value": 44.91,
+      "source": "friedman_m2_spliced",
+      "raw": 38.45,
+      "yoy": -14.06
+    },
+    {
+      "date": "1931-12-01",
+      "value": 43.62,
+      "source": "friedman_m2_spliced",
+      "raw": 37.34,
+      "yoy": -15.24
+    },
+    {
+      "date": "1932-01-01",
+      "value": 42.72,
+      "source": "friedman_m2_spliced",
+      "raw": 36.57,
+      "yoy": -16.22
+    },
+    {
+      "date": "1932-02-01",
+      "value": 42.18,
+      "source": "friedman_m2_spliced",
+      "raw": 36.11,
+      "yoy": -17.83
+    },
+    {
+      "date": "1932-03-01",
+      "value": 41.77,
+      "source": "friedman_m2_spliced",
+      "raw": 35.76,
+      "yoy": -18.51
+    },
+    {
+      "date": "1932-04-01",
+      "value": 41.38,
+      "source": "friedman_m2_spliced",
+      "raw": 35.42,
+      "yoy": -18.5
+    },
+    {
+      "date": "1932-05-01",
+      "value": 40.76,
+      "source": "friedman_m2_spliced",
+      "raw": 34.89,
+      "yoy": -18.71
+    },
+    {
+      "date": "1932-06-01",
+      "value": 40.28,
+      "source": "friedman_m2_spliced",
+      "raw": 34.48,
+      "yoy": -19.05
+    },
+    {
+      "date": "1932-07-01",
+      "value": 39.87,
+      "source": "friedman_m2_spliced",
+      "raw": 34.13,
+      "yoy": -19.32
+    },
+    {
+      "date": "1932-08-01",
+      "value": 39.76,
+      "source": "friedman_m2_spliced",
+      "raw": 34.04,
+      "yoy": -18.12
+    },
+    {
+      "date": "1932-09-01",
+      "value": 39.67,
+      "source": "friedman_m2_spliced",
+      "raw": 33.96,
+      "yoy": -17.03
+    },
+    {
+      "date": "1932-10-01",
+      "value": 39.83,
+      "source": "friedman_m2_spliced",
+      "raw": 34.1,
+      "yoy": -13.38
+    },
+    {
+      "date": "1932-11-01",
+      "value": 40.08,
+      "source": "friedman_m2_spliced",
+      "raw": 34.31,
+      "yoy": -10.75
+    },
+    {
+      "date": "1932-12-01",
+      "value": 39.75,
+      "source": "friedman_m2_spliced",
+      "raw": 34.03,
+      "yoy": -8.87
+    },
+    {
+      "date": "1933-01-01",
+      "value": 39.89,
+      "source": "friedman_m2_spliced",
+      "raw": 34.15,
+      "yoy": -6.62
+    },
+    {
+      "date": "1933-02-01",
+      "value": 38.09,
+      "source": "friedman_m2_spliced",
+      "raw": 32.61,
+      "yoy": -9.7
+    },
+    {
+      "date": "1933-03-01",
+      "value": 35.01,
+      "source": "friedman_m2_spliced",
+      "raw": 29.97,
+      "yoy": -16.18
+    },
+    {
+      "date": "1933-04-01",
+      "value": 34.75,
+      "source": "friedman_m2_spliced",
+      "raw": 29.75,
+      "yoy": -16.02
+    },
+    {
+      "date": "1933-05-01",
+      "value": 35.16,
+      "source": "friedman_m2_spliced",
+      "raw": 30.1,
+      "yoy": -13.74
+    },
+    {
+      "date": "1933-06-01",
+      "value": 35.15,
+      "source": "friedman_m2_spliced",
+      "raw": 30.09,
+      "yoy": -12.74
+    },
+    {
+      "date": "1933-07-01",
+      "value": 35.23,
+      "source": "friedman_m2_spliced",
+      "raw": 30.16,
+      "yoy": -11.64
+    },
+    {
+      "date": "1933-08-01",
+      "value": 35.27,
+      "source": "friedman_m2_spliced",
+      "raw": 30.19,
+      "yoy": -11.29
+    },
+    {
+      "date": "1933-09-01",
+      "value": 35.35,
+      "source": "friedman_m2_spliced",
+      "raw": 30.26,
+      "yoy": -10.89
+    },
+    {
+      "date": "1933-10-01",
+      "value": 35.5,
+      "source": "friedman_m2_spliced",
+      "raw": 30.39,
+      "yoy": -10.87
+    },
+    {
+      "date": "1933-11-01",
+      "value": 35.7,
+      "source": "friedman_m2_spliced",
+      "raw": 30.56,
+      "yoy": -10.93
+    },
+    {
+      "date": "1933-12-01",
+      "value": 35.99,
+      "source": "friedman_m2_spliced",
+      "raw": 30.81,
+      "yoy": -9.46
+    },
+    {
+      "date": "1934-01-01",
+      "value": 36.15,
+      "source": "friedman_m2_spliced",
+      "raw": 30.95,
+      "yoy": -9.38
+    },
+    {
+      "date": "1934-02-01",
+      "value": 36.92,
+      "source": "friedman_m2_spliced",
+      "raw": 31.61,
+      "yoy": -3.07
+    },
+    {
+      "date": "1934-03-01",
+      "value": 37.66,
+      "source": "friedman_m2_spliced",
+      "raw": 32.24,
+      "yoy": 7.57
+    },
+    {
+      "date": "1934-04-01",
+      "value": 38.05,
+      "source": "friedman_m2_spliced",
+      "raw": 32.57,
+      "yoy": 9.5
+    },
+    {
+      "date": "1934-05-01",
+      "value": 38.31,
+      "source": "friedman_m2_spliced",
+      "raw": 32.8,
+      "yoy": 8.96
+    },
+    {
+      "date": "1934-06-01",
+      "value": 38.63,
+      "source": "friedman_m2_spliced",
+      "raw": 33.07,
+      "yoy": 9.9
+    },
+    {
+      "date": "1934-07-01",
+      "value": 39.21,
+      "source": "friedman_m2_spliced",
+      "raw": 33.57,
+      "yoy": 11.3
+    },
+    {
+      "date": "1934-08-01",
+      "value": 39.98,
+      "source": "friedman_m2_spliced",
+      "raw": 34.23,
+      "yoy": 13.35
+    },
+    {
+      "date": "1934-09-01",
+      "value": 39.83,
+      "source": "friedman_m2_spliced",
+      "raw": 34.1,
+      "yoy": 12.67
+    },
+    {
+      "date": "1934-10-01",
+      "value": 40.58,
+      "source": "friedman_m2_spliced",
+      "raw": 34.74,
+      "yoy": 14.31
+    },
+    {
+      "date": "1934-11-01",
+      "value": 41.09,
+      "source": "friedman_m2_spliced",
+      "raw": 35.18,
+      "yoy": 15.1
+    },
+    {
+      "date": "1934-12-01",
+      "value": 40.95,
+      "source": "friedman_m2_spliced",
+      "raw": 35.06,
+      "yoy": 13.78
+    },
+    {
+      "date": "1935-01-01",
+      "value": 42.1,
+      "source": "friedman_m2_spliced",
+      "raw": 36.04,
+      "yoy": 16.46
+    },
+    {
+      "date": "1935-02-01",
+      "value": 42.94,
+      "source": "friedman_m2_spliced",
+      "raw": 36.76,
+      "yoy": 16.31
+    },
+    {
+      "date": "1935-03-01",
+      "value": 43.01,
+      "source": "friedman_m2_spliced",
+      "raw": 36.82,
+      "yoy": 14.21
+    },
+    {
+      "date": "1935-04-01",
+      "value": 43.66,
+      "source": "friedman_m2_spliced",
+      "raw": 37.38,
+      "yoy": 14.74
+    },
+    {
+      "date": "1935-05-01",
+      "value": 43.9,
+      "source": "friedman_m2_spliced",
+      "raw": 37.58,
+      "yoy": 14.59
+    },
+    {
+      "date": "1935-06-01",
+      "value": 44.45,
+      "source": "friedman_m2_spliced",
+      "raw": 38.05,
+      "yoy": 15.07
+    },
+    {
+      "date": "1935-07-01",
+      "value": 44.74,
+      "source": "friedman_m2_spliced",
+      "raw": 38.3,
+      "yoy": 14.1
+    },
+    {
+      "date": "1935-08-01",
+      "value": 46.33,
+      "source": "friedman_m2_spliced",
+      "raw": 39.66,
+      "yoy": 15.88
+    },
+    {
+      "date": "1935-09-01",
+      "value": 45.97,
+      "source": "friedman_m2_spliced",
+      "raw": 39.35,
+      "yoy": 15.42
+    },
+    {
+      "date": "1935-10-01",
+      "value": 46.43,
+      "source": "friedman_m2_spliced",
+      "raw": 39.75,
+      "yoy": 14.42
+    },
+    {
+      "date": "1935-11-01",
+      "value": 47.13,
+      "source": "friedman_m2_spliced",
+      "raw": 40.35,
+      "yoy": 14.7
+    },
+    {
+      "date": "1935-12-01",
+      "value": 47.12,
+      "source": "friedman_m2_spliced",
+      "raw": 40.34,
+      "yoy": 15.07
+    },
+    {
+      "date": "1936-01-01",
+      "value": 47.09,
+      "source": "friedman_m2_spliced",
+      "raw": 40.31,
+      "yoy": 11.85
+    },
+    {
+      "date": "1936-02-01",
+      "value": 47.78,
+      "source": "friedman_m2_spliced",
+      "raw": 40.9,
+      "yoy": 11.27
+    },
+    {
+      "date": "1936-03-01",
+      "value": 47.86,
+      "source": "friedman_m2_spliced",
+      "raw": 40.97,
+      "yoy": 11.28
+    },
+    {
+      "date": "1936-04-01",
+      "value": 48.82,
+      "source": "friedman_m2_spliced",
+      "raw": 41.79,
+      "yoy": 11.82
+    },
+    {
+      "date": "1936-05-01",
+      "value": 49.76,
+      "source": "friedman_m2_spliced",
+      "raw": 42.6,
+      "yoy": 13.35
+    },
+    {
+      "date": "1936-06-01",
+      "value": 50.63,
+      "source": "friedman_m2_spliced",
+      "raw": 43.34,
+      "yoy": 13.9
+    },
+    {
+      "date": "1936-07-01",
+      "value": 50.95,
+      "source": "friedman_m2_spliced",
+      "raw": 43.62,
+      "yoy": 13.88
+    },
+    {
+      "date": "1936-08-01",
+      "value": 50.94,
+      "source": "friedman_m2_spliced",
+      "raw": 43.61,
+      "yoy": 9.95
+    },
+    {
+      "date": "1936-09-01",
+      "value": 51.63,
+      "source": "friedman_m2_spliced",
+      "raw": 44.2,
+      "yoy": 12.31
+    },
+    {
+      "date": "1936-10-01",
+      "value": 51.64,
+      "source": "friedman_m2_spliced",
+      "raw": 44.21,
+      "yoy": 11.22
+    },
+    {
+      "date": "1936-11-01",
+      "value": 51.91,
+      "source": "friedman_m2_spliced",
+      "raw": 44.44,
+      "yoy": 10.14
+    },
+    {
+      "date": "1936-12-01",
+      "value": 52.54,
+      "source": "friedman_m2_spliced",
+      "raw": 44.98,
+      "yoy": 11.5
+    },
+    {
+      "date": "1937-01-01",
+      "value": 52.37,
+      "source": "friedman_m2_spliced",
+      "raw": 44.83,
+      "yoy": 11.21
+    },
+    {
+      "date": "1937-02-01",
+      "value": 52.93,
+      "source": "friedman_m2_spliced",
+      "raw": 45.31,
+      "yoy": 10.78
+    },
+    {
+      "date": "1937-03-01",
+      "value": 53.09,
+      "source": "friedman_m2_spliced",
+      "raw": 45.45,
+      "yoy": 10.93
+    },
+    {
+      "date": "1937-04-01",
+      "value": 53.02,
+      "source": "friedman_m2_spliced",
+      "raw": 45.39,
+      "yoy": 8.6
+    },
+    {
+      "date": "1937-05-01",
+      "value": 52.75,
+      "source": "friedman_m2_spliced",
+      "raw": 45.16,
+      "yoy": 6.01
+    },
+    {
+      "date": "1937-06-01",
+      "value": 52.8,
+      "source": "friedman_m2_spliced",
+      "raw": 45.2,
+      "yoy": 4.29
+    },
+    {
+      "date": "1937-07-01",
+      "value": 52.87,
+      "source": "friedman_m2_spliced",
+      "raw": 45.26,
+      "yoy": 3.77
+    },
+    {
+      "date": "1937-08-01",
+      "value": 52.74,
+      "source": "friedman_m2_spliced",
+      "raw": 45.15,
+      "yoy": 3.53
+    },
+    {
+      "date": "1937-09-01",
+      "value": 52.71,
+      "source": "friedman_m2_spliced",
+      "raw": 45.12,
+      "yoy": 2.09
+    },
+    {
+      "date": "1937-10-01",
+      "value": 52.0,
+      "source": "friedman_m2_spliced",
+      "raw": 44.52,
+      "yoy": 0.7
+    },
+    {
+      "date": "1937-11-01",
+      "value": 51.67,
+      "source": "friedman_m2_spliced",
+      "raw": 44.23,
+      "yoy": -0.46
+    },
+    {
+      "date": "1937-12-01",
+      "value": 51.35,
+      "source": "friedman_m2_spliced",
+      "raw": 43.96,
+      "yoy": -2.26
+    },
+    {
+      "date": "1938-01-01",
+      "value": 51.69,
+      "source": "friedman_m2_spliced",
+      "raw": 44.25,
+      "yoy": -1.3
+    },
+    {
+      "date": "1938-02-01",
+      "value": 51.99,
+      "source": "friedman_m2_spliced",
+      "raw": 44.51,
+      "yoy": -1.78
+    },
+    {
+      "date": "1938-03-01",
+      "value": 51.98,
+      "source": "friedman_m2_spliced",
+      "raw": 44.5,
+      "yoy": -2.09
+    },
+    {
+      "date": "1938-04-01",
+      "value": 51.79,
+      "source": "friedman_m2_spliced",
+      "raw": 44.34,
+      "yoy": -2.32
+    },
+    {
+      "date": "1938-05-01",
+      "value": 51.33,
+      "source": "friedman_m2_spliced",
+      "raw": 43.94,
+      "yoy": -2.69
+    },
+    {
+      "date": "1938-06-01",
+      "value": 51.51,
+      "source": "friedman_m2_spliced",
+      "raw": 44.1,
+      "yoy": -2.44
+    },
+    {
+      "date": "1938-07-01",
+      "value": 51.77,
+      "source": "friedman_m2_spliced",
+      "raw": 44.32,
+      "yoy": -2.08
+    },
+    {
+      "date": "1938-08-01",
+      "value": 52.68,
+      "source": "friedman_m2_spliced",
+      "raw": 45.1,
+      "yoy": -0.11
+    },
+    {
+      "date": "1938-09-01",
+      "value": 53.02,
+      "source": "friedman_m2_spliced",
+      "raw": 45.39,
+      "yoy": 0.59
+    },
+    {
+      "date": "1938-10-01",
+      "value": 53.48,
+      "source": "friedman_m2_spliced",
+      "raw": 45.78,
+      "yoy": 2.85
+    },
+    {
+      "date": "1938-11-01",
+      "value": 54.1,
+      "source": "friedman_m2_spliced",
+      "raw": 46.31,
+      "yoy": 4.7
+    },
+    {
+      "date": "1938-12-01",
+      "value": 54.41,
+      "source": "friedman_m2_spliced",
+      "raw": 46.58,
+      "yoy": 5.96
+    },
+    {
+      "date": "1939-01-01",
+      "value": 54.41,
+      "source": "friedman_m2_spliced",
+      "raw": 46.58,
+      "yoy": 5.26
+    },
+    {
+      "date": "1939-02-01",
+      "value": 54.31,
+      "source": "friedman_m2_spliced",
+      "raw": 46.49,
+      "yoy": 4.46
+    },
+    {
+      "date": "1939-03-01",
+      "value": 54.89,
+      "source": "friedman_m2_spliced",
+      "raw": 46.99,
+      "yoy": 5.6
+    },
+    {
+      "date": "1939-04-01",
+      "value": 55.32,
+      "source": "friedman_m2_spliced",
+      "raw": 47.36,
+      "yoy": 6.82
+    },
+    {
+      "date": "1939-05-01",
+      "value": 55.52,
+      "source": "friedman_m2_spliced",
+      "raw": 47.53,
+      "yoy": 8.16
+    },
+    {
+      "date": "1939-06-01",
+      "value": 55.7,
+      "source": "friedman_m2_spliced",
+      "raw": 47.68,
+      "yoy": 8.13
+    },
+    {
+      "date": "1939-07-01",
+      "value": 56.74,
+      "source": "friedman_m2_spliced",
+      "raw": 48.57,
+      "yoy": 9.6
+    },
+    {
+      "date": "1939-08-01",
+      "value": 57.78,
+      "source": "friedman_m2_spliced",
+      "raw": 49.46,
+      "yoy": 9.68
+    },
+    {
+      "date": "1939-09-01",
+      "value": 58.62,
+      "source": "friedman_m2_spliced",
+      "raw": 50.18,
+      "yoy": 10.56
+    },
+    {
+      "date": "1939-10-01",
+      "value": 59.14,
+      "source": "friedman_m2_spliced",
+      "raw": 50.63,
+      "yoy": 10.58
+    },
+    {
+      "date": "1939-11-01",
+      "value": 60.18,
+      "source": "friedman_m2_spliced",
+      "raw": 51.52,
+      "yoy": 11.24
+    },
+    {
+      "date": "1939-12-01",
+      "value": 59.87,
+      "source": "friedman_m2_spliced",
+      "raw": 51.25,
+      "yoy": 10.03
+    },
+    {
+      "date": "1940-01-01",
+      "value": 60.5,
+      "source": "friedman_m2_spliced",
+      "raw": 51.79,
+      "yoy": 11.19
+    },
+    {
+      "date": "1940-02-01",
+      "value": 61.2,
+      "source": "friedman_m2_spliced",
+      "raw": 52.39,
+      "yoy": 12.69
+    },
+    {
+      "date": "1940-03-01",
+      "value": 61.96,
+      "source": "friedman_m2_spliced",
+      "raw": 53.04,
+      "yoy": 12.88
+    },
+    {
+      "date": "1940-04-01",
+      "value": 61.7,
+      "source": "friedman_m2_spliced",
+      "raw": 52.82,
+      "yoy": 11.53
+    },
+    {
+      "date": "1940-05-01",
+      "value": 62.68,
+      "source": "friedman_m2_spliced",
+      "raw": 53.66,
+      "yoy": 12.9
+    },
+    {
+      "date": "1940-06-01",
+      "value": 63.46,
+      "source": "friedman_m2_spliced",
+      "raw": 54.33,
+      "yoy": 13.93
+    },
+    {
+      "date": "1940-07-01",
+      "value": 63.98,
+      "source": "friedman_m2_spliced",
+      "raw": 54.77,
+      "yoy": 12.76
+    },
+    {
+      "date": "1940-08-01",
+      "value": 64.21,
+      "source": "friedman_m2_spliced",
+      "raw": 54.97,
+      "yoy": 11.13
+    },
+    {
+      "date": "1940-09-01",
+      "value": 64.85,
+      "source": "friedman_m2_spliced",
+      "raw": 55.52,
+      "yoy": 10.63
+    },
+    {
+      "date": "1940-10-01",
+      "value": 65.63,
+      "source": "friedman_m2_spliced",
+      "raw": 56.18,
+      "yoy": 10.97
+    },
+    {
+      "date": "1940-11-01",
+      "value": 66.35,
+      "source": "friedman_m2_spliced",
+      "raw": 56.8,
+      "yoy": 10.25
+    },
+    {
+      "date": "1940-12-01",
+      "value": 67.38,
+      "source": "friedman_m2_spliced",
+      "raw": 57.68,
+      "yoy": 12.54
+    },
+    {
+      "date": "1941-01-01",
+      "value": 68.25,
+      "source": "friedman_m2_spliced",
+      "raw": 58.43,
+      "yoy": 12.81
+    },
+    {
+      "date": "1941-02-01",
+      "value": 69.74,
+      "source": "friedman_m2_spliced",
+      "raw": 59.7,
+      "yoy": 13.95
+    },
+    {
+      "date": "1941-03-01",
+      "value": 70.55,
+      "source": "friedman_m2_spliced",
+      "raw": 60.4,
+      "yoy": 13.86
+    },
+    {
+      "date": "1941-04-01",
+      "value": 70.88,
+      "source": "friedman_m2_spliced",
+      "raw": 60.68,
+      "yoy": 14.88
+    },
+    {
+      "date": "1941-05-01",
+      "value": 71.89,
+      "source": "friedman_m2_spliced",
+      "raw": 61.54,
+      "yoy": 14.69
+    },
+    {
+      "date": "1941-06-01",
+      "value": 71.61,
+      "source": "friedman_m2_spliced",
+      "raw": 61.3,
+      "yoy": 12.84
+    },
+    {
+      "date": "1941-07-01",
+      "value": 73.07,
+      "source": "friedman_m2_spliced",
+      "raw": 62.55,
+      "yoy": 14.21
+    },
+    {
+      "date": "1941-08-01",
+      "value": 73.23,
+      "source": "friedman_m2_spliced",
+      "raw": 62.69,
+      "yoy": 14.05
+    },
+    {
+      "date": "1941-09-01",
+      "value": 73.91,
+      "source": "friedman_m2_spliced",
+      "raw": 63.27,
+      "yoy": 13.97
+    },
+    {
+      "date": "1941-10-01",
+      "value": 73.85,
+      "source": "friedman_m2_spliced",
+      "raw": 63.22,
+      "yoy": 12.52
+    },
+    {
+      "date": "1941-11-01",
+      "value": 74.63,
+      "source": "friedman_m2_spliced",
+      "raw": 63.89,
+      "yoy": 12.48
+    },
+    {
+      "date": "1941-12-01",
+      "value": 74.87,
+      "source": "friedman_m2_spliced",
+      "raw": 64.09,
+      "yoy": 11.12
+    },
+    {
+      "date": "1942-01-01",
+      "value": 76.05,
+      "source": "friedman_m2_spliced",
+      "raw": 65.1,
+      "yoy": 11.43
+    },
+    {
+      "date": "1942-02-01",
+      "value": 76.77,
+      "source": "friedman_m2_spliced",
+      "raw": 65.72,
+      "yoy": 10.08
+    },
+    {
+      "date": "1942-03-01",
+      "value": 77.33,
+      "source": "friedman_m2_spliced",
+      "raw": 66.2,
+      "yoy": 9.61
+    },
+    {
+      "date": "1942-04-01",
+      "value": 78.77,
+      "source": "friedman_m2_spliced",
+      "raw": 67.43,
+      "yoy": 11.13
+    },
+    {
+      "date": "1942-05-01",
+      "value": 80.02,
+      "source": "friedman_m2_spliced",
+      "raw": 68.5,
+      "yoy": 11.31
+    },
+    {
+      "date": "1942-06-01",
+      "value": 80.6,
+      "source": "friedman_m2_spliced",
+      "raw": 69.0,
+      "yoy": 12.55
+    },
+    {
+      "date": "1942-07-01",
+      "value": 82.97,
+      "source": "friedman_m2_spliced",
+      "raw": 71.03,
+      "yoy": 13.55
+    },
+    {
+      "date": "1942-08-01",
+      "value": 84.69,
+      "source": "friedman_m2_spliced",
+      "raw": 72.5,
+      "yoy": 15.65
+    },
+    {
+      "date": "1942-09-01",
+      "value": 86.42,
+      "source": "friedman_m2_spliced",
+      "raw": 73.98,
+      "yoy": 16.93
+    },
+    {
+      "date": "1942-10-01",
+      "value": 88.98,
+      "source": "friedman_m2_spliced",
+      "raw": 76.17,
+      "yoy": 20.49
+    },
+    {
+      "date": "1942-11-01",
+      "value": 90.37,
+      "source": "friedman_m2_spliced",
+      "raw": 77.36,
+      "yoy": 21.09
+    },
+    {
+      "date": "1942-12-01",
+      "value": 92.13,
+      "source": "friedman_m2_spliced",
+      "raw": 78.87,
+      "yoy": 23.05
+    },
+    {
+      "date": "1943-01-01",
+      "value": 94.66,
+      "source": "friedman_m2_spliced",
+      "raw": 81.04,
+      "yoy": 24.47
+    },
+    {
+      "date": "1943-02-01",
+      "value": 98.05,
+      "source": "friedman_m2_spliced",
+      "raw": 83.94,
+      "yoy": 27.72
+    },
+    {
+      "date": "1943-03-01",
+      "value": 100.46,
+      "source": "friedman_m2_spliced",
+      "raw": 86.0,
+      "yoy": 29.91
+    },
+    {
+      "date": "1943-04-01",
+      "value": 99.63,
+      "source": "friedman_m2_spliced",
+      "raw": 85.29,
+      "yoy": 26.48
+    },
+    {
+      "date": "1943-05-01",
+      "value": 100.93,
+      "source": "friedman_m2_spliced",
+      "raw": 86.4,
+      "yoy": 26.13
+    },
+    {
+      "date": "1943-06-01",
+      "value": 105.55,
+      "source": "friedman_m2_spliced",
+      "raw": 90.36,
+      "yoy": 30.96
+    },
+    {
+      "date": "1943-07-01",
+      "value": 109.31,
+      "source": "friedman_m2_spliced",
+      "raw": 93.58,
+      "yoy": 31.75
+    },
+    {
+      "date": "1943-08-01",
+      "value": 114.04,
+      "source": "friedman_m2_spliced",
+      "raw": 97.63,
+      "yoy": 34.66
+    },
+    {
+      "date": "1943-09-01",
+      "value": 105.42,
+      "source": "friedman_m2_spliced",
+      "raw": 90.25,
+      "yoy": 21.99
+    },
+    {
+      "date": "1943-10-01",
+      "value": 107.14,
+      "source": "friedman_m2_spliced",
+      "raw": 91.72,
+      "yoy": 20.41
+    },
+    {
+      "date": "1943-11-01",
+      "value": 111.42,
+      "source": "friedman_m2_spliced",
+      "raw": 95.38,
+      "yoy": 23.29
+    },
+    {
+      "date": "1943-12-01",
+      "value": 115.64,
+      "source": "friedman_m2_spliced",
+      "raw": 99.0,
+      "yoy": 25.52
+    },
+    {
+      "date": "1944-01-01",
+      "value": 114.35,
+      "source": "friedman_m2_spliced",
+      "raw": 97.89,
+      "yoy": 20.8
+    },
+    {
+      "date": "1944-02-01",
+      "value": 115.76,
+      "source": "friedman_m2_spliced",
+      "raw": 99.1,
+      "yoy": 18.06
+    },
+    {
+      "date": "1944-03-01",
+      "value": 117.72,
+      "source": "friedman_m2_spliced",
+      "raw": 100.78,
+      "yoy": 17.18
+    },
+    {
+      "date": "1944-04-01",
+      "value": 120.27,
+      "source": "friedman_m2_spliced",
+      "raw": 102.96,
+      "yoy": 20.72
+    },
+    {
+      "date": "1944-05-01",
+      "value": 123.19,
+      "source": "friedman_m2_spliced",
+      "raw": 105.46,
+      "yoy": 22.05
+    },
+    {
+      "date": "1944-06-01",
+      "value": 122.15,
+      "source": "friedman_m2_spliced",
+      "raw": 104.57,
+      "yoy": 15.73
+    },
+    {
+      "date": "1944-07-01",
+      "value": 123.55,
+      "source": "friedman_m2_spliced",
+      "raw": 105.77,
+      "yoy": 13.03
+    },
+    {
+      "date": "1944-08-01",
+      "value": 127.13,
+      "source": "friedman_m2_spliced",
+      "raw": 108.83,
+      "yoy": 11.48
+    },
+    {
+      "date": "1944-09-01",
+      "value": 129.83,
+      "source": "friedman_m2_spliced",
+      "raw": 111.14,
+      "yoy": 23.15
+    },
+    {
+      "date": "1944-10-01",
+      "value": 133.72,
+      "source": "friedman_m2_spliced",
+      "raw": 114.47,
+      "yoy": 24.81
+    },
+    {
+      "date": "1944-11-01",
+      "value": 136.71,
+      "source": "friedman_m2_spliced",
+      "raw": 117.03,
+      "yoy": 22.7
+    },
+    {
+      "date": "1944-12-01",
+      "value": 134.28,
+      "source": "friedman_m2_spliced",
+      "raw": 114.95,
+      "yoy": 16.12
+    },
+    {
+      "date": "1945-01-01",
+      "value": 138.34,
+      "source": "friedman_m2_spliced",
+      "raw": 118.43,
+      "yoy": 20.98
+    },
+    {
+      "date": "1945-02-01",
+      "value": 140.85,
+      "source": "friedman_m2_spliced",
+      "raw": 120.58,
+      "yoy": 21.67
+    },
+    {
+      "date": "1945-03-01",
+      "value": 143.67,
+      "source": "friedman_m2_spliced",
+      "raw": 122.99,
+      "yoy": 22.04
+    },
+    {
+      "date": "1945-04-01",
+      "value": 145.27,
+      "source": "friedman_m2_spliced",
+      "raw": 124.36,
+      "yoy": 20.79
+    },
+    {
+      "date": "1945-05-01",
+      "value": 146.48,
+      "source": "friedman_m2_spliced",
+      "raw": 125.4,
+      "yoy": 18.91
+    },
+    {
+      "date": "1945-06-01",
+      "value": 145.63,
+      "source": "friedman_m2_spliced",
+      "raw": 124.67,
+      "yoy": 19.22
+    },
+    {
+      "date": "1945-07-01",
+      "value": 148.35,
+      "source": "friedman_m2_spliced",
+      "raw": 127.0,
+      "yoy": 20.07
+    },
+    {
+      "date": "1945-08-01",
+      "value": 150.61,
+      "source": "friedman_m2_spliced",
+      "raw": 128.93,
+      "yoy": 18.47
+    },
+    {
+      "date": "1945-09-01",
+      "value": 153.01,
+      "source": "friedman_m2_spliced",
+      "raw": 130.99,
+      "yoy": 17.85
+    },
+    {
+      "date": "1945-10-01",
+      "value": 154.5,
+      "source": "friedman_m2_spliced",
+      "raw": 132.26,
+      "yoy": 15.54
+    },
+    {
+      "date": "1945-11-01",
+      "value": 155.37,
+      "source": "friedman_m2_spliced",
+      "raw": 133.01,
+      "yoy": 13.65
+    },
+    {
+      "date": "1945-12-01",
+      "value": 154.96,
+      "source": "friedman_m2_spliced",
+      "raw": 132.66,
+      "yoy": 15.4
+    },
+    {
+      "date": "1946-01-01",
+      "value": 154.78,
+      "source": "friedman_m2_spliced",
+      "raw": 132.5,
+      "yoy": 11.88
+    },
+    {
+      "date": "1946-02-01",
+      "value": 156.76,
+      "source": "friedman_m2_spliced",
+      "raw": 134.2,
+      "yoy": 11.3
+    },
+    {
+      "date": "1946-03-01",
+      "value": 156.76,
+      "source": "friedman_m2_spliced",
+      "raw": 134.2,
+      "yoy": 9.11
+    },
+    {
+      "date": "1946-04-01",
+      "value": 159.68,
+      "source": "friedman_m2_spliced",
+      "raw": 136.7,
+      "yoy": 9.92
+    },
+    {
+      "date": "1946-05-01",
+      "value": 161.32,
+      "source": "friedman_m2_spliced",
+      "raw": 138.1,
+      "yoy": 10.13
+    },
+    {
+      "date": "1946-06-01",
+      "value": 162.72,
+      "source": "friedman_m2_spliced",
+      "raw": 139.3,
+      "yoy": 11.74
+    },
+    {
+      "date": "1946-07-01",
+      "value": 163.54,
+      "source": "friedman_m2_spliced",
+      "raw": 140.0,
+      "yoy": 10.24
+    },
+    {
+      "date": "1946-08-01",
+      "value": 163.77,
+      "source": "friedman_m2_spliced",
+      "raw": 140.2,
+      "yoy": 8.74
+    },
+    {
+      "date": "1946-09-01",
+      "value": 164.59,
+      "source": "friedman_m2_spliced",
+      "raw": 140.9,
+      "yoy": 7.57
+    },
+    {
+      "date": "1946-10-01",
+      "value": 164.94,
+      "source": "friedman_m2_spliced",
+      "raw": 141.2,
+      "yoy": 6.76
+    },
+    {
+      "date": "1946-11-01",
+      "value": 165.29,
+      "source": "friedman_m2_spliced",
+      "raw": 141.5,
+      "yoy": 6.38
+    },
+    {
+      "date": "1946-12-01",
+      "value": 165.29,
+      "source": "friedman_m2_spliced",
+      "raw": 141.5,
+      "yoy": 6.67
+    },
+    {
+      "date": "1947-01-01",
+      "value": 166.69,
+      "source": "friedman_m2_spliced",
+      "raw": 142.7,
+      "yoy": 7.69
+    },
+    {
+      "date": "1947-02-01",
+      "value": 167.16,
+      "source": "friedman_m2_spliced",
+      "raw": 143.1,
+      "yoy": 6.63
+    },
+    {
+      "date": "1947-03-01",
+      "value": 168.09,
+      "source": "friedman_m2_spliced",
+      "raw": 143.9,
+      "yoy": 7.23
+    },
+    {
+      "date": "1947-04-01",
+      "value": 169.14,
+      "source": "friedman_m2_spliced",
+      "raw": 144.8,
+      "yoy": 5.92
+    },
+    {
+      "date": "1947-05-01",
+      "value": 169.96,
+      "source": "friedman_m2_spliced",
+      "raw": 145.5,
+      "yoy": 5.36
+    },
+    {
+      "date": "1947-06-01",
+      "value": 170.55,
+      "source": "friedman_m2_spliced",
+      "raw": 146.0,
+      "yoy": 4.81
+    },
+    {
+      "date": "1947-07-01",
+      "value": 170.78,
+      "source": "friedman_m2_spliced",
+      "raw": 146.2,
+      "yoy": 4.43
+    },
+    {
+      "date": "1947-08-01",
+      "value": 171.71,
+      "source": "friedman_m2_spliced",
+      "raw": 147.0,
+      "yoy": 4.85
+    },
+    {
+      "date": "1947-09-01",
+      "value": 172.53,
+      "source": "friedman_m2_spliced",
+      "raw": 147.7,
+      "yoy": 4.82
+    },
+    {
+      "date": "1947-10-01",
+      "value": 172.77,
+      "source": "friedman_m2_spliced",
+      "raw": 147.9,
+      "yoy": 4.75
+    },
+    {
+      "date": "1947-11-01",
+      "value": 173.47,
+      "source": "friedman_m2_spliced",
+      "raw": 148.5,
+      "yoy": 4.95
+    },
+    {
+      "date": "1947-12-01",
+      "value": 173.47,
+      "source": "friedman_m2_spliced",
+      "raw": 148.5,
+      "yoy": 4.95
+    },
+    {
+      "date": "1948-01-01",
+      "value": 173.93,
+      "source": "friedman_m2_spliced",
+      "raw": 148.9,
+      "yoy": 4.34
+    },
+    {
+      "date": "1948-02-01",
+      "value": 173.82,
+      "source": "friedman_m2_spliced",
+      "raw": 148.8,
+      "yoy": 3.98
+    },
+    {
+      "date": "1948-03-01",
+      "value": 173.23,
+      "source": "friedman_m2_spliced",
+      "raw": 148.3,
+      "yoy": 3.06
+    },
+    {
+      "date": "1948-04-01",
+      "value": 172.88,
+      "source": "friedman_m2_spliced",
+      "raw": 148.0,
+      "yoy": 2.21
+    },
+    {
+      "date": "1948-05-01",
+      "value": 172.65,
+      "source": "friedman_m2_spliced",
+      "raw": 147.8,
+      "yoy": 1.58
+    },
+    {
+      "date": "1948-06-01",
+      "value": 172.65,
+      "source": "friedman_m2_spliced",
+      "raw": 147.8,
+      "yoy": 1.23
+    },
+    {
+      "date": "1948-07-01",
+      "value": 172.88,
+      "source": "friedman_m2_spliced",
+      "raw": 148.0,
+      "yoy": 1.23
+    },
+    {
+      "date": "1948-08-01",
+      "value": 173.12,
+      "source": "friedman_m2_spliced",
+      "raw": 148.2,
+      "yoy": 0.82
+    },
+    {
+      "date": "1948-09-01",
+      "value": 173.0,
+      "source": "friedman_m2_spliced",
+      "raw": 148.1,
+      "yoy": 0.27
+    },
+    {
+      "date": "1948-10-01",
+      "value": 173.0,
+      "source": "friedman_m2_spliced",
+      "raw": 148.1,
+      "yoy": 0.13
+    },
+    {
+      "date": "1948-11-01",
+      "value": 172.65,
+      "source": "friedman_m2_spliced",
+      "raw": 147.8,
+      "yoy": -0.47
+    },
+    {
+      "date": "1948-12-01",
+      "value": 172.3,
+      "source": "friedman_m2_spliced",
+      "raw": 147.5,
+      "yoy": -0.67
+    },
+    {
+      "date": "1949-01-01",
+      "value": 171.95,
+      "source": "friedman_m2_spliced",
+      "raw": 147.2,
+      "yoy": -1.14
+    },
+    {
+      "date": "1949-02-01",
+      "value": 172.06,
+      "source": "friedman_m2_spliced",
+      "raw": 147.3,
+      "yoy": -1.01
+    },
+    {
+      "date": "1949-03-01",
+      "value": 172.06,
+      "source": "friedman_m2_spliced",
+      "raw": 147.3,
+      "yoy": -0.68
+    },
+    {
+      "date": "1949-04-01",
+      "value": 172.3,
+      "source": "friedman_m2_spliced",
+      "raw": 147.5,
+      "yoy": -0.34
+    },
+    {
+      "date": "1949-05-01",
+      "value": 172.65,
+      "source": "friedman_m2_spliced",
+      "raw": 147.8,
+      "yoy": 0.0
+    },
+    {
+      "date": "1949-06-01",
+      "value": 172.53,
+      "source": "friedman_m2_spliced",
+      "raw": 147.7,
+      "yoy": -0.07
+    },
+    {
+      "date": "1949-07-01",
+      "value": 172.42,
+      "source": "friedman_m2_spliced",
+      "raw": 147.6,
+      "yoy": -0.27
+    },
+    {
+      "date": "1949-08-01",
+      "value": 172.3,
+      "source": "friedman_m2_spliced",
+      "raw": 147.5,
+      "yoy": -0.47
+    },
+    {
+      "date": "1949-09-01",
+      "value": 172.06,
+      "source": "friedman_m2_spliced",
+      "raw": 147.3,
+      "yoy": -0.54
+    },
+    {
+      "date": "1949-10-01",
+      "value": 172.06,
+      "source": "friedman_m2_spliced",
+      "raw": 147.3,
+      "yoy": -0.54
+    },
+    {
+      "date": "1949-11-01",
+      "value": 172.18,
+      "source": "friedman_m2_spliced",
+      "raw": 147.4,
+      "yoy": -0.27
+    },
+    {
+      "date": "1949-12-01",
+      "value": 172.42,
+      "source": "friedman_m2_spliced",
+      "raw": 147.6,
+      "yoy": 0.07
+    },
+    {
+      "date": "1950-01-01",
+      "value": 172.77,
+      "source": "friedman_m2_spliced",
+      "raw": 147.9,
+      "yoy": 0.48
+    },
+    {
+      "date": "1950-02-01",
+      "value": 173.58,
+      "source": "friedman_m2_spliced",
+      "raw": 148.6,
+      "yoy": 0.88
+    },
+    {
+      "date": "1950-03-01",
+      "value": 174.17,
+      "source": "friedman_m2_spliced",
+      "raw": 149.1,
+      "yoy": 1.23
+    },
+    {
+      "date": "1950-04-01",
+      "value": 175.22,
+      "source": "friedman_m2_spliced",
+      "raw": 150.0,
+      "yoy": 1.69
+    },
+    {
+      "date": "1950-05-01",
+      "value": 175.92,
+      "source": "friedman_m2_spliced",
+      "raw": 150.6,
+      "yoy": 1.89
+    },
+    {
+      "date": "1950-06-01",
+      "value": 176.39,
+      "source": "friedman_m2_spliced",
+      "raw": 151.0,
+      "yoy": 2.24
+    },
+    {
+      "date": "1950-07-01",
+      "value": 176.85,
+      "source": "friedman_m2_spliced",
+      "raw": 151.4,
+      "yoy": 2.57
+    },
+    {
+      "date": "1950-08-01",
+      "value": 177.2,
+      "source": "friedman_m2_spliced",
+      "raw": 151.7,
+      "yoy": 2.84
+    },
+    {
+      "date": "1950-09-01",
+      "value": 177.32,
+      "source": "friedman_m2_spliced",
+      "raw": 151.8,
+      "yoy": 3.06
+    },
+    {
+      "date": "1950-10-01",
+      "value": 177.91,
+      "source": "friedman_m2_spliced",
+      "raw": 152.3,
+      "yoy": 3.4
+    },
+    {
+      "date": "1950-11-01",
+      "value": 178.14,
+      "source": "friedman_m2_spliced",
+      "raw": 152.5,
+      "yoy": 3.46
+    },
+    {
+      "date": "1950-12-01",
+      "value": 178.61,
+      "source": "friedman_m2_spliced",
+      "raw": 152.9,
+      "yoy": 3.59
+    },
+    {
+      "date": "1951-01-01",
+      "value": 179.19,
+      "source": "friedman_m2_spliced",
+      "raw": 153.4,
+      "yoy": 3.72
+    },
+    {
+      "date": "1951-02-01",
+      "value": 179.54,
+      "source": "friedman_m2_spliced",
+      "raw": 153.7,
+      "yoy": 3.43
+    },
+    {
+      "date": "1951-03-01",
+      "value": 180.13,
+      "source": "friedman_m2_spliced",
+      "raw": 154.2,
+      "yoy": 3.42
+    },
+    {
+      "date": "1951-04-01",
+      "value": 180.48,
+      "source": "friedman_m2_spliced",
+      "raw": 154.5,
+      "yoy": 3.0
+    },
+    {
+      "date": "1951-05-01",
+      "value": 180.94,
+      "source": "friedman_m2_spliced",
+      "raw": 154.9,
+      "yoy": 2.85
+    },
+    {
+      "date": "1951-06-01",
+      "value": 181.53,
+      "source": "friedman_m2_spliced",
+      "raw": 155.4,
+      "yoy": 2.91
+    },
+    {
+      "date": "1951-07-01",
+      "value": 182.58,
+      "source": "friedman_m2_spliced",
+      "raw": 156.3,
+      "yoy": 3.24
+    },
+    {
+      "date": "1951-08-01",
+      "value": 183.4,
+      "source": "friedman_m2_spliced",
+      "raw": 157.0,
+      "yoy": 3.5
+    },
+    {
+      "date": "1951-09-01",
+      "value": 184.68,
+      "source": "friedman_m2_spliced",
+      "raw": 158.1,
+      "yoy": 4.15
+    },
+    {
+      "date": "1951-10-01",
+      "value": 185.5,
+      "source": "friedman_m2_spliced",
+      "raw": 158.8,
+      "yoy": 4.27
+    },
+    {
+      "date": "1951-11-01",
+      "value": 186.9,
+      "source": "friedman_m2_spliced",
+      "raw": 160.0,
+      "yoy": 4.92
+    },
+    {
+      "date": "1951-12-01",
+      "value": 187.95,
+      "source": "friedman_m2_spliced",
+      "raw": 160.9,
+      "yoy": 5.23
+    },
+    {
+      "date": "1952-01-01",
+      "value": 188.65,
+      "source": "friedman_m2_spliced",
+      "raw": 161.5,
+      "yoy": 5.28
+    },
+    {
+      "date": "1952-02-01",
+      "value": 189.59,
+      "source": "friedman_m2_spliced",
+      "raw": 162.3,
+      "yoy": 5.6
+    },
+    {
+      "date": "1952-03-01",
+      "value": 190.05,
+      "source": "friedman_m2_spliced",
+      "raw": 162.7,
+      "yoy": 5.51
+    },
+    {
+      "date": "1952-04-01",
+      "value": 190.64,
+      "source": "friedman_m2_spliced",
+      "raw": 163.2,
+      "yoy": 5.63
+    },
+    {
+      "date": "1952-05-01",
+      "value": 191.34,
+      "source": "friedman_m2_spliced",
+      "raw": 163.8,
+      "yoy": 5.75
+    },
+    {
+      "date": "1952-06-01",
+      "value": 192.16,
+      "source": "friedman_m2_spliced",
+      "raw": 164.5,
+      "yoy": 5.86
+    },
+    {
+      "date": "1952-07-01",
+      "value": 192.74,
+      "source": "friedman_m2_spliced",
+      "raw": 165.0,
+      "yoy": 5.56
+    },
+    {
+      "date": "1952-08-01",
+      "value": 193.56,
+      "source": "friedman_m2_spliced",
+      "raw": 165.7,
+      "yoy": 5.54
+    },
+    {
+      "date": "1952-09-01",
+      "value": 194.73,
+      "source": "friedman_m2_spliced",
+      "raw": 166.7,
+      "yoy": 5.44
+    },
+    {
+      "date": "1952-10-01",
+      "value": 195.31,
+      "source": "friedman_m2_spliced",
+      "raw": 167.2,
+      "yoy": 5.29
+    },
+    {
+      "date": "1952-11-01",
+      "value": 196.13,
+      "source": "friedman_m2_spliced",
+      "raw": 167.9,
+      "yoy": 4.94
+    },
+    {
+      "date": "1952-12-01",
+      "value": 196.95,
+      "source": "friedman_m2_spliced",
+      "raw": 168.6,
+      "yoy": 4.79
+    },
+    {
+      "date": "1953-01-01",
+      "value": 197.06,
+      "source": "friedman_m2_spliced",
+      "raw": 168.7,
+      "yoy": 4.46
+    },
+    {
+      "date": "1953-02-01",
+      "value": 197.41,
+      "source": "friedman_m2_spliced",
+      "raw": 169.0,
+      "yoy": 4.12
+    },
+    {
+      "date": "1953-03-01",
+      "value": 198.46,
+      "source": "friedman_m2_spliced",
+      "raw": 169.9,
+      "yoy": 4.43
+    },
+    {
+      "date": "1953-04-01",
+      "value": 199.05,
+      "source": "friedman_m2_spliced",
+      "raw": 170.4,
+      "yoy": 4.41
+    },
+    {
+      "date": "1953-05-01",
+      "value": 199.63,
+      "source": "friedman_m2_spliced",
+      "raw": 170.9,
+      "yoy": 4.33
+    },
+    {
+      "date": "1953-06-01",
+      "value": 199.87,
+      "source": "friedman_m2_spliced",
+      "raw": 171.1,
+      "yoy": 4.01
+    },
+    {
+      "date": "1953-07-01",
+      "value": 200.33,
+      "source": "friedman_m2_spliced",
+      "raw": 171.5,
+      "yoy": 3.94
+    },
+    {
+      "date": "1953-08-01",
+      "value": 200.68,
+      "source": "friedman_m2_spliced",
+      "raw": 171.8,
+      "yoy": 3.68
+    },
+    {
+      "date": "1953-09-01",
+      "value": 200.92,
+      "source": "friedman_m2_spliced",
+      "raw": 172.0,
+      "yoy": 3.18
+    },
+    {
+      "date": "1953-10-01",
+      "value": 201.5,
+      "source": "friedman_m2_spliced",
+      "raw": 172.5,
+      "yoy": 3.17
+    },
+    {
+      "date": "1953-11-01",
+      "value": 201.97,
+      "source": "friedman_m2_spliced",
+      "raw": 172.9,
+      "yoy": 2.98
+    },
+    {
+      "date": "1953-12-01",
+      "value": 202.55,
+      "source": "friedman_m2_spliced",
+      "raw": 173.4,
+      "yoy": 2.84
+    },
+    {
+      "date": "1954-01-01",
+      "value": 203.14,
+      "source": "friedman_m2_spliced",
+      "raw": 173.9,
+      "yoy": 3.09
+    },
+    {
+      "date": "1954-02-01",
+      "value": 203.6,
+      "source": "friedman_m2_spliced",
+      "raw": 174.3,
+      "yoy": 3.14
+    },
+    {
+      "date": "1954-03-01",
+      "value": 204.19,
+      "source": "friedman_m2_spliced",
+      "raw": 174.8,
+      "yoy": 2.89
+    },
+    {
+      "date": "1954-04-01",
+      "value": 204.07,
+      "source": "friedman_m2_spliced",
+      "raw": 174.7,
+      "yoy": 2.52
+    },
+    {
+      "date": "1954-05-01",
+      "value": 205.82,
+      "source": "friedman_m2_spliced",
+      "raw": 176.2,
+      "yoy": 3.1
+    },
+    {
+      "date": "1954-06-01",
+      "value": 206.41,
+      "source": "friedman_m2_spliced",
+      "raw": 176.7,
+      "yoy": 3.27
+    },
+    {
+      "date": "1954-07-01",
+      "value": 207.46,
+      "source": "friedman_m2_spliced",
+      "raw": 177.6,
+      "yoy": 3.56
+    },
+    {
+      "date": "1954-08-01",
+      "value": 208.39,
+      "source": "friedman_m2_spliced",
+      "raw": 178.4,
+      "yoy": 3.84
+    },
+    {
+      "date": "1954-09-01",
+      "value": 208.86,
+      "source": "friedman_m2_spliced",
+      "raw": 178.8,
+      "yoy": 3.95
+    },
+    {
+      "date": "1954-10-01",
+      "value": 209.8,
+      "source": "friedman_m2_spliced",
+      "raw": 179.6,
+      "yoy": 4.12
+    },
+    {
+      "date": "1954-11-01",
+      "value": 210.61,
+      "source": "friedman_m2_spliced",
+      "raw": 180.3,
+      "yoy": 4.28
+    },
+    {
+      "date": "1954-12-01",
+      "value": 211.08,
+      "source": "friedman_m2_spliced",
+      "raw": 180.7,
+      "yoy": 4.21
+    },
+    {
+      "date": "1955-01-01",
+      "value": 212.01,
+      "source": "friedman_m2_spliced",
+      "raw": 181.5,
+      "yoy": 4.37
+    },
+    {
+      "date": "1955-02-01",
+      "value": 213.3,
+      "source": "friedman_m2_spliced",
+      "raw": 182.6,
+      "yoy": 4.76
+    },
+    {
+      "date": "1955-03-01",
+      "value": 213.07,
+      "source": "friedman_m2_spliced",
+      "raw": 182.4,
+      "yoy": 4.35
+    },
+    {
+      "date": "1955-04-01",
+      "value": 213.65,
+      "source": "friedman_m2_spliced",
+      "raw": 182.9,
+      "yoy": 4.69
+    },
+    {
+      "date": "1955-05-01",
+      "value": 214.47,
+      "source": "friedman_m2_spliced",
+      "raw": 183.6,
+      "yoy": 4.2
+    },
+    {
+      "date": "1955-06-01",
+      "value": 214.47,
+      "source": "friedman_m2_spliced",
+      "raw": 183.6,
+      "yoy": 3.9
+    },
+    {
+      "date": "1955-07-01",
+      "value": 215.05,
+      "source": "friedman_m2_spliced",
+      "raw": 184.1,
+      "yoy": 3.66
+    },
+    {
+      "date": "1955-08-01",
+      "value": 215.05,
+      "source": "friedman_m2_spliced",
+      "raw": 184.1,
+      "yoy": 3.2
+    },
+    {
+      "date": "1955-09-01",
+      "value": 215.64,
+      "source": "friedman_m2_spliced",
+      "raw": 184.6,
+      "yoy": 3.25
+    },
+    {
+      "date": "1955-10-01",
+      "value": 215.99,
+      "source": "friedman_m2_spliced",
+      "raw": 184.9,
+      "yoy": 2.95
+    },
+    {
+      "date": "1955-11-01",
+      "value": 215.87,
+      "source": "friedman_m2_spliced",
+      "raw": 184.8,
+      "yoy": 2.5
+    },
+    {
+      "date": "1955-12-01",
+      "value": 216.34,
+      "source": "friedman_m2_spliced",
+      "raw": 185.2,
+      "yoy": 2.49
+    },
+    {
+      "date": "1956-01-01",
+      "value": 216.57,
+      "source": "friedman_m2_spliced",
+      "raw": 185.4,
+      "yoy": 2.15
+    },
+    {
+      "date": "1956-02-01",
+      "value": 216.57,
+      "source": "friedman_m2_spliced",
+      "raw": 185.4,
+      "yoy": 1.53
+    },
+    {
+      "date": "1956-03-01",
+      "value": 217.04,
+      "source": "friedman_m2_spliced",
+      "raw": 185.8,
+      "yoy": 1.86
+    },
+    {
+      "date": "1956-04-01",
+      "value": 217.62,
+      "source": "friedman_m2_spliced",
+      "raw": 186.3,
+      "yoy": 1.86
+    },
+    {
+      "date": "1956-05-01",
+      "value": 217.51,
+      "source": "friedman_m2_spliced",
+      "raw": 186.2,
+      "yoy": 1.42
+    },
+    {
+      "date": "1956-06-01",
+      "value": 218.09,
+      "source": "friedman_m2_spliced",
+      "raw": 186.7,
+      "yoy": 1.69
+    },
+    {
+      "date": "1956-07-01",
+      "value": 218.32,
+      "source": "friedman_m2_spliced",
+      "raw": 186.9,
+      "yoy": 1.52
+    },
+    {
+      "date": "1956-08-01",
+      "value": 218.32,
+      "source": "friedman_m2_spliced",
+      "raw": 186.9,
+      "yoy": 1.52
+    },
+    {
+      "date": "1956-09-01",
+      "value": 219.26,
+      "source": "friedman_m2_spliced",
+      "raw": 187.7,
+      "yoy": 1.68
+    },
+    {
+      "date": "1956-10-01",
+      "value": 219.49,
+      "source": "friedman_m2_spliced",
+      "raw": 187.9,
+      "yoy": 1.62
+    },
+    {
+      "date": "1956-11-01",
+      "value": 220.07,
+      "source": "friedman_m2_spliced",
+      "raw": 188.4,
+      "yoy": 1.95
+    },
+    {
+      "date": "1956-12-01",
+      "value": 220.54,
+      "source": "friedman_m2_spliced",
+      "raw": 188.8,
+      "yoy": 1.94
+    },
+    {
+      "date": "1957-01-01",
+      "value": 221.36,
+      "source": "friedman_m2_spliced",
+      "raw": 189.5,
+      "yoy": 2.21
+    },
+    {
+      "date": "1957-02-01",
+      "value": 221.83,
+      "source": "friedman_m2_spliced",
+      "raw": 189.9,
+      "yoy": 2.43
+    },
+    {
+      "date": "1957-03-01",
+      "value": 222.64,
+      "source": "friedman_m2_spliced",
+      "raw": 190.6,
+      "yoy": 2.58
+    },
+    {
+      "date": "1957-04-01",
+      "value": 223.0,
+      "source": "friedman_m2_spliced",
+      "raw": 190.9,
+      "yoy": 2.47
+    },
+    {
+      "date": "1957-05-01",
+      "value": 223.7,
+      "source": "friedman_m2_spliced",
+      "raw": 191.5,
+      "yoy": 2.85
+    },
+    {
+      "date": "1957-06-01",
+      "value": 223.93,
+      "source": "friedman_m2_spliced",
+      "raw": 191.7,
+      "yoy": 2.68
+    },
+    {
+      "date": "1957-07-01",
+      "value": 224.63,
+      "source": "friedman_m2_spliced",
+      "raw": 192.3,
+      "yoy": 2.89
+    },
+    {
+      "date": "1957-08-01",
+      "value": 225.21,
+      "source": "friedman_m2_spliced",
+      "raw": 192.8,
+      "yoy": 3.16
+    },
+    {
+      "date": "1957-09-01",
+      "value": 225.33,
+      "source": "friedman_m2_spliced",
+      "raw": 192.9,
+      "yoy": 2.77
+    },
+    {
+      "date": "1957-10-01",
+      "value": 225.57,
+      "source": "friedman_m2_spliced",
+      "raw": 193.1,
+      "yoy": 2.77
+    },
+    {
+      "date": "1957-11-01",
+      "value": 225.8,
+      "source": "friedman_m2_spliced",
+      "raw": 193.3,
+      "yoy": 2.6
+    },
+    {
+      "date": "1957-12-01",
+      "value": 225.8,
+      "source": "friedman_m2_spliced",
+      "raw": 193.3,
+      "yoy": 2.39
+    },
+    {
+      "date": "1958-01-01",
+      "value": 225.57,
+      "source": "friedman_m2_spliced",
+      "raw": 193.1,
+      "yoy": 1.9
+    },
+    {
+      "date": "1958-02-01",
+      "value": 228.25,
+      "source": "friedman_m2_spliced",
+      "raw": 195.4,
+      "yoy": 2.89
+    },
+    {
+      "date": "1958-03-01",
+      "value": 230.12,
+      "source": "friedman_m2_spliced",
+      "raw": 197.0,
+      "yoy": 3.36
+    },
+    {
+      "date": "1958-04-01",
+      "value": 231.87,
+      "source": "friedman_m2_spliced",
+      "raw": 198.5,
+      "yoy": 3.98
+    },
+    {
+      "date": "1958-05-01",
+      "value": 233.39,
+      "source": "friedman_m2_spliced",
+      "raw": 199.8,
+      "yoy": 4.33
+    },
+    {
+      "date": "1958-06-01",
+      "value": 235.49,
+      "source": "friedman_m2_spliced",
+      "raw": 201.6,
+      "yoy": 5.16
+    },
+    {
+      "date": "1958-07-01",
+      "value": 236.43,
+      "source": "friedman_m2_spliced",
+      "raw": 202.4,
+      "yoy": 5.25
+    },
+    {
+      "date": "1958-08-01",
+      "value": 237.95,
+      "source": "friedman_m2_spliced",
+      "raw": 203.7,
+      "yoy": 5.66
+    },
+    {
+      "date": "1958-09-01",
+      "value": 238.65,
+      "source": "friedman_m2_spliced",
+      "raw": 204.3,
+      "yoy": 5.91
+    },
+    {
+      "date": "1958-10-01",
+      "value": 239.47,
+      "source": "friedman_m2_spliced",
+      "raw": 205.0,
+      "yoy": 6.16
+    },
+    {
+      "date": "1958-11-01",
+      "value": 240.75,
+      "source": "friedman_m2_spliced",
+      "raw": 206.1,
+      "yoy": 6.62
+    },
+    {
+      "date": "1958-12-01",
+      "value": 241.22,
+      "source": "friedman_m2_spliced",
+      "raw": 206.5,
+      "yoy": 6.83
+    },
+    {
+      "date": "1959-01-01",
+      "value": 242.5,
+      "source": "friedman_m2_spliced",
+      "raw": 207.6,
+      "yoy": 7.51
+    },
+    {
+      "date": "1959-02-01",
+      "value": 242.97,
+      "source": "friedman_m2_spliced",
+      "raw": 208.0,
+      "yoy": 6.45
+    },
+    {
+      "date": "1959-03-01",
+      "value": 243.79,
+      "source": "friedman_m2_spliced",
+      "raw": 208.7,
+      "yoy": 5.94
+    },
+    {
+      "date": "1959-04-01",
+      "value": 244.37,
+      "source": "friedman_m2_spliced",
+      "raw": 209.2,
+      "yoy": 5.39
+    },
+    {
+      "date": "1959-05-01",
+      "value": 245.07,
+      "source": "friedman_m2_spliced",
+      "raw": 209.8,
+      "yoy": 5.0
+    },
+    {
+      "date": "1959-06-01",
+      "value": 245.77,
+      "source": "friedman_m2_spliced",
+      "raw": 210.4,
+      "yoy": 4.37
+    },
+    {
+      "date": "1959-07-01",
+      "value": 246.71,
+      "source": "friedman_m2_spliced",
+      "raw": 211.2,
+      "yoy": 4.35
+    },
+    {
+      "date": "1959-08-01",
+      "value": 246.24,
+      "source": "friedman_m2_spliced",
+      "raw": 210.8,
+      "yoy": 3.48
+    },
+    {
+      "date": "1959-09-01",
+      "value": 246.01,
+      "source": "friedman_m2_spliced",
+      "raw": 210.6,
+      "yoy": 3.08
+    },
+    {
+      "date": "1959-10-01",
+      "value": 245.54,
+      "source": "friedman_m2_spliced",
+      "raw": 210.2,
+      "yoy": 2.53
+    },
+    {
+      "date": "1959-11-01",
+      "value": 245.31,
+      "source": "friedman_m2_spliced",
+      "raw": 210.0,
+      "yoy": 1.89
+    },
+    {
+      "date": "1959-12-01",
+      "value": 244.49,
+      "source": "friedman_m2_spliced",
+      "raw": 209.3,
+      "yoy": 1.36
+    },
+    {
+      "date": "1960-01-01",
+      "value": 244.02,
+      "source": "friedman_m2_spliced",
+      "raw": 208.9,
+      "yoy": 0.63
+    },
+    {
+      "date": "1960-02-01",
+      "value": 243.2,
+      "source": "friedman_m2_spliced",
+      "raw": 208.2,
+      "yoy": 0.09
+    },
+    {
+      "date": "1960-03-01",
+      "value": 242.85,
+      "source": "friedman_m2_spliced",
+      "raw": 207.9,
+      "yoy": -0.39
+    },
+    {
+      "date": "1960-04-01",
+      "value": 243.09,
+      "source": "friedman_m2_spliced",
+      "raw": 208.1,
+      "yoy": -0.52
+    },
+    {
+      "date": "1960-05-01",
+      "value": 242.62,
+      "source": "friedman_m2_spliced",
+      "raw": 207.7,
+      "yoy": -1.0
+    },
+    {
+      "date": "1960-06-01",
+      "value": 242.97,
+      "source": "friedman_m2_spliced",
+      "raw": 208.0,
+      "yoy": -1.14
+    },
+    {
+      "date": "1960-07-01",
+      "value": 244.26,
+      "source": "friedman_m2_spliced",
+      "raw": 209.1,
+      "yoy": -0.99
+    },
+    {
+      "date": "1960-08-01",
+      "value": 246.01,
+      "source": "friedman_m2_spliced",
+      "raw": 210.6,
+      "yoy": -0.09
+    },
+    {
+      "date": "1960-09-01",
+      "value": 247.18,
+      "source": "friedman_m2_spliced",
+      "raw": 211.6,
+      "yoy": 0.48
+    },
+    {
+      "date": "1960-10-01",
+      "value": 248.11,
+      "source": "friedman_m2_spliced",
+      "raw": 212.4,
+      "yoy": 1.05
+    },
+    {
+      "date": "1960-11-01",
+      "value": 248.69,
+      "source": "friedman_m2_spliced",
+      "raw": 212.9,
+      "yoy": 1.38
+    },
+    {
+      "date": "1960-12-01",
+      "value": 249.98,
+      "source": "friedman_m2_spliced",
+      "raw": 214.0,
+      "yoy": 2.25
+    },
+    {
+      "date": "1961-01-01",
+      "value": 250.91,
+      "source": "friedman_m2_spliced",
+      "raw": 214.8,
+      "yoy": 2.82
+    },
+    {
+      "date": "1961-02-01",
+      "value": 253.02,
+      "source": "friedman_m2_spliced",
+      "raw": 216.6,
+      "yoy": 4.04
+    },
+    {
+      "date": "1961-03-01",
+      "value": 254.07,
+      "source": "friedman_m2_spliced",
+      "raw": 217.5,
+      "yoy": 4.62
+    },
+    {
+      "date": "1961-04-01",
+      "value": 255.24,
+      "source": "friedman_m2_spliced",
+      "raw": 218.5,
+      "yoy": 5.0
+    },
+    {
+      "date": "1961-05-01",
+      "value": 256.87,
+      "source": "friedman_m2_spliced",
+      "raw": 219.9,
+      "yoy": 5.87
+    },
+    {
+      "date": "1961-06-01",
+      "value": 258.27,
+      "source": "friedman_m2_spliced",
+      "raw": 221.1,
+      "yoy": 6.3
+    },
+    {
+      "date": "1961-07-01",
+      "value": 259.44,
+      "source": "friedman_m2_spliced",
+      "raw": 222.1,
+      "yoy": 6.21
+    },
+    {
+      "date": "1961-08-01",
+      "value": 260.73,
+      "source": "friedman_m2_spliced",
+      "raw": 223.2,
+      "yoy": 5.98
+    },
+    {
+      "date": "1961-09-01",
+      "value": 262.36,
+      "source": "friedman_m2_spliced",
+      "raw": 224.6,
+      "yoy": 6.14
+    },
+    {
+      "date": "1961-10-01",
+      "value": 263.76,
+      "source": "friedman_m2_spliced",
+      "raw": 225.8,
+      "yoy": 6.31
+    },
+    {
+      "date": "1961-11-01",
+      "value": 265.4,
+      "source": "friedman_m2_spliced",
+      "raw": 227.2,
+      "yoy": 6.72
+    },
+    {
+      "date": "1961-12-01",
+      "value": 266.45,
+      "source": "friedman_m2_spliced",
+      "raw": 228.1,
+      "yoy": 6.59
+    },
+    {
+      "date": "1962-01-01",
+      "value": 268.2,
+      "source": "friedman_m2_spliced",
+      "raw": 229.6,
+      "yoy": 6.89
+    },
+    {
+      "date": "1962-02-01",
+      "value": 270.77,
+      "source": "friedman_m2_spliced",
+      "raw": 231.8,
+      "yoy": 7.02
+    },
+    {
+      "date": "1962-03-01",
+      "value": 272.87,
+      "source": "friedman_m2_spliced",
+      "raw": 233.6,
+      "yoy": 7.4
+    },
+    {
+      "date": "1962-04-01",
+      "value": 274.63,
+      "source": "friedman_m2_spliced",
+      "raw": 235.1,
+      "yoy": 7.6
+    },
+    {
+      "date": "1962-05-01",
+      "value": 275.21,
+      "source": "friedman_m2_spliced",
+      "raw": 235.6,
+      "yoy": 7.14
+    },
+    {
+      "date": "1962-06-01",
+      "value": 276.61,
+      "source": "friedman_m2_spliced",
+      "raw": 236.8,
+      "yoy": 7.1
+    },
+    {
+      "date": "1962-07-01",
+      "value": 277.78,
+      "source": "friedman_m2_spliced",
+      "raw": 237.8,
+      "yoy": 7.07
+    },
+    {
+      "date": "1962-08-01",
+      "value": 278.71,
+      "source": "friedman_m2_spliced",
+      "raw": 238.6,
+      "yoy": 6.9
+    },
+    {
+      "date": "1962-09-01",
+      "value": 279.77,
+      "source": "friedman_m2_spliced",
+      "raw": 239.5,
+      "yoy": 6.64
+    },
+    {
+      "date": "1962-10-01",
+      "value": 281.99,
+      "source": "friedman_m2_spliced",
+      "raw": 241.4,
+      "yoy": 6.91
+    },
+    {
+      "date": "1962-11-01",
+      "value": 283.97,
+      "source": "friedman_m2_spliced",
+      "raw": 243.1,
+      "yoy": 7.0
+    },
+    {
+      "date": "1962-12-01",
+      "value": 286.42,
+      "source": "friedman_m2_spliced",
+      "raw": 245.2,
+      "yoy": 7.49
+    },
+    {
+      "date": "1963-01-01",
+      "value": 288.53,
+      "source": "friedman_m2_spliced",
+      "raw": 247.0,
+      "yoy": 7.58
+    },
+    {
+      "date": "1963-02-01",
+      "value": 290.75,
+      "source": "friedman_m2_spliced",
+      "raw": 248.9,
+      "yoy": 7.38
+    },
+    {
+      "date": "1963-03-01",
+      "value": 292.27,
+      "source": "friedman_m2_spliced",
+      "raw": 250.2,
+      "yoy": 7.11
+    },
+    {
+      "date": "1963-04-01",
+      "value": 294.37,
+      "source": "friedman_m2_spliced",
+      "raw": 252.0,
+      "yoy": 7.19
+    },
+    {
+      "date": "1963-05-01",
+      "value": 296.0,
+      "source": "friedman_m2_spliced",
+      "raw": 253.4,
+      "yoy": 7.55
+    },
+    {
+      "date": "1963-06-01",
+      "value": 297.99,
+      "source": "friedman_m2_spliced",
+      "raw": 255.1,
+      "yoy": 7.73
+    },
+    {
+      "date": "1963-07-01",
+      "value": 300.09,
+      "source": "friedman_m2_spliced",
+      "raw": 256.9,
+      "yoy": 8.03
+    },
+    {
+      "date": "1963-08-01",
+      "value": 301.84,
+      "source": "friedman_m2_spliced",
+      "raw": 258.4,
+      "yoy": 8.3
+    },
+    {
+      "date": "1963-09-01",
+      "value": 303.6,
+      "source": "friedman_m2_spliced",
+      "raw": 259.9,
+      "yoy": 8.52
+    },
+    {
+      "date": "1963-10-01",
+      "value": 305.93,
+      "source": "friedman_m2_spliced",
+      "raw": 261.9,
+      "yoy": 8.49
+    },
+    {
+      "date": "1963-11-01",
+      "value": 308.85,
+      "source": "friedman_m2_spliced",
+      "raw": 264.4,
+      "yoy": 8.76
+    },
+    {
+      "date": "1963-12-01",
+      "value": 309.79,
+      "source": "friedman_m2_spliced",
+      "raw": 265.2,
+      "yoy": 8.16
+    },
+    {
+      "date": "1964-01-01",
+      "value": 311.77,
+      "source": "friedman_m2_spliced",
+      "raw": 266.9,
+      "yoy": 8.05
+    },
+    {
+      "date": "1964-02-01",
+      "value": 313.41,
+      "source": "friedman_m2_spliced",
+      "raw": 268.3,
+      "yoy": 7.79
+    },
+    {
+      "date": "1964-03-01",
+      "value": 314.69,
+      "source": "friedman_m2_spliced",
+      "raw": 269.4,
+      "yoy": 7.67
+    },
+    {
+      "date": "1964-04-01",
+      "value": 316.21,
+      "source": "friedman_m2_spliced",
+      "raw": 270.7,
+      "yoy": 7.42
+    },
+    {
+      "date": "1964-05-01",
+      "value": 318.31,
+      "source": "friedman_m2_spliced",
+      "raw": 272.5,
+      "yoy": 7.54
+    },
+    {
+      "date": "1964-06-01",
+      "value": 320.42,
+      "source": "friedman_m2_spliced",
+      "raw": 274.3,
+      "yoy": 7.53
+    },
+    {
+      "date": "1964-07-01",
+      "value": 322.75,
+      "source": "friedman_m2_spliced",
+      "raw": 276.3,
+      "yoy": 7.55
+    },
+    {
+      "date": "1964-08-01",
+      "value": 324.86,
+      "source": "friedman_m2_spliced",
+      "raw": 278.1,
+      "yoy": 7.63
+    },
+    {
+      "date": "1964-09-01",
+      "value": 327.08,
+      "source": "friedman_m2_spliced",
+      "raw": 280.0,
+      "yoy": 7.73
+    },
+    {
+      "date": "1964-10-01",
+      "value": 329.41,
+      "source": "friedman_m2_spliced",
+      "raw": 282.0,
+      "yoy": 7.67
+    },
+    {
+      "date": "1964-11-01",
+      "value": 331.86,
+      "source": "friedman_m2_spliced",
+      "raw": 284.1,
+      "yoy": 7.45
+    },
+    {
+      "date": "1964-12-01",
+      "value": 333.97,
+      "source": "friedman_m2_spliced",
+      "raw": 285.9,
+      "yoy": 7.81
+    },
+    {
+      "date": "1965-01-01",
+      "value": 336.77,
+      "source": "friedman_m2_spliced",
+      "raw": 288.3,
+      "yoy": 8.02
+    },
+    {
+      "date": "1965-02-01",
+      "value": 339.69,
+      "source": "friedman_m2_spliced",
+      "raw": 290.8,
+      "yoy": 8.39
+    },
+    {
+      "date": "1965-03-01",
+      "value": 341.68,
+      "source": "friedman_m2_spliced",
+      "raw": 292.5,
+      "yoy": 8.58
+    },
+    {
+      "date": "1965-04-01",
+      "value": 343.9,
+      "source": "friedman_m2_spliced",
+      "raw": 294.4,
+      "yoy": 8.76
+    },
+    {
+      "date": "1965-05-01",
+      "value": 345.53,
+      "source": "friedman_m2_spliced",
+      "raw": 295.8,
+      "yoy": 8.55
+    },
+    {
+      "date": "1965-06-01",
+      "value": 348.22,
+      "source": "friedman_m2_spliced",
+      "raw": 298.1,
+      "yoy": 8.68
+    },
+    {
+      "date": "1965-07-01",
+      "value": 350.91,
+      "source": "friedman_m2_spliced",
+      "raw": 300.4,
+      "yoy": 8.73
+    },
+    {
+      "date": "1965-08-01",
+      "value": 353.71,
+      "source": "friedman_m2_spliced",
+      "raw": 302.8,
+      "yoy": 8.88
+    },
+    {
+      "date": "1965-09-01",
+      "value": 356.75,
+      "source": "friedman_m2_spliced",
+      "raw": 305.4,
+      "yoy": 9.07
+    },
+    {
+      "date": "1965-10-01",
+      "value": 360.6,
+      "source": "friedman_m2_spliced",
+      "raw": 308.7,
+      "yoy": 9.47
+    },
+    {
+      "date": "1965-11-01",
+      "value": 363.29,
+      "source": "friedman_m2_spliced",
+      "raw": 311.0,
+      "yoy": 9.47
+    },
+    {
+      "date": "1965-12-01",
+      "value": 366.09,
+      "source": "friedman_m2_spliced",
+      "raw": 313.4,
+      "yoy": 9.62
+    },
+    {
+      "date": "1966-01-01",
+      "value": 368.66,
+      "source": "friedman_m2_spliced",
+      "raw": 315.6,
+      "yoy": 9.47
+    },
+    {
+      "date": "1966-02-01",
+      "value": 370.65,
+      "source": "friedman_m2_spliced",
+      "raw": 317.3,
+      "yoy": 9.11
+    },
+    {
+      "date": "1966-03-01",
+      "value": 372.87,
+      "source": "friedman_m2_spliced",
+      "raw": 319.2,
+      "yoy": 9.13
+    },
+    {
+      "date": "1966-04-01",
+      "value": 376.95,
+      "source": "friedman_m2_spliced",
+      "raw": 322.7,
+      "yoy": 9.61
+    },
+    {
+      "date": "1966-05-01",
+      "value": 378.47,
+      "source": "friedman_m2_spliced",
+      "raw": 324.0,
+      "yoy": 9.53
+    },
+    {
+      "date": "1966-06-01",
+      "value": 379.41,
+      "source": "friedman_m2_spliced",
+      "raw": 324.8,
+      "yoy": 8.96
+    },
+    {
+      "date": "1966-07-01",
+      "value": 380.46,
+      "source": "friedman_m2_spliced",
+      "raw": 325.7,
+      "yoy": 8.42
+    },
+    {
+      "date": "1966-08-01",
+      "value": 381.39,
+      "source": "friedman_m2_spliced",
+      "raw": 326.5,
+      "yoy": 7.83
+    },
+    {
+      "date": "1966-09-01",
+      "value": 383.03,
+      "source": "friedman_m2_spliced",
+      "raw": 327.9,
+      "yoy": 7.37
+    },
+    {
+      "date": "1966-10-01",
+      "value": 382.21,
+      "source": "friedman_m2_spliced",
+      "raw": 327.2,
+      "yoy": 5.99
+    },
+    {
+      "date": "1966-11-01",
+      "value": 381.98,
+      "source": "friedman_m2_spliced",
+      "raw": 327.0,
+      "yoy": 5.14
+    },
+    {
+      "date": "1966-12-01",
+      "value": 384.2,
+      "source": "friedman_m2_spliced",
+      "raw": 328.9,
+      "yoy": 4.95
+    },
+    {
+      "date": "1967-01-01",
+      "value": 386.88,
+      "source": "friedman_m2_spliced",
+      "raw": 331.2,
+      "yoy": 4.94
+    },
+    {
+      "date": "1967-02-01",
+      "value": 392.26,
+      "source": "friedman_m2_spliced",
+      "raw": 335.8,
+      "yoy": 5.83
+    },
+    {
+      "date": "1967-03-01",
+      "value": 396.46,
+      "source": "friedman_m2_spliced",
+      "raw": 339.4,
+      "yoy": 6.33
+    },
+    {
+      "date": "1967-04-01",
+      "value": 398.45,
+      "source": "friedman_m2_spliced",
+      "raw": 341.1,
+      "yoy": 5.7
+    },
+    {
+      "date": "1967-05-01",
+      "value": 402.89,
+      "source": "friedman_m2_spliced",
+      "raw": 344.9,
+      "yoy": 6.45
+    },
+    {
+      "date": "1967-06-01",
+      "value": 407.44,
+      "source": "friedman_m2_spliced",
+      "raw": 348.8,
+      "yoy": 7.39
+    },
+    {
+      "date": "1967-07-01",
+      "value": 412.0,
+      "source": "friedman_m2_spliced",
+      "raw": 352.7,
+      "yoy": 8.29
+    },
+    {
+      "date": "1967-08-01",
+      "value": 415.5,
+      "source": "friedman_m2_spliced",
+      "raw": 355.7,
+      "yoy": 8.94
+    },
+    {
+      "date": "1967-09-01",
+      "value": 418.66,
+      "source": "friedman_m2_spliced",
+      "raw": 358.4,
+      "yoy": 9.3
+    },
+    {
+      "date": "1967-10-01",
+      "value": 421.34,
+      "source": "friedman_m2_spliced",
+      "raw": 360.7,
+      "yoy": 10.24
+    },
+    {
+      "date": "1967-11-01",
+      "value": 424.26,
+      "source": "friedman_m2_spliced",
+      "raw": 363.2,
+      "yoy": 11.07
+    },
+    {
+      "date": "1967-12-01",
+      "value": 426.83,
+      "source": "friedman_m2_spliced",
+      "raw": 365.4,
+      "yoy": 11.1
+    },
+    {
+      "date": "1968-01-01",
+      "value": 428.35,
+      "source": "friedman_m2_spliced",
+      "raw": 366.7,
+      "yoy": 10.72
+    },
+    {
+      "date": "1968-02-01",
+      "value": 431.16,
+      "source": "friedman_m2_spliced",
+      "raw": 369.1,
+      "yoy": 9.92
+    },
+    {
+      "date": "1968-03-01",
+      "value": 433.84,
+      "source": "friedman_m2_spliced",
+      "raw": 371.4,
+      "yoy": 9.43
+    },
+    {
+      "date": "1968-04-01",
+      "value": 435.48,
+      "source": "friedman_m2_spliced",
+      "raw": 372.8,
+      "yoy": 9.29
+    },
+    {
+      "date": "1968-05-01",
+      "value": 438.05,
+      "source": "friedman_m2_spliced",
+      "raw": 375.0,
+      "yoy": 8.73
+    },
+    {
+      "date": "1968-06-01",
+      "value": 440.15,
+      "source": "friedman_m2_spliced",
+      "raw": 376.8,
+      "yoy": 8.03
+    },
+    {
+      "date": "1968-07-01",
+      "value": 444.71,
+      "source": "friedman_m2_spliced",
+      "raw": 380.7,
+      "yoy": 7.94
+    },
+    {
+      "date": "1968-08-01",
+      "value": 449.49,
+      "source": "friedman_m2_spliced",
+      "raw": 384.8,
+      "yoy": 8.18
+    },
+    {
+      "date": "1968-09-01",
+      "value": 453.0,
+      "source": "friedman_m2_spliced",
+      "raw": 387.8,
+      "yoy": 8.2
+    },
+    {
+      "date": "1968-10-01",
+      "value": 456.97,
+      "source": "friedman_m2_spliced",
+      "raw": 391.2,
+      "yoy": 8.46
+    },
+    {
+      "date": "1968-11-01",
+      "value": 462.23,
+      "source": "friedman_m2_spliced",
+      "raw": 395.7,
+      "yoy": 8.95
+    },
+    {
+      "date": "1968-12-01",
+      "value": 466.9,
+      "source": "friedman_m2_spliced",
+      "raw": 399.7,
+      "yoy": 9.39
+    },
+    {
+      "date": "1969-01-01",
+      "value": 466.9,
+      "source": "tms2",
+      "yoy": 9.0
+    },
+    {
+      "date": "1969-02-01",
+      "value": 467.1,
+      "source": "tms2",
+      "yoy": 8.34
+    },
+    {
+      "date": "1969-03-01",
+      "value": 468.5,
+      "source": "tms2",
+      "yoy": 7.99
+    },
+    {
+      "date": "1969-04-01",
+      "value": 468.2,
+      "source": "tms2",
+      "yoy": 7.51
+    },
+    {
+      "date": "1969-05-01",
+      "value": 467.7,
+      "source": "tms2",
+      "yoy": 6.77
+    },
+    {
+      "date": "1969-06-01",
+      "value": 468.8,
+      "source": "tms2",
+      "yoy": 6.51
+    },
+    {
+      "date": "1969-07-01",
+      "value": 467.2,
+      "source": "tms2",
+      "yoy": 5.06
+    },
+    {
+      "date": "1969-08-01",
+      "value": 465.8,
+      "source": "tms2",
+      "yoy": 3.63
+    },
+    {
+      "date": "1969-09-01",
+      "value": 466.3,
+      "source": "tms2",
+      "yoy": 2.94
+    },
+    {
+      "date": "1969-10-01",
+      "value": 465.9,
+      "source": "tms2",
+      "yoy": 1.95
+    },
+    {
+      "date": "1969-11-01",
+      "value": 466.4,
+      "source": "tms2",
+      "yoy": 0.9
+    },
+    {
+      "date": "1969-12-01",
+      "value": 467.0,
+      "source": "tms2",
+      "yoy": 0.02
+    },
+    {
+      "date": "1970-01-01",
+      "value": 468.5,
+      "source": "tms2",
+      "yoy": 0.34
+    },
+    {
+      "date": "1970-02-01",
+      "value": 462.4,
+      "source": "tms2",
+      "yoy": -1.01
+    },
+    {
+      "date": "1970-03-01",
+      "value": 459.8,
+      "source": "tms2",
+      "yoy": -1.86
+    },
+    {
+      "date": "1970-04-01",
+      "value": 457.7,
+      "source": "tms2",
+      "yoy": -2.24
+    },
+    {
+      "date": "1970-05-01",
+      "value": 456.8,
+      "source": "tms2",
+      "yoy": -2.33
+    },
+    {
+      "date": "1970-06-01",
+      "value": 457.5,
+      "source": "tms2",
+      "yoy": -2.41
+    },
+    {
+      "date": "1970-07-01",
+      "value": 459.0,
+      "source": "tms2",
+      "yoy": -1.76
+    },
+    {
+      "date": "1970-08-01",
+      "value": 462.4,
+      "source": "tms2",
+      "yoy": -0.73
+    },
+    {
+      "date": "1970-09-01",
+      "value": 466.4,
+      "source": "tms2",
+      "yoy": 0.02
+    },
+    {
+      "date": "1970-10-01",
+      "value": 469.4,
+      "source": "tms2",
+      "yoy": 0.75
+    },
+    {
+      "date": "1970-11-01",
+      "value": 471.9,
+      "source": "tms2",
+      "yoy": 1.18
+    },
+    {
+      "date": "1970-12-01",
+      "value": 474.9,
+      "source": "tms2",
+      "yoy": 1.69
+    },
+    {
+      "date": "1971-01-01",
+      "value": 478.6,
+      "source": "tms2",
+      "yoy": 2.16
+    },
+    {
+      "date": "1971-02-01",
+      "value": 483.0,
+      "source": "tms2",
+      "yoy": 4.46
+    },
+    {
+      "date": "1971-03-01",
+      "value": 487.7,
+      "source": "tms2",
+      "yoy": 6.07
+    },
+    {
+      "date": "1971-04-01",
+      "value": 492.0,
+      "source": "tms2",
+      "yoy": 7.49
+    },
+    {
+      "date": "1971-05-01",
+      "value": 497.2,
+      "source": "tms2",
+      "yoy": 8.84
+    },
+    {
+      "date": "1971-06-01",
+      "value": 501.1,
+      "source": "tms2",
+      "yoy": 9.53
+    },
+    {
+      "date": "1971-07-01",
+      "value": 505.1,
+      "source": "tms2",
+      "yoy": 10.04
+    },
+    {
+      "date": "1971-08-01",
+      "value": 508.4,
+      "source": "tms2",
+      "yoy": 9.95
+    },
+    {
+      "date": "1971-09-01",
+      "value": 511.9,
+      "source": "tms2",
+      "yoy": 9.76
+    },
+    {
+      "date": "1971-10-01",
+      "value": 514.8,
+      "source": "tms2",
+      "yoy": 9.67
+    },
+    {
+      "date": "1971-11-01",
+      "value": 517.4,
+      "source": "tms2",
+      "yoy": 9.64
+    },
+    {
+      "date": "1971-12-01",
+      "value": 520.0,
+      "source": "tms2",
+      "yoy": 9.5
+    },
+    {
+      "date": "1972-01-01",
+      "value": 524.2,
+      "source": "tms2",
+      "yoy": 9.53
+    },
+    {
+      "date": "1972-02-01",
+      "value": 528.9,
+      "source": "tms2",
+      "yoy": 9.5
+    },
+    {
+      "date": "1972-03-01",
+      "value": 533.2,
+      "source": "tms2",
+      "yoy": 9.33
+    },
+    {
+      "date": "1972-04-01",
+      "value": 536.1,
+      "source": "tms2",
+      "yoy": 8.96
+    },
+    {
+      "date": "1972-05-01",
+      "value": 537.9,
+      "source": "tms2",
+      "yoy": 8.19
+    },
+    {
+      "date": "1972-06-01",
+      "value": 541.0,
+      "source": "tms2",
+      "yoy": 7.96
+    },
+    {
+      "date": "1972-07-01",
+      "value": 545.9,
+      "source": "tms2",
+      "yoy": 8.08
+    },
+    {
+      "date": "1972-08-01",
+      "value": 551.4,
+      "source": "tms2",
+      "yoy": 8.46
+    },
+    {
+      "date": "1972-09-01",
+      "value": 556.7,
+      "source": "tms2",
+      "yoy": 8.75
+    },
+    {
+      "date": "1972-10-01",
+      "value": 561.0,
+      "source": "tms2",
+      "yoy": 8.97
+    },
+    {
+      "date": "1972-11-01",
+      "value": 564.9,
+      "source": "tms2",
+      "yoy": 9.18
+    },
+    {
+      "date": "1972-12-01",
+      "value": 570.0,
+      "source": "tms2",
+      "yoy": 9.62
+    },
+    {
+      "date": "1973-01-01",
+      "value": 573.5,
+      "source": "tms2",
+      "yoy": 9.4
+    },
+    {
+      "date": "1973-02-01",
+      "value": 574.5,
+      "source": "tms2",
+      "yoy": 8.62
+    },
+    {
+      "date": "1973-03-01",
+      "value": 574.5,
+      "source": "tms2",
+      "yoy": 7.75
+    },
+    {
+      "date": "1973-04-01",
+      "value": 575.9,
+      "source": "tms2",
+      "yoy": 7.42
+    },
+    {
+      "date": "1973-05-01",
+      "value": 579.4,
+      "source": "tms2",
+      "yoy": 7.72
+    },
+    {
+      "date": "1973-06-01",
+      "value": 582.6,
+      "source": "tms2",
+      "yoy": 7.69
+    },
+    {
+      "date": "1973-07-01",
+      "value": 584.3,
+      "source": "tms2",
+      "yoy": 7.03
+    },
+    {
+      "date": "1973-08-01",
+      "value": 583.0,
+      "source": "tms2",
+      "yoy": 5.73
+    },
+    {
+      "date": "1973-09-01",
+      "value": 582.2,
+      "source": "tms2",
+      "yoy": 4.58
+    },
+    {
+      "date": "1973-10-01",
+      "value": 583.8,
+      "source": "tms2",
+      "yoy": 4.06
+    },
+    {
+      "date": "1973-11-01",
+      "value": 586.1,
+      "source": "tms2",
+      "yoy": 3.75
+    },
+    {
+      "date": "1973-12-01",
+      "value": 588.9,
+      "source": "tms2",
+      "yoy": 3.32
+    },
+    {
+      "date": "1974-01-01",
+      "value": 590.7,
+      "source": "tms2",
+      "yoy": 3.0
+    },
+    {
+      "date": "1974-02-01",
+      "value": 592.2,
+      "source": "tms2",
+      "yoy": 3.08
+    },
+    {
+      "date": "1974-03-01",
+      "value": 594.6,
+      "source": "tms2",
+      "yoy": 3.5
+    },
+    {
+      "date": "1974-04-01",
+      "value": 595.8,
+      "source": "tms2",
+      "yoy": 3.46
+    },
+    {
+      "date": "1974-05-01",
+      "value": 596.4,
+      "source": "tms2",
+      "yoy": 2.93
+    },
+    {
+      "date": "1974-06-01",
+      "value": 597.8,
+      "source": "tms2",
+      "yoy": 2.61
+    },
+    {
+      "date": "1974-07-01",
+      "value": 600.0,
+      "source": "tms2",
+      "yoy": 2.69
+    },
+    {
+      "date": "1974-08-01",
+      "value": 600.9,
+      "source": "tms2",
+      "yoy": 3.07
+    },
+    {
+      "date": "1974-09-01",
+      "value": 602.2,
+      "source": "tms2",
+      "yoy": 3.44
+    },
+    {
+      "date": "1974-10-01",
+      "value": 605.0,
+      "source": "tms2",
+      "yoy": 3.63
+    },
+    {
+      "date": "1974-11-01",
+      "value": 608.3,
+      "source": "tms2",
+      "yoy": 3.79
+    },
+    {
+      "date": "1974-12-01",
+      "value": 610.9,
+      "source": "tms2",
+      "yoy": 3.74
+    },
+    {
+      "date": "1975-01-01",
+      "value": 612.7,
+      "source": "tms2",
+      "yoy": 3.72
+    },
+    {
+      "date": "1975-02-01",
+      "value": 616.7,
+      "source": "tms2",
+      "yoy": 4.14
+    },
+    {
+      "date": "1975-03-01",
+      "value": 622.5,
+      "source": "tms2",
+      "yoy": 4.69
+    },
+    {
+      "date": "1975-04-01",
+      "value": 627.2,
+      "source": "tms2",
+      "yoy": 5.27
+    },
+    {
+      "date": "1975-05-01",
+      "value": 635.5,
+      "source": "tms2",
+      "yoy": 6.56
+    },
+    {
+      "date": "1975-06-01",
+      "value": 645.5,
+      "source": "tms2",
+      "yoy": 7.98
+    },
+    {
+      "date": "1975-07-01",
+      "value": 651.7,
+      "source": "tms2",
+      "yoy": 8.62
+    },
+    {
+      "date": "1975-08-01",
+      "value": 655.7,
+      "source": "tms2",
+      "yoy": 9.12
+    },
+    {
+      "date": "1975-09-01",
+      "value": 660.6,
+      "source": "tms2",
+      "yoy": 9.7
+    },
+    {
+      "date": "1975-10-01",
+      "value": 663.2,
+      "source": "tms2",
+      "yoy": 9.62
+    },
+    {
+      "date": "1975-11-01",
+      "value": 668.6,
+      "source": "tms2",
+      "yoy": 9.91
+    },
+    {
+      "date": "1975-12-01",
+      "value": 673.0,
+      "source": "tms2",
+      "yoy": 10.17
+    },
+    {
+      "date": "1976-01-01",
+      "value": 679.8,
+      "source": "tms2",
+      "yoy": 10.95
+    },
+    {
+      "date": "1976-02-01",
+      "value": 690.3,
+      "source": "tms2",
+      "yoy": 11.93
+    },
+    {
+      "date": "1976-03-01",
+      "value": 698.1,
+      "source": "tms2",
+      "yoy": 12.14
+    },
+    {
+      "date": "1976-04-01",
+      "value": 705.2,
+      "source": "tms2",
+      "yoy": 12.44
+    },
+    {
+      "date": "1976-05-01",
+      "value": 710.6,
+      "source": "tms2",
+      "yoy": 11.82
+    },
+    {
+      "date": "1976-06-01",
+      "value": 712.2,
+      "source": "tms2",
+      "yoy": 10.33
+    },
+    {
+      "date": "1976-07-01",
+      "value": 716.5,
+      "source": "tms2",
+      "yoy": 9.94
+    },
+    {
+      "date": "1976-08-01",
+      "value": 723.0,
+      "source": "tms2",
+      "yoy": 10.26
+    },
+    {
+      "date": "1976-09-01",
+      "value": 728.5,
+      "source": "tms2",
+      "yoy": 10.28
+    },
+    {
+      "date": "1976-10-01",
+      "value": 736.7,
+      "source": "tms2",
+      "yoy": 11.08
+    },
+    {
+      "date": "1976-11-01",
+      "value": 745.4,
+      "source": "tms2",
+      "yoy": 11.49
+    },
+    {
+      "date": "1976-12-01",
+      "value": 753.8,
+      "source": "tms2",
+      "yoy": 12.01
+    },
+    {
+      "date": "1977-01-01",
+      "value": 761.3,
+      "source": "tms2",
+      "yoy": 11.99
+    },
+    {
+      "date": "1977-02-01",
+      "value": 768.7,
+      "source": "tms2",
+      "yoy": 11.36
+    },
+    {
+      "date": "1977-03-01",
+      "value": 773.7,
+      "source": "tms2",
+      "yoy": 10.83
+    },
+    {
+      "date": "1977-04-01",
+      "value": 779.3,
+      "source": "tms2",
+      "yoy": 10.51
+    },
+    {
+      "date": "1977-05-01",
+      "value": 783.0,
+      "source": "tms2",
+      "yoy": 10.19
+    },
+    {
+      "date": "1977-06-01",
+      "value": 786.1,
+      "source": "tms2",
+      "yoy": 10.38
+    },
+    {
+      "date": "1977-07-01",
+      "value": 790.5,
+      "source": "tms2",
+      "yoy": 10.33
+    },
+    {
+      "date": "1977-08-01",
+      "value": 796.5,
+      "source": "tms2",
+      "yoy": 10.17
+    },
+    {
+      "date": "1977-09-01",
+      "value": 801.4,
+      "source": "tms2",
+      "yoy": 10.01
+    },
+    {
+      "date": "1977-10-01",
+      "value": 805.5,
+      "source": "tms2",
+      "yoy": 9.34
+    },
+    {
+      "date": "1977-11-01",
+      "value": 810.8,
+      "source": "tms2",
+      "yoy": 8.77
+    },
+    {
+      "date": "1977-12-01",
+      "value": 814.4,
+      "source": "tms2",
+      "yoy": 8.04
+    },
+    {
+      "date": "1978-01-01",
+      "value": 820.0,
+      "source": "tms2",
+      "yoy": 7.71
+    },
+    {
+      "date": "1978-02-01",
+      "value": 822.3,
+      "source": "tms2",
+      "yoy": 6.97
+    },
+    {
+      "date": "1978-03-01",
+      "value": 824.6,
+      "source": "tms2",
+      "yoy": 6.58
+    },
+    {
+      "date": "1978-04-01",
+      "value": 828.3,
+      "source": "tms2",
+      "yoy": 6.29
+    },
+    {
+      "date": "1978-05-01",
+      "value": 834.0,
+      "source": "tms2",
+      "yoy": 6.51
+    },
+    {
+      "date": "1978-06-01",
+      "value": 834.3,
+      "source": "tms2",
+      "yoy": 6.13
+    },
+    {
+      "date": "1978-07-01",
+      "value": 830.4,
+      "source": "tms2",
+      "yoy": 5.05
+    },
+    {
+      "date": "1978-08-01",
+      "value": 832.1,
+      "source": "tms2",
+      "yoy": 4.47
+    },
+    {
+      "date": "1978-09-01",
+      "value": 835.2,
+      "source": "tms2",
+      "yoy": 4.22
+    },
+    {
+      "date": "1978-10-01",
+      "value": 834.1,
+      "source": "tms2",
+      "yoy": 3.55
+    },
+    {
+      "date": "1978-11-01",
+      "value": 831.2,
+      "source": "tms2",
+      "yoy": 2.52
+    },
+    {
+      "date": "1978-12-01",
+      "value": 825.7,
+      "source": "tms2",
+      "yoy": 1.39
+    },
+    {
+      "date": "1979-01-01",
+      "value": 817.3,
+      "source": "tms2",
+      "yoy": -0.33
+    },
+    {
+      "date": "1979-02-01",
+      "value": 812.3,
+      "source": "tms2",
+      "yoy": -1.22
+    },
+    {
+      "date": "1979-03-01",
+      "value": 810.9,
+      "source": "tms2",
+      "yoy": -1.66
+    },
+    {
+      "date": "1979-04-01",
+      "value": 812.2,
+      "source": "tms2",
+      "yoy": -1.94
+    },
+    {
+      "date": "1979-05-01",
+      "value": 809.7,
+      "source": "tms2",
+      "yoy": -2.91
+    },
+    {
+      "date": "1979-06-01",
+      "value": 813.5,
+      "source": "tms2",
+      "yoy": -2.49
+    },
+    {
+      "date": "1979-07-01",
+      "value": 817.1,
+      "source": "tms2",
+      "yoy": -1.6
+    },
+    {
+      "date": "1979-08-01",
+      "value": 818.9,
+      "source": "tms2",
+      "yoy": -1.59
+    },
+    {
+      "date": "1979-09-01",
+      "value": 814.4,
+      "source": "tms2",
+      "yoy": -2.49
+    },
+    {
+      "date": "1979-10-01",
+      "value": 804.6,
+      "source": "tms2",
+      "yoy": -3.54
+    },
+    {
+      "date": "1979-11-01",
+      "value": 791.6,
+      "source": "tms2",
+      "yoy": -4.76
+    },
+    {
+      "date": "1979-12-01",
+      "value": 786.9,
+      "source": "tms2",
+      "yoy": -4.7
+    },
+    {
+      "date": "1980-01-01",
+      "value": 783.8,
+      "source": "tms2",
+      "yoy": -4.1
+    },
+    {
+      "date": "1980-02-01",
+      "value": 781.1,
+      "source": "tms2",
+      "yoy": -3.84
+    },
+    {
+      "date": "1980-03-01",
+      "value": 768.6,
+      "source": "tms2",
+      "yoy": -5.22
+    },
+    {
+      "date": "1980-04-01",
+      "value": 749.9,
+      "source": "tms2",
+      "yoy": -7.67
+    },
+    {
+      "date": "1980-05-01",
+      "value": 746.4,
+      "source": "tms2",
+      "yoy": -7.82
+    },
+    {
+      "date": "1980-06-01",
+      "value": 758.8,
+      "source": "tms2",
+      "yoy": -6.72
+    },
+    {
+      "date": "1980-07-01",
+      "value": 775.3,
+      "source": "tms2",
+      "yoy": -5.12
+    },
+    {
+      "date": "1980-08-01",
+      "value": 791.9,
+      "source": "tms2",
+      "yoy": -3.3
+    },
+    {
+      "date": "1980-09-01",
+      "value": 801.7,
+      "source": "tms2",
+      "yoy": -1.56
+    },
+    {
+      "date": "1980-10-01",
+      "value": 806.1,
+      "source": "tms2",
+      "yoy": 0.19
+    },
+    {
+      "date": "1980-11-01",
+      "value": 802.4,
+      "source": "tms2",
+      "yoy": 1.36
+    },
+    {
+      "date": "1980-12-01",
+      "value": 785.5,
+      "source": "tms2",
+      "yoy": -0.18
+    },
+    {
+      "date": "1981-01-01",
+      "value": 769.7,
+      "source": "tms2",
+      "yoy": -1.8
+    },
+    {
+      "date": "1981-02-01",
+      "value": 765.5,
+      "source": "tms2",
+      "yoy": -2.0
+    },
+    {
+      "date": "1981-03-01",
+      "value": 766.1,
+      "source": "tms2",
+      "yoy": -0.33
+    },
+    {
+      "date": "1981-04-01",
+      "value": 774.4,
+      "source": "tms2",
+      "yoy": 3.27
+    },
+    {
+      "date": "1981-05-01",
+      "value": 765.6,
+      "source": "tms2",
+      "yoy": 2.57
+    },
+    {
+      "date": "1981-06-01",
+      "value": 759.5,
+      "source": "tms2",
+      "yoy": 0.09
+    },
+    {
+      "date": "1981-07-01",
+      "value": 759.7,
+      "source": "tms2",
+      "yoy": -2.01
+    },
+    {
+      "date": "1981-08-01",
+      "value": 753.2,
+      "source": "tms2",
+      "yoy": -4.89
+    },
+    {
+      "date": "1981-09-01",
+      "value": 746.8,
+      "source": "tms2",
+      "yoy": -6.85
+    },
+    {
+      "date": "1981-10-01",
+      "value": 742.8,
+      "source": "tms2",
+      "yoy": -7.85
+    },
+    {
+      "date": "1981-11-01",
+      "value": 744.4,
+      "source": "tms2",
+      "yoy": -7.23
+    },
+    {
+      "date": "1981-12-01",
+      "value": 749.7,
+      "source": "tms2",
+      "yoy": -4.56
+    },
+    {
+      "date": "1982-01-01",
+      "value": 756.6,
+      "source": "tms2",
+      "yoy": -1.7
+    },
+    {
+      "date": "1982-02-01",
+      "value": 752.3,
+      "source": "tms2",
+      "yoy": -1.72
+    },
+    {
+      "date": "1982-03-01",
+      "value": 749.4,
+      "source": "tms2",
+      "yoy": -2.18
+    },
+    {
+      "date": "1982-04-01",
+      "value": 750.6,
+      "source": "tms2",
+      "yoy": -3.07
+    },
+    {
+      "date": "1982-05-01",
+      "value": 748.5,
+      "source": "tms2",
+      "yoy": -2.23
+    },
+    {
+      "date": "1982-06-01",
+      "value": 747.4,
+      "source": "tms2",
+      "yoy": -1.59
+    },
+    {
+      "date": "1982-07-01",
+      "value": 744.8,
+      "source": "tms2",
+      "yoy": -1.96
+    },
+    {
+      "date": "1982-08-01",
+      "value": 749.4,
+      "source": "tms2",
+      "yoy": -0.5
+    },
+    {
+      "date": "1982-09-01",
+      "value": 756.0,
+      "source": "tms2",
+      "yoy": 1.23
+    },
+    {
+      "date": "1982-10-01",
+      "value": 770.6,
+      "source": "tms2",
+      "yoy": 3.74
+    },
+    {
+      "date": "1982-11-01",
+      "value": 783.4,
+      "source": "tms2",
+      "yoy": 5.24
+    },
+    {
+      "date": "1982-12-01",
+      "value": 822.3,
+      "source": "tms2",
+      "yoy": 9.68
+    },
+    {
+      "date": "1983-01-01",
+      "value": 943.5,
+      "source": "tms2",
+      "yoy": 24.7
+    },
+    {
+      "date": "1983-02-01",
+      "value": 1028.1,
+      "source": "tms2",
+      "yoy": 36.66
+    },
+    {
+      "date": "1983-03-01",
+      "value": 1068.4,
+      "source": "tms2",
+      "yoy": 42.57
+    },
+    {
+      "date": "1983-04-01",
+      "value": 1087.7,
+      "source": "tms2",
+      "yoy": 44.91
+    },
+    {
+      "date": "1983-05-01",
+      "value": 1109.6,
+      "source": "tms2",
+      "yoy": 48.24
+    },
+    {
+      "date": "1983-06-01",
+      "value": 1121.0,
+      "source": "tms2",
+      "yoy": 49.99
+    },
+    {
+      "date": "1983-07-01",
+      "value": 1125.1,
+      "source": "tms2",
+      "yoy": 51.06
+    },
+    {
+      "date": "1983-08-01",
+      "value": 1125.1,
+      "source": "tms2",
+      "yoy": 50.13
+    },
+    {
+      "date": "1983-09-01",
+      "value": 1125.8,
+      "source": "tms2",
+      "yoy": 48.92
+    },
+    {
+      "date": "1983-10-01",
+      "value": 1128.4,
+      "source": "tms2",
+      "yoy": 46.43
+    },
+    {
+      "date": "1983-11-01",
+      "value": 1127.3,
+      "source": "tms2",
+      "yoy": 43.9
+    },
+    {
+      "date": "1983-12-01",
+      "value": 1127.7,
+      "source": "tms2",
+      "yoy": 37.14
+    },
+    {
+      "date": "1984-01-01",
+      "value": 1128.9,
+      "source": "tms2",
+      "yoy": 19.65
+    },
+    {
+      "date": "1984-02-01",
+      "value": 1133.4,
+      "source": "tms2",
+      "yoy": 10.24
+    },
+    {
+      "date": "1984-03-01",
+      "value": 1139.3,
+      "source": "tms2",
+      "yoy": 6.64
+    },
+    {
+      "date": "1984-04-01",
+      "value": 1141.2,
+      "source": "tms2",
+      "yoy": 4.92
+    },
+    {
+      "date": "1984-05-01",
+      "value": 1139.4,
+      "source": "tms2",
+      "yoy": 2.69
+    },
+    {
+      "date": "1984-06-01",
+      "value": 1137.2,
+      "source": "tms2",
+      "yoy": 1.45
+    },
+    {
+      "date": "1984-07-01",
+      "value": 1130.9,
+      "source": "tms2",
+      "yoy": 0.52
+    },
+    {
+      "date": "1984-08-01",
+      "value": 1122.6,
+      "source": "tms2",
+      "yoy": -0.22
+    },
+    {
+      "date": "1984-09-01",
+      "value": 1122.3,
+      "source": "tms2",
+      "yoy": -0.31
+    },
+    {
+      "date": "1984-10-01",
+      "value": 1122.2,
+      "source": "tms2",
+      "yoy": -0.55
+    },
+    {
+      "date": "1984-11-01",
+      "value": 1131.3,
+      "source": "tms2",
+      "yoy": 0.35
+    },
+    {
+      "date": "1984-12-01",
+      "value": 1143.4,
+      "source": "tms2",
+      "yoy": 1.39
+    },
+    {
+      "date": "1985-01-01",
+      "value": 1160.0,
+      "source": "tms2",
+      "yoy": 2.75
+    },
+    {
+      "date": "1985-02-01",
+      "value": 1178.0,
+      "source": "tms2",
+      "yoy": 3.94
+    },
+    {
+      "date": "1985-03-01",
+      "value": 1184.6,
+      "source": "tms2",
+      "yoy": 3.98
+    },
+    {
+      "date": "1985-04-01",
+      "value": 1183.3,
+      "source": "tms2",
+      "yoy": 3.69
+    },
+    {
+      "date": "1985-05-01",
+      "value": 1192.6,
+      "source": "tms2",
+      "yoy": 4.67
+    },
+    {
+      "date": "1985-06-01",
+      "value": 1210.3,
+      "source": "tms2",
+      "yoy": 6.43
+    },
+    {
+      "date": "1985-07-01",
+      "value": 1227.1,
+      "source": "tms2",
+      "yoy": 8.51
+    },
+    {
+      "date": "1985-08-01",
+      "value": 1243.9,
+      "source": "tms2",
+      "yoy": 10.81
+    },
+    {
+      "date": "1985-09-01",
+      "value": 1256.5,
+      "source": "tms2",
+      "yoy": 11.96
+    },
+    {
+      "date": "1985-10-01",
+      "value": 1267.0,
+      "source": "tms2",
+      "yoy": 12.9
+    },
+    {
+      "date": "1985-11-01",
+      "value": 1275.6,
+      "source": "tms2",
+      "yoy": 12.76
+    },
+    {
+      "date": "1985-12-01",
+      "value": 1283.5,
+      "source": "tms2",
+      "yoy": 12.25
+    },
+    {
+      "date": "1986-01-01",
+      "value": 1293.73,
+      "source": "tms2",
+      "yoy": 11.53
+    },
+    {
+      "date": "1986-02-01",
+      "value": 1292.9,
+      "source": "tms2",
+      "yoy": 9.75
+    },
+    {
+      "date": "1986-03-01",
+      "value": 1295.96,
+      "source": "tms2",
+      "yoy": 9.4
+    },
+    {
+      "date": "1986-04-01",
+      "value": 1306.73,
+      "source": "tms2",
+      "yoy": 10.43
+    },
+    {
+      "date": "1986-05-01",
+      "value": 1331.05,
+      "source": "tms2",
+      "yoy": 11.61
+    },
+    {
+      "date": "1986-06-01",
+      "value": 1347.92,
+      "source": "tms2",
+      "yoy": 11.37
+    },
+    {
+      "date": "1986-07-01",
+      "value": 1368.36,
+      "source": "tms2",
+      "yoy": 11.51
+    },
+    {
+      "date": "1986-08-01",
+      "value": 1389.99,
+      "source": "tms2",
+      "yoy": 11.74
+    },
+    {
+      "date": "1986-09-01",
+      "value": 1413.41,
+      "source": "tms2",
+      "yoy": 12.49
+    },
+    {
+      "date": "1986-10-01",
+      "value": 1435.83,
+      "source": "tms2",
+      "yoy": 13.33
+    },
+    {
+      "date": "1986-11-01",
+      "value": 1455.7,
+      "source": "tms2",
+      "yoy": 14.12
+    },
+    {
+      "date": "1986-12-01",
+      "value": 1483.23,
+      "source": "tms2",
+      "yoy": 15.56
+    },
+    {
+      "date": "1987-01-01",
+      "value": 1503.51,
+      "source": "tms2",
+      "yoy": 16.22
+    },
+    {
+      "date": "1987-02-01",
+      "value": 1506.4,
+      "source": "tms2",
+      "yoy": 16.51
+    },
+    {
+      "date": "1987-03-01",
+      "value": 1509.11,
+      "source": "tms2",
+      "yoy": 16.45
+    },
+    {
+      "date": "1987-04-01",
+      "value": 1523.07,
+      "source": "tms2",
+      "yoy": 16.56
+    },
+    {
+      "date": "1987-05-01",
+      "value": 1536.37,
+      "source": "tms2",
+      "yoy": 15.43
+    },
+    {
+      "date": "1987-06-01",
+      "value": 1516.61,
+      "source": "tms2",
+      "yoy": 12.51
+    },
+    {
+      "date": "1987-07-01",
+      "value": 1510.78,
+      "source": "tms2",
+      "yoy": 10.41
+    },
+    {
+      "date": "1987-08-01",
+      "value": 1504.86,
+      "source": "tms2",
+      "yoy": 8.26
+    },
+    {
+      "date": "1987-09-01",
+      "value": 1509.18,
+      "source": "tms2",
+      "yoy": 6.78
+    },
+    {
+      "date": "1987-10-01",
+      "value": 1507.86,
+      "source": "tms2",
+      "yoy": 5.02
+    },
+    {
+      "date": "1987-11-01",
+      "value": 1486.92,
+      "source": "tms2",
+      "yoy": 2.14
+    },
+    {
+      "date": "1987-12-01",
+      "value": 1476.79,
+      "source": "tms2",
+      "yoy": -0.43
+    },
+    {
+      "date": "1988-01-01",
+      "value": 1479.87,
+      "source": "tms2",
+      "yoy": -1.57
+    },
+    {
+      "date": "1988-02-01",
+      "value": 1480.27,
+      "source": "tms2",
+      "yoy": -1.73
+    },
+    {
+      "date": "1988-03-01",
+      "value": 1484.97,
+      "source": "tms2",
+      "yoy": -1.6
+    },
+    {
+      "date": "1988-04-01",
+      "value": 1491.27,
+      "source": "tms2",
+      "yoy": -2.09
+    },
+    {
+      "date": "1988-05-01",
+      "value": 1496.87,
+      "source": "tms2",
+      "yoy": -2.57
+    },
+    {
+      "date": "1988-06-01",
+      "value": 1503.97,
+      "source": "tms2",
+      "yoy": -0.83
+    },
+    {
+      "date": "1988-07-01",
+      "value": 1504.27,
+      "source": "tms2",
+      "yoy": -0.43
+    },
+    {
+      "date": "1988-08-01",
+      "value": 1498.57,
+      "source": "tms2",
+      "yoy": -0.42
+    },
+    {
+      "date": "1988-09-01",
+      "value": 1489.67,
+      "source": "tms2",
+      "yoy": -1.29
+    },
+    {
+      "date": "1988-10-01",
+      "value": 1482.17,
+      "source": "tms2",
+      "yoy": -1.7
+    },
+    {
+      "date": "1988-11-01",
+      "value": 1479.97,
+      "source": "tms2",
+      "yoy": -0.47
+    },
+    {
+      "date": "1988-12-01",
+      "value": 1474.27,
+      "source": "tms2",
+      "yoy": -0.17
+    },
+    {
+      "date": "1989-01-01",
+      "value": 1460.37,
+      "source": "tms2",
+      "yoy": -1.32
+    },
+    {
+      "date": "1989-02-01",
+      "value": 1443.87,
+      "source": "tms2",
+      "yoy": -2.46
+    },
+    {
+      "date": "1989-03-01",
+      "value": 1429.8,
+      "source": "tms2",
+      "yoy": -3.72
+    },
+    {
+      "date": "1989-04-01",
+      "value": 1409.69,
+      "source": "tms2",
+      "yoy": -5.47
+    },
+    {
+      "date": "1989-05-01",
+      "value": 1395.53,
+      "source": "tms2",
+      "yoy": -6.77
+    },
+    {
+      "date": "1989-06-01",
+      "value": 1381.37,
+      "source": "tms2",
+      "yoy": -8.15
+    },
+    {
+      "date": "1989-07-01",
+      "value": 1381.53,
+      "source": "tms2",
+      "yoy": -8.16
+    },
+    {
+      "date": "1989-08-01",
+      "value": 1383.16,
+      "source": "tms2",
+      "yoy": -7.7
+    },
+    {
+      "date": "1989-09-01",
+      "value": 1389.34,
+      "source": "tms2",
+      "yoy": -6.74
+    },
+    {
+      "date": "1989-10-01",
+      "value": 1398.33,
+      "source": "tms2",
+      "yoy": -5.66
+    },
+    {
+      "date": "1989-11-01",
+      "value": 1404.02,
+      "source": "tms2",
+      "yoy": -5.13
+    },
+    {
+      "date": "1989-12-01",
+      "value": 1412.95,
+      "source": "tms2",
+      "yoy": -4.16
+    },
+    {
+      "date": "1990-01-01",
+      "value": 1420.86,
+      "source": "tms2",
+      "yoy": -2.71
+    },
+    {
+      "date": "1990-02-01",
+      "value": 1423.87,
+      "source": "tms2",
+      "yoy": -1.39
+    },
+    {
+      "date": "1990-03-01",
+      "value": 1427.71,
+      "source": "tms2",
+      "yoy": -0.15
+    },
+    {
+      "date": "1990-04-01",
+      "value": 1430.55,
+      "source": "tms2",
+      "yoy": 1.48
+    },
+    {
+      "date": "1990-05-01",
+      "value": 1427.35,
+      "source": "tms2",
+      "yoy": 2.28
+    },
+    {
+      "date": "1990-06-01",
+      "value": 1431.93,
+      "source": "tms2",
+      "yoy": 3.66
+    },
+    {
+      "date": "1990-07-01",
+      "value": 1434.44,
+      "source": "tms2",
+      "yoy": 3.83
+    },
+    {
+      "date": "1990-08-01",
+      "value": 1440.52,
+      "source": "tms2",
+      "yoy": 4.15
+    },
+    {
+      "date": "1990-09-01",
+      "value": 1444.67,
+      "source": "tms2",
+      "yoy": 3.98
+    },
+    {
+      "date": "1990-10-01",
+      "value": 1441.27,
+      "source": "tms2",
+      "yoy": 3.07
+    },
+    {
+      "date": "1990-11-01",
+      "value": 1441.17,
+      "source": "tms2",
+      "yoy": 2.65
+    },
+    {
+      "date": "1990-12-01",
+      "value": 1441.2,
+      "source": "tms2",
+      "yoy": 2.0
+    },
+    {
+      "date": "1991-01-01",
+      "value": 1448.35,
+      "source": "tms2",
+      "yoy": 1.93
+    },
+    {
+      "date": "1991-02-01",
+      "value": 1462.26,
+      "source": "tms2",
+      "yoy": 2.7
+    },
+    {
+      "date": "1991-03-01",
+      "value": 1472.0,
+      "source": "tms2",
+      "yoy": 3.1
+    },
+    {
+      "date": "1991-04-01",
+      "value": 1485.11,
+      "source": "tms2",
+      "yoy": 3.81
+    },
+    {
+      "date": "1991-05-01",
+      "value": 1503.42,
+      "source": "tms2",
+      "yoy": 5.33
+    },
+    {
+      "date": "1991-06-01",
+      "value": 1522.11,
+      "source": "tms2",
+      "yoy": 6.3
+    },
+    {
+      "date": "1991-07-01",
+      "value": 1538.35,
+      "source": "tms2",
+      "yoy": 7.24
+    },
+    {
+      "date": "1991-08-01",
+      "value": 1547.74,
+      "source": "tms2",
+      "yoy": 7.44
+    },
+    {
+      "date": "1991-09-01",
+      "value": 1559.57,
+      "source": "tms2",
+      "yoy": 7.95
+    },
+    {
+      "date": "1991-10-01",
+      "value": 1577.35,
+      "source": "tms2",
+      "yoy": 9.44
+    },
+    {
+      "date": "1991-11-01",
+      "value": 1597.25,
+      "source": "tms2",
+      "yoy": 10.83
+    },
+    {
+      "date": "1991-12-01",
+      "value": 1620.17,
+      "source": "tms2",
+      "yoy": 12.42
+    },
+    {
+      "date": "1992-01-01",
+      "value": 1654.51,
+      "source": "tms2",
+      "yoy": 14.23
+    },
+    {
+      "date": "1992-02-01",
+      "value": 1690.85,
+      "source": "tms2",
+      "yoy": 15.63
+    },
+    {
+      "date": "1992-03-01",
+      "value": 1718.31,
+      "source": "tms2",
+      "yoy": 16.73
+    },
+    {
+      "date": "1992-04-01",
+      "value": 1736.0,
+      "source": "tms2",
+      "yoy": 16.89
+    },
+    {
+      "date": "1992-05-01",
+      "value": 1754.47,
+      "source": "tms2",
+      "yoy": 16.7
+    },
+    {
+      "date": "1992-06-01",
+      "value": 1768.21,
+      "source": "tms2",
+      "yoy": 16.17
+    },
+    {
+      "date": "1992-07-01",
+      "value": 1786.32,
+      "source": "tms2",
+      "yoy": 16.12
+    },
+    {
+      "date": "1992-08-01",
+      "value": 1806.97,
+      "source": "tms2",
+      "yoy": 16.75
+    },
+    {
+      "date": "1992-09-01",
+      "value": 1840.69,
+      "source": "tms2",
+      "yoy": 18.03
+    },
+    {
+      "date": "1992-10-01",
+      "value": 1861.78,
+      "source": "tms2",
+      "yoy": 18.03
+    },
+    {
+      "date": "1992-11-01",
+      "value": 1881.86,
+      "source": "tms2",
+      "yoy": 17.82
+    },
+    {
+      "date": "1992-12-01",
+      "value": 1895.75,
+      "source": "tms2",
+      "yoy": 17.01
+    },
+    {
+      "date": "1993-01-01",
+      "value": 1903.4,
+      "source": "tms2",
+      "yoy": 15.04
+    },
+    {
+      "date": "1993-02-01",
+      "value": 1909.05,
+      "source": "tms2",
+      "yoy": 12.9
+    },
+    {
+      "date": "1993-03-01",
+      "value": 1912.05,
+      "source": "tms2",
+      "yoy": 11.28
+    },
+    {
+      "date": "1993-04-01",
+      "value": 1922.89,
+      "source": "tms2",
+      "yoy": 10.77
+    },
+    {
+      "date": "1993-05-01",
+      "value": 1953.35,
+      "source": "tms2",
+      "yoy": 11.34
+    },
+    {
+      "date": "1993-06-01",
+      "value": 1970.65,
+      "source": "tms2",
+      "yoy": 11.45
+    },
+    {
+      "date": "1993-07-01",
+      "value": 1978.69,
+      "source": "tms2",
+      "yoy": 10.77
+    },
+    {
+      "date": "1993-08-01",
+      "value": 1991.31,
+      "source": "tms2",
+      "yoy": 10.2
+    },
+    {
+      "date": "1993-09-01",
+      "value": 2006.24,
+      "source": "tms2",
+      "yoy": 8.99
+    },
+    {
+      "date": "1993-10-01",
+      "value": 2014.1,
+      "source": "tms2",
+      "yoy": 8.18
+    },
+    {
+      "date": "1993-11-01",
+      "value": 2030.86,
+      "source": "tms2",
+      "yoy": 7.92
+    },
+    {
+      "date": "1993-12-01",
+      "value": 2039.49,
+      "source": "tms2",
+      "yoy": 7.58
+    },
+    {
+      "date": "1994-01-01",
+      "value": 2046.67,
+      "source": "tms2",
+      "yoy": 7.53
+    },
+    {
+      "date": "1994-02-01",
+      "value": 2053.47,
+      "source": "tms2",
+      "yoy": 7.57
+    },
+    {
+      "date": "1994-03-01",
+      "value": 2054.49,
+      "source": "tms2",
+      "yoy": 7.45
+    },
+    {
+      "date": "1994-04-01",
+      "value": 2051.02,
+      "source": "tms2",
+      "yoy": 6.66
+    },
+    {
+      "date": "1994-05-01",
+      "value": 2055.29,
+      "source": "tms2",
+      "yoy": 5.22
+    },
+    {
+      "date": "1994-06-01",
+      "value": 2046.63,
+      "source": "tms2",
+      "yoy": 3.86
+    },
+    {
+      "date": "1994-07-01",
+      "value": 2047.08,
+      "source": "tms2",
+      "yoy": 3.46
+    },
+    {
+      "date": "1994-08-01",
+      "value": 2038.7,
+      "source": "tms2",
+      "yoy": 2.38
+    },
+    {
+      "date": "1994-09-01",
+      "value": 2032.81,
+      "source": "tms2",
+      "yoy": 1.32
+    },
+    {
+      "date": "1994-10-01",
+      "value": 2018.48,
+      "source": "tms2",
+      "yoy": 0.22
+    },
+    {
+      "date": "1994-11-01",
+      "value": 2006.3,
+      "source": "tms2",
+      "yoy": -1.21
+    },
+    {
+      "date": "1994-12-01",
+      "value": 1990.21,
+      "source": "tms2",
+      "yoy": -2.42
+    },
+    {
+      "date": "1995-01-01",
+      "value": 1975.35,
+      "source": "tms2",
+      "yoy": -3.48
+    },
+    {
+      "date": "1995-02-01",
+      "value": 1950.3,
+      "source": "tms2",
+      "yoy": -5.02
+    },
+    {
+      "date": "1995-03-01",
+      "value": 1925.42,
+      "source": "tms2",
+      "yoy": -6.28
+    },
+    {
+      "date": "1995-04-01",
+      "value": 1910.74,
+      "source": "tms2",
+      "yoy": -6.84
+    },
+    {
+      "date": "1995-05-01",
+      "value": 1909.7,
+      "source": "tms2",
+      "yoy": -7.08
+    },
+    {
+      "date": "1995-06-01",
+      "value": 1913.18,
+      "source": "tms2",
+      "yoy": -6.52
+    },
+    {
+      "date": "1995-07-01",
+      "value": 1912.47,
+      "source": "tms2",
+      "yoy": -6.58
+    },
+    {
+      "date": "1995-08-01",
+      "value": 1917.34,
+      "source": "tms2",
+      "yoy": -5.95
+    },
+    {
+      "date": "1995-09-01",
+      "value": 1921.96,
+      "source": "tms2",
+      "yoy": -5.45
+    },
+    {
+      "date": "1995-10-01",
+      "value": 1925.47,
+      "source": "tms2",
+      "yoy": -4.61
+    },
+    {
+      "date": "1995-11-01",
+      "value": 1924.29,
+      "source": "tms2",
+      "yoy": -4.09
+    },
+    {
+      "date": "1995-12-01",
+      "value": 1930.23,
+      "source": "tms2",
+      "yoy": -3.01
+    },
+    {
+      "date": "1996-01-01",
+      "value": 1940.57,
+      "source": "tms2",
+      "yoy": -1.76
+    },
+    {
+      "date": "1996-02-01",
+      "value": 1944.63,
+      "source": "tms2",
+      "yoy": -0.29
+    },
+    {
+      "date": "1996-03-01",
+      "value": 1960.53,
+      "source": "tms2",
+      "yoy": 1.82
+    },
+    {
+      "date": "1996-04-01",
+      "value": 1970.68,
+      "source": "tms2",
+      "yoy": 3.14
+    },
+    {
+      "date": "1996-05-01",
+      "value": 1977.34,
+      "source": "tms2",
+      "yoy": 3.54
+    },
+    {
+      "date": "1996-06-01",
+      "value": 1985.6,
+      "source": "tms2",
+      "yoy": 3.79
+    },
+    {
+      "date": "1996-07-01",
+      "value": 1990.86,
+      "source": "tms2",
+      "yoy": 4.1
+    },
+    {
+      "date": "1996-08-01",
+      "value": 1989.56,
+      "source": "tms2",
+      "yoy": 3.77
+    },
+    {
+      "date": "1996-09-01",
+      "value": 1992.35,
+      "source": "tms2",
+      "yoy": 3.66
+    },
+    {
+      "date": "1996-10-01",
+      "value": 2000.27,
+      "source": "tms2",
+      "yoy": 3.88
+    },
+    {
+      "date": "1996-11-01",
+      "value": 2013.09,
+      "source": "tms2",
+      "yoy": 4.61
+    },
+    {
+      "date": "1996-12-01",
+      "value": 2026.17,
+      "source": "tms2",
+      "yoy": 4.97
+    },
+    {
+      "date": "1997-01-01",
+      "value": 2036.85,
+      "source": "tms2",
+      "yoy": 4.96
+    },
+    {
+      "date": "1997-02-01",
+      "value": 2041.22,
+      "source": "tms2",
+      "yoy": 4.97
+    },
+    {
+      "date": "1997-03-01",
+      "value": 2048.39,
+      "source": "tms2",
+      "yoy": 4.48
+    },
+    {
+      "date": "1997-04-01",
+      "value": 2058.66,
+      "source": "tms2",
+      "yoy": 4.46
+    },
+    {
+      "date": "1997-05-01",
+      "value": 2066.5,
+      "source": "tms2",
+      "yoy": 4.51
+    },
+    {
+      "date": "1997-06-01",
+      "value": 2071.04,
+      "source": "tms2",
+      "yoy": 4.3
+    },
+    {
+      "date": "1997-07-01",
+      "value": 2076.1,
+      "source": "tms2",
+      "yoy": 4.28
+    },
+    {
+      "date": "1997-08-01",
+      "value": 2093.37,
+      "source": "tms2",
+      "yoy": 5.22
+    },
+    {
+      "date": "1997-09-01",
+      "value": 2101.7,
+      "source": "tms2",
+      "yoy": 5.49
+    },
+    {
+      "date": "1997-10-01",
+      "value": 2115.42,
+      "source": "tms2",
+      "yoy": 5.76
+    },
+    {
+      "date": "1997-11-01",
+      "value": 2129.56,
+      "source": "tms2",
+      "yoy": 5.79
+    },
+    {
+      "date": "1997-12-01",
+      "value": 2144.68,
+      "source": "tms2",
+      "yoy": 5.85
+    },
+    {
+      "date": "1998-01-01",
+      "value": 2160.7,
+      "source": "tms2",
+      "yoy": 6.08
+    },
+    {
+      "date": "1998-02-01",
+      "value": 2180.03,
+      "source": "tms2",
+      "yoy": 6.8
+    },
+    {
+      "date": "1998-03-01",
+      "value": 2194.75,
+      "source": "tms2",
+      "yoy": 7.15
+    },
+    {
+      "date": "1998-04-01",
+      "value": 2214.23,
+      "source": "tms2",
+      "yoy": 7.56
+    },
+    {
+      "date": "1998-05-01",
+      "value": 2226.78,
+      "source": "tms2",
+      "yoy": 7.76
+    },
+    {
+      "date": "1998-06-01",
+      "value": 2239.03,
+      "source": "tms2",
+      "yoy": 8.11
+    },
+    {
+      "date": "1998-07-01",
+      "value": 2254.82,
+      "source": "tms2",
+      "yoy": 8.61
+    },
+    {
+      "date": "1998-08-01",
+      "value": 2262.81,
+      "source": "tms2",
+      "yoy": 8.09
+    },
+    {
+      "date": "1998-09-01",
+      "value": 2279.96,
+      "source": "tms2",
+      "yoy": 8.48
+    },
+    {
+      "date": "1998-10-01",
+      "value": 2302.98,
+      "source": "tms2",
+      "yoy": 8.87
+    },
+    {
+      "date": "1998-11-01",
+      "value": 2331.43,
+      "source": "tms2",
+      "yoy": 9.48
+    },
+    {
+      "date": "1998-12-01",
+      "value": 2353.86,
+      "source": "tms2",
+      "yoy": 9.75
+    },
+    {
+      "date": "1999-01-01",
+      "value": 2375.52,
+      "source": "tms2",
+      "yoy": 9.94
+    },
+    {
+      "date": "1999-02-01",
+      "value": 2388.54,
+      "source": "tms2",
+      "yoy": 9.56
+    },
+    {
+      "date": "1999-03-01",
+      "value": 2396.67,
+      "source": "tms2",
+      "yoy": 9.2
+    },
+    {
+      "date": "1999-04-01",
+      "value": 2418.82,
+      "source": "tms2",
+      "yoy": 9.24
+    },
+    {
+      "date": "1999-05-01",
+      "value": 2438.61,
+      "source": "tms2",
+      "yoy": 9.51
+    },
+    {
+      "date": "1999-06-01",
+      "value": 2451.41,
+      "source": "tms2",
+      "yoy": 9.49
+    },
+    {
+      "date": "1999-07-01",
+      "value": 2468.15,
+      "source": "tms2",
+      "yoy": 9.46
+    },
+    {
+      "date": "1999-08-01",
+      "value": 2473.73,
+      "source": "tms2",
+      "yoy": 9.32
+    },
+    {
+      "date": "1999-09-01",
+      "value": 2477.28,
+      "source": "tms2",
+      "yoy": 8.65
+    },
+    {
+      "date": "1999-10-01",
+      "value": 2488.73,
+      "source": "tms2",
+      "yoy": 8.07
+    },
+    {
+      "date": "1999-11-01",
+      "value": 2495.36,
+      "source": "tms2",
+      "yoy": 7.03
+    },
+    {
+      "date": "1999-12-01",
+      "value": 2508.2,
+      "source": "tms2",
+      "yoy": 6.56
+    },
+    {
+      "date": "2000-01-01",
+      "value": 2513.52,
+      "source": "tms2",
+      "yoy": 5.81
+    },
+    {
+      "date": "2000-02-01",
+      "value": 2506.11,
+      "source": "tms2",
+      "yoy": 4.92
+    },
+    {
+      "date": "2000-03-01",
+      "value": 2515.53,
+      "source": "tms2",
+      "yoy": 4.96
+    },
+    {
+      "date": "2000-04-01",
+      "value": 2543.33,
+      "source": "tms2",
+      "yoy": 5.15
+    },
+    {
+      "date": "2000-05-01",
+      "value": 2529.39,
+      "source": "tms2",
+      "yoy": 3.72
+    },
+    {
+      "date": "2000-06-01",
+      "value": 2533.7,
+      "source": "tms2",
+      "yoy": 3.36
+    },
+    {
+      "date": "2000-07-01",
+      "value": 2545.58,
+      "source": "tms2",
+      "yoy": 3.14
+    },
+    {
+      "date": "2000-08-01",
+      "value": 2552.84,
+      "source": "tms2",
+      "yoy": 3.2
+    },
+    {
+      "date": "2000-09-01",
+      "value": 2572.14,
+      "source": "tms2",
+      "yoy": 3.83
+    },
+    {
+      "date": "2000-10-01",
+      "value": 2575.55,
+      "source": "tms2",
+      "yoy": 3.49
+    },
+    {
+      "date": "2000-11-01",
+      "value": 2576.23,
+      "source": "tms2",
+      "yoy": 3.24
+    },
+    {
+      "date": "2000-12-01",
+      "value": 2600.48,
+      "source": "tms2",
+      "yoy": 3.68
+    },
+    {
+      "date": "2001-01-01",
+      "value": 2624.62,
+      "source": "tms2",
+      "yoy": 4.42
+    },
+    {
+      "date": "2001-02-01",
+      "value": 2652.19,
+      "source": "tms2",
+      "yoy": 5.83
+    },
+    {
+      "date": "2001-03-01",
+      "value": 2692.9,
+      "source": "tms2",
+      "yoy": 7.05
+    },
+    {
+      "date": "2001-04-01",
+      "value": 2737.57,
+      "source": "tms2",
+      "yoy": 7.64
+    },
+    {
+      "date": "2001-05-01",
+      "value": 2761.62,
+      "source": "tms2",
+      "yoy": 9.18
+    },
+    {
+      "date": "2001-06-01",
+      "value": 2807.2,
+      "source": "tms2",
+      "yoy": 10.79
+    },
+    {
+      "date": "2001-07-01",
+      "value": 2842.08,
+      "source": "tms2",
+      "yoy": 11.65
+    },
+    {
+      "date": "2001-08-01",
+      "value": 2885.76,
+      "source": "tms2",
+      "yoy": 13.04
+    },
+    {
+      "date": "2001-09-01",
+      "value": 2990.14,
+      "source": "tms2",
+      "yoy": 16.25
+    },
+    {
+      "date": "2001-10-01",
+      "value": 2978.89,
+      "source": "tms2",
+      "yoy": 15.66
+    },
+    {
+      "date": "2001-11-01",
+      "value": 3036.09,
+      "source": "tms2",
+      "yoy": 17.85
+    },
+    {
+      "date": "2001-12-01",
+      "value": 3103.75,
+      "source": "tms2",
+      "yoy": 19.35
+    },
+    {
+      "date": "2002-01-01",
+      "value": 3151.2,
+      "source": "tms2",
+      "yoy": 20.06
+    },
+    {
+      "date": "2002-02-01",
+      "value": 3197.09,
+      "source": "tms2",
+      "yoy": 20.55
+    },
+    {
+      "date": "2002-03-01",
+      "value": 3232.8,
+      "source": "tms2",
+      "yoy": 20.05
+    },
+    {
+      "date": "2002-04-01",
+      "value": 3248.94,
+      "source": "tms2",
+      "yoy": 18.68
+    },
+    {
+      "date": "2002-05-01",
+      "value": 3285.63,
+      "source": "tms2",
+      "yoy": 18.97
+    },
+    {
+      "date": "2002-06-01",
+      "value": 3316.07,
+      "source": "tms2",
+      "yoy": 18.13
+    },
+    {
+      "date": "2002-07-01",
+      "value": 3349.54,
+      "source": "tms2",
+      "yoy": 17.86
+    },
+    {
+      "date": "2002-08-01",
+      "value": 3396.58,
+      "source": "tms2",
+      "yoy": 17.7
+    },
+    {
+      "date": "2002-09-01",
+      "value": 3437.7,
+      "source": "tms2",
+      "yoy": 14.97
+    },
+    {
+      "date": "2002-10-01",
+      "value": 3488.9,
+      "source": "tms2",
+      "yoy": 17.12
+    },
+    {
+      "date": "2002-11-01",
+      "value": 3545.86,
+      "source": "tms2",
+      "yoy": 16.79
+    },
+    {
+      "date": "2002-12-01",
+      "value": 3582.95,
+      "source": "tms2",
+      "yoy": 15.44
+    },
+    {
+      "date": "2003-01-01",
+      "value": 3629.88,
+      "source": "tms2",
+      "yoy": 15.19
+    },
+    {
+      "date": "2003-02-01",
+      "value": 3671.09,
+      "source": "tms2",
+      "yoy": 14.83
+    },
+    {
+      "date": "2003-03-01",
+      "value": 3698.65,
+      "source": "tms2",
+      "yoy": 14.41
+    },
+    {
+      "date": "2003-04-01",
+      "value": 3746.17,
+      "source": "tms2",
+      "yoy": 15.3
+    },
+    {
+      "date": "2003-05-01",
+      "value": 3819.57,
+      "source": "tms2",
+      "yoy": 16.25
+    },
+    {
+      "date": "2003-06-01",
+      "value": 3869.44,
+      "source": "tms2",
+      "yoy": 16.69
+    },
+    {
+      "date": "2003-07-01",
+      "value": 3935.81,
+      "source": "tms2",
+      "yoy": 17.5
+    },
+    {
+      "date": "2003-08-01",
+      "value": 4008.32,
+      "source": "tms2",
+      "yoy": 18.01
+    },
+    {
+      "date": "2003-09-01",
+      "value": 3997.8,
+      "source": "tms2",
+      "yoy": 16.29
+    },
+    {
+      "date": "2003-10-01",
+      "value": 4018.58,
+      "source": "tms2",
+      "yoy": 15.18
+    },
+    {
+      "date": "2003-11-01",
+      "value": 4045.21,
+      "source": "tms2",
+      "yoy": 14.08
+    },
+    {
+      "date": "2003-12-01",
+      "value": 4063.02,
+      "source": "tms2",
+      "yoy": 13.4
+    },
+    {
+      "date": "2004-01-01",
+      "value": 4093.18,
+      "source": "tms2",
+      "yoy": 12.76
+    },
+    {
+      "date": "2004-02-01",
+      "value": 4145.0,
+      "source": "tms2",
+      "yoy": 12.91
+    },
+    {
+      "date": "2004-03-01",
+      "value": 4195.6,
+      "source": "tms2",
+      "yoy": 13.44
+    },
+    {
+      "date": "2004-04-01",
+      "value": 4246.26,
+      "source": "tms2",
+      "yoy": 13.35
+    },
+    {
+      "date": "2004-05-01",
+      "value": 4320.9,
+      "source": "tms2",
+      "yoy": 13.13
+    },
+    {
+      "date": "2004-06-01",
+      "value": 4328.0,
+      "source": "tms2",
+      "yoy": 11.85
+    },
+    {
+      "date": "2004-07-01",
+      "value": 4349.46,
+      "source": "tms2",
+      "yoy": 10.51
+    },
+    {
+      "date": "2004-08-01",
+      "value": 4379.95,
+      "source": "tms2",
+      "yoy": 9.27
+    },
+    {
+      "date": "2004-09-01",
+      "value": 4418.91,
+      "source": "tms2",
+      "yoy": 10.53
+    },
+    {
+      "date": "2004-10-01",
+      "value": 4449.95,
+      "source": "tms2",
+      "yoy": 10.73
+    },
+    {
+      "date": "2004-11-01",
+      "value": 4475.98,
+      "source": "tms2",
+      "yoy": 10.65
+    },
+    {
+      "date": "2004-12-01",
+      "value": 4489.3,
+      "source": "tms2",
+      "yoy": 10.49
+    },
+    {
+      "date": "2005-01-01",
+      "value": 4487.71,
+      "source": "tms2",
+      "yoy": 9.64
+    },
+    {
+      "date": "2005-02-01",
+      "value": 4484.84,
+      "source": "tms2",
+      "yoy": 8.2
+    },
+    {
+      "date": "2005-03-01",
+      "value": 4485.04,
+      "source": "tms2",
+      "yoy": 6.9
+    },
+    {
+      "date": "2005-04-01",
+      "value": 4477.11,
+      "source": "tms2",
+      "yoy": 5.44
+    },
+    {
+      "date": "2005-05-01",
+      "value": 4474.6,
+      "source": "tms2",
+      "yoy": 3.56
+    },
+    {
+      "date": "2005-06-01",
+      "value": 4493.29,
+      "source": "tms2",
+      "yoy": 3.82
+    },
+    {
+      "date": "2005-07-01",
+      "value": 4508.85,
+      "source": "tms2",
+      "yoy": 3.66
+    },
+    {
+      "date": "2005-08-01",
+      "value": 4526.58,
+      "source": "tms2",
+      "yoy": 3.35
+    },
+    {
+      "date": "2005-09-01",
+      "value": 4541.26,
+      "source": "tms2",
+      "yoy": 2.77
+    },
+    {
+      "date": "2005-10-01",
+      "value": 4557.94,
+      "source": "tms2",
+      "yoy": 2.43
+    },
+    {
+      "date": "2005-11-01",
+      "value": 4556.34,
+      "source": "tms2",
+      "yoy": 1.8
+    },
+    {
+      "date": "2005-12-01",
+      "value": 4567.95,
+      "source": "tms2",
+      "yoy": 1.75
+    },
+    {
+      "date": "2006-01-01",
+      "value": 4589.11,
+      "source": "tms2",
+      "yoy": 2.26
+    },
+    {
+      "date": "2006-02-01",
+      "value": 4591.38,
+      "source": "tms2",
+      "yoy": 2.38
+    },
+    {
+      "date": "2006-03-01",
+      "value": 4582.33,
+      "source": "tms2",
+      "yoy": 2.17
+    },
+    {
+      "date": "2006-04-01",
+      "value": 4589.18,
+      "source": "tms2",
+      "yoy": 2.5
+    },
+    {
+      "date": "2006-05-01",
+      "value": 4566.11,
+      "source": "tms2",
+      "yoy": 2.05
+    },
+    {
+      "date": "2006-06-01",
+      "value": 4565.23,
+      "source": "tms2",
+      "yoy": 1.6
+    },
+    {
+      "date": "2006-07-01",
+      "value": 4570.11,
+      "source": "tms2",
+      "yoy": 1.36
+    },
+    {
+      "date": "2006-08-01",
+      "value": 4567.04,
+      "source": "tms2",
+      "yoy": 0.89
+    },
+    {
+      "date": "2006-09-01",
+      "value": 4566.62,
+      "source": "tms2",
+      "yoy": 0.56
+    },
+    {
+      "date": "2006-10-01",
+      "value": 4587.76,
+      "source": "tms2",
+      "yoy": 0.65
+    },
+    {
+      "date": "2006-11-01",
+      "value": 4599.63,
+      "source": "tms2",
+      "yoy": 0.95
+    },
+    {
+      "date": "2006-12-01",
+      "value": 4625.28,
+      "source": "tms2",
+      "yoy": 1.26
+    },
+    {
+      "date": "2007-01-01",
+      "value": 4643.64,
+      "source": "tms2",
+      "yoy": 1.19
+    },
+    {
+      "date": "2007-02-01",
+      "value": 4642.83,
+      "source": "tms2",
+      "yoy": 1.12
+    },
+    {
+      "date": "2007-03-01",
+      "value": 4657.84,
+      "source": "tms2",
+      "yoy": 1.65
+    },
+    {
+      "date": "2007-04-01",
+      "value": 4705.86,
+      "source": "tms2",
+      "yoy": 2.54
+    },
+    {
+      "date": "2007-05-01",
+      "value": 4704.67,
+      "source": "tms2",
+      "yoy": 3.03
+    },
+    {
+      "date": "2007-06-01",
+      "value": 4716.27,
+      "source": "tms2",
+      "yoy": 3.31
+    },
+    {
+      "date": "2007-07-01",
+      "value": 4725.99,
+      "source": "tms2",
+      "yoy": 3.41
+    },
+    {
+      "date": "2007-08-01",
+      "value": 4768.41,
+      "source": "tms2",
+      "yoy": 4.41
+    },
+    {
+      "date": "2007-09-01",
+      "value": 4762.6,
+      "source": "tms2",
+      "yoy": 4.29
+    },
+    {
+      "date": "2007-10-01",
+      "value": 4756.98,
+      "source": "tms2",
+      "yoy": 3.69
+    },
+    {
+      "date": "2007-11-01",
+      "value": 4754.6,
+      "source": "tms2",
+      "yoy": 3.37
+    },
+    {
+      "date": "2007-12-01",
+      "value": 4754.74,
+      "source": "tms2",
+      "yoy": 2.8
+    },
+    {
+      "date": "2008-01-01",
+      "value": 4752.9,
+      "source": "tms2",
+      "yoy": 2.35
+    },
+    {
+      "date": "2008-02-01",
+      "value": 4784.97,
+      "source": "tms2",
+      "yoy": 3.06
+    },
+    {
+      "date": "2008-03-01",
+      "value": 4837.61,
+      "source": "tms2",
+      "yoy": 3.86
+    },
+    {
+      "date": "2008-04-01",
+      "value": 4852.04,
+      "source": "tms2",
+      "yoy": 3.11
+    },
+    {
+      "date": "2008-05-01",
+      "value": 4877.7,
+      "source": "tms2",
+      "yoy": 3.68
+    },
+    {
+      "date": "2008-06-01",
+      "value": 4906.52,
+      "source": "tms2",
+      "yoy": 4.03
+    },
+    {
+      "date": "2008-07-01",
+      "value": 4933.39,
+      "source": "tms2",
+      "yoy": 4.39
+    },
+    {
+      "date": "2008-08-01",
+      "value": 4915.63,
+      "source": "tms2",
+      "yoy": 3.09
+    },
+    {
+      "date": "2008-09-01",
+      "value": 4963.87,
+      "source": "tms2",
+      "yoy": 4.23
+    },
+    {
+      "date": "2008-10-01",
+      "value": 4995.66,
+      "source": "tms2",
+      "yoy": 5.02
+    },
+    {
+      "date": "2008-11-01",
+      "value": 5034.84,
+      "source": "tms2",
+      "yoy": 5.89
+    },
+    {
+      "date": "2008-12-01",
+      "value": 5208.17,
+      "source": "tms2",
+      "yoy": 9.54
+    },
+    {
+      "date": "2009-01-01",
+      "value": 5258.2,
+      "source": "tms2",
+      "yoy": 10.63
+    },
+    {
+      "date": "2009-02-01",
+      "value": 5294.17,
+      "source": "tms2",
+      "yoy": 10.64
+    },
+    {
+      "date": "2009-03-01",
+      "value": 5394.23,
+      "source": "tms2",
+      "yoy": 11.51
+    },
+    {
+      "date": "2009-04-01",
+      "value": 5420.19,
+      "source": "tms2",
+      "yoy": 11.71
+    },
+    {
+      "date": "2009-05-01",
+      "value": 5525.02,
+      "source": "tms2",
+      "yoy": 13.27
+    },
+    {
+      "date": "2009-06-01",
+      "value": 5585.92,
+      "source": "tms2",
+      "yoy": 13.85
+    },
+    {
+      "date": "2009-07-01",
+      "value": 5642.64,
+      "source": "tms2",
+      "yoy": 14.38
+    },
+    {
+      "date": "2009-08-01",
+      "value": 5691.37,
+      "source": "tms2",
+      "yoy": 15.78
+    },
+    {
+      "date": "2009-09-01",
+      "value": 5742.99,
+      "source": "tms2",
+      "yoy": 15.7
+    },
+    {
+      "date": "2009-10-01",
+      "value": 5851.76,
+      "source": "tms2",
+      "yoy": 17.14
+    },
+    {
+      "date": "2009-11-01",
+      "value": 5934.82,
+      "source": "tms2",
+      "yoy": 17.88
+    },
+    {
+      "date": "2009-12-01",
+      "value": 6002.25,
+      "source": "tms2",
+      "yoy": 15.25
+    },
+    {
+      "date": "2010-01-01",
+      "value": 6091.82,
+      "source": "tms2",
+      "yoy": 15.85
+    },
+    {
+      "date": "2010-02-01",
+      "value": 6090.28,
+      "source": "tms2",
+      "yoy": 15.04
+    },
+    {
+      "date": "2010-03-01",
+      "value": 6109.54,
+      "source": "tms2",
+      "yoy": 13.26
+    },
+    {
+      "date": "2010-04-01",
+      "value": 6158.6,
+      "source": "tms2",
+      "yoy": 13.62
+    },
+    {
+      "date": "2010-05-01",
+      "value": 6239.05,
+      "source": "tms2",
+      "yoy": 12.92
+    },
+    {
+      "date": "2010-06-01",
+      "value": 6269.12,
+      "source": "tms2",
+      "yoy": 12.23
+    },
+    {
+      "date": "2010-07-01",
+      "value": 6299.19,
+      "source": "tms2",
+      "yoy": 11.64
+    },
+    {
+      "date": "2010-08-01",
+      "value": 6369.86,
+      "source": "tms2",
+      "yoy": 11.92
+    },
+    {
+      "date": "2010-09-01",
+      "value": 6445.99,
+      "source": "tms2",
+      "yoy": 12.24
+    },
+    {
+      "date": "2010-10-01",
+      "value": 6528.59,
+      "source": "tms2",
+      "yoy": 11.57
+    },
+    {
+      "date": "2010-11-01",
+      "value": 6561.46,
+      "source": "tms2",
+      "yoy": 10.56
+    },
+    {
+      "date": "2010-12-01",
+      "value": 6648.22,
+      "source": "tms2",
+      "yoy": 10.76
+    },
+    {
+      "date": "2011-01-01",
+      "value": 6732.79,
+      "source": "tms2",
+      "yoy": 10.52
+    },
+    {
+      "date": "2011-02-01",
+      "value": 6789.58,
+      "source": "tms2",
+      "yoy": 11.48
+    },
+    {
+      "date": "2011-03-01",
+      "value": 6849.86,
+      "source": "tms2",
+      "yoy": 12.12
+    },
+    {
+      "date": "2011-04-01",
+      "value": 6938.01,
+      "source": "tms2",
+      "yoy": 12.66
+    },
+    {
+      "date": "2011-05-01",
+      "value": 7052.98,
+      "source": "tms2",
+      "yoy": 13.05
+    },
+    {
+      "date": "2011-06-01",
+      "value": 7112.59,
+      "source": "tms2",
+      "yoy": 13.45
+    },
+    {
+      "date": "2011-07-01",
+      "value": 7283.16,
+      "source": "tms2",
+      "yoy": 15.62
+    },
+    {
+      "date": "2011-08-01",
+      "value": 7426.12,
+      "source": "tms2",
+      "yoy": 16.58
+    },
+    {
+      "date": "2011-09-01",
+      "value": 7468.15,
+      "source": "tms2",
+      "yoy": 15.86
+    },
+    {
+      "date": "2011-10-01",
+      "value": 7516.23,
+      "source": "tms2",
+      "yoy": 15.13
+    },
+    {
+      "date": "2011-11-01",
+      "value": 7578.64,
+      "source": "tms2",
+      "yoy": 15.5
+    },
+    {
+      "date": "2011-12-01",
+      "value": 7663.51,
+      "source": "tms2",
+      "yoy": 15.27
+    },
+    {
+      "date": "2012-01-01",
+      "value": 7778.66,
+      "source": "tms2",
+      "yoy": 15.53
+    },
+    {
+      "date": "2012-02-01",
+      "value": 7833.87,
+      "source": "tms2",
+      "yoy": 15.38
+    },
+    {
+      "date": "2012-03-01",
+      "value": 7893.83,
+      "source": "tms2",
+      "yoy": 15.24
+    },
+    {
+      "date": "2012-04-01",
+      "value": 7953.43,
+      "source": "tms2",
+      "yoy": 14.64
+    },
+    {
+      "date": "2012-05-01",
+      "value": 8050.25,
+      "source": "tms2",
+      "yoy": 14.14
+    },
+    {
+      "date": "2012-06-01",
+      "value": 8115.94,
+      "source": "tms2",
+      "yoy": 14.11
+    },
+    {
+      "date": "2012-07-01",
+      "value": 8168.65,
+      "source": "tms2",
+      "yoy": 12.16
+    },
+    {
+      "date": "2012-08-01",
+      "value": 8201.67,
+      "source": "tms2",
+      "yoy": 10.44
+    },
+    {
+      "date": "2012-09-01",
+      "value": 8311.76,
+      "source": "tms2",
+      "yoy": 11.3
+    },
+    {
+      "date": "2012-10-01",
+      "value": 8399.25,
+      "source": "tms2",
+      "yoy": 11.75
+    },
+    {
+      "date": "2012-11-01",
+      "value": 8434.05,
+      "source": "tms2",
+      "yoy": 11.29
+    },
+    {
+      "date": "2012-12-01",
+      "value": 8568.38,
+      "source": "tms2",
+      "yoy": 11.81
+    },
+    {
+      "date": "2013-01-01",
+      "value": 8615.51,
+      "source": "tms2",
+      "yoy": 10.76
+    },
+    {
+      "date": "2013-02-01",
+      "value": 8631.47,
+      "source": "tms2",
+      "yoy": 10.18
+    },
+    {
+      "date": "2013-03-01",
+      "value": 8705.99,
+      "source": "tms2",
+      "yoy": 10.29
+    },
+    {
+      "date": "2013-04-01",
+      "value": 8770.65,
+      "source": "tms2",
+      "yoy": 10.28
+    },
+    {
+      "date": "2013-05-01",
+      "value": 8814.57,
+      "source": "tms2",
+      "yoy": 9.49
+    },
+    {
+      "date": "2013-06-01",
+      "value": 8835.81,
+      "source": "tms2",
+      "yoy": 8.87
+    },
+    {
+      "date": "2013-07-01",
+      "value": 8892.91,
+      "source": "tms2",
+      "yoy": 8.87
+    },
+    {
+      "date": "2013-08-01",
+      "value": 8927.96,
+      "source": "tms2",
+      "yoy": 8.86
+    },
+    {
+      "date": "2013-09-01",
+      "value": 8976.82,
+      "source": "tms2",
+      "yoy": 8.0
+    },
+    {
+      "date": "2013-10-01",
+      "value": 9102.0,
+      "source": "tms2",
+      "yoy": 8.37
+    },
+    {
+      "date": "2013-11-01",
+      "value": 9134.7,
+      "source": "tms2",
+      "yoy": 8.31
+    },
+    {
+      "date": "2013-12-01",
+      "value": 9216.66,
+      "source": "tms2",
+      "yoy": 7.57
+    },
+    {
+      "date": "2014-01-01",
+      "value": 9343.0,
+      "source": "tms2",
+      "yoy": 8.44
+    },
+    {
+      "date": "2014-02-01",
+      "value": 9375.49,
+      "source": "tms2",
+      "yoy": 8.62
+    },
+    {
+      "date": "2014-03-01",
+      "value": 9441.98,
+      "source": "tms2",
+      "yoy": 8.45
+    },
+    {
+      "date": "2014-04-01",
+      "value": 9504.02,
+      "source": "tms2",
+      "yoy": 8.36
+    },
+    {
+      "date": "2014-05-01",
+      "value": 9548.19,
+      "source": "tms2",
+      "yoy": 8.32
+    },
+    {
+      "date": "2014-06-01",
+      "value": 9620.63,
+      "source": "tms2",
+      "yoy": 8.88
+    },
+    {
+      "date": "2014-07-01",
+      "value": 9682.55,
+      "source": "tms2",
+      "yoy": 8.88
+    },
+    {
+      "date": "2014-08-01",
+      "value": 9691.35,
+      "source": "tms2",
+      "yoy": 8.55
+    },
+    {
+      "date": "2014-09-01",
+      "value": 9747.6,
+      "source": "tms2",
+      "yoy": 8.59
+    },
+    {
+      "date": "2014-10-01",
+      "value": 9858.09,
+      "source": "tms2",
+      "yoy": 8.31
+    },
+    {
+      "date": "2014-11-01",
+      "value": 9902.21,
+      "source": "tms2",
+      "yoy": 8.4
+    },
+    {
+      "date": "2014-12-01",
+      "value": 10021.29,
+      "source": "tms2",
+      "yoy": 8.73
+    },
+    {
+      "date": "2015-01-01",
+      "value": 10166.01,
+      "source": "tms2",
+      "yoy": 8.81
+    },
+    {
+      "date": "2015-02-01",
+      "value": 10251.98,
+      "source": "tms2",
+      "yoy": 9.35
+    },
+    {
+      "date": "2015-03-01",
+      "value": 10195.66,
+      "source": "tms2",
+      "yoy": 7.98
+    },
+    {
+      "date": "2015-04-01",
+      "value": 10294.77,
+      "source": "tms2",
+      "yoy": 8.32
+    },
+    {
+      "date": "2015-05-01",
+      "value": 10427.13,
+      "source": "tms2",
+      "yoy": 9.21
+    },
+    {
+      "date": "2015-06-01",
+      "value": 10472.95,
+      "source": "tms2",
+      "yoy": 8.86
+    },
+    {
+      "date": "2015-07-01",
+      "value": 10512.51,
+      "source": "tms2",
+      "yoy": 8.57
+    },
+    {
+      "date": "2015-08-01",
+      "value": 10534.87,
+      "source": "tms2",
+      "yoy": 8.7
+    },
+    {
+      "date": "2015-09-01",
+      "value": 10541.05,
+      "source": "tms2",
+      "yoy": 8.14
+    },
+    {
+      "date": "2015-10-01",
+      "value": 10529.73,
+      "source": "tms2",
+      "yoy": 6.81
+    },
+    {
+      "date": "2015-11-01",
+      "value": 10668.66,
+      "source": "tms2",
+      "yoy": 7.74
+    },
+    {
+      "date": "2015-12-01",
+      "value": 10853.16,
+      "source": "tms2",
+      "yoy": 8.3
+    },
+    {
+      "date": "2016-01-01",
+      "value": 10988.08,
+      "source": "tms2",
+      "yoy": 8.09
+    },
+    {
+      "date": "2016-02-01",
+      "value": 11043.52,
+      "source": "tms2",
+      "yoy": 7.72
+    },
+    {
+      "date": "2016-03-01",
+      "value": 11074.18,
+      "source": "tms2",
+      "yoy": 8.62
+    },
+    {
+      "date": "2016-04-01",
+      "value": 11194.03,
+      "source": "tms2",
+      "yoy": 8.74
+    },
+    {
+      "date": "2016-05-01",
+      "value": 11283.12,
+      "source": "tms2",
+      "yoy": 8.21
+    },
+    {
+      "date": "2016-06-01",
+      "value": 11319.8,
+      "source": "tms2",
+      "yoy": 8.09
+    },
+    {
+      "date": "2016-07-01",
+      "value": 11427.5,
+      "source": "tms2",
+      "yoy": 8.7
+    },
+    {
+      "date": "2016-08-01",
+      "value": 11470.4,
+      "source": "tms2",
+      "yoy": 8.88
+    },
+    {
+      "date": "2016-09-01",
+      "value": 11576.85,
+      "source": "tms2",
+      "yoy": 9.83
+    },
+    {
+      "date": "2016-10-01",
+      "value": 11729.34,
+      "source": "tms2",
+      "yoy": 11.39
+    },
+    {
+      "date": "2016-11-01",
+      "value": 11813.81,
+      "source": "tms2",
+      "yoy": 10.73
+    },
+    {
+      "date": "2016-12-01",
+      "value": 11800.36,
+      "source": "tms2",
+      "yoy": 8.73
+    },
+    {
+      "date": "2017-01-01",
+      "value": 11903.15,
+      "source": "tms2",
+      "yoy": 8.33
+    },
+    {
+      "date": "2017-02-01",
+      "value": 11921.1,
+      "source": "tms2",
+      "yoy": 7.95
+    },
+    {
+      "date": "2017-03-01",
+      "value": 11759.46,
+      "source": "tms2",
+      "yoy": 6.19
+    },
+    {
+      "date": "2017-04-01",
+      "value": 11877.15,
+      "source": "tms2",
+      "yoy": 6.1
+    },
+    {
+      "date": "2017-05-01",
+      "value": 11966.78,
+      "source": "tms2",
+      "yoy": 6.06
+    },
+    {
+      "date": "2017-06-01",
+      "value": 11966.18,
+      "source": "tms2",
+      "yoy": 5.71
+    },
+    {
+      "date": "2017-07-01",
+      "value": 12020.46,
+      "source": "tms2",
+      "yoy": 5.19
+    },
+    {
+      "date": "2017-08-01",
+      "value": 11997.46,
+      "source": "tms2",
+      "yoy": 4.59
+    },
+    {
+      "date": "2017-09-01",
+      "value": 12005.76,
+      "source": "tms2",
+      "yoy": 3.7
+    },
+    {
+      "date": "2017-10-01",
+      "value": 12127.48,
+      "source": "tms2",
+      "yoy": 3.39
+    },
+    {
+      "date": "2017-11-01",
+      "value": 12163.66,
+      "source": "tms2",
+      "yoy": 2.96
+    },
+    {
+      "date": "2017-12-01",
+      "value": 12154.12,
+      "source": "tms2",
+      "yoy": 3.0
+    },
+    {
+      "date": "2018-01-01",
+      "value": 12268.16,
+      "source": "tms2",
+      "yoy": 3.07
+    },
+    {
+      "date": "2018-02-01",
+      "value": 12275.23,
+      "source": "tms2",
+      "yoy": 2.97
+    },
+    {
+      "date": "2018-03-01",
+      "value": 12391.78,
+      "source": "tms2",
+      "yoy": 5.38
+    },
+    {
+      "date": "2018-04-01",
+      "value": 12442.01,
+      "source": "tms2",
+      "yoy": 4.76
+    },
+    {
+      "date": "2018-05-01",
+      "value": 12516.56,
+      "source": "tms2",
+      "yoy": 4.59
+    },
+    {
+      "date": "2018-06-01",
+      "value": 12518.09,
+      "source": "tms2",
+      "yoy": 4.61
+    },
+    {
+      "date": "2018-07-01",
+      "value": 12543.86,
+      "source": "tms2",
+      "yoy": 4.35
+    },
+    {
+      "date": "2018-08-01",
+      "value": 12577.25,
+      "source": "tms2",
+      "yoy": 4.83
+    },
+    {
+      "date": "2018-09-01",
+      "value": 12564.23,
+      "source": "tms2",
+      "yoy": 4.65
+    },
+    {
+      "date": "2018-10-01",
+      "value": 12568.32,
+      "source": "tms2",
+      "yoy": 3.64
+    },
+    {
+      "date": "2018-11-01",
+      "value": 12533.27,
+      "source": "tms2",
+      "yoy": 3.04
+    },
+    {
+      "date": "2018-12-01",
+      "value": 12612.73,
+      "source": "tms2",
+      "yoy": 3.77
+    },
+    {
+      "date": "2019-01-01",
+      "value": 12653.94,
+      "source": "tms2",
+      "yoy": 3.14
+    },
+    {
+      "date": "2019-02-01",
+      "value": 12644.59,
+      "source": "tms2",
+      "yoy": 3.01
+    },
+    {
+      "date": "2019-03-01",
+      "value": 12599.93,
+      "source": "tms2",
+      "yoy": 1.68
+    },
+    {
+      "date": "2019-04-01",
+      "value": 12658.87,
+      "source": "tms2",
+      "yoy": 1.74
+    },
+    {
+      "date": "2019-05-01",
+      "value": 12766.36,
+      "source": "tms2",
+      "yoy": 2.0
+    },
+    {
+      "date": "2019-06-01",
+      "value": 12738.07,
+      "source": "tms2",
+      "yoy": 1.76
+    },
+    {
+      "date": "2019-07-01",
+      "value": 12783.31,
+      "source": "tms2",
+      "yoy": 1.91
+    },
+    {
+      "date": "2019-08-01",
+      "value": 12774.44,
+      "source": "tms2",
+      "yoy": 1.57
+    },
+    {
+      "date": "2019-09-01",
+      "value": 12916.22,
+      "source": "tms2",
+      "yoy": 2.8
+    },
+    {
+      "date": "2019-10-01",
+      "value": 13155.67,
+      "source": "tms2",
+      "yoy": 4.67
+    },
+    {
+      "date": "2019-11-01",
+      "value": 13276.28,
+      "source": "tms2",
+      "yoy": 5.93
+    },
+    {
+      "date": "2019-12-01",
+      "value": 13307.06,
+      "source": "tms2",
+      "yoy": 5.5
+    },
+    {
+      "date": "2020-01-01",
+      "value": 13431.41,
+      "source": "tms2",
+      "yoy": 6.14
+    },
+    {
+      "date": "2020-02-01",
+      "value": 13522.18,
+      "source": "tms2",
+      "yoy": 6.94
+    },
+    {
+      "date": "2020-03-01",
+      "value": 13962.77,
+      "source": "tms2",
+      "yoy": 10.82
+    },
+    {
+      "date": "2020-04-01",
+      "value": 15323.3,
+      "source": "tms2",
+      "yoy": 21.05
+    },
+    {
+      "date": "2020-05-01",
+      "value": 16584.47,
+      "source": "tms2",
+      "yoy": 29.91
+    },
+    {
+      "date": "2020-06-01",
+      "value": 17196.44,
+      "source": "tms2",
+      "yoy": 35.0
+    },
+    {
+      "date": "2020-07-01",
+      "value": 17577.83,
+      "source": "tms2",
+      "yoy": 37.51
+    },
+    {
+      "date": "2020-08-01",
+      "value": 17644.19,
+      "source": "tms2",
+      "yoy": 38.12
+    },
+    {
+      "date": "2020-09-01",
+      "value": 17844.79,
+      "source": "tms2",
+      "yoy": 38.16
+    },
+    {
+      "date": "2020-10-01",
+      "value": 18088.45,
+      "source": "tms2",
+      "yoy": 37.5
+    },
+    {
+      "date": "2020-11-01",
+      "value": 18231.77,
+      "source": "tms2",
+      "yoy": 37.33
+    },
+    {
+      "date": "2020-12-01",
+      "value": 18380.19,
+      "source": "tms2",
+      "yoy": 38.12
+    },
+    {
+      "date": "2021-01-01",
+      "value": 18749.1,
+      "source": "tms2",
+      "yoy": 39.59
+    },
+    {
+      "date": "2021-02-01",
+      "value": 18992.01,
+      "source": "tms2",
+      "yoy": 40.45
+    },
+    {
+      "date": "2021-03-01",
+      "value": 18911.31,
+      "source": "tms2",
+      "yoy": 35.44
+    },
+    {
+      "date": "2021-04-01",
+      "value": 18994.0,
+      "source": "tms2",
+      "yoy": 23.96
+    },
+    {
+      "date": "2021-05-01",
+      "value": 19209.67,
+      "source": "tms2",
+      "yoy": 15.83
+    },
+    {
+      "date": "2021-06-01",
+      "value": 19099.4,
+      "source": "tms2",
+      "yoy": 11.07
+    },
+    {
+      "date": "2021-07-01",
+      "value": 19231.85,
+      "source": "tms2",
+      "yoy": 9.41
+    },
+    {
+      "date": "2021-08-01",
+      "value": 19203.96,
+      "source": "tms2",
+      "yoy": 8.84
+    },
+    {
+      "date": "2021-09-01",
+      "value": 19241.55,
+      "source": "tms2",
+      "yoy": 7.83
+    },
+    {
+      "date": "2021-10-01",
+      "value": 19224.03,
+      "source": "tms2",
+      "yoy": 6.28
+    },
+    {
+      "date": "2021-11-01",
+      "value": 19514.26,
+      "source": "tms2",
+      "yoy": 7.03
+    },
+    {
+      "date": "2021-12-01",
+      "value": 19584.17,
+      "source": "tms2",
+      "yoy": 6.55
+    },
+    {
+      "date": "2022-01-01",
+      "value": 20078.33,
+      "source": "tms2",
+      "yoy": 7.09
+    },
+    {
+      "date": "2022-02-01",
+      "value": 20366.63,
+      "source": "tms2",
+      "yoy": 7.24
+    },
+    {
+      "date": "2022-03-01",
+      "value": 20358.95,
+      "source": "tms2",
+      "yoy": 7.65
+    },
+    {
+      "date": "2022-04-01",
+      "value": 20416.77,
+      "source": "tms2",
+      "yoy": 7.49
+    },
+    {
+      "date": "2022-05-01",
+      "value": 20559.71,
+      "source": "tms2",
+      "yoy": 7.03
+    },
+    {
+      "date": "2022-06-01",
+      "value": 20283.54,
+      "source": "tms2",
+      "yoy": 6.2
+    },
+    {
+      "date": "2022-07-01",
+      "value": 20125.76,
+      "source": "tms2",
+      "yoy": 4.65
+    },
+    {
+      "date": "2022-08-01",
+      "value": 19979.4,
+      "source": "tms2",
+      "yoy": 4.04
+    },
+    {
+      "date": "2022-09-01",
+      "value": 19886.09,
+      "source": "tms2",
+      "yoy": 3.35
+    },
+    {
+      "date": "2022-10-01",
+      "value": 19705.2,
+      "source": "tms2",
+      "yoy": 2.5
+    },
+    {
+      "date": "2022-11-01",
+      "value": 19459.99,
+      "source": "tms2",
+      "yoy": -0.28
+    },
+    {
+      "date": "2022-12-01",
+      "value": 19132.59,
+      "source": "tms2",
+      "yoy": -2.31
+    },
+    {
+      "date": "2023-01-01",
+      "value": 18998.91,
+      "source": "tms2",
+      "yoy": -5.38
+    },
+    {
+      "date": "2023-02-01",
+      "value": 18960.07,
+      "source": "tms2",
+      "yoy": -6.91
+    },
+    {
+      "date": "2023-03-01",
+      "value": 18292.12,
+      "source": "tms2",
+      "yoy": -10.15
+    },
+    {
+      "date": "2023-04-01",
+      "value": 17844.36,
+      "source": "tms2",
+      "yoy": -12.6
+    },
+    {
+      "date": "2023-05-01",
+      "value": 17728.9,
+      "source": "tms2",
+      "yoy": -13.77
+    },
+    {
+      "date": "2023-06-01",
+      "value": 17661.87,
+      "source": "tms2",
+      "yoy": -12.93
+    },
+    {
+      "date": "2023-07-01",
+      "value": 17869.13,
+      "source": "tms2",
+      "yoy": -11.21
+    },
+    {
+      "date": "2023-08-01",
+      "value": 17716.49,
+      "source": "tms2",
+      "yoy": -11.33
+    },
+    {
+      "date": "2023-09-01",
+      "value": 17730.46,
+      "source": "tms2",
+      "yoy": -10.84
+    },
+    {
+      "date": "2023-10-01",
+      "value": 17798.97,
+      "source": "tms2",
+      "yoy": -9.67
+    },
+    {
+      "date": "2023-11-01",
+      "value": 17737.79,
+      "source": "tms2",
+      "yoy": -8.85
+    },
+    {
+      "date": "2023-12-01",
+      "value": 17647.64,
+      "source": "tms2",
+      "yoy": -7.76
+    },
+    {
+      "date": "2024-01-01",
+      "value": 17742.46,
+      "source": "tms2",
+      "yoy": -6.61
+    },
+    {
+      "date": "2024-02-01",
+      "value": 17797.56,
+      "source": "tms2",
+      "yoy": -6.13
+    },
+    {
+      "date": "2024-03-01",
+      "value": 17798.51,
+      "source": "tms2",
+      "yoy": -2.7
+    },
+    {
+      "date": "2024-04-01",
+      "value": 17762.2,
+      "source": "tms2",
+      "yoy": -0.46
+    },
+    {
+      "date": "2024-05-01",
+      "value": 17781.72,
+      "source": "tms2",
+      "yoy": 0.3
+    },
+    {
+      "date": "2024-06-01",
+      "value": 17710.88,
+      "source": "tms2",
+      "yoy": 0.28
+    },
+    {
+      "date": "2024-07-01",
+      "value": 17742.43,
+      "source": "tms2",
+      "yoy": -0.71
+    },
+    {
+      "date": "2024-08-01",
+      "value": 17794.55,
+      "source": "tms2",
+      "yoy": 0.44
+    },
+    {
+      "date": "2024-09-01",
+      "value": 17851.37,
+      "source": "tms2",
+      "yoy": 0.68
+    },
+    {
+      "date": "2024-10-01",
+      "value": 17945.38,
+      "source": "tms2",
+      "yoy": 0.82
+    },
+    {
+      "date": "2024-11-01",
+      "value": 18047.94,
+      "source": "tms2",
+      "yoy": 1.75
+    },
+    {
+      "date": "2024-12-01",
+      "value": 18045.52,
+      "source": "tms2",
+      "yoy": 2.25
+    },
+    {
+      "date": "2025-01-01",
+      "value": 18020.24,
+      "source": "tms2",
+      "yoy": 1.57
+    },
+    {
+      "date": "2025-02-01",
+      "value": 18135.83,
+      "source": "tms2",
+      "yoy": 1.9
+    },
+    {
+      "date": "2025-03-01",
+      "value": 17853.16,
+      "source": "tms2",
+      "yoy": 0.31
+    },
+    {
+      "date": "2025-04-01",
+      "value": 17892.75,
+      "source": "tms2",
+      "yoy": 0.73
+    },
+    {
+      "date": "2025-05-01",
+      "value": 18009.66,
+      "source": "tms2",
+      "yoy": 1.28
+    },
+    {
+      "date": "2025-06-01",
+      "value": 17907.4,
+      "source": "tms2",
+      "yoy": 1.11
+    },
+    {
+      "date": "2025-07-01",
+      "value": 17937.47,
+      "source": "tms2",
+      "yoy": 1.1
+    },
+    {
+      "date": "2025-08-01",
+      "value": 18143.62,
+      "source": "tms2",
+      "yoy": 1.96
+    },
+    {
+      "date": "2025-09-01",
+      "value": 18400.06,
+      "source": "tms2",
+      "yoy": 3.07
+    },
+    {
+      "date": "2025-10-01",
+      "value": 18622.23,
+      "source": "tms2",
+      "yoy": 3.77
+    },
+    {
+      "date": "2025-11-01",
+      "value": 18644.13,
+      "source": "tms2",
+      "yoy": 3.3
+    },
+    {
+      "date": "2025-12-01",
+      "value": 18706.83,
+      "source": "tms2",
+      "yoy": 3.66
+    },
+    {
+      "date": "2026-01-01",
+      "value": 18793.23,
+      "source": "tms2",
+      "yoy": 4.29
+    },
+    {
+      "date": "2026-02-01",
+      "value": 18974.83,
+      "source": "tms2",
+      "yoy": 4.63
+    },
+    {
+      "date": "2026-03-01",
+      "value": 19010.53,
+      "source": "tms2",
+      "yoy": 6.48
+    },
+    {
+      "date": "2026-04-01",
+      "value": 19097.23,
+      "source": "tms2",
+      "yoy": 6.73
+    },
+    {
+      "date": "2026-05-01",
+      "value": 19314.03,
+      "source": "tms2",
+      "yoy": 7.24
+    },
+    {
+      "date": "2026-06-01",
+      "value": 19392.53,
+      "source": "tms2",
+      "yoy": 8.29
+    },
+    {
+      "date": "2026-07-01",
+      "value": 19483.03,
+      "source": "tms2",
+      "yoy": 8.62
+    },
+    {
+      "date": "2026-08-01",
+      "value": 19586.73,
+      "source": "tms2",
+      "yoy": 7.95
+    },
+    {
+      "date": "2026-09-01",
+      "value": 19680.53,
+      "source": "tms2",
+      "yoy": 6.96
+    }
+  ],
+  "meta": {
+    "label": "美国真实货币供应量 TMS",
+    "unit": "十亿美元",
+    "frequency": "monthly",
+    "pre1969": "Friedman-Schwartz M2（NBER 14144a/14144c，月度、季调）",
+    "post1969": "Rothbard-Salerno TMS2 = M2SL - STDSL - RMFSL + TREASURY",
+    "splice": "1969-01",
+    "splice_method": "Friedman M2 按 1969-01 TMS 水平做比例拼接；1969 年前保留 M2 增速，水平按 TMS 缩放。",
+    "note": "TMS2 不含旅行支票、small time deposits、retail MMF；TREASURY 1986 年前按 0，缺失尾部按最近值。"
+  }
+}
