@@ -9,6 +9,7 @@ import FilterSidebar from "./components/FilterSidebar";
 import MarketChart from "./components/MarketChart";
 import PolicyTimeline from "./components/PolicyTimeline";
 import TmsChart from "./components/TmsChart";
+import RateChart from "./components/RateChart";
 import EventList from "./components/EventList";
 import EventDetailDrawer from "./components/EventDetailDrawer";
 
@@ -97,23 +98,24 @@ function Explorer({
           onGroupToggle={actions.group}
         />
         <main className="main-panel">
-          <MarketChart
-            spx={spx}
-            rates={rates}
-            rateControls={rateControls}
-            yieldSpread={yieldSpread}
-            events={filtered}
-            selected={selected}
-            taxonomy={taxonomy}
-            onOpen={openEvent}
-          />
+          <div className="chart-stack">
+            <MarketChart
+              spx={spx}
+              rateControls={rateControls}
+              events={filtered}
+              selected={selected}
+              taxonomy={taxonomy}
+              onOpen={openEvent}
+            />
+            <RateChart rates={rates} yieldSpread={yieldSpread} />
+            <TmsChart tms={tms} />
+          </div>
           <PolicyTimeline
             events={filtered}
             selected={selected}
             taxonomy={taxonomy}
             onOpen={openEvent}
           />
-          <TmsChart tms={tms} />
           <EventList
             events={filtered}
             selected={selected}

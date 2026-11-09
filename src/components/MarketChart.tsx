@@ -1,21 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, YieldSpreadData } from "../types";
+import type { PolicyEvent, RateControlEvent, SpxPoint, Taxonomy } from "../types";
 
 export default function MarketChart({
   spx,
-  rates,
   rateControls,
-  yieldSpread,
   events,
   selected,
   taxonomy,
   onOpen,
 }: {
   spx: SpxPoint[];
-  rates: RatesData;
   rateControls: RateControlEvent[];
-  yieldSpread: YieldSpreadData;
   events: PolicyEvent[];
   selected: Set<number>;
   taxonomy: Taxonomy;
@@ -25,10 +21,7 @@ export default function MarketChart({
   const chartRef = useRef<echarts.ECharts | null>(null);
   const onOpenRef = useRef(onOpen);
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
-  const [showCredit, setShowCredit] = useState(true);
-  const [showReserve, setShowReserve] = useState(true);
   const [showRateControls, setShowRateControls] = useState(true);
-  const [showSpread, setShowSpread] = useState(true);
 
   const rateControlSpots = useMemo(
     () =>
@@ -87,7 +80,7 @@ export default function MarketChart({
       {
         backgroundColor: "transparent",
         animation: false,
-        grid: { left: 60, right: 118, top: 34, bottom: 58 },
+        grid: { left: 60, right: 24, top: 34, bottom: 58 },
         tooltip: {
           trigger: "axis",
           confine: true,
@@ -118,13 +111,6 @@ export default function MarketChart({
               ? Number(spxItem.value[1])
               : latest(spx.map((p) => ({ date: p.date, value: p.close })))?.value;
             if (spxValue !== undefined) rows.push(`标普500：${spxValue.toFixed(2)}`);
-
-            const credit = latest(rates.primaryCredit);
-            if (credit) rows.push(`一级信贷利率：${credit.value.toFixed(2)}%`);
-            const reserve = latest(rates.reserveRequirement);
-            if (reserve) rows.push(`存款准备金率：${reserve.value.toFixed(2)}%`);
-            const spread = latest(yieldSpread.weekly);
-            if (spread) rows.push(`10Y−1Y 利差：${spread.value >= 0 ? "+" : ""}${spread.value.toFixed(2)}%`);
 
             const target = new Date(date).getTime();
             const near = (value?: string) =>
@@ -162,7 +148,7 @@ export default function MarketChart({
         },
         xAxis: {
           type: "time",
-          min: "1912-01-01",
+          min: "1927-01-01",
           max: "2026-12-31",
           axisLine: { lineStyle: { color: "#cfd3d8" } },
           axisLabel: { color: "#667085", fontSize: 11 },
@@ -176,45 +162,16 @@ export default function MarketChart({
             },
           },
         },
-        yAxis: [
-          {
-            type: "log",
-            name: "标普500（对数）",
-            nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
-            axisLabel: { color: "#667085", fontSize: 11 },
-            splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
-            axisPointer: {
-              label: { formatter: (p: any) => Number(p.value).toFixed(2) },
-            },
+        yAxis: {
+          type: "log",
+          name: "标普500（对数）",
+          nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
+          axisLabel: { color: "#667085", fontSize: 11 },
+          splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
+          axisPointer: {
+            label: { formatter: (p: any) => Number(p.value).toFixed(2) },
           },
-          {
-            type: "value",
-            name: "利率 / 准备金率 (%)",
-            position: "right",
-            min: 0,
-            max: 30,
-            nameTextStyle: { color: "#667085", fontSize: 10, padding: [0, 0, 6, 0] },
-            axisLabel: { color: "#667085", fontSize: 10, formatter: "{value}%" },
-            splitLine: { show: false },
-            axisPointer: {
-              label: { formatter: (p: any) => `${Number(p.value).toFixed(2)}%` },
-            },
-          },
-          {
-            type: "value",
-            name: "10Y−1Y (%)",
-            position: "right",
-            offset: 52,
-            min: -3.5,
-            max: 4,
-            nameTextStyle: { color: "#667085", fontSize: 9, padding: [0, 0, 6, 0] },
-            axisLabel: { color: "#667085", fontSize: 9, formatter: "{value}%" },
-            splitLine: { show: false },
-            axisPointer: {
-              label: { formatter: (p: any) => `${Number(p.value).toFixed(2)}%` },
-            },
-          },
-        ],
+        },
         dataZoom: [
           { type: "inside", filterMode: "none" },
           {
@@ -239,53 +196,6 @@ export default function MarketChart({
             itemStyle: { color: "#1F4E79" },
             z: 1,
           },
-          ...(showCredit
-            ? [{
-                id: "primaryCredit",
-                name: rates.meta.primaryCredit.label,
-                type: "line",
-                yAxisIndex: 1,
-                step: "end",
-                showSymbol: false,
-                data: rates.primaryCredit.map((p) => [p.date, p.value]),
-                lineStyle: { width: 1.4, color: "#8E44AD" },
-                itemStyle: { color: "#8E44AD" },
-                z: 3,
-              }]
-            : []),
-          ...(showReserve
-            ? [{
-                id: "reserveRequirement",
-                name: rates.meta.reserveRequirement.label,
-                type: "line",
-                yAxisIndex: 1,
-                step: "end",
-                showSymbol: false,
-                data: rates.reserveRequirement.map((p) => [p.date, p.value]),
-                lineStyle: { width: 1.4, color: "#2C7FB8" },
-                itemStyle: { color: "#2C7FB8" },
-                z: 3,
-              }]
-            : []),
-          ...(showSpread
-            ? [{
-                id: "yieldSpread",
-                name: yieldSpread.meta.label,
-                type: "line",
-                yAxisIndex: 2,
-                showSymbol: false,
-                data: yieldSpread.weekly.map((p) => [p.date, p.value]),
-                lineStyle: { width: 1.2, color: "#16A085" },
-                itemStyle: { color: "#16A085" },
-                markLine: {
-                  symbol: "none",
-                  label: { show: false },
-                  lineStyle: { color: "#94a3b8", type: "dashed", width: 0.8 },
-                  data: [{ yAxis: 0 }],
-                },
-                z: 2.5,
-              }]
-            : []),
           ...(showRateControls
             ? [{
                 id: "rateControlSpots",
@@ -340,13 +250,13 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
-  }, [spx, rates, events, selected, taxonomy, eventsById, showCredit, showReserve, showSpread, showRateControls, rateControlSpots, yieldSpread]);
+  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots]);
 
   return (
     <section className="chart-panel">
       <div className="panel-heading">
         <h2>标普500、政策事件与利率管制</h2>
-        <span>左轴=标普500；右轴=利率/准备金率；外侧右轴=10Y−1Y 利差；红方块=利率管制</span>
+        <span>左轴=标普500；红方块=利率管制事件；利率/准备金率/利差见下方独立图</span>
       </div>
       <div className="chart-legend">
         {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
@@ -354,24 +264,12 @@ export default function MarketChart({
         ))}
         <span className="key-legend"><i className="diamond" />K1—K11 关键标注</span>
         <label className="rate-toggle">
-          <input type="checkbox" checked={showCredit} onChange={(e) => setShowCredit(e.target.checked)} />
-          <i style={{ background: "#8E44AD" }} />一级信贷利率
-        </label>
-        <label className="rate-toggle">
-          <input type="checkbox" checked={showReserve} onChange={(e) => setShowReserve(e.target.checked)} />
-          <i style={{ background: "#2C7FB8" }} />存款准备金率
-        </label>
-        <label className="rate-toggle">
           <input type="checkbox" checked={showRateControls} onChange={(e) => setShowRateControls(e.target.checked)} />
           <i className="rate-square" />利率管制事件
         </label>
-        <label className="rate-toggle">
-          <input type="checkbox" checked={showSpread} onChange={(e) => setShowSpread(e.target.checked)} />
-          <i style={{ background: "#16A085" }} />10Y−1Y 利差
-        </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED、Regulation Q 史料、FRED WGS10YR/WGS1YR（周度）；红方块按事件日映射到标普收盘价；10Y−1Y 利差使用外侧右轴；1927 年前及超出行情数据范围的事件不显示在标普上。
+        来源：美联储 H.15/FRED、Regulation Q 史料；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利率与 10Y−1Y 利差见下方独立图。
       </p>
       <div ref={ref} className="market-chart" />
     </section>
