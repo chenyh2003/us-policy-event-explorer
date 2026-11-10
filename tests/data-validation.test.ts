@@ -74,18 +74,20 @@ describe("构建数据", () => {
     expect(rateControls.filter((e: any) => e.chartStatus === "in-range").length).toBeGreaterThanOrEqual(13);
   });
 
-  it("10Y−1Y 利差覆盖 1953—2026（1962 前月频）", () => {
-    expect(yieldSpread.pre1953.length).toBeGreaterThan(390);
-    expect(yieldSpread.pre1953[0].date).toBe("1920-01-01");
-    expect(yieldSpread.pre1953.at(-1).date).toBe("1953-03-01");
-    expect(yieldSpread.pre1962.length).toBeGreaterThan(90);
-    expect(yieldSpread.pre1962[0].date).toBe("1953-04-01");
-    expect(yieldSpread.pre1962.at(-1).date).toBe("1961-12-01");
-    expect(yieldSpread.weekly.length).toBeGreaterThan(3000);
-    expect(yieldSpread.weekly[0].date).toBe("1962-01-05");
-    expect(yieldSpread.weekly.at(-1).date).toBe("2026-10-30");
+  it("10Y−1Y 利差使用 1872—2026 用户序列（1962-02 前月频）", () => {
+    expect(yieldSpread.points).toHaveLength(17199);
+    expect(yieldSpread.points[0].date).toBe("1872-07-01");
+    expect(yieldSpread.points.at(-1).date).toBe("2026-08-10");
+    expect(yieldSpread.meta.monthly_count).toBe(1075);
+    expect(yieldSpread.meta.daily_count).toBe(16124);
     expect(yieldSpread.meta.frequency).toContain("monthly");
-    expect(yieldSpread.meta.frequency).toContain("weekly");
+    expect(yieldSpread.meta.frequency).toContain("daily");
+    const dates = yieldSpread.points.map((p: any) => p.date);
+    expect(dates).toEqual([...dates].sort());
+    expect(new Set(dates).size).toBe(dates.length);
+    expect(dates.every((d: string) => /^\d{4}-\d{2}-\d{2}$/.test(d))).toBe(true);
+    expect(yieldSpread.points.find((p: any) => p.date === "1962-01-01")).toBeTruthy();
+    expect(yieldSpread.points.find((p: any) => p.date === "1962-02-01")).toBeTruthy();
   });
 
   it("TMS 月频数据覆盖 1912—2026 且 1969 拼接连续", () => {

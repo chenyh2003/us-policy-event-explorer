@@ -34,14 +34,21 @@ export default function RateChart({
     const chart = chartRef.current;
     if (!chart) return;
     const latest = (items: { date: string; value: number }[], date: string) => {
+      let low = 0;
+      let high = items.length - 1;
       let found: { date: string; value: number } | undefined;
-      for (const item of items) {
-        if (item.date <= date) found = item;
-        else break;
+      while (low <= high) {
+        const mid = (low + high) >> 1;
+        if (items[mid].date <= date) {
+          found = items[mid];
+          low = mid + 1;
+        } else {
+          high = mid - 1;
+        }
       }
       return found;
     };
-    const spreadPoints = [...yieldSpread.pre1953, ...yieldSpread.pre1962, ...yieldSpread.weekly];
+    const spreadPoints = yieldSpread.points;
 
     chart.setOption(
       {
@@ -175,7 +182,7 @@ export default function RateChart({
     <section className="chart-panel rate-panel">
       <div className="panel-heading">
         <h2>利率、准备金率与 10Y−1Y 利差</h2>
-        <span>左轴=信贷利率/准备金率；右轴=10Y−1Y；周/月混合频率</span>
+        <span>左轴=信贷利率/准备金率；右轴=10Y−1Y；月/日混合频率</span>
       </div>
       <div className="chart-legend">
         <label className="rate-toggle">
@@ -192,7 +199,7 @@ export default function RateChart({
         </label>
       </div>
       <p className="chart-note">
-        一级信贷利率/准备金率为月频；10Y−1Y 在 1920-01—1953-03 用长期国债−短期国债代理，1953-04—1961-12 用 GS10−GS1 月频，1962-01 起用 WGS10YR−WGS1YR 周频；1948 年前准备金率为最高档。
+        一级信贷利率/准备金率为月频；10Y−1Y 采用用户提供的 1872—2026 序列（1872-07—1962-01 月频，1962-02 起日频），图中展示 1912 年起并与三图联动区间一致；1948 年前准备金率为最高档。
       </p>
       <div ref={ref} className="market-chart rate-chart" />
     </section>
