@@ -11,6 +11,7 @@ export default function RateChart({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
+  const updateAxisRef = useRef<(() => void) | null>(null);
   const [showCredit, setShowCredit] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
   const [showSpread, setShowSpread] = useState(true);
@@ -20,6 +21,7 @@ export default function RateChart({
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
     chart.group = "policy-charts";
     echarts.connect("policy-charts");
+    chart.on("dataZoom", () => updateAxisRef.current?.());
     chartRef.current = chart;
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(ref.current);
@@ -176,6 +178,71 @@ export default function RateChart({
       },
       { replaceMerge: ["series"] }
     );
+
+    const updateAxis = () => {
+      const dz = (chart.getOption().dataZoom as any[])[0];
+      const start = Number(dz?.start ?? 0);
+      const end = Number(dz?.end ?? 100);
+      if (start <= 0.5 && end >= 99.5) {
+        chart.setOption({
+          yAxis: [
+            { min: 0, max: 30 },
+            { min: -3.5, max: 4 },
+          ],
+        });
+        return;
+      }
+      const toTime = (v: any) => (typeof v === "number" ? v : Date.parse(String(v)));
+      const domainStart = Math.min(
+        Date.parse(rates.primaryCredit[0].date),
+        Date.parse(rates.reserveRequirement[0].date),
+        Date.parse(yieldSpread.points[0].date)
+      );
+      const domainEnd = Math.max(
+        Date.parse(rates.primaryCredit[rates.primaryCredit.length - 1].date),
+        Date.parse(rates.reserveRequirement[rates.reserveRequirement.length - 1].date),
+        Date.parse(yieldSpread.points[yieldSpread.points.length - 1].date)
+      );
+      const from = dz?.startValue != null
+        ? toTime(dz.startValue)
+        : domainStart + (domainEnd - domainStart) * start / 100;
+      const to = dz?.endValue != null
+        ? toTime(dz.endValue)
+        : domainStart + (domainEnd - domainStart) * end / 100;
+      const inWindow = (date: string) => {
+        const t = Date.parse(date);
+        return t >= from && t <= to;
+      };
+      const leftValues = [
+        ...rates.primaryCredit.filter((p) => inWindow(p.date)).map((p) => p.value),
+        ...rates.reserveRequirement.filter((p) => inWindow(p.date)).map((p) => p.value),
+      ];
+      const rightValues = yieldSpread.points.filter((p) => inWindow(p.date)).map((p) => p.value);
+      const leftPad = leftValues.length
+        ? Math.max((Math.max(...leftValues) - Math.min(...leftValues)) * 0.1, 0.5)
+        : 0;
+      const rightPad = rightValues.length
+        ? Math.max((Math.max(...rightValues) - Math.min(...rightValues)) * 0.1, 0.05)
+        : 0;
+      chart.setOption({
+        yAxis: [
+          leftValues.length
+            ? {
+                min: Math.max(0, Math.min(...leftValues) - leftPad),
+                max: Math.max(...leftValues) + leftPad,
+              }
+            : {},
+          rightValues.length
+            ? {
+                min: Math.min(...rightValues) - rightPad,
+                max: Math.max(...rightValues) + rightPad,
+              }
+            : {},
+        ],
+      });
+    };
+    updateAxisRef.current = updateAxis;
+    updateAxis();
   }, [rates, yieldSpread, showCredit, showReserve, showSpread]);
 
   return (

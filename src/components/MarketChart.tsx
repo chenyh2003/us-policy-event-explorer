@@ -19,6 +19,7 @@ export default function MarketChart({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
+  const updateAxisRef = useRef<(() => void) | null>(null);
   const onOpenRef = useRef(onOpen);
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
   const [showRateControls, setShowRateControls] = useState(true);
@@ -57,6 +58,7 @@ export default function MarketChart({
         if (Number.isFinite(id)) onOpenRef.current(id);
       }
     });
+    chart.on("dataZoom", () => updateAxisRef.current?.());
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(ref.current);
     return () => {
@@ -252,6 +254,42 @@ export default function MarketChart({
       },
       { replaceMerge: ["series"] }
     );
+
+    const updateAxis = () => {
+      const dz = (chart.getOption().dataZoom as any[])[0];
+      const start = Number(dz?.start ?? 0);
+      const end = Number(dz?.end ?? 100);
+      if (start <= 0.5 && end >= 99.5) {
+        chart.setOption({ yAxis: { min: "dataMin", max: "dataMax" } });
+        return;
+      }
+      const toTime = (v: any) => (typeof v === "number" ? v : Date.parse(String(v)));
+      const domainStart = Date.parse(spx[0].date);
+      const domainEnd = Date.parse(spx[spx.length - 1].date);
+      const from = dz?.startValue != null
+        ? toTime(dz.startValue)
+        : domainStart + (domainEnd - domainStart) * start / 100;
+      const to = dz?.endValue != null
+        ? toTime(dz.endValue)
+        : domainStart + (domainEnd - domainStart) * end / 100;
+      const values = spx
+        .filter((p) => {
+          const t = Date.parse(p.date);
+          return t >= from && t <= to;
+        })
+        .map((p) => p.close);
+      if (!values.length) return;
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      chart.setOption({
+        yAxis: {
+          min: Math.max(0.01, min * 0.85),
+          max: max * 1.15,
+        },
+      });
+    };
+    updateAxisRef.current = updateAxis;
+    updateAxis();
   }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots]);
 
   return (

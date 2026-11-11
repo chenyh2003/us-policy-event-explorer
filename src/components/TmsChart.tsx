@@ -5,6 +5,7 @@ import type { TmsData } from "../types";
 export default function TmsChart({ tms }: { tms: TmsData }) {
   const ref = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
+  const updateAxisRef = useRef<(() => void) | null>(null);
   const latest = tms.monthly[tms.monthly.length - 1];
 
   useEffect(() => {
@@ -12,6 +13,7 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
     chart.group = "policy-charts";
     echarts.connect("policy-charts");
+    chart.on("dataZoom", () => updateAxisRef.current?.());
     chartRef.current = chart;
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(ref.current);
@@ -144,6 +146,58 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
       },
       { replaceMerge: ["series"] }
     );
+
+    const updateAxis = () => {
+      const dz = (chart.getOption().dataZoom as any[])[0];
+      const start = Number(dz?.start ?? 0);
+      const end = Number(dz?.end ?? 100);
+      if (start <= 0.5 && end >= 99.5) {
+        chart.setOption({
+          yAxis: [
+            { min: "dataMin", max: "dataMax" },
+            { min: -20, max: 40 },
+          ],
+        });
+        return;
+      }
+      const toTime = (v: any) => (typeof v === "number" ? v : Date.parse(String(v)));
+      const domainStart = Date.parse(tms.monthly[0].date);
+      const domainEnd = Date.parse(tms.monthly[tms.monthly.length - 1].date);
+      const from = dz?.startValue != null
+        ? toTime(dz.startValue)
+        : domainStart + (domainEnd - domainStart) * start / 100;
+      const to = dz?.endValue != null
+        ? toTime(dz.endValue)
+        : domainStart + (domainEnd - domainStart) * end / 100;
+      const levelValues = tms.monthly
+        .filter((p) => {
+          const t = Date.parse(p.date);
+          return t >= from && t <= to;
+        })
+        .map((p) => p.value);
+      const yoyValues = tms.monthly
+        .filter((p) => {
+          const t = Date.parse(p.date);
+          return t >= from && t <= to && p.yoy !== undefined;
+        })
+        .map((p) => p.yoy as number);
+      if (!levelValues.length) return;
+      const levelMin = Math.min(...levelValues);
+      const levelMax = Math.max(...levelValues);
+      const yoyMin = Math.min(...yoyValues);
+      const yoyMax = Math.max(...yoyValues);
+      const yoyPad = Math.max((yoyMax - yoyMin) * 0.1, 0.5);
+      chart.setOption({
+        yAxis: [
+          { min: Math.max(0.1, levelMin * 0.85), max: levelMax * 1.15 },
+          yoyValues.length
+            ? { min: yoyMin - yoyPad, max: yoyMax + yoyPad }
+            : {},
+        ],
+      });
+    };
+    updateAxisRef.current = updateAxis;
+    updateAxis();
   }, [tms]);
 
   return (
