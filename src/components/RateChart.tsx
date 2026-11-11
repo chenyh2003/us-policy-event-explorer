@@ -213,9 +213,19 @@ export default function RateChart({
         const t = Date.parse(date);
         return t >= from && t <= to;
       };
+      const lastAtOrBefore = (items: { date: string; value: number }[]) => {
+        for (let i = items.length - 1; i >= 0; i--) {
+          if (Date.parse(items[i].date) <= to) return items[i].value;
+        }
+        return undefined;
+      };
+      const creditCarry = lastAtOrBefore(rates.primaryCredit);
+      const reserveCarry = lastAtOrBefore(rates.reserveRequirement);
       const leftValues = [
         ...rates.primaryCredit.filter((p) => inWindow(p.date)).map((p) => p.value),
         ...rates.reserveRequirement.filter((p) => inWindow(p.date)).map((p) => p.value),
+        ...(creditCarry !== undefined ? [creditCarry] : []),
+        ...(reserveCarry !== undefined ? [reserveCarry] : []),
       ];
       const rightValues = yieldSpread.points.filter((p) => inWindow(p.date)).map((p) => p.value);
       const leftPad = leftValues.length
