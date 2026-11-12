@@ -30,6 +30,7 @@ export default function MarketChart({
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
   const [showRateControls, setShowRateControls] = useState(true);
   const [showSpread, setShowSpread] = useState(true);
+  const [showTmsLevel, setShowTmsLevel] = useState(true);
   const [showTms, setShowTms] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
   const [showCredit, setShowCredit] = useState(false);
@@ -52,6 +53,14 @@ export default function MarketChart({
   const spreadPoints = useMemo(
     () => normalized(yieldSpread.points),
     [yieldSpread]
+  );
+  const tmsLevelRaw = useMemo(
+    () => tms.monthly.map((p) => ({ date: p.date, value: p.value })),
+    [tms]
+  );
+  const tmsLevelPoints = useMemo(
+    () => normalized(tmsLevelRaw),
+    [tmsLevelRaw]
   );
   const tmsYoyRaw = useMemo(
     () => tms.monthly.filter((p) => p.yoy !== undefined).map((p) => ({ date: p.date, value: p.yoy as number })),
@@ -172,6 +181,10 @@ export default function MarketChart({
             if (showSpread) {
               const p = latest(yieldSpread.points);
               if (p) rows.push(`10Y−1Y：${p.value >= 0 ? "+" : ""}${p.value.toFixed(2)}%`);
+            }
+            if (showTmsLevel) {
+              const p = latest(tmsLevelRaw);
+              if (p) rows.push(`TMS：${p.value.toLocaleString("en-US", { maximumFractionDigits: 2 })} 十亿美元`);
             }
             if (showTms) {
               const p = latest(tmsYoyRaw);
@@ -294,6 +307,20 @@ export default function MarketChart({
                 data: spreadPoints,
                 lineStyle: { width: 1.1, color: "#16A085" },
                 itemStyle: { color: "#16A085" },
+                z: 2,
+              }]
+            : []),
+          ...(showTmsLevel
+            ? [{
+                id: "tms_level_overlay",
+                name: "TMS水平",
+                type: "line",
+                yAxisIndex: 1,
+                showSymbol: false,
+                sampling: "lttb",
+                data: tmsLevelPoints,
+                lineStyle: { width: 1.0, color: "#1F4E79" },
+                itemStyle: { color: "#1F4E79" },
                 z: 2,
               }]
             : []),
@@ -429,7 +456,7 @@ export default function MarketChart({
     };
     updateAxisRef.current = updateAxis;
     updateAxis();
-  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots, showSpread, showTms, showReserve, showCredit, spreadPoints, tmsYoyPoints, reservePoints, creditPoints]);
+  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots, showSpread, showTmsLevel, showTms, showReserve, showCredit, spreadPoints, tmsLevelPoints, tmsYoyPoints, reservePoints, creditPoints]);
 
   return (
     <section className="chart-panel">
@@ -449,6 +476,10 @@ export default function MarketChart({
         <label className="rate-toggle">
           <input type="checkbox" checked={showSpread} onChange={(e) => setShowSpread(e.target.checked)} />
           <i style={{ background: "#16A085" }} />10Y−1Y
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showTmsLevel} onChange={(e) => setShowTmsLevel(e.target.checked)} />
+          <i style={{ background: "#1F4E79" }} />TMS水平
         </label>
         <label className="rate-toggle">
           <input type="checkbox" checked={showTms} onChange={(e) => setShowTms(e.target.checked)} />
