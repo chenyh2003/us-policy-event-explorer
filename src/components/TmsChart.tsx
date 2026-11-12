@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
 import type { TmsData } from "../types";
 
@@ -6,6 +6,8 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
   const ref = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
   const updateAxisRef = useRef<(() => void) | null>(null);
+  const [showLevel, setShowLevel] = useState(true);
+  const [showYoy, setShowYoy] = useState(true);
   const latest = tms.monthly[tms.monthly.length - 1];
 
   useEffect(() => {
@@ -105,43 +107,47 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
           { type: "slider", show: false, filterMode: "none" },
         ],
         series: [
-          {
-            id: "tms",
-            name: "TMS",
-            type: "line",
-            showSymbol: false,
-            sampling: "lttb",
-            data: level,
-            lineStyle: { width: 1.5, color: "#1F4E79" },
-            itemStyle: { color: "#1F4E79" },
-            markLine: {
-              symbol: "none",
-              label: { formatter: "1969 TMS", color: "#8a5a00", fontSize: 9 },
-              lineStyle: { color: "#B7950B", type: "dashed", width: 1 },
-              data: [{ xAxis: "1969-01-01" }],
-            },
-            markArea: {
-              silent: true,
-              label: { show: true, position: "insideTop", color: "#8a94a0", fontSize: 9 },
-              data: [
-                [{ xAxis: "1912-01-01", name: "Friedman M2 拼接" }, { xAxis: "1969-01-01" }],
-                [{ xAxis: "1969-01-01", name: "Rothbard-Salerno TMS2" }, { xAxis: "2026-12-31" }],
-              ],
-              itemStyle: { color: "rgba(31,78,121,.035)" },
-            },
-            z: 3,
-          },
-          {
-            id: "tmsYoy",
-            name: "TMS 同比",
-            type: "line",
-            yAxisIndex: 1,
-            showSymbol: false,
-            data: yoy,
-            lineStyle: { width: 1.1, color: "#C0392B" },
-            itemStyle: { color: "#C0392B" },
-            z: 4,
-          },
+          ...(showLevel
+            ? [{
+                id: "tms",
+                name: "TMS",
+                type: "line",
+                showSymbol: false,
+                sampling: "lttb",
+                data: level,
+                lineStyle: { width: 1.5, color: "#1F4E79" },
+                itemStyle: { color: "#1F4E79" },
+                markLine: {
+                  symbol: "none",
+                  label: { formatter: "1969 TMS", color: "#8a5a00", fontSize: 9 },
+                  lineStyle: { color: "#B7950B", type: "dashed", width: 1 },
+                  data: [{ xAxis: "1969-01-01" }],
+                },
+                markArea: {
+                  silent: true,
+                  label: { show: true, position: "insideTop", color: "#8a94a0", fontSize: 9 },
+                  data: [
+                    [{ xAxis: "1912-01-01", name: "Friedman M2 拼接" }, { xAxis: "1969-01-01" }],
+                    [{ xAxis: "1969-01-01", name: "Rothbard-Salerno TMS2" }, { xAxis: "2026-12-31" }],
+                  ],
+                  itemStyle: { color: "rgba(31,78,121,.035)" },
+                },
+                z: 3,
+              }]
+            : []),
+          ...(showYoy
+            ? [{
+                id: "tmsYoy",
+                name: "TMS 同比",
+                type: "line",
+                yAxisIndex: 1,
+                showSymbol: false,
+                data: yoy,
+                lineStyle: { width: 1.1, color: "#C0392B" },
+                itemStyle: { color: "#C0392B" },
+                z: 4,
+              }]
+            : []),
         ],
       },
       { replaceMerge: ["series"] }
@@ -198,7 +204,7 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
     };
     updateAxisRef.current = updateAxis;
     updateAxis();
-  }, [tms]);
+  }, [tms, showLevel, showYoy]);
 
   return (
     <section className="chart-panel tms-panel">
@@ -207,8 +213,14 @@ export default function TmsChart({ tms }: { tms: TmsData }) {
         <span>左轴=TMS（对数）；右轴=同比；1969 年前为 Friedman M2 拼接</span>
       </div>
       <div className="chart-legend">
-        <span><i style={{ background: "#1F4E79" }} />TMS 水平</span>
-        <span><i style={{ background: "#C0392B" }} />同比 %</span>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showLevel} onChange={(e) => setShowLevel(e.target.checked)} />
+          <i style={{ background: "#1F4E79" }} />TMS 水平
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showYoy} onChange={(e) => setShowYoy(e.target.checked)} />
+          <i style={{ background: "#C0392B" }} />同比 %
+        </label>
         {latest ? <span className="tms-latest">最新 {latest.date.slice(0, 7)}：{latest.value.toLocaleString("en-US", { maximumFractionDigits: 0 })} 十亿美元 · 同比 {latest.yoy?.toFixed(2)}%</span> : null}
       </div>
       <p className="chart-note">
