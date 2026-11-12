@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, RateControlEvent, SpxPoint, Taxonomy } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, YieldSpreadData } from "../types";
 
 export default function MarketChart({
   spx,
+  rates,
+  tms,
+  yieldSpread,
   rateControls,
   events,
   selected,
@@ -11,6 +14,9 @@ export default function MarketChart({
   onOpen,
 }: {
   spx: SpxPoint[];
+  rates: RatesData;
+  tms: TmsData;
+  yieldSpread: YieldSpreadData;
   rateControls: RateControlEvent[];
   events: PolicyEvent[];
   selected: Set<number>;
@@ -23,6 +29,46 @@ export default function MarketChart({
   const onOpenRef = useRef(onOpen);
   const eventsById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
   const [showRateControls, setShowRateControls] = useState(true);
+  const [showSpread, setShowSpread] = useState(true);
+  const [showTms, setShowTms] = useState(true);
+  const [showReserve, setShowReserve] = useState(true);
+  const [showCredit, setShowCredit] = useState(false);
+
+  const normalized = (items: { date: string; value: number }[]) => {
+    const values = items.map((item) => item.value).sort((a, b) => a - b);
+    const pct = (v: number) => {
+      let lo = 0;
+      let hi = values.length;
+      while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (values[mid] <= v) lo = mid + 1;
+        else hi = mid;
+      }
+      return (lo / values.length) * 100;
+    };
+    return items.map((item) => [item.date, pct(item.value)]);
+  };
+
+  const spreadPoints = useMemo(
+    () => normalized(yieldSpread.points),
+    [yieldSpread]
+  );
+  const tmsYoyRaw = useMemo(
+    () => tms.monthly.filter((p) => p.yoy !== undefined).map((p) => ({ date: p.date, value: p.yoy as number })),
+    [tms]
+  );
+  const tmsYoyPoints = useMemo(
+    () => normalized(tmsYoyRaw),
+    [tmsYoyRaw]
+  );
+  const reservePoints = useMemo(
+    () => normalized(rates.reserveRequirement.map((p) => ({ date: p.date, value: p.value }))),
+    [rates]
+  );
+  const creditPoints = useMemo(
+    () => normalized(rates.primaryCredit.map((p) => ({ date: p.date, value: p.value }))),
+    [rates]
+  );
 
   const rateControlSpots = useMemo(
     () =>
@@ -84,7 +130,7 @@ export default function MarketChart({
       {
         backgroundColor: "transparent",
         animation: false,
-        grid: { left: 60, right: 24, top: 34, bottom: 58 },
+        grid: { left: 60, right: 68, top: 34, bottom: 58 },
         tooltip: {
           trigger: "axis",
           confine: true,
@@ -102,10 +148,17 @@ export default function MarketChart({
                 : String(axisValue).slice(0, 10);
             const rows: string[] = [`<b>${date}</b>`];
             const latest = (items: { date: string; value: number }[]) => {
+              let lo = 0;
+              let hi = items.length - 1;
               let found: { date: string; value: number } | undefined;
-              for (const item of items) {
-                if (item.date <= date) found = item;
-                else break;
+              while (lo <= hi) {
+                const mid = (lo + hi) >> 1;
+                if (items[mid].date <= date) {
+                  found = items[mid];
+                  lo = mid + 1;
+                } else {
+                  hi = mid - 1;
+                }
               }
               return found;
             };
@@ -115,6 +168,23 @@ export default function MarketChart({
               ? Number(spxItem.value[1])
               : latest(spx.map((p) => ({ date: p.date, value: p.close })))?.value;
             if (spxValue !== undefined) rows.push(`标普500：${spxValue.toFixed(2)}`);
+
+            if (showSpread) {
+              const p = latest(yieldSpread.points);
+              if (p) rows.push(`10Y−1Y：${p.value >= 0 ? "+" : ""}${p.value.toFixed(2)}%`);
+            }
+            if (showTms) {
+              const p = latest(tmsYoyRaw);
+              if (p) rows.push(`TMS 同比：${p.value >= 0 ? "+" : ""}${p.value.toFixed(2)}%`);
+            }
+            if (showReserve) {
+              const p = latest(rates.reserveRequirement.map((x) => ({ date: x.date, value: x.value })));
+              if (p) rows.push(`存款准备金率：${p.value.toFixed(2)}%`);
+            }
+            if (showCredit) {
+              const p = latest(rates.primaryCredit.map((x) => ({ date: x.date, value: x.value })));
+              if (p) rows.push(`一级信贷利率：${p.value.toFixed(2)}%`);
+            }
 
             const target = new Date(date).getTime();
             const near = (value?: string) =>
@@ -166,16 +236,29 @@ export default function MarketChart({
             },
           },
         },
-        yAxis: {
-          type: "log",
-          name: "标普500（对数）",
-          nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
-          axisLabel: { color: "#667085", fontSize: 11 },
-          splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
-          axisPointer: {
-            label: { formatter: (p: any) => Number(p.value).toFixed(2) },
+        yAxis: [
+          {
+            type: "log",
+            name: "标普500（对数）",
+            nameTextStyle: { color: "#667085", fontSize: 11, padding: [0, 0, 6, 0] },
+            axisLabel: { color: "#667085", fontSize: 11 },
+            splitLine: { lineStyle: { color: "#eef0f2", type: "dashed" } },
+            axisPointer: {
+              label: { formatter: (p: any) => Number(p.value).toFixed(2) },
+            },
           },
-        },
+          {
+            type: "value",
+            name: "历史分位",
+            position: "right",
+            min: 0,
+            max: 100,
+            nameTextStyle: { color: "#667085", fontSize: 10, padding: [0, 0, 6, 0] },
+            axisLabel: { color: "#667085", fontSize: 10, formatter: "{value}" },
+            splitLine: { show: false },
+            axisPointer: { label: { formatter: (p: any) => `${Number(p.value).toFixed(0)}%` } },
+          },
+        ],
         dataZoom: [
           { type: "inside", filterMode: "none" },
           {
@@ -200,6 +283,62 @@ export default function MarketChart({
             itemStyle: { color: "#1F4E79" },
             z: 1,
           },
+          ...(showSpread
+            ? [{
+                id: "spread_overlay",
+                name: "10Y−1Y",
+                type: "line",
+                yAxisIndex: 1,
+                showSymbol: false,
+                sampling: "lttb",
+                data: spreadPoints,
+                lineStyle: { width: 1.1, color: "#16A085" },
+                itemStyle: { color: "#16A085" },
+                z: 2,
+              }]
+            : []),
+          ...(showTms
+            ? [{
+                id: "tms_overlay",
+                name: "TMS同比",
+                type: "line",
+                yAxisIndex: 1,
+                showSymbol: false,
+                sampling: "lttb",
+                data: tmsYoyPoints,
+                lineStyle: { width: 1.1, color: "#7C3AED" },
+                itemStyle: { color: "#7C3AED" },
+                z: 2,
+              }]
+            : []),
+          ...(showReserve
+            ? [{
+                id: "reserve_overlay",
+                name: "存款准备金率",
+                type: "line",
+                yAxisIndex: 1,
+                step: "end" as const,
+                showSymbol: false,
+                data: reservePoints,
+                lineStyle: { width: 1.1, color: "#2C7FB8" },
+                itemStyle: { color: "#2C7FB8" },
+                z: 2,
+              }]
+            : []),
+          ...(showCredit
+            ? [{
+                id: "credit_overlay",
+                name: "一级信贷利率",
+                type: "line",
+                yAxisIndex: 1,
+                step: "end" as const,
+                showSymbol: false,
+                data: creditPoints,
+                lineStyle: { width: 1.0, color: "#8E44AD" },
+                itemStyle: { color: "#8E44AD" },
+                z: 2,
+              }]
+            : []),
           ...(showRateControls
             ? [{
                 id: "rateControlSpots",
@@ -260,7 +399,7 @@ export default function MarketChart({
       const start = Number(dz?.start ?? 0);
       const end = Number(dz?.end ?? 100);
       if (start <= 0.5 && end >= 99.5) {
-        chart.setOption({ yAxis: { min: "dataMin", max: "dataMax" } });
+        chart.setOption({ yAxis: [{ min: "dataMin", max: "dataMax" }, { min: 0, max: 100 }] });
         return;
       }
       const toTime = (v: any) => (typeof v === "number" ? v : Date.parse(String(v)));
@@ -282,21 +421,21 @@ export default function MarketChart({
       const min = Math.min(...values);
       const max = Math.max(...values);
       chart.setOption({
-        yAxis: {
-          min: Math.max(0.01, min * 0.85),
-          max: max * 1.15,
-        },
+        yAxis: [
+          { min: Math.max(0.01, min * 0.85), max: max * 1.15 },
+          { min: 0, max: 100 },
+        ],
       });
     };
     updateAxisRef.current = updateAxis;
     updateAxis();
-  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots]);
+  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots, showSpread, showTms, showReserve, showCredit, spreadPoints, tmsYoyPoints, reservePoints, creditPoints]);
 
   return (
     <section className="chart-panel">
       <div className="panel-heading">
         <h2>标普500、政策事件与利率管制</h2>
-        <span>左轴=标普500；红方块=利率管制事件；利率/准备金率/利差见下方独立图</span>
+        <span>左轴=标普500；右轴=历史分位；红方块=利率管制事件</span>
       </div>
       <div className="chart-legend">
         {Object.entries(taxonomy.categoryColors).map(([cat, color]) => (
@@ -307,9 +446,25 @@ export default function MarketChart({
           <input type="checkbox" checked={showRateControls} onChange={(e) => setShowRateControls(e.target.checked)} />
           <i className="rate-square" />利率管制事件
         </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showSpread} onChange={(e) => setShowSpread(e.target.checked)} />
+          <i style={{ background: "#16A085" }} />10Y−1Y
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showTms} onChange={(e) => setShowTms(e.target.checked)} />
+          <i style={{ background: "#7C3AED" }} />TMS同比
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showReserve} onChange={(e) => setShowReserve(e.target.checked)} />
+          <i style={{ background: "#2C7FB8" }} />存款准备金率
+        </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showCredit} onChange={(e) => setShowCredit(e.target.checked)} />
+          <i style={{ background: "#8E44AD" }} />一级信贷利率
+        </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED、Regulation Q 史料；标普曲线从 1927 年开始；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利率与 10Y−1Y 利差见下方独立图。
+        来源：美联储 H.15/FRED、Regulation Q 史料；标普曲线从 1927 年开始；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利差、TMS、准备金率、一级信贷利率以历史分位叠加在右轴，悬停显示原值。
       </p>
       <div ref={ref} className="market-chart" />
     </section>
