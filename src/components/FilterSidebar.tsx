@@ -80,7 +80,7 @@ export default function FilterSidebar({
   };
 
   return (
-    <aside className="sidebar">
+    <aside className="sidebar filter-bar">
       <div className="sidebar-section">
         <label className="search-label" htmlFor="event-search">搜索事件</label>
         <input
