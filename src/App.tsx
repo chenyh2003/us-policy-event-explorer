@@ -7,7 +7,6 @@ import Header from "./components/Header";
 import SelectionToolbar from "./components/SelectionToolbar";
 import FilterSidebar from "./components/FilterSidebar";
 import MarketChart from "./components/MarketChart";
-import UnemploymentChart from "./components/UnemploymentChart";
 import PolicyTimeline from "./components/PolicyTimeline";
 import EventList from "./components/EventList";
 import EventDetailDrawer from "./components/EventDetailDrawer";
@@ -99,20 +98,20 @@ function Explorer({
           onGroupToggle={actions.group}
         />
         <main className="main-panel">
-          <div className="sync-hint">拖动标普图下方滑块，或在图中滚轮缩放；右侧分位轴对应已勾选的利差、TMS、准备金率和信贷利率。</div>
+          <div className="sync-hint">拖动标普图下方滑块，或在图中滚轮缩放；右侧分位轴对应已勾选的利差、TMS、准备金率、信贷利率和失业率。</div>
           <div className="chart-stack">
             <MarketChart
               spx={spx}
               rates={rates}
               tms={tms}
               yieldSpread={yieldSpread}
+              unemployment={unemployment}
               rateControls={rateControls}
               events={filtered}
               selected={selected}
               taxonomy={taxonomy}
               onOpen={openEvent}
             />
-            <UnemploymentChart data={unemployment} />
           </div>
           <PolicyTimeline
             events={filtered}

@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as echarts from "echarts";
-import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, YieldSpreadData } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, UnemploymentData, YieldSpreadData } from "../types";
 
 export default function MarketChart({
   spx,
   rates,
   tms,
   yieldSpread,
+  unemployment,
   rateControls,
   events,
   selected,
@@ -17,6 +18,7 @@ export default function MarketChart({
   rates: RatesData;
   tms: TmsData;
   yieldSpread: YieldSpreadData;
+  unemployment: UnemploymentData;
   rateControls: RateControlEvent[];
   events: PolicyEvent[];
   selected: Set<number>;
@@ -34,6 +36,7 @@ export default function MarketChart({
   const [showTms, setShowTms] = useState(true);
   const [showReserve, setShowReserve] = useState(true);
   const [showCredit, setShowCredit] = useState(false);
+  const [showUnemployment, setShowUnemployment] = useState(true);
 
   const normalized = (items: { date: string; value: number }[]) => {
     const values = items.map((item) => item.value).sort((a, b) => a - b);
@@ -77,6 +80,19 @@ export default function MarketChart({
   const creditPoints = useMemo(
     () => normalized(rates.primaryCredit.map((p) => ({ date: p.date, value: p.value }))),
     [rates]
+  );
+  const unemploymentRaw = useMemo(
+    () => [
+      ...unemployment.annual
+        .filter((p) => p.year !== undefined && p.year < 1948)
+        .map((p) => ({ date: `${p.year}-12-31`, value: p.value })),
+      ...unemployment.monthly.map((p) => ({ date: p.date as string, value: p.value })),
+    ],
+    [unemployment]
+  );
+  const unemploymentPoints = useMemo(
+    () => normalized(unemploymentRaw),
+    [unemploymentRaw]
   );
 
   const rateControlSpots = useMemo(
@@ -197,6 +213,10 @@ export default function MarketChart({
             if (showCredit) {
               const p = latest(rates.primaryCredit.map((x) => ({ date: x.date, value: x.value })));
               if (p) rows.push(`一级信贷利率：${p.value.toFixed(2)}%`);
+            }
+            if (showUnemployment) {
+              const p = latest(unemploymentRaw);
+              if (p) rows.push(`美国失业率：${p.value.toFixed(2)}%`);
             }
 
             const target = new Date(date).getTime();
@@ -366,6 +386,20 @@ export default function MarketChart({
                 z: 2,
               }]
             : []),
+          ...(showUnemployment
+            ? [{
+                id: "unemployment_overlay",
+                name: "美国失业率",
+                type: "line",
+                yAxisIndex: 1,
+                showSymbol: false,
+                sampling: "lttb",
+                data: unemploymentPoints,
+                lineStyle: { width: 1.1, color: "#B45309" },
+                itemStyle: { color: "#B45309" },
+                z: 2,
+              }]
+            : []),
           ...(showRateControls
             ? [{
                 id: "rateControlSpots",
@@ -456,7 +490,7 @@ export default function MarketChart({
     };
     updateAxisRef.current = updateAxis;
     updateAxis();
-  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots, showSpread, showTmsLevel, showTms, showReserve, showCredit, spreadPoints, tmsLevelPoints, tmsYoyPoints, reservePoints, creditPoints]);
+  }, [spx, events, selected, taxonomy, eventsById, showRateControls, rateControlSpots, showSpread, showTmsLevel, showTms, showReserve, showCredit, showUnemployment, spreadPoints, tmsLevelPoints, tmsYoyPoints, reservePoints, creditPoints, unemploymentPoints, unemploymentRaw]);
 
   return (
     <section className="chart-panel">
@@ -493,9 +527,13 @@ export default function MarketChart({
           <input type="checkbox" checked={showCredit} onChange={(e) => setShowCredit(e.target.checked)} />
           <i style={{ background: "#8E44AD" }} />一级信贷利率
         </label>
+        <label className="rate-toggle">
+          <input type="checkbox" checked={showUnemployment} onChange={(e) => setShowUnemployment(e.target.checked)} />
+          <i style={{ background: "#B45309" }} />美国失业率
+        </label>
       </div>
       <p className="chart-note">
-        来源：美联储 H.15/FRED、Regulation Q 史料；标普曲线从 1927 年开始；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利差、TMS、准备金率、一级信贷利率以历史分位叠加在右轴，悬停显示原值。
+        来源：美联储 H.15/FRED、Regulation Q 史料、BLS/FRED UNRATE；标普曲线从 1927 年开始；红方块按事件日映射到标普收盘价；1927 年前及超出行情数据范围的事件不显示在标普上。利差、TMS、准备金率、一级信贷利率、失业率以历史分位叠加在右轴，悬停显示原值。
       </p>
       <div ref={ref} className="market-chart" />
     </section>
