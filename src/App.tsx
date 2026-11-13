@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, YieldSpreadData } from "./types";
+import type { Filters, PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, UnemploymentData, YieldSpreadData } from "./types";
 import { loadSiteData } from "./lib/data";
 import { filterEvents } from "./lib/filters";
 import { useEventSelection } from "./hooks/useEventSelection";
@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import SelectionToolbar from "./components/SelectionToolbar";
 import FilterSidebar from "./components/FilterSidebar";
 import MarketChart from "./components/MarketChart";
+import UnemploymentChart from "./components/UnemploymentChart";
 import PolicyTimeline from "./components/PolicyTimeline";
 import EventList from "./components/EventList";
 import EventDetailDrawer from "./components/EventDetailDrawer";
@@ -28,6 +29,7 @@ function Explorer({
   rateControls,
   tms,
   yieldSpread,
+  unemployment,
 }: {
   events: PolicyEvent[];
   spx: SpxPoint[];
@@ -36,6 +38,7 @@ function Explorer({
   rateControls: RateControlEvent[];
   tms: TmsData;
   yieldSpread: YieldSpreadData;
+  unemployment: UnemploymentData;
 }) {
   const allIds = useMemo(() => events.map((e) => e.id), [events]);
   const { selected, actions } = useEventSelection(allIds);
@@ -109,6 +112,7 @@ function Explorer({
               taxonomy={taxonomy}
               onOpen={openEvent}
             />
+            <UnemploymentChart data={unemployment} />
           </div>
           <PolicyTimeline
             events={filtered}
@@ -142,7 +146,7 @@ function Explorer({
 }
 
 export default function App() {
-  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[]; tms: TmsData; yieldSpread: YieldSpreadData } | null>(null);
+  const [data, setData] = useState<{ events: PolicyEvent[]; spx: SpxPoint[]; taxonomy: Taxonomy; rates: RatesData; rateControls: RateControlEvent[]; tms: TmsData; yieldSpread: YieldSpreadData; unemployment: UnemploymentData } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -165,5 +169,5 @@ export default function App() {
     return <div className="loading-screen">正在加载 108 条政策事件与标普500数据…</div>;
   }
 
-  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} tms={data.tms} yieldSpread={data.yieldSpread} />;
+  return <Explorer events={data.events} spx={data.spx} taxonomy={data.taxonomy} rates={data.rates} rateControls={data.rateControls} tms={data.tms} yieldSpread={data.yieldSpread} unemployment={data.unemployment} />;
 }

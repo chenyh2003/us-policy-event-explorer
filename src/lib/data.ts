@@ -1,4 +1,4 @@
-import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, YieldSpreadData } from "../types";
+import type { PolicyEvent, RateControlEvent, RatesData, SpxPoint, Taxonomy, TmsData, UnemploymentData, YieldSpreadData } from "../types";
 
 export interface SiteData {
   events: PolicyEvent[];
@@ -8,11 +8,12 @@ export interface SiteData {
   rateControls: RateControlEvent[];
   tms: TmsData;
   yieldSpread: YieldSpreadData;
+  unemployment: UnemploymentData;
 }
 
 export async function loadSiteData(): Promise<SiteData> {
   const base = import.meta.env.BASE_URL;
-  const [events, spx, taxonomy, rates, rateControls, tms, yieldSpread] = await Promise.all([
+  const [events, spx, taxonomy, rates, rateControls, tms, yieldSpread, unemployment] = await Promise.all([
     fetch(`${base}data/events.json`).then((r) => {
       if (!r.ok) throw new Error("events.json 加载失败");
       return r.json();
@@ -41,6 +42,10 @@ export async function loadSiteData(): Promise<SiteData> {
       if (!r.ok) throw new Error("yield-spread.json 加载失败");
       return r.json();
     }),
+    fetch(`${base}data/unemployment.json`).then((r) => {
+      if (!r.ok) throw new Error("unemployment.json 加载失败");
+      return r.json();
+    }),
   ]);
-  return { events, spx, taxonomy, rates, rateControls, tms, yieldSpread };
+  return { events, spx, taxonomy, rates, rateControls, tms, yieldSpread, unemployment };
 }

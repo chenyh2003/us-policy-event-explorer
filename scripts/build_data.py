@@ -176,6 +176,7 @@ def main():
     rate_controls = enrich_rate_controls(spx)
     tms = json.loads((CONTENT / "tms.json").read_text(encoding="utf-8"))
     yield_spread = json.loads((CONTENT / "yield-spread.json").read_text(encoding="utf-8"))
+    unemployment = json.loads((CONTENT / "unemployment.json").read_text(encoding="utf-8"))
     (PUBLIC / "events.json").write_text(
         json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -194,6 +195,9 @@ def main():
     )
     (PUBLIC / "yield-spread.json").write_text(
         json.dumps(yield_spread, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (PUBLIC / "unemployment.json").write_text(
+        json.dumps(unemployment, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     core_count = sum(1 for e in events if e["isCore32"])
     print(f"events={len(events)} core32={core_count} spx={len(spx)} strict={STRICT}")

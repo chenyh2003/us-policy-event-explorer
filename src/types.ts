@@ -121,6 +121,26 @@ export interface YieldSpreadData {
   };
 }
 
+export interface UnemploymentPoint {
+  date?: string;
+  year?: number;
+  value: number;
+  source?: string;
+}
+
+export interface UnemploymentData {
+  monthly: UnemploymentPoint[];
+  annual: UnemploymentPoint[];
+  meta: {
+    label: string;
+    unit: string;
+    annual_range: string;
+    monthly_range: string;
+    source: string;
+    note: string;
+  };
+}
+
 export interface RatePoint {
   date: string;
   value: number;
